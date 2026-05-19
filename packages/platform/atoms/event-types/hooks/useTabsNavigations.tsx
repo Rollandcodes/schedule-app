@@ -1,16 +1,16 @@
 "use client";
 
-import { getPaymentAppData } from "@calcom/app-store/_utils/payments/getPaymentAppData";
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
+import { getPaymentAppData } from "@schedule/app-store/_utils/payments/getPaymentAppData";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
 import type {
   AvailabilityOption,
   EventTypeApps,
   EventTypeSetupProps,
   FormValues,
-} from "@calcom/features/eventtypes/lib/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { VerticalTabItemProps } from "@calcom/ui/components/navigation";
-// eslint-disable-next-line @calcom/eslint/deprecated-imports-next-router
+} from "@schedule/features/eventtypes/lib/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { VerticalTabItemProps } from "@schedule/ui/components/navigation";
+// eslint-disable-next-line @schedule/eslint/deprecated-imports-next-router
 import type { TFunction } from "i18next";
 import { useMemo } from "react";
 import type { UseFormReturn } from "react-hook-form";

@@ -1,5 +1,5 @@
-import { X_CAL_CLIENT_ID, X_CAL_SECRET_KEY } from "@calcom/platform-constants";
-import type { PlatformOAuthClient, Team, User } from "@calcom/prisma/client";
+import { X_CAL_CLIENT_ID, X_CAL_SECRET_KEY } from "@schedule/platform-constants";
+import type { PlatformOAuthClient, Team, User } from "@schedule/prisma/client";
 import { ExecutionContext, HttpException } from "@nestjs/common";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { JwtService as NestJwtService } from "@nestjs/jwt";

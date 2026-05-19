@@ -3,14 +3,14 @@ import {
   ERROR_STATUS,
   SUCCESS_STATUS,
   VERSION_2024_08_13,
-} from "@calcom/platform-constants";
+} from "@schedule/platform-constants";
 import {
   AttendeeAddGuestsEmail,
   AttendeeScheduledEmail,
   OrganizerAddGuestsEmail,
-} from "@calcom/platform-libraries/emails";
-import type { BookingOutput_2024_08_13, CreateBookingInput_2024_08_13 } from "@calcom/platform-types";
-import type { Team, User } from "@calcom/prisma/client";
+} from "@schedule/platform-libraries/emails";
+import type { BookingOutput_2024_08_13, CreateBookingInput_2024_08_13 } from "@schedule/platform-types";
+import type { Team, User } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";

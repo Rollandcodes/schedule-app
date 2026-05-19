@@ -1,12 +1,12 @@
 import type { TFunction } from "i18next";
 
-import { enrichUserWithDelegationConferencingCredentialsWithoutOrgId } from "@calcom/app-store/delegationCredential";
-import { defaultVideoAppCategories } from "@calcom/app-store/utils";
-import { buildNonDelegationCredentials } from "@calcom/lib/delegationCredential";
-import { prisma } from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
-import { AppCategories } from "@calcom/prisma/enums";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
+import { enrichUserWithDelegationConferencingCredentialsWithoutOrgId } from "@schedule/app-store/delegationCredential";
+import { defaultVideoAppCategories } from "@schedule/app-store/utils";
+import { buildNonDelegationCredentials } from "@schedule/lib/delegationCredential";
+import { prisma } from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
+import { AppCategories } from "@schedule/prisma/enums";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
 
 import getEnabledAppsFromCredentials from "./_utils/getEnabledAppsFromCredentials";
 import { defaultLocations } from "./locations";

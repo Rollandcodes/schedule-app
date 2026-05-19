@@ -1,10 +1,10 @@
 "use client";
 
-import { APP_NAME } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
-import { Dialog, DialogContent } from "@calcom/ui/components/dialog";
-import { Logo } from "@calcom/ui/components/logo";
+import { APP_NAME } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
+import { Dialog, DialogContent } from "@schedule/ui/components/dialog";
+import { Logo } from "@schedule/ui/components/logo";
 import { CheckIcon, UserIcon } from "@coss/ui/icons";
 
 import { useWelcomeToCalcomModal } from "../hooks/useWelcomeToCalcomModal";

@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { BookingStatus } from "@calcom/prisma/enums";
-import { trpc } from "@calcom/trpc/react";
-import { showToast } from "@calcom/ui/components/toast";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { BookingStatus } from "@schedule/prisma/enums";
+import { trpc } from "@schedule/trpc/react";
+import { showToast } from "@schedule/ui/components/toast";
 
 interface UseBookingConfirmationOptions {
   isRecurring?: boolean;

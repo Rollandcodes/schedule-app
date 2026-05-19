@@ -1,9 +1,9 @@
 "use client";
 
-import getBrandColours from "@calcom/lib/getBrandColours";
-import useTheme from "@calcom/lib/hooks/useTheme";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
-import { useCalcomTheme } from "@calcom/ui/styles";
+import getBrandColours from "@schedule/lib/getBrandColours";
+import useTheme from "@schedule/lib/hooks/useTheme";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
+import { useCalcomTheme } from "@schedule/ui/styles";
 
 export const useAppTheme = () => {
   const { data: user } = useMeQuery();

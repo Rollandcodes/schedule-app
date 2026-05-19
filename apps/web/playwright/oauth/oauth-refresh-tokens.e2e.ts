@@ -3,7 +3,7 @@ import { randomBytes } from "node:crypto";
 import jwt from "jsonwebtoken";
 
 import { test } from "../lib/fixtures";
-import type { PrismaClient } from "@calcom/prisma";
+import type { PrismaClient } from "@schedule/prisma";
 
 test.describe("OAuth - refresh tokens", () => {
   test.afterEach(async ({ prisma, users }, testInfo) => {

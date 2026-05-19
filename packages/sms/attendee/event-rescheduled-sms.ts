@@ -1,5 +1,5 @@
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import type { CalendarEvent, Person } from "@calcom/types/Calendar";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import type { CalendarEvent, Person } from "@schedule/types/Calendar";
 
 import SMSManager from "../sms-manager";
 

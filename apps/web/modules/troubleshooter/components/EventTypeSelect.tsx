@@ -1,5 +1,5 @@
-import { EventTypeSelectComponent } from "@calcom/features/troubleshooter/components/EventTypeSelectComponent";
-import { trpc } from "@calcom/trpc/react";
+import { EventTypeSelectComponent } from "@schedule/features/troubleshooter/components/EventTypeSelectComponent";
+import { trpc } from "@schedule/trpc/react";
 
 export { EventTypeSelectComponent };
 

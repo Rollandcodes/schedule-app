@@ -1,5 +1,5 @@
-import { createContainer } from "@calcom/features/di/di";
-import type { BookingAuditProducerService } from "@calcom/features/booking-audit/lib/service/BookingAuditProducerService.interface";
+import { createContainer } from "@schedule/features/di/di";
+import type { BookingAuditProducerService } from "@schedule/features/booking-audit/lib/service/BookingAuditProducerService.interface";
 
 import { moduleLoader as bookingAuditTaskerProducerServiceModule } from "./BookingAuditTaskerProducerService.module";
 

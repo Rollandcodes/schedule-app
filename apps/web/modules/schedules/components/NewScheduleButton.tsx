@@ -2,15 +2,15 @@ import { revalidateAvailabilityList } from "app/(use-page-wrapper)/(main-nav)/av
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { HttpError } from "@calcom/lib/http-error";
-import { trpc } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogTrigger, DialogClose } from "@calcom/ui/components/dialog";
-import { Form } from "@calcom/ui/components/form";
-import { InputField } from "@calcom/ui/components/form";
-import { showToast } from "@calcom/ui/components/toast";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { HttpError } from "@schedule/lib/http-error";
+import { trpc } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogTrigger, DialogClose } from "@schedule/ui/components/dialog";
+import { Form } from "@schedule/ui/components/form";
+import { InputField } from "@schedule/ui/components/form";
+import { showToast } from "@schedule/ui/components/toast";
 
 export function NewScheduleButton({
   name = "new-schedule",

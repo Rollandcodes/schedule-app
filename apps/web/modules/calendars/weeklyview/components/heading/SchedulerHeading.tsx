@@ -1,8 +1,8 @@
-import dayjs from "@calcom/dayjs";
-import { Button } from "@calcom/ui/components/button";
-import { ButtonGroup } from "@calcom/ui/components/buttonGroup";
+import dayjs from "@schedule/dayjs";
+import { Button } from "@schedule/ui/components/button";
+import { ButtonGroup } from "@schedule/ui/components/buttonGroup";
 
-import { useCalendarStore } from "@calcom/features/calendars/weeklyview/state/store";
+import { useCalendarStore } from "@schedule/features/calendars/weeklyview/state/store";
 
 export function SchedulerHeading() {
   const { startDate, endDate, handleDateChange } = useCalendarStore((state) => ({

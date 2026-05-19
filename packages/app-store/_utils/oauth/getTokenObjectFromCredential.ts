@@ -1,6 +1,6 @@
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import type { CredentialPayload } from "@calcom/types/Credential";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 import { OAuth2TokenResponseInDbSchema } from "./universalSchema";
 

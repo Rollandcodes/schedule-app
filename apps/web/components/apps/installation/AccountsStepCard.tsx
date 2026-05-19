@@ -1,12 +1,12 @@
 import type { FC } from "react";
 import React, { useState } from "react";
 
-import { getPlaceholderAvatar } from "@calcom/lib/defaultAvatarImage";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { User } from "@calcom/prisma/client";
-import classNames from "@calcom/ui/classNames";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { StepCard } from "@calcom/ui/components/card";
+import { getPlaceholderAvatar } from "@schedule/lib/defaultAvatarImage";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { User } from "@schedule/prisma/client";
+import classNames from "@schedule/ui/classNames";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { StepCard } from "@schedule/ui/components/card";
 
 import type { TTeams } from "~/apps/installation/[[...step]]/step-view";
 

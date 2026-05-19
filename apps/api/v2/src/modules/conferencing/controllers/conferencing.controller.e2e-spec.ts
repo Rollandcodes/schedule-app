@@ -4,9 +4,9 @@ import {
   GOOGLE_MEET,
   GOOGLE_MEET_TYPE,
   SUCCESS_STATUS,
-} from "@calcom/platform-constants";
-import type { ApiSuccessResponse } from "@calcom/platform-types";
-import type { User } from "@calcom/prisma/client";
+} from "@schedule/platform-constants";
+import type { ApiSuccessResponse } from "@schedule/platform-types";
+import type { User } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";

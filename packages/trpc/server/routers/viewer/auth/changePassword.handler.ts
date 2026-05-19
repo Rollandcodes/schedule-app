@@ -1,8 +1,8 @@
-import { validPassword } from "@calcom/features/auth/lib/validPassword";
-import { verifyPassword } from "@calcom/features/auth/lib/verifyPassword";
-import { hashPassword } from "@calcom/lib/auth/hashPassword";
-import { prisma } from "@calcom/prisma";
-import { IdentityProvider } from "@calcom/prisma/enums";
+import { validPassword } from "@schedule/features/auth/lib/validPassword";
+import { verifyPassword } from "@schedule/features/auth/lib/verifyPassword";
+import { hashPassword } from "@schedule/lib/auth/hashPassword";
+import { prisma } from "@schedule/prisma";
+import { IdentityProvider } from "@schedule/prisma/enums";
 
 import { TRPCError } from "@trpc/server";
 

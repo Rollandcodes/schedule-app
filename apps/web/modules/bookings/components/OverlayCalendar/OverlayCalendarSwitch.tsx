@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { Switch } from "@calcom/ui/components/form";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { Switch } from "@schedule/ui/components/form";
 
-import { useOverlayCalendarStore } from "@calcom/features/bookings/Booker/components/OverlayCalendar/store";
+import { useOverlayCalendarStore } from "@schedule/features/bookings/Booker/components/OverlayCalendar/store";
 
 interface OverlayCalendarSwitchProps {
   enabled?: boolean;

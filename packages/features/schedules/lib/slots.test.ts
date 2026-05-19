@@ -1,6 +1,6 @@
 import process from "node:process";
-import dayjs from "@calcom/dayjs";
-import type { DateRange } from "@calcom/features/schedules/lib/date-ranges";
+import dayjs from "@schedule/dayjs";
+import type { DateRange } from "@schedule/features/schedules/lib/date-ranges";
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import getSlots from "./slots";
 

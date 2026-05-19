@@ -1,7 +1,7 @@
-import { BookingAccessService } from "@calcom/features/bookings/services/BookingAccessService";
-import { WrongAssignmentReportRepository } from "@calcom/features/bookings/repositories/WrongAssignmentReportRepository";
-import prisma from "@calcom/prisma";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+import { BookingAccessService } from "@schedule/features/bookings/services/BookingAccessService";
+import { WrongAssignmentReportRepository } from "@schedule/features/bookings/repositories/WrongAssignmentReportRepository";
+import prisma from "@schedule/prisma";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 
 import { TRPCError } from "@trpc/server";
 

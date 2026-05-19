@@ -2,24 +2,24 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
 
-import dayjs from "@calcom/dayjs";
-import type { EventTypeSetupProps } from "@calcom/features/eventtypes/lib/types";
-import type { FormValues, PrivateLinkWithOptions } from "@calcom/features/eventtypes/lib/types";
-import { generateHashedLink } from "@calcom/lib/generateHashedLink";
-import { isLinkExpired as utilsIsLinkExpired } from "@calcom/lib/hashedLinksUtils";
-import { useCopy } from "@calcom/lib/hooks/useCopy";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import classNames from "@calcom/ui/classNames";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { Dialog, DialogContent } from "@calcom/ui/components/dialog";
-import { TextField } from "@calcom/ui/components/form";
-import { DatePicker } from "@calcom/ui/components/form";
-import { NumberInput } from "@calcom/ui/components/form";
-import { RadioAreaGroup as RadioArea } from "@calcom/ui/components/radio";
-import { showToast } from "@calcom/ui/components/toast";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import dayjs from "@schedule/dayjs";
+import type { EventTypeSetupProps } from "@schedule/features/eventtypes/lib/types";
+import type { FormValues, PrivateLinkWithOptions } from "@schedule/features/eventtypes/lib/types";
+import { generateHashedLink } from "@schedule/lib/generateHashedLink";
+import { isLinkExpired as utilsIsLinkExpired } from "@schedule/lib/hashedLinksUtils";
+import { useCopy } from "@schedule/lib/hooks/useCopy";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import classNames from "@schedule/ui/classNames";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { Dialog, DialogContent } from "@schedule/ui/components/dialog";
+import { TextField } from "@schedule/ui/components/form";
+import { DatePicker } from "@schedule/ui/components/form";
+import { NumberInput } from "@schedule/ui/components/form";
+import { RadioAreaGroup as RadioArea } from "@schedule/ui/components/radio";
+import { showToast } from "@schedule/ui/components/toast";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 
 export const MultiplePrivateLinksController = ({
   team,

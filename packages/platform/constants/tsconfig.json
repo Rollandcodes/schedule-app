@@ -1,11 +1,16 @@
 {
-  "extends": "@calcom/tsconfig/base.json",
+  "extends": "@schedule/tsconfig/base.json",
   "compilerOptions": {
     "target": "ES5",
     "resolveJsonModule": true,
     "baseUrl": "./",
     "outDir": "./dist"
   },
-  "include": ["."],
-  "exclude": ["dist", "**/node_modules/**"]
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "**/node_modules/**"
+  ]
 }

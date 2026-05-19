@@ -7,16 +7,16 @@ import { useFieldArray, useFormContext } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import type { LocationObject } from "@calcom/app-store/locations";
-import { locationsResolver } from "@calcom/app-store/locations";
-import NoSSR from "@calcom/lib/components/NoSSR";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { AppCategories } from "@calcom/prisma/enums";
-import type { EventTypeMetaDataSchema, eventTypeBookingFields } from "@calcom/prisma/zod-utils";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Button } from "@calcom/ui/components/button";
-import { Form } from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
+import type { LocationObject } from "@schedule/app-store/locations";
+import { locationsResolver } from "@schedule/app-store/locations";
+import NoSSR from "@schedule/lib/components/NoSSR";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { AppCategories } from "@schedule/prisma/enums";
+import type { EventTypeMetaDataSchema, eventTypeBookingFields } from "@schedule/prisma/zod-utils";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Button } from "@schedule/ui/components/button";
+import { Form } from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
 
 import EventTypeAppSettingsWrapper from "@components/apps/installation/EventTypeAppSettingsWrapper";
 import EventTypeConferencingAppSettings from "@components/apps/installation/EventTypeConferencingAppSettings";

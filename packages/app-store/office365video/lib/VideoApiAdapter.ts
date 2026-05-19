@@ -1,16 +1,16 @@
 import { z } from "zod";
 
-import { triggerDelegationCredentialErrorWebhook } from "@calcom/features/webhooks/lib/triggerDelegationCredentialErrorWebhook";
+import { triggerDelegationCredentialErrorWebhook } from "@schedule/features/webhooks/lib/triggerDelegationCredentialErrorWebhook";
 import {
   CalendarAppDelegationCredentialConfigurationError,
   CalendarAppDelegationCredentialInvalidGrantError,
-} from "@calcom/lib/CalendarAppError";
-import { HttpError } from "@calcom/lib/http-error";
-import logger from "@calcom/lib/logger";
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { CredentialForCalendarServiceWithTenantId } from "@calcom/types/Credential";
-import type { PartialReference } from "@calcom/types/EventManager";
-import type { VideoApiAdapter, VideoCallData } from "@calcom/types/VideoApiAdapter";
+} from "@schedule/lib/CalendarAppError";
+import { HttpError } from "@schedule/lib/http-error";
+import logger from "@schedule/lib/logger";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { CredentialForCalendarServiceWithTenantId } from "@schedule/types/Credential";
+import type { PartialReference } from "@schedule/types/EventManager";
+import type { VideoApiAdapter, VideoCallData } from "@schedule/types/VideoApiAdapter";
 
 import getParsedAppKeysFromSlug from "../../_utils/getParsedAppKeysFromSlug";
 import { OAuthManager } from "../../_utils/oauth/OAuthManager";

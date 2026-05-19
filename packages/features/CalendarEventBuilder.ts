@@ -1,15 +1,15 @@
 import process from "node:process";
-import { ALL_APPS } from "@calcom/app-store/utils";
-import { getAssignmentReasonCategory } from "@calcom/features/bookings/lib/getAssignmentReasonCategory";
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
-import type { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
+import { ALL_APPS } from "@schedule/app-store/utils";
+import { getAssignmentReasonCategory } from "@schedule/features/bookings/lib/getAssignmentReasonCategory";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
+import type { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
 import {
   type EventTypeBrandingData,
   getEventTypeService,
-} from "@calcom/features/eventtypes/di/EventTypeService.container";
-import { getTranslation } from "@calcom/i18n/server";
-import { parseRecurringEvent } from "@calcom/lib/isRecurringEvent";
-import { getTimeFormatStringFromUserTimeFormat } from "@calcom/lib/timeFormat";
+} from "@schedule/features/eventtypes/di/EventTypeService.container";
+import { getTranslation } from "@schedule/i18n/server";
+import { parseRecurringEvent } from "@schedule/lib/isRecurringEvent";
+import { getTimeFormatStringFromUserTimeFormat } from "@schedule/lib/timeFormat";
 import type {
   Attendee,
   BookingReference,
@@ -17,11 +17,11 @@ import type {
   DestinationCalendar,
   Prisma,
   User,
-} from "@calcom/prisma/client";
-import type { SchedulingType } from "@calcom/prisma/enums";
-import { bookingResponses as bookingResponsesSchema } from "@calcom/prisma/zod-utils";
-import type { AppsStatus, CalEventResponses, CalendarEvent, Person } from "@calcom/types/Calendar";
-import type { VideoCallData } from "@calcom/types/VideoApiAdapter";
+} from "@schedule/prisma/client";
+import type { SchedulingType } from "@schedule/prisma/enums";
+import { bookingResponses as bookingResponsesSchema } from "@schedule/prisma/zod-utils";
+import type { AppsStatus, CalEventResponses, CalendarEvent, Person } from "@schedule/types/Calendar";
+import type { VideoCallData } from "@schedule/types/VideoApiAdapter";
 import type { TFunction } from "i18next";
 
 const getBookerBaseUrl = async (_orgSlug?: string | number | null): Promise<string> =>

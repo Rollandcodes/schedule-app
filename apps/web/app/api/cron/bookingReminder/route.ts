@@ -2,16 +2,16 @@ import { defaultResponderForAppDir } from "app/api/defaultResponderForAppDir";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-import dayjs from "@calcom/dayjs";
-import { sendOrganizerRequestReminderEmail } from "@calcom/emails/email-manager";
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
-import { isPrismaObjOrUndefined } from "@calcom/lib/isPrismaObj";
-import { parseRecurringEvent } from "@calcom/lib/isRecurringEvent";
-import { getTranslation } from "@calcom/i18n/server";
-import prisma, { bookingMinimalSelect } from "@calcom/prisma";
-import { BookingStatus, ReminderType } from "@calcom/prisma/enums";
-import type { EventTypeMetadata } from "@calcom/prisma/zod-utils";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import dayjs from "@schedule/dayjs";
+import { sendOrganizerRequestReminderEmail } from "@schedule/emails/email-manager";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
+import { isPrismaObjOrUndefined } from "@schedule/lib/isPrismaObj";
+import { parseRecurringEvent } from "@schedule/lib/isRecurringEvent";
+import { getTranslation } from "@schedule/i18n/server";
+import prisma, { bookingMinimalSelect } from "@schedule/prisma";
+import { BookingStatus, ReminderType } from "@schedule/prisma/enums";
+import type { EventTypeMetadata } from "@schedule/prisma/zod-utils";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 async function postHandler(request: NextRequest) {
   const apiKey = request.headers.get("authorization") || request.nextUrl.searchParams.get("apiKey");

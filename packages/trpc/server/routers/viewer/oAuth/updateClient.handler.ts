@@ -1,6 +1,6 @@
-import { OAuthClientRepository } from "@calcom/features/oauth/repositories/OAuthClientRepository";
-import type { PrismaClient } from "@calcom/prisma";
-import { OAuthClientStatus } from "@calcom/prisma/enums";
+import { OAuthClientRepository } from "@schedule/features/oauth/repositories/OAuthClientRepository";
+import type { PrismaClient } from "@schedule/prisma";
+import { OAuthClientStatus } from "@schedule/prisma/enums";
 import { TRPCError } from "@trpc/server";
 import type { TUpdateClientInputSchema } from "./updateClient.schema";
 

@@ -1,4 +1,4 @@
-import { validateUrlForSSRFSync } from "@calcom/platform-libraries";
+import { validateUrlForSSRFSync } from "@schedule/platform-libraries";
 import type { ValidatorConstraintInterface } from "class-validator";
 import { ValidatorConstraint } from "class-validator";
 

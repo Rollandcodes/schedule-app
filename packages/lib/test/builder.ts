@@ -1,8 +1,8 @@
-import getICalUID from "@calcom/emails/lib/getICalUID";
-import { WebhookVersion } from "@calcom/features/webhooks/lib/interface/IWebhookRepository";
-import type { Booking, BookingReference, EventType, Prisma, Webhook } from "@calcom/prisma/client";
-import { BookingStatus, CreationSource } from "@calcom/prisma/enums";
-import type { CalendarEvent, Person, VideoCallData } from "@calcom/types/Calendar";
+import getICalUID from "@schedule/emails/lib/getICalUID";
+import { WebhookVersion } from "@schedule/features/webhooks/lib/interface/IWebhookRepository";
+import type { Booking, BookingReference, EventType, Prisma, Webhook } from "@schedule/prisma/client";
+import { BookingStatus, CreationSource } from "@schedule/prisma/enums";
+import type { CalendarEvent, Person, VideoCallData } from "@schedule/types/Calendar";
 import { faker } from "@faker-js/faker";
 import type { TFunction } from "i18next";
 

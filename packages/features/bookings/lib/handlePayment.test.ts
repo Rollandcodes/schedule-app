@@ -2,13 +2,13 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 
 import { handlePayment } from "./handlePayment";
 
-vi.mock("@calcom/app-store/zod-utils", () => ({
+vi.mock("@schedule/app-store/zod-utils", () => ({
   eventTypeMetaDataSchemaWithTypedApps: {
     parse: vi.fn((data) => data),
   },
 }));
 
-vi.mock("@calcom/app-store/payment.services.generated", () => ({
+vi.mock("@schedule/app-store/payment.services.generated", () => ({
   PaymentServiceMap: {
     stripepayment: Promise.resolve({
       BuildPaymentService: () => ({

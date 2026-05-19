@@ -1,5 +1,5 @@
-import type { PrismaClient } from "@calcom/prisma";
-import prisma from "@calcom/prisma";
+import type { PrismaClient } from "@schedule/prisma";
+import prisma from "@schedule/prisma";
 
 import type { TrackingRepositoryInterface } from "./TrackingRepository.interface";
 

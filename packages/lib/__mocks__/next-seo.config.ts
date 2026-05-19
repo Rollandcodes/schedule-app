@@ -1,4 +1,4 @@
-vi.mock("@calcom/lib/next-seo.config", () => ({
+vi.mock("@schedule/lib/next-seo.config", () => ({
   default: {
     headSeo: {
       siteName: "Cal.diy",

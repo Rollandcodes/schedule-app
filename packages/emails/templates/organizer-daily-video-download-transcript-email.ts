@@ -1,9 +1,9 @@
 import type { TFunction } from "i18next";
 
-import { EMAIL_FROM_NAME } from "@calcom/lib/constants";
-import { getReplyToHeader } from "@calcom/lib/getReplyToHeader";
-import { TimeFormat } from "@calcom/lib/timeFormat";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import { EMAIL_FROM_NAME } from "@schedule/lib/constants";
+import { getReplyToHeader } from "@schedule/lib/getReplyToHeader";
+import { TimeFormat } from "@schedule/lib/timeFormat";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 import renderEmail from "../src/renderEmail";
 import BaseEmail from "./_base-email";

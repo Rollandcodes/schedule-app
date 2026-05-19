@@ -4,8 +4,8 @@ import { UpdateManagedUserInput } from "@/modules/users/inputs/update-managed-us
 import { UserWithProfile, UsersRepository } from "@/modules/users/users.repository";
 import { Injectable } from "@nestjs/common";
 
-import { sendChangeOfEmailVerification } from "@calcom/platform-libraries/emails";
-import type { Prisma } from "@calcom/prisma/client";
+import { sendChangeOfEmailVerification } from "@schedule/platform-libraries/emails";
+import type { Prisma } from "@schedule/prisma/client";
 
 export interface UpdateMeResult {
   updatedUser: UserWithProfile;

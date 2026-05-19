@@ -1,8 +1,8 @@
-import { DEFAULT_WEBHOOK_VERSION } from "@calcom/features/webhooks/lib/interface/IWebhookRepository";
-import type { EventPayloadType } from "@calcom/features/webhooks/lib/sendPayload";
-import sendPayload from "@calcom/features/webhooks/lib/sendPayload";
-import { validateUrlForSSRFSync } from "@calcom/lib/ssrfProtection";
-import { getTranslation } from "@calcom/i18n/server";
+import { DEFAULT_WEBHOOK_VERSION } from "@schedule/features/webhooks/lib/interface/IWebhookRepository";
+import type { EventPayloadType } from "@schedule/features/webhooks/lib/sendPayload";
+import sendPayload from "@schedule/features/webhooks/lib/sendPayload";
+import { validateUrlForSSRFSync } from "@schedule/lib/ssrfProtection";
+import { getTranslation } from "@schedule/i18n/server";
 
 import type { TTestTriggerInputSchema } from "./testTrigger.schema";
 

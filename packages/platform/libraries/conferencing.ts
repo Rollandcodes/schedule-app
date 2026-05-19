@@ -6,8 +6,8 @@ export {
   createMeeting,
   updateMeeting,
   deleteMeeting,
-} from "@calcom/features/conferencing/lib/videoClient";
+} from "@schedule/features/conferencing/lib/videoClient";
 
-export { FAKE_DAILY_CREDENTIAL } from "@calcom/app-store/dailyvideo/lib/VideoApiAdapter";
+export { FAKE_DAILY_CREDENTIAL } from "@schedule/app-store/dailyvideo/lib/VideoApiAdapter";
 
-export type { CalMeetingParticipant, CalMeetingSession } from "@calcom/app-store/dailyvideo/zod";
+export type { CalMeetingParticipant, CalMeetingSession } from "@schedule/app-store/dailyvideo/zod";

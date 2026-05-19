@@ -1,11 +1,11 @@
-import getWebhooks from "@calcom/features/webhooks/lib/getWebhooks";
-import { sendGenericWebhookPayload } from "@calcom/features/webhooks/lib/sendPayload";
-import { ErrorWithCode } from "@calcom/lib/errors";
-import logger from "@calcom/lib/logger";
-import { getTranslation } from "@calcom/i18n/server";
-import { Prisma } from "@calcom/prisma/client";
-import type { WrongAssignmentReportStatus } from "@calcom/prisma/enums";
-import { WebhookTriggerEvents } from "@calcom/prisma/enums";
+import getWebhooks from "@schedule/features/webhooks/lib/getWebhooks";
+import { sendGenericWebhookPayload } from "@schedule/features/webhooks/lib/sendPayload";
+import { ErrorWithCode } from "@schedule/lib/errors";
+import logger from "@schedule/lib/logger";
+import { getTranslation } from "@schedule/i18n/server";
+import { Prisma } from "@schedule/prisma/client";
+import type { WrongAssignmentReportStatus } from "@schedule/prisma/enums";
+import { WebhookTriggerEvents } from "@schedule/prisma/enums";
 import type { BookingRepository } from "../repositories/BookingRepository";
 import type { WrongAssignmentReportRepository } from "../repositories/WrongAssignmentReportRepository";
 

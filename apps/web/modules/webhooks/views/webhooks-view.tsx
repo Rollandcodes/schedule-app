@@ -1,9 +1,9 @@
 "use client";
 
-import { useBookerUrl } from "@calcom/features/bookings/hooks/useBookerUrl";
-import { APP_NAME, WEBAPP_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { RouterOutputs } from "@calcom/trpc/react";
+import { useBookerUrl } from "@schedule/features/bookings/hooks/useBookerUrl";
+import { APP_NAME, WEBAPP_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { RouterOutputs } from "@schedule/trpc/react";
 import { Avatar, AvatarImage } from "@coss/ui/components/avatar";
 import { Card, CardFrame, CardFrameHeader, CardPanel } from "@coss/ui/components/card";
 import {

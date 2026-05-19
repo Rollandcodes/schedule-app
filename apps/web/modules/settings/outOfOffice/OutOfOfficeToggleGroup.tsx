@@ -1,8 +1,8 @@
 "use client";
 
-import { useCompatSearchParams } from "@calcom/embed-core/src/useCompatSearchParams";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Select, ToggleGroup } from "@calcom/ui/components/form";
+import { useCompatSearchParams } from "@schedule/embed-core/src/useCompatSearchParams";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Select, ToggleGroup } from "@schedule/ui/components/form";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useMemo } from "react";
 

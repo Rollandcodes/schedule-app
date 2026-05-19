@@ -1,5 +1,5 @@
 {
-  "name": "@calcom/example-app-credential-sync",
+  "name": "@schedule/example-app-credential-sync",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@calcom/atoms": "workspace:*",
     "@prisma/client": "6.16.1",
+    "@schedule/atoms": "workspace:*",
     "next": "15.5.15",
     "prisma": "6.16.1",
     "react": "18.2.0",

@@ -1,5 +1,5 @@
-import type { DateRange } from "@calcom/features/schedules/lib/date-ranges";
-import { IntervalTree, ContainmentSearchAlgorithm, createIntervalNodes } from "@calcom/lib/intervalTree";
+import type { DateRange } from "@schedule/features/schedules/lib/date-ranges";
+import { IntervalTree, ContainmentSearchAlgorithm, createIntervalNodes } from "@schedule/lib/intervalTree";
 
 /**
  * Filters out date ranges that are completely covered by other date ranges.

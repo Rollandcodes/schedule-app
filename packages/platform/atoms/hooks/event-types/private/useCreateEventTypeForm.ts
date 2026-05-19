@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import type { z } from "zod";
 
-import { createEventTypeInput } from "@calcom/features/eventtypes/lib/types";
-import { SchedulingType } from "@calcom/prisma/enums";
-import { unlockedManagedEventTypeProps } from "@calcom/prisma/zod-utils";
+import { createEventTypeInput } from "@schedule/features/eventtypes/lib/types";
+import { SchedulingType } from "@schedule/prisma/enums";
+import { unlockedManagedEventTypeProps } from "@schedule/prisma/zod-utils";
 
 export type CreateEventTypeFormValues = z.infer<typeof createEventTypeInput>;
 

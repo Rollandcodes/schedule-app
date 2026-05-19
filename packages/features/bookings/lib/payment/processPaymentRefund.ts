@@ -1,10 +1,10 @@
-import { getPaymentAppData } from "@calcom/app-store/_utils/payments/getPaymentAppData";
-import dayjs from "@calcom/dayjs";
-import { handlePaymentRefund } from "@calcom/features/bookings/lib/payment/handlePaymentRefund";
-import { RefundPolicy } from "@calcom/lib/payment/types";
-import prisma from "@calcom/prisma";
-import type { Payment, Prisma } from "@calcom/prisma/client";
-import { EventTypeMetaDataSchema } from "@calcom/prisma/zod-utils";
+import { getPaymentAppData } from "@schedule/app-store/_utils/payments/getPaymentAppData";
+import dayjs from "@schedule/dayjs";
+import { handlePaymentRefund } from "@schedule/features/bookings/lib/payment/handlePaymentRefund";
+import { RefundPolicy } from "@schedule/lib/payment/types";
+import prisma from "@schedule/prisma";
+import type { Payment, Prisma } from "@schedule/prisma/client";
+import { EventTypeMetaDataSchema } from "@schedule/prisma/zod-utils";
 
 export const processPaymentRefund = async ({
   booking,

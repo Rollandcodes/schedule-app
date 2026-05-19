@@ -1,6 +1,6 @@
 import process from "node:process";
-import { validJson } from "@calcom/lib/jsonUtils";
-import type { AppMeta } from "@calcom/types/App";
+import { validJson } from "@schedule/lib/jsonUtils";
+import type { AppMeta } from "@schedule/types/App";
 
 export const metadata = {
   name: "Google Meet",

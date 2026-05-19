@@ -1,15 +1,15 @@
 "use client";
 
-import getStripe from "@calcom/app-store/stripepayment/lib/client";
-import { getPremiumPlanPriceValue } from "@calcom/app-store/stripepayment/lib/utils";
+import getStripe from "@schedule/app-store/stripepayment/lib/client";
+import { getPremiumPlanPriceValue } from "@schedule/app-store/stripepayment/lib/utils";
 import {
   fetchSignup,
   hasCheckoutSession,
   isAccountUnderReview,
   isUserAlreadyExistsError,
-} from "@calcom/features/auth/signup/lib/fetchSignup";
-import { getOrgUsernameFromEmail } from "@calcom/features/auth/signup/utils/getOrgUsernameFromEmail";
-import ServerTrans from "@calcom/lib/components/ServerTrans";
+} from "@schedule/features/auth/signup/lib/fetchSignup";
+import { getOrgUsernameFromEmail } from "@schedule/features/auth/signup/utils/getOrgUsernameFromEmail";
+import ServerTrans from "@schedule/lib/components/ServerTrans";
 import {
   APP_NAME,
   CLOUDFLARE_SITE_ID,
@@ -19,23 +19,23 @@ import {
   WEBSITE_PRIVACY_POLICY_URL,
   WEBSITE_TERMS_URL,
   WEBSITE_URL,
-} from "@calcom/lib/constants";
-import { isENVDev } from "@calcom/lib/env";
-import { fetchUsername } from "@calcom/lib/fetchUsername";
-import { pushGTMEvent } from "@calcom/lib/gtm";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useDebounce } from "@calcom/lib/hooks/useDebounce";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { INVALID_CLOUDFLARE_TOKEN_ERROR } from "@calcom/lib/server/checkCfTurnstileToken";
-import { IS_EUROPE } from "@calcom/lib/timezoneConstants";
-import { signupSchema as apiSignupSchema } from "@calcom/prisma/zod-utils";
-import type { inferSSRProps } from "@calcom/types/inferSSRProps";
-import classNames from "@calcom/ui/classNames";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { CheckboxField, Form, PasswordField, SelectField, TextField } from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
-import { showToast } from "@calcom/ui/components/toast";
+} from "@schedule/lib/constants";
+import { isENVDev } from "@schedule/lib/env";
+import { fetchUsername } from "@schedule/lib/fetchUsername";
+import { pushGTMEvent } from "@schedule/lib/gtm";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useDebounce } from "@schedule/lib/hooks/useDebounce";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { INVALID_CLOUDFLARE_TOKEN_ERROR } from "@schedule/lib/server/checkCfTurnstileToken";
+import { IS_EUROPE } from "@schedule/lib/timezoneConstants";
+import { signupSchema as apiSignupSchema } from "@schedule/prisma/zod-utils";
+import type { inferSSRProps } from "@schedule/types/inferSSRProps";
+import classNames from "@schedule/ui/classNames";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { CheckboxField, Form, PasswordField, SelectField, TextField } from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
+import { showToast } from "@schedule/ui/components/toast";
 import { InfoIcon, ShieldCheckIcon, StarIcon } from "@coss/ui/icons";
 import { Analytics as DubAnalytics } from "@dub/analytics/react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -57,7 +57,7 @@ const signupSchema = apiSignupSchema.extend({
   cfToken: z.string().optional(),
 });
 
-const TurnstileCaptcha = dynamic(() => import("@calcom/web/modules/auth/components/Turnstile"), {
+const TurnstileCaptcha = dynamic(() => import("@schedule/web/modules/auth/components/Turnstile"), {
   ssr: false,
 });
 

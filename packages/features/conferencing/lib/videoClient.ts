@@ -1,21 +1,21 @@
 import short from "short-uuid";
 import { v5 as uuidv5 } from "uuid";
 
-import { DailyLocationType } from "@calcom/app-store/constants";
-import { getDailyAppKeys } from "@calcom/app-store/dailyvideo/lib/getDailyAppKeys";
-import { getVideoAdapters } from "@calcom/app-store/getVideoAdapters";
-import { sendBrokenIntegrationEmail } from "@calcom/emails/integration-email-service";
-import { getUid } from "@calcom/lib/CalEventParser";
-import { CAL_VIDEO, CAL_VIDEO_TYPE } from "@calcom/lib/constants";
-import logger from "@calcom/lib/logger";
-import { getPiiFreeCalendarEvent, getPiiFreeCredential } from "@calcom/lib/piiFreeData";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import { prisma } from "@calcom/prisma";
-import type { GetRecordingsResponseSchema, GetAccessLinkResponseSchema } from "@calcom/prisma/zod-utils";
-import type { CalendarEvent, EventBusyDate } from "@calcom/types/Calendar";
-import type { CredentialPayload, CredentialForCalendarService } from "@calcom/types/Credential";
-import type { EventResult, PartialReference } from "@calcom/types/EventManager";
-import type { VideoCallData } from "@calcom/types/VideoApiAdapter";
+import { DailyLocationType } from "@schedule/app-store/constants";
+import { getDailyAppKeys } from "@schedule/app-store/dailyvideo/lib/getDailyAppKeys";
+import { getVideoAdapters } from "@schedule/app-store/getVideoAdapters";
+import { sendBrokenIntegrationEmail } from "@schedule/emails/integration-email-service";
+import { getUid } from "@schedule/lib/CalEventParser";
+import { CAL_VIDEO, CAL_VIDEO_TYPE } from "@schedule/lib/constants";
+import logger from "@schedule/lib/logger";
+import { getPiiFreeCalendarEvent, getPiiFreeCredential } from "@schedule/lib/piiFreeData";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import { prisma } from "@schedule/prisma";
+import type { GetRecordingsResponseSchema, GetAccessLinkResponseSchema } from "@schedule/prisma/zod-utils";
+import type { CalendarEvent, EventBusyDate } from "@schedule/types/Calendar";
+import type { CredentialPayload, CredentialForCalendarService } from "@schedule/types/Credential";
+import type { EventResult, PartialReference } from "@schedule/types/EventManager";
+import type { VideoCallData } from "@schedule/types/VideoApiAdapter";
 
 const log = logger.getSubLogger({ prefix: ["[features/conferencing/lib] videoClient"] });
 

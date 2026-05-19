@@ -1,6 +1,6 @@
-import type { FeatureId } from "@calcom/features/flags/config";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import type { PrismaClient } from "@calcom/prisma";
+import type { FeatureId } from "@schedule/features/flags/config";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import type { PrismaClient } from "@schedule/prisma";
 
 import type { TrpcSessionUser } from "../../../types";
 import type { TAdminUnassignFeatureFromTeamSchema } from "./unassignFeatureFromTeam.schema";

@@ -1,24 +1,24 @@
 import { useCallback, useMemo, useRef } from "react";
 
-import dayjs from "@calcom/dayjs";
+import dayjs from "@schedule/dayjs";
 import {
   AvailableTimes,
   AvailableTimesSkeleton,
-} from "@calcom/web/modules/bookings/components/AvailableTimes";
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
+} from "@schedule/web/modules/bookings/components/AvailableTimes";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
 import type { IUseBookingLoadingStates } from "../hooks/useBookings";
-import type { BookerEvent } from "@calcom/features/bookings/types";
+import type { BookerEvent } from "@schedule/features/bookings/types";
 import type { Slot } from "~/schedules/lib/types";
-import { useNonEmptyScheduleDays } from "@calcom/web/modules/schedules/hooks/useNonEmptyScheduleDays";
-import { useSlotsForAvailableDates } from "@calcom/web/modules/schedules/hooks/useSlotsForDate";
-import { PUBLIC_INVALIDATE_AVAILABLE_SLOTS_ON_BOOKING_FORM } from "@calcom/lib/constants";
-import { localStorage } from "@calcom/lib/webstorage";
-import { BookerLayouts } from "@calcom/prisma/zod-utils";
-import classNames from "@calcom/ui/classNames";
+import { useNonEmptyScheduleDays } from "@schedule/web/modules/schedules/hooks/useNonEmptyScheduleDays";
+import { useSlotsForAvailableDates } from "@schedule/web/modules/schedules/hooks/useSlotsForDate";
+import { PUBLIC_INVALIDATE_AVAILABLE_SLOTS_ON_BOOKING_FORM } from "@schedule/lib/constants";
+import { localStorage } from "@schedule/lib/webstorage";
+import { BookerLayouts } from "@schedule/prisma/zod-utils";
+import classNames from "@schedule/ui/classNames";
 
-import { AvailableTimesHeader } from "@calcom/web/modules/bookings/components/AvailableTimesHeader";
-import type { useScheduleForEventReturnType } from "@calcom/web/modules/schedules/hooks/useEvent";
-import { getQueryParam } from "@calcom/features/bookings/Booker/utils/query-param";
+import { AvailableTimesHeader } from "@schedule/web/modules/bookings/components/AvailableTimesHeader";
+import type { useScheduleForEventReturnType } from "@schedule/web/modules/schedules/hooks/useEvent";
+import { getQueryParam } from "@schedule/features/bookings/Booker/utils/query-param";
 
 type AvailableTimeSlotsProps = {
   extraDays?: number;

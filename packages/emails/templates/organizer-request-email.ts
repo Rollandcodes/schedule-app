@@ -1,7 +1,7 @@
-import { checkIfUserHasFeatureController } from "@calcom/features/flags/operations/check-if-user-has-feature.controller";
-import { EMAIL_FROM_NAME } from "@calcom/lib/constants";
-import { getReplyToHeader } from "@calcom/lib/getReplyToHeader";
-import type { CalendarEvent, Person } from "@calcom/types/Calendar";
+import { checkIfUserHasFeatureController } from "@schedule/features/flags/operations/check-if-user-has-feature.controller";
+import { EMAIL_FROM_NAME } from "@schedule/lib/constants";
+import { getReplyToHeader } from "@schedule/lib/getReplyToHeader";
+import type { CalendarEvent, Person } from "@schedule/types/Calendar";
 
 import renderEmail from "../src/renderEmail";
 import OrganizerScheduledEmail from "./organizer-scheduled-email";

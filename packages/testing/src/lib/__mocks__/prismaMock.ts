@@ -1,10 +1,10 @@
-import type { PrismaClient } from "@calcom/prisma";
+import type { PrismaClient } from "@schedule/prisma";
 import { beforeEach, vi } from "vitest";
 import { type DeepMockProxy, mockDeep, mockReset } from "vitest-mock-extended";
 
 const prisma = mockDeep<PrismaClient>() as unknown as DeepMockProxy<PrismaClient>;
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: prisma,
   prisma,
   availabilityUserSelect: vi.fn(),

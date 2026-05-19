@@ -1,24 +1,24 @@
 import process from "node:process";
-import { sendEmailVerification } from "@calcom/features/auth/lib/verifyEmail";
-import { SIGNUP_ERROR_CODES } from "@calcom/features/auth/signup/constants";
-import { createOrUpdateMemberships } from "@calcom/features/auth/signup/utils/createOrUpdateMemberships";
-import { joinAnyChildTeamOnOrgInvite } from "@calcom/features/auth/signup/utils/organization";
-import { prefillAvatar } from "@calcom/features/auth/signup/utils/prefillAvatar";
+import { sendEmailVerification } from "@schedule/features/auth/lib/verifyEmail";
+import { SIGNUP_ERROR_CODES } from "@schedule/features/auth/signup/constants";
+import { createOrUpdateMemberships } from "@schedule/features/auth/signup/utils/createOrUpdateMemberships";
+import { joinAnyChildTeamOnOrgInvite } from "@schedule/features/auth/signup/utils/organization";
+import { prefillAvatar } from "@schedule/features/auth/signup/utils/prefillAvatar";
 import {
   findTokenByToken,
   throwIfTokenExpired,
   validateAndGetCorrectedUsernameForTeam,
-} from "@calcom/features/auth/signup/utils/token";
-import { validateAndGetCorrectedUsernameAndEmail } from "@calcom/features/auth/signup/utils/validateUsername";
-import { hashPassword } from "@calcom/lib/auth/hashPassword";
+} from "@schedule/features/auth/signup/utils/token";
+import { validateAndGetCorrectedUsernameAndEmail } from "@schedule/features/auth/signup/utils/validateUsername";
+import { hashPassword } from "@schedule/lib/auth/hashPassword";
 
-import logger from "@calcom/lib/logger";
-import { isPrismaError } from "@calcom/lib/server/getServerErrorFromUnknown";
-import { isUsernameReservedDueToMigration } from "@calcom/lib/server/username";
-import slugify from "@calcom/lib/slugify";
-import prisma from "@calcom/prisma";
-import { IdentityProvider } from "@calcom/prisma/enums";
-import { signupSchema } from "@calcom/prisma/zod-utils";
+import logger from "@schedule/lib/logger";
+import { isPrismaError } from "@schedule/lib/server/getServerErrorFromUnknown";
+import { isUsernameReservedDueToMigration } from "@schedule/lib/server/username";
+import slugify from "@schedule/lib/slugify";
+import prisma from "@schedule/prisma";
+import { IdentityProvider } from "@schedule/prisma/enums";
+import { signupSchema } from "@schedule/prisma/zod-utils";
 import { NextResponse } from "next/server";
 
 export default async function handler(body: Record<string, string>) {

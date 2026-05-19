@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { eventTypeAppCardZod } from "@calcom/app-store/eventTypeAppCardZod";
+import { eventTypeAppCardZod } from "@schedule/app-store/eventTypeAppCardZod";
 
 export const PaypalPaymentOptions = [
   {

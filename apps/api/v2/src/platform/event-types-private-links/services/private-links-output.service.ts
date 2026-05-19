@@ -5,7 +5,7 @@ import {
   PrivateLinkOutput,
   TimeBasedPrivateLinkOutput,
   UsageBasedPrivateLinkOutput,
-} from "@calcom/platform-types";
+} from "@schedule/platform-types";
 
 export type PrivateLinkData = {
   id: string;

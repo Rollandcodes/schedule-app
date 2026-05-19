@@ -1,28 +1,28 @@
 import z from "zod";
 
-import { getCalendar } from "@calcom/app-store/_utils/getCalendar";
-import { appStoreMetadata } from "@calcom/app-store/appStoreMetaData";
-import { DailyLocationType } from "@calcom/app-store/locations";
+import { getCalendar } from "@schedule/app-store/_utils/getCalendar";
+import { appStoreMetadata } from "@schedule/app-store/appStoreMetaData";
+import { DailyLocationType } from "@schedule/app-store/locations";
 import {
   type EventTypeAppMetadataSchema,
   eventTypeAppMetadataOptionalSchema,
-} from "@calcom/app-store/zod-utils";
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import { sendCancelledEmailsAndSMS } from "@calcom/emails/email-manager";
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
-import { deletePayment } from "@calcom/features/bookings/lib/payment/deletePayment";
-import { deleteWebhookScheduledTriggers } from "@calcom/features/webhooks/lib/scheduleTrigger";
-import { buildNonDelegationCredential } from "@calcom/lib/delegationCredential";
-import { isPrismaObjOrUndefined } from "@calcom/lib/isPrismaObj";
-import { parseRecurringEvent } from "@calcom/lib/isRecurringEvent";
-import { getTranslation } from "@calcom/i18n/server";
-import { bookingMinimalSelect, prisma } from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
-import { AppCategories, BookingStatus } from "@calcom/prisma/enums";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
-import type { EventTypeMetadata } from "@calcom/prisma/zod-utils";
-import { EventTypeMetaDataSchema } from "@calcom/prisma/zod-utils";
-import { userMetadata as userMetadataSchema } from "@calcom/prisma/zod-utils";
+} from "@schedule/app-store/zod-utils";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import { sendCancelledEmailsAndSMS } from "@schedule/emails/email-manager";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
+import { deletePayment } from "@schedule/features/bookings/lib/payment/deletePayment";
+import { deleteWebhookScheduledTriggers } from "@schedule/features/webhooks/lib/scheduleTrigger";
+import { buildNonDelegationCredential } from "@schedule/lib/delegationCredential";
+import { isPrismaObjOrUndefined } from "@schedule/lib/isPrismaObj";
+import { parseRecurringEvent } from "@schedule/lib/isRecurringEvent";
+import { getTranslation } from "@schedule/i18n/server";
+import { bookingMinimalSelect, prisma } from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
+import { AppCategories, BookingStatus } from "@schedule/prisma/enums";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
+import type { EventTypeMetadata } from "@schedule/prisma/zod-utils";
+import { EventTypeMetaDataSchema } from "@schedule/prisma/zod-utils";
+import { userMetadata as userMetadataSchema } from "@schedule/prisma/zod-utils";
 
 type App = {
   slug: string;

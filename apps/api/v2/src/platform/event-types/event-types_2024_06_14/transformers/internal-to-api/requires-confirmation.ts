@@ -1,5 +1,5 @@
-import { ConfirmationPolicyEnum } from "@calcom/platform-enums";
-import type { NoticeThresholdTransformedSchema, ConfirmationPolicy_2024_06_14 } from "@calcom/platform-types";
+import { ConfirmationPolicyEnum } from "@schedule/platform-enums";
+import type { NoticeThresholdTransformedSchema, ConfirmationPolicy_2024_06_14 } from "@schedule/platform-types";
 
 export function transformRequiresConfirmationInternalToApi(
   requiresConfirmation: boolean,

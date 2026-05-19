@@ -3,18 +3,18 @@
 import type { ColumnDef } from "@tanstack/react-table";
 import { useMemo } from "react";
 
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
 import {
   Dropdown,
   DropdownItem,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@calcom/ui/components/dropdown";
-import { Checkbox } from "@calcom/ui/components/form";
+} from "@schedule/ui/components/dropdown";
+import { Checkbox } from "@schedule/ui/components/form";
 
-import type { GroupedBookingReport, BlocklistScope } from "@calcom/features/blocklist/types";
+import type { GroupedBookingReport, BlocklistScope } from "@schedule/features/blocklist/types";
 
 interface UsePendingReportsColumnsProps<T extends GroupedBookingReport> {
   t: (key: string) => string;

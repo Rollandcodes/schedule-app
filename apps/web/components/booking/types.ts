@@ -1,4 +1,4 @@
-import type { RouterInputs, RouterOutputs } from "@calcom/trpc/react";
+import type { RouterInputs, RouterOutputs } from "@schedule/trpc/react";
 
 export type BookingListingStatus = NonNullable<
   RouterInputs["viewer"]["bookings"]["get"]["filters"]["statuses"]

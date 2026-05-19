@@ -1,11 +1,11 @@
 "use client";
 
-import { getWebhookVersionLabel } from "@calcom/features/webhooks/lib/constants";
-import type { Webhook } from "@calcom/features/webhooks/lib/dto/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import { revalidateEventTypeEditPage } from "@calcom/web/app/(use-page-wrapper)/event-types/[type]/actions";
-import { revalidateWebhooksList } from "@calcom/web/app/(use-page-wrapper)/settings/(settings-layout)/developer/webhooks/(with-loader)/actions";
+import { getWebhookVersionLabel } from "@schedule/features/webhooks/lib/constants";
+import type { Webhook } from "@schedule/features/webhooks/lib/dto/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import { revalidateEventTypeEditPage } from "@schedule/web/app/(use-page-wrapper)/event-types/[type]/actions";
+import { revalidateWebhooksList } from "@schedule/web/app/(use-page-wrapper)/settings/(settings-layout)/developer/webhooks/(with-loader)/actions";
 import { Badge } from "@coss/ui/components/badge";
 import { Button } from "@coss/ui/components/button";
 import {

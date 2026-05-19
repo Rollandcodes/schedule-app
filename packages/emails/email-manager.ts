@@ -1,17 +1,17 @@
 import { default as cloneDeep } from "lodash/cloneDeep";
 import type { z } from "zod";
 
-import dayjs from "@calcom/dayjs";
-import type BaseEmail from "@calcom/emails/templates/_base-email";
-import type { EventNameObjectType } from "@calcom/features/eventtypes/lib/eventNaming";
-import { getEventName } from "@calcom/features/eventtypes/lib/eventNaming";
-import { formatCalEvent } from "@calcom/lib/formatCalendarEvent";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import { withReporting } from "@calcom/lib/sentryWrapper";
-import { prisma } from "@calcom/prisma";
-import type { EventTypeMetaDataSchema } from "@calcom/prisma/zod-utils";
-import type { CalendarEvent, Person } from "@calcom/types/Calendar";
+import dayjs from "@schedule/dayjs";
+import type BaseEmail from "@schedule/emails/templates/_base-email";
+import type { EventNameObjectType } from "@schedule/features/eventtypes/lib/eventNaming";
+import { getEventName } from "@schedule/features/eventtypes/lib/eventNaming";
+import { formatCalEvent } from "@schedule/lib/formatCalendarEvent";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import { withReporting } from "@schedule/lib/sentryWrapper";
+import { prisma } from "@schedule/prisma";
+import type { EventTypeMetaDataSchema } from "@schedule/prisma/zod-utils";
+import type { CalendarEvent, Person } from "@schedule/types/Calendar";
 
 import AwaitingPaymentSMS from "../sms/attendee/awaiting-payment-sms";
 import CancelledSeatSMS from "../sms/attendee/cancelled-seat-sms";

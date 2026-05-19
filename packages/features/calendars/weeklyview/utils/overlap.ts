@@ -1,4 +1,4 @@
-import dayjs from "@calcom/dayjs";
+import dayjs from "@schedule/dayjs";
 
 import type { CalendarEvent } from "../types/events";
 

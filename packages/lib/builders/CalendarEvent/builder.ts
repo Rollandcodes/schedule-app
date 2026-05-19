@@ -1,12 +1,12 @@
 import short from "short-uuid";
 import { v5 as uuidv5 } from "uuid";
 
-import dayjs from "@calcom/dayjs";
-import { getRescheduleLink } from "@calcom/lib/CalEventParser";
-import { getTranslation } from "@calcom/i18n/server";
-import prisma from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import dayjs from "@schedule/dayjs";
+import { getRescheduleLink } from "@schedule/lib/CalEventParser";
+import { getTranslation } from "@schedule/i18n/server";
+import prisma from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 import { CalendarEventClass } from "./class";
 

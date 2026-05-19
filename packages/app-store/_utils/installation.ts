@@ -1,8 +1,8 @@
-import { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
-import { HttpError } from "@calcom/lib/http-error";
-import prisma from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
-import type { UserProfile } from "@calcom/types/UserProfile";
+import { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
+import { HttpError } from "@schedule/lib/http-error";
+import prisma from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
+import type { UserProfile } from "@schedule/types/UserProfile";
 
 export async function checkInstalled(slug: string, userId: number) {
   const alreadyInstalled = await CredentialRepository.findByAppIdAndUserId({ appId: slug, userId });

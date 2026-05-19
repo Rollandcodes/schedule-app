@@ -1,4 +1,4 @@
-import type { Prisma } from "@calcom/prisma/client";
+import type { Prisma } from "@schedule/prisma/client";
 
 /**
  * Interface for Booking Reference repository operations

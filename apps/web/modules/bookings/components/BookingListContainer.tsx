@@ -1,14 +1,14 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
-import { Alert } from "@calcom/ui/components/alert";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { ToggleGroup } from "@calcom/ui/components/form";
-import { WipeMyCalActionButton } from "@calcom/web/components/apps/wipemycalother/wipeMyCalActionButton";
+import dayjs from "@schedule/dayjs";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
+import { Alert } from "@schedule/ui/components/alert";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { ToggleGroup } from "@schedule/ui/components/form";
+import { WipeMyCalActionButton } from "@schedule/web/components/apps/wipemycalother/wipeMyCalActionButton";
 import { getCoreRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
 import { useRouter } from "next/navigation";
 import React, { useCallback, useEffect, useMemo, useState } from "react";

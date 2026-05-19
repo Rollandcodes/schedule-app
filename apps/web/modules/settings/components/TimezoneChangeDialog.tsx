@@ -4,13 +4,13 @@ import type { ManipulateType as DayjsManipulateType } from "dayjs";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
-import dayjs from "@calcom/dayjs";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { CURRENT_TIMEZONE } from "@calcom/lib/timezoneConstants";
-import { trpc } from "@calcom/trpc/react";
-import { DialogContent, DialogFooter, DialogHeader, DialogClose } from "@calcom/ui/components/dialog";
-import { showToast } from "@calcom/ui/components/toast";
+import dayjs from "@schedule/dayjs";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { CURRENT_TIMEZONE } from "@schedule/lib/timezoneConstants";
+import { trpc } from "@schedule/trpc/react";
+import { DialogContent, DialogFooter, DialogHeader, DialogClose } from "@schedule/ui/components/dialog";
+import { showToast } from "@schedule/ui/components/toast";
 
 function hideDialogFor(hideFor: [number, DayjsManipulateType], toastContent: string) {
   document.cookie = `calcom-timezone-dialog=1;max-age=${

@@ -1,18 +1,18 @@
 import { useEffect, useMemo } from "react";
 
-import dayjs from "@calcom/dayjs";
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { useBookerTime } from "@calcom/features/bookings/Booker/hooks/useBookerTime";
-import type { BookerEvent } from "@calcom/features/bookings/types";
-import { Calendar } from "@calcom/web/modules/calendars/weeklyview/components/Calendar";
-import type { CalendarAvailableTimeslots } from "@calcom/features/calendars/weeklyview/types/state";
-import { localStorage } from "@calcom/lib/webstorage";
-import type { BookingStatus } from "@calcom/prisma/enums";
+import dayjs from "@schedule/dayjs";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { useBookerTime } from "@schedule/features/bookings/Booker/hooks/useBookerTime";
+import type { BookerEvent } from "@schedule/features/bookings/types";
+import { Calendar } from "@schedule/web/modules/calendars/weeklyview/components/Calendar";
+import type { CalendarAvailableTimeslots } from "@schedule/features/calendars/weeklyview/types/state";
+import { localStorage } from "@schedule/lib/webstorage";
+import type { BookingStatus } from "@schedule/prisma/enums";
 
-import { useBookings } from "@calcom/atoms/hooks/bookings/useBookings";
-import { useCalendarsBusyTimes } from "@calcom/atoms/hooks/useCalendarsBusyTimes";
-import { useConnectedCalendars } from "@calcom/atoms/hooks/useConnectedCalendars";
-import { getQueryParam } from "@calcom/features/bookings/Booker/utils/query-param";
+import { useBookings } from "@schedule/atoms/hooks/bookings/useBookings";
+import { useCalendarsBusyTimes } from "@schedule/atoms/hooks/useCalendarsBusyTimes";
+import { useConnectedCalendars } from "@schedule/atoms/hooks/useConnectedCalendars";
+import { getQueryParam } from "@schedule/features/bookings/Booker/utils/query-param";
 
 export const LargeCalendar = ({
   extraDays,

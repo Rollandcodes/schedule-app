@@ -1,4 +1,4 @@
-import { createNextApiHandler } from "@calcom/trpc/server/createNextApiHandler";
-import { publicViewerRouter } from "@calcom/trpc/server/routers/publicViewer/_router";
+import { createNextApiHandler } from "@schedule/trpc/server/createNextApiHandler";
+import { publicViewerRouter } from "@schedule/trpc/server/routers/publicViewer/_router";
 
 export default createNextApiHandler(publicViewerRouter, true);

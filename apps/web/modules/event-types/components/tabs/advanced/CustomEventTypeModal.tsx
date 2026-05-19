@@ -3,15 +3,15 @@ import type { SubmitHandler } from "react-hook-form";
 import { FormProvider } from "react-hook-form";
 import { useForm, useFormContext } from "react-hook-form";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import type { EventNameObjectType } from "@calcom/features/eventtypes/lib/eventNaming";
-import { getEventName, validateCustomEventName } from "@calcom/features/eventtypes/lib/eventNaming";
-import type { InputClassNames } from "@calcom/features/eventtypes/lib/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { TextField } from "@calcom/ui/components/form";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import type { EventNameObjectType } from "@schedule/features/eventtypes/lib/eventNaming";
+import { getEventName, validateCustomEventName } from "@schedule/features/eventtypes/lib/eventNaming";
+import type { InputClassNames } from "@schedule/features/eventtypes/lib/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { TextField } from "@schedule/ui/components/form";
 
 interface FormValues {
   customEventName: string;

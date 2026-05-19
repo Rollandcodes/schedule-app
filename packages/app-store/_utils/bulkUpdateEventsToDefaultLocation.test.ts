@@ -1,6 +1,6 @@
 import { describe, expect, it, beforeEach, vi } from "vitest";
 
-import type { PrismaClient } from "@calcom/prisma";
+import type { PrismaClient } from "@schedule/prisma";
 
 import { bulkUpdateEventsToDefaultLocation } from "./bulkUpdateEventsToDefaultLocation";
 

@@ -3,12 +3,12 @@ import type { GetServerSidePropsContext, NextApiRequest, NextApiResponse } from 
 import type { Session } from "next-auth";
 import type { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { getLocale } from "@calcom/features/auth/lib/getLocale";
-import getIP from "@calcom/lib/getIP";
-import type { TraceContext } from "@calcom/lib/tracing";
-import { distributedTracing } from "@calcom/lib/tracing/factory";
-import { prisma, readonlyPrisma } from "@calcom/prisma";
-import type { SelectedCalendar, User as PrismaUser } from "@calcom/prisma/client";
+import { getLocale } from "@schedule/features/auth/lib/getLocale";
+import getIP from "@schedule/lib/getIP";
+import type { TraceContext } from "@schedule/lib/tracing";
+import { distributedTracing } from "@schedule/lib/tracing/factory";
+import { prisma, readonlyPrisma } from "@schedule/prisma";
+import type { SelectedCalendar, User as PrismaUser } from "@schedule/prisma/client";
 
 import type { CreateNextContextOptions } from "@trpc/server/adapters/next";
 

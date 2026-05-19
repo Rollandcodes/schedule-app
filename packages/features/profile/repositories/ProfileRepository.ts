@@ -1,12 +1,12 @@
-import { getOrgUsernameFromEmail } from "@calcom/features/auth/signup/utils/getOrgUsernameFromEmail";
-import { DATABASE_CHUNK_SIZE } from "@calcom/lib/constants";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import prisma from "@calcom/prisma";
-import type { Prisma, PrismaClient, User as PrismaUser, Team } from "@calcom/prisma/client";
-import { MembershipRole } from "@calcom/prisma/enums";
-import { userMetadata } from "@calcom/prisma/zod-utils";
-import type { UpId, UserAsPersonalProfile, UserProfile } from "@calcom/types/UserProfile";
+import { getOrgUsernameFromEmail } from "@schedule/features/auth/signup/utils/getOrgUsernameFromEmail";
+import { DATABASE_CHUNK_SIZE } from "@schedule/lib/constants";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import prisma from "@schedule/prisma";
+import type { Prisma, PrismaClient, User as PrismaUser, Team } from "@schedule/prisma/client";
+import { MembershipRole } from "@schedule/prisma/enums";
+import { userMetadata } from "@schedule/prisma/zod-utils";
+import type { UpId, UserAsPersonalProfile, UserProfile } from "@schedule/types/UserProfile";
 import { v4 as uuidv4 } from "uuid";
 import type { IProfileRepository } from "./IProfileRepository";
 

@@ -1,4 +1,4 @@
-import { getDate } from "@calcom/testing/lib/bookingScenario/bookingScenario";
+import { getDate } from "@schedule/testing/lib/bookingScenario/bookingScenario";
 
 import { vi } from "vitest";
 

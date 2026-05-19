@@ -1,11 +1,11 @@
-import { getOrgUsernameFromEmail } from "@calcom/features/auth/signup/utils/getOrgUsernameFromEmail";
-import { ProfileRepository } from "@calcom/features/profile/repositories/ProfileRepository";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import prisma from "@calcom/prisma";
-import { RedirectType } from "@calcom/prisma/enums";
+import { getOrgUsernameFromEmail } from "@schedule/features/auth/signup/utils/getOrgUsernameFromEmail";
+import { ProfileRepository } from "@schedule/features/profile/repositories/ProfileRepository";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import prisma from "@schedule/prisma";
+import { RedirectType } from "@schedule/prisma/enums";
 
 const log = logger.getSubLogger({ prefix: ["lib", "createAProfileForAnExistingUser"] });
 export const createAProfileForAnExistingUser = async ({

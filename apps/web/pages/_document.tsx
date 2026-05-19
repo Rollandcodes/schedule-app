@@ -4,7 +4,7 @@ import { dir } from "i18next";
 import type { DocumentContext, DocumentProps } from "next/document";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
-import { IS_PRODUCTION } from "@calcom/lib/constants";
+import { IS_PRODUCTION } from "@schedule/lib/constants";
 
 import { applyTheme, applyToDesktopClass } from "./../lib/pages/document/_applyThemeForDocument";
 
@@ -12,7 +12,7 @@ type Props = Record<string, unknown> & DocumentProps & { newLocale: string };
 
 class MyDocument extends Document<Props> {
   static async getInitialProps(ctx: DocumentContext) {
-    const getLocaleModule = ctx.req ? await import("@calcom/features/auth/lib/getLocale") : null;
+    const getLocaleModule = ctx.req ? await import("@schedule/features/auth/lib/getLocale") : null;
 
     const newLocale =
       ctx.req && getLocaleModule
@@ -52,6 +52,11 @@ class MyDocument extends Document<Props> {
         dir={newDir}
         style={embedColorScheme ? { colorScheme: embedColorScheme as string } : undefined}>
         <Head>
+          <title>Schedule — Smart Booking for Modern Businesses</title>
+          <meta name="description" content="Schedule lets your clients book time with you effortlessly. Built for clinics, agencies, and service businesses." />
+          <meta property="og:title" content="Schedule" />
+          <meta property="og:description" content="Smart booking software for modern businesses." />
+          <link rel="icon" href="/schedule-favicon.ico" />
           <script
             id="newLocale"
             // eslint-disable-next-line react/no-danger
@@ -83,7 +88,7 @@ class MyDocument extends Document<Props> {
         </Head>
 
         <body
-          className="dark:bg-default bg-subtle antialiased"
+          className="document-body-base dark:bg-default bg-subtle antialiased"
           style={
             isEmbed
               ? {

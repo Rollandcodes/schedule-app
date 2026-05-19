@@ -4,16 +4,16 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
+import { getServerSession } from "@schedule/features/auth/lib/getServerSession";
 import {
   getCalendarCredentials,
   getConnectedCalendars,
-} from "@calcom/features/calendars/lib/CalendarManager";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { HttpError } from "@calcom/lib/http-error";
-import notEmpty from "@calcom/lib/notEmpty";
-import { SelectedCalendarRepository } from "@calcom/features/selectedCalendar/repositories/SelectedCalendarRepository";
-import prisma from "@calcom/prisma";
+} from "@schedule/features/calendars/lib/CalendarManager";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { HttpError } from "@schedule/lib/http-error";
+import notEmpty from "@schedule/lib/notEmpty";
+import { SelectedCalendarRepository } from "@schedule/features/selectedCalendar/repositories/SelectedCalendarRepository";
+import prisma from "@schedule/prisma";
 
 import { buildLegacyRequest } from "@lib/buildLegacyCtx";
 

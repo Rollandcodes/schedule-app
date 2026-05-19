@@ -3,15 +3,15 @@ import {
   SUCCESS_STATUS,
   VERSION_2024_04_15,
   VERSION_2024_06_11,
-} from "@calcom/platform-constants";
+} from "@schedule/platform-constants";
 import {
   EventTypesByViewer,
   EventTypesPublic,
   eventTypeBookingFields,
   eventTypeLocations,
-} from "@calcom/platform-libraries/event-types";
-import type { ApiSuccessResponse } from "@calcom/platform-types";
-import type { EventType, PlatformOAuthClient, Team, User } from "@calcom/prisma/client";
+} from "@schedule/platform-libraries/event-types";
+import type { ApiSuccessResponse } from "@schedule/platform-types";
+import type { EventType, PlatformOAuthClient, Team, User } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";

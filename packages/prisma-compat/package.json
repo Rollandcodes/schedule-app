@@ -1,0 +1,12 @@
+{
+  "name": "@calcom/prisma",
+  "version": "1.0.0",
+  "description": "Compatibility shim that re-exports @schedule/prisma for older imports",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "author": "Muhanguzi Rolland",
+  "dependencies": {
+    "@schedule/prisma": "workspace:*"
+  }
+}

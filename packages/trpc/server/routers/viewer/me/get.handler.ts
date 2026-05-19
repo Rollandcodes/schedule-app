@@ -1,10 +1,10 @@
-import { ProfileRepository } from "@calcom/features/profile/repositories/ProfileRepository";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { getUserAvatarUrl } from "@calcom/lib/getAvatarUrl";
-import prisma from "@calcom/prisma";
-import { IdentityProvider, MembershipRole } from "@calcom/prisma/enums";
-import { userMetadata } from "@calcom/prisma/zod-utils";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+import { ProfileRepository } from "@schedule/features/profile/repositories/ProfileRepository";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { getUserAvatarUrl } from "@schedule/lib/getAvatarUrl";
+import prisma from "@schedule/prisma";
+import { IdentityProvider, MembershipRole } from "@schedule/prisma/enums";
+import { userMetadata } from "@schedule/prisma/zod-utils";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 import type { Session } from "next-auth";
 import type { TGetInputSchema } from "./get.schema";
 

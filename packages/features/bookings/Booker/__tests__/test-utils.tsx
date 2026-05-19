@@ -1,5 +1,5 @@
-import dayjs from "@calcom/dayjs";
-import { BookerLayouts } from "@calcom/prisma/zod-utils";
+import dayjs from "@schedule/dayjs";
+import { BookerLayouts } from "@schedule/prisma/zod-utils";
 import type { RenderOptions } from "@testing-library/react";
 import { render } from "@testing-library/react";
 import React, { type ReactElement, type ReactNode } from "react";

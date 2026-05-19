@@ -1,10 +1,10 @@
-import { EventTypeRepository } from "@calcom/features/eventtypes/repositories/eventTypeRepository";
-import { hasFilter } from "@calcom/features/filters/lib/hasFilter";
-import { checkRateLimitAndThrowError } from "@calcom/lib/checkRateLimitAndThrowError";
-import logger from "@calcom/lib/logger";
-import type { PrismaClient } from "@calcom/prisma";
-import { prisma } from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
+import { EventTypeRepository } from "@schedule/features/eventtypes/repositories/eventTypeRepository";
+import { hasFilter } from "@schedule/features/filters/lib/hasFilter";
+import { checkRateLimitAndThrowError } from "@schedule/lib/checkRateLimitAndThrowError";
+import logger from "@schedule/lib/logger";
+import type { PrismaClient } from "@schedule/prisma";
+import { prisma } from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
 import type { TrpcSessionUser } from "../../../types";
 import type { TGetEventTypesFromGroupSchema } from "./getByViewer.schema";
 import { mapEventType } from "./util";

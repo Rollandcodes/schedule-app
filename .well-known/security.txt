@@ -1,4 +1,4 @@
-Contact: security@cal.com
+Contact: security@schedule.app
 Preferred-Languages: en
-Canonical: https://cal.com/.well-known/security.txt
-Policy: https://github.com/calcom/cal.diy/security/policy
+Canonical: https://schedule.app/.well-known/security.txt
+Policy: https://github.com/Rollandcodes/schedule-app/security/policy

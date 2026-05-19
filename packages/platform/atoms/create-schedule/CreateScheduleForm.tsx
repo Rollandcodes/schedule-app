@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { ApiErrorResponse } from "@calcom/platform-types";
-import { Button } from "@calcom/ui/components/button";
-import { Form } from "@calcom/ui/components/form";
-import { InputField } from "@calcom/ui/components/form";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { ApiErrorResponse } from "@schedule/platform-types";
+import { Button } from "@schedule/ui/components/button";
+import { Form } from "@schedule/ui/components/form";
+import { InputField } from "@schedule/ui/components/form";
 
 import { useAtomCreateSchedule } from "../hooks/schedules/useAtomCreateSchedule";
 import { AtomsWrapper } from "../src/components/atoms-wrapper";

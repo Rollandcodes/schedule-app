@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { useRef, useCallback } from "react";
 
-import type { AvailabilitySettingsFormRef } from "@calcom/atoms";
-import { AvailabilitySettings } from "@calcom/atoms";
+import type { AvailabilitySettingsFormRef } from "@schedule/atoms";
+import { AvailabilitySettings } from "@schedule/atoms";
 
 const inter = Inter({ subsets: ["latin"] });
 

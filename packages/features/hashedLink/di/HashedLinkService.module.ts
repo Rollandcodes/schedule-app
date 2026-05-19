@@ -1,6 +1,6 @@
-import { moduleLoader as membershipServiceModuleLoader } from "@calcom/features/users/di/MembershipService.module";
-import { bindModuleToClassOnToken, createModule } from "@calcom/features/di/di";
-import { DI_TOKENS } from "@calcom/features/di/tokens";
+import { moduleLoader as membershipServiceModuleLoader } from "@schedule/features/users/di/MembershipService.module";
+import { bindModuleToClassOnToken, createModule } from "@schedule/features/di/di";
+import { DI_TOKENS } from "@schedule/features/di/tokens";
 
 import { HashedLinkService } from "../lib/service/HashedLinkService";
 import { moduleLoader as hashedLinkRepositoryModuleLoader } from "./HashedLinkRepository.module";

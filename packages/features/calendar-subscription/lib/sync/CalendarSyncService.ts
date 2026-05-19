@@ -1,11 +1,11 @@
-import type { CreateRegularBookingData } from "@calcom/features/bookings/lib/dto/types";
-import { IdempotencyKeyService } from "@calcom/lib/idempotencyKey/idempotencyKeyService";
-import handleCancelBooking from "@calcom/features/bookings/lib/handleCancelBooking";
-import type { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import type { CalendarSubscriptionEventItem } from "@calcom/features/calendar-subscription/lib/CalendarSubscriptionPort.interface";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import type { SelectedCalendar } from "@calcom/prisma/client";
+import type { CreateRegularBookingData } from "@schedule/features/bookings/lib/dto/types";
+import { IdempotencyKeyService } from "@schedule/lib/idempotencyKey/idempotencyKeyService";
+import handleCancelBooking from "@schedule/features/bookings/lib/handleCancelBooking";
+import type { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import type { CalendarSubscriptionEventItem } from "@schedule/features/calendar-subscription/lib/CalendarSubscriptionPort.interface";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import type { SelectedCalendar } from "@schedule/prisma/client";
 import { metrics } from "@sentry/nextjs";
 
 const log = logger.getSubLogger({ prefix: ["CalendarSyncService"] });
@@ -198,7 +198,7 @@ export class CalendarSyncService {
       // Dynamic import to avoid loading the entire booking service chain at module evaluation time
       // This prevents react-awesome-query-builder from being loaded in server-side contexts
       const { getRegularBookingService } = await import(
-        "@calcom/features/bookings/di/RegularBookingService.container"
+        "@schedule/features/bookings/di/RegularBookingService.container"
       );
       const regularBookingService = getRegularBookingService();
       await regularBookingService.createBooking({

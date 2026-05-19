@@ -7,8 +7,8 @@ import { useRouter } from "next/router";
 import { useEffect, useMemo, useState } from "react";
 import Select from "react-select";
 
-import { CalProvider, CalOAuthProvider, BookerEmbed, Router as CalRouter } from "@calcom/atoms";
-import "@calcom/atoms/globals.min.css";
+import { CalProvider, CalOAuthProvider, BookerEmbed, Router as CalRouter } from "@schedule/atoms";
+import "@schedule/atoms/globals.min.css";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "800"] });
 type TUser = Data["users"][0];

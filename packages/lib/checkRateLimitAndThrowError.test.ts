@@ -4,7 +4,7 @@ import { checkRateLimitAndThrowError } from "./checkRateLimitAndThrowError";
 import { rateLimiter } from "./rateLimit";
 import type { RatelimitResponse } from "./rateLimit";
 
-vi.mock("@calcom/prisma", () => {
+vi.mock("@schedule/prisma", () => {
   return {
     prisma: vi.fn(),
   };

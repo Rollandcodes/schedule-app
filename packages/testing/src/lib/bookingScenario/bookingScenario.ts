@@ -6,11 +6,11 @@ import type { TFunction } from "i18next";
 import { v4 as uuidv4 } from "uuid";
 import { vi } from "vitest";
 import "vitest-fetch-mock";
-import { appStoreMetadata } from "@calcom/app-store/appStoreMetaData";
-import { type WeekDays, weekdayToWeekIndex } from "@calcom/lib/dayjs";
-import type { IntervalLimit } from "@calcom/lib/intervalLimits/intervalLimitSchema";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
+import { appStoreMetadata } from "@schedule/app-store/appStoreMetaData";
+import { type WeekDays, weekdayToWeekIndex } from "@schedule/lib/dayjs";
+import type { IntervalLimit } from "@schedule/lib/intervalLimits/intervalLimitSchema";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
 import type {
   Attendee,
   Booking,
@@ -18,30 +18,30 @@ import type {
   Membership,
   Prisma,
   WebhookTriggerEvents,
-} from "@calcom/prisma/client";
+} from "@schedule/prisma/client";
 import type {
   BookingStatus,
   PaymentOption,
   SchedulingType,
   SMSLockState,
   TimeUnit,
-} from "@calcom/prisma/enums";
+} from "@schedule/prisma/enums";
 import type {
   EventTypeMetaDataSchema,
   eventTypeBookingFields,
   teamMetadataSchema,
   userMetadataType,
-} from "@calcom/prisma/zod-utils";
-import type { AppMeta } from "@calcom/types/App";
+} from "@schedule/prisma/zod-utils";
+import type { AppMeta } from "@schedule/types/App";
 import type {
   Calendar,
   CalendarEvent,
   EventBusyDate,
   IntegrationCalendar,
   NewCalendarEventType,
-} from "@calcom/types/Calendar";
-import type { CredentialPayload } from "@calcom/types/Credential";
-import type { VideoApiAdapter } from "@calcom/types/VideoApiAdapter";
+} from "@schedule/types/Calendar";
+import type { CredentialPayload } from "@schedule/types/Credential";
+import type { VideoApiAdapter } from "@schedule/types/VideoApiAdapter";
 import type { z } from "zod";
 import type { getMockRequestDataForBooking } from "./getMockRequestDataForBooking";
 import { getMockPaymentService } from "./MockPaymentService";
@@ -60,7 +60,7 @@ function getOrCreateCalendarServiceMock(key: string): ReturnType<typeof vi.fn> {
   return calendarServiceConstructorMocks[key];
 }
 
-vi.mock("@calcom/app-store/calendar.services.generated", () => ({
+vi.mock("@schedule/app-store/calendar.services.generated", () => ({
   CalendarServiceMap: new Proxy({} as Record<string, Promise<{ default: ReturnType<typeof vi.fn> }>>, {
     get(_target, prop: string) {
       if (typeof prop === "symbol") return undefined;
@@ -71,7 +71,7 @@ vi.mock("@calcom/app-store/calendar.services.generated", () => ({
 
 const mockVideoAdapterRegistry: Record<string, unknown> = {};
 
-vi.mock("@calcom/app-store/video.adapters.generated", () => ({
+vi.mock("@schedule/app-store/video.adapters.generated", () => ({
   VideoApiAdapterMap: new Proxy(
     {},
     {
@@ -87,8 +87,8 @@ vi.mock("@calcom/app-store/video.adapters.generated", () => ({
 
 // Routing forms feature removed - mock no longer needed
 
-vi.mock("@calcom/lib/crypto", async (importOriginal) => {
-  const actual = await importOriginal<typeof import("@calcom/lib/crypto")>();
+vi.mock("@schedule/lib/crypto", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("@schedule/lib/crypto")>();
   return {
     ...actual,
     symmetricEncrypt: vi.fn((serviceAccountKey) => serviceAccountKey),
@@ -2085,8 +2085,8 @@ export function mockCrmApp(
   const eventsCreated: boolean[] = [];
 
   // Mock the CrmServiceMap directly instead of using the old app-store index approach
-  vi.doMock("@calcom/app-store/crm.apps.generated", async (importOriginal) => {
-    const original = await importOriginal<typeof import("@calcom/app-store/crm.apps.generated")>();
+  vi.doMock("@schedule/app-store/crm.apps.generated", async (importOriginal) => {
+    const original = await importOriginal<typeof import("@schedule/app-store/crm.apps.generated")>();
 
     class MockCrmService {
       constructor() {

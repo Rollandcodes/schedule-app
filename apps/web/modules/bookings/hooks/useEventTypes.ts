@@ -1,9 +1,9 @@
 import { useSession } from "next-auth/react";
 import { useMemo } from "react";
 
-import type { FacetedValue } from "@calcom/features/data-table";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
+import type { FacetedValue } from "@schedule/features/data-table";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
 
 export function useEventTypes() {
   const { data: user } = useSession();

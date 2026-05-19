@@ -1,6 +1,6 @@
 "use client";
 
-import classNames from "@calcom/ui/classNames";
+import classNames from "@schedule/ui/classNames";
 import { ArrowLeftIcon, RotateCwIcon } from "@coss/ui/icons";
 import type { ReactNode } from "react";
 

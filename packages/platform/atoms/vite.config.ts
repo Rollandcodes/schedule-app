@@ -12,13 +12,13 @@ export default defineConfig(({ mode }) => {
   return {
     optimizeDeps: {
       include: [
-        "@calcom/lib",
-        "@calcom/features",
-        "@calcom/prisma",
-        "@calcom/dayjs",
-        "@calcom/platform-constants",
-        "@calcom/platform-types",
-        "@calcom/platform-utils",
+        "@schedule/lib",
+        "@schedule/features",
+        "@schedule/prisma",
+        "@schedule/dayjs",
+        "@schedule/platform-constants",
+        "@schedule/platform-types",
+        "@schedule/platform-utils",
       ],
     },
     plugins: [
@@ -85,17 +85,17 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
-        "@calcom/lib/markdownToSafeHTML": path.resolve(__dirname, "./lib/markdownToSafeHTML"),
-        "@calcom/lib/hooks/useLocale": path.resolve(__dirname, "./lib/useLocale"),
+        "@schedule/lib/markdownToSafeHTML": path.resolve(__dirname, "./lib/markdownToSafeHTML"),
+        "@schedule/lib/hooks/useLocale": path.resolve(__dirname, "./lib/useLocale"),
         "@radix-ui/react-tooltip": path.resolve(__dirname, "./src/components/ui/tooltip.tsx"),
         "@radix-ui/react-dialog": path.resolve(__dirname, "./src/components/ui/dialog.tsx"),
-        "@calcom/prisma/client/runtime/library": resolve("./prisma-types/index.ts"),
-        "@calcom/prisma/client": path.resolve(__dirname, "../../kysely/types.ts"),
+        "@schedule/prisma/client/runtime/library": resolve("./prisma-types/index.ts"),
+        "@schedule/prisma/client": path.resolve(__dirname, "../../kysely/types.ts"),
         kysely: path.resolve(__dirname, "./kysely-types/index.ts"),
-        "@calcom/dayjs": path.resolve(__dirname, "../../dayjs"),
-        "@calcom/platform-constants": path.resolve(__dirname, "../constants/index.ts"),
-        "@calcom/platform-types": path.resolve(__dirname, "../types/index.ts"),
-        "@calcom/platform-utils": path.resolve(__dirname, "../constants/index.ts"),
+        "@schedule/dayjs": path.resolve(__dirname, "../../dayjs"),
+        "@schedule/platform-constants": path.resolve(__dirname, "../constants/index.ts"),
+        "@schedule/platform-types": path.resolve(__dirname, "../types/index.ts"),
+        "@schedule/platform-utils": path.resolve(__dirname, "../constants/index.ts"),
       },
     },
   };

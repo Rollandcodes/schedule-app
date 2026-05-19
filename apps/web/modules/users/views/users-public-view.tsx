@@ -5,15 +5,15 @@ import {
   useEmbedNonStylesConfig,
   useEmbedStyles,
   useIsEmbed,
-} from "@calcom/embed-core/embed-iframe";
-import { useRouterQuery } from "@calcom/lib/hooks/useRouterQuery";
-import useTheme from "@calcom/lib/hooks/useTheme";
-import { UserAvatar } from "@calcom/ui/components/avatar";
-import { Icon } from "@calcom/ui/components/icon";
-import { OrgBanner } from "@calcom/ui/components/organization-banner";
-import { UnpublishedEntity } from "@calcom/ui/components/unpublished-entity";
-import { EventTypeDescriptionLazy as EventTypeDescription } from "@calcom/web/modules/event-types/components";
-import EmptyPage from "@calcom/web/modules/event-types/components/EmptyPage";
+} from "@schedule/embed-core/embed-iframe";
+import { useRouterQuery } from "@schedule/lib/hooks/useRouterQuery";
+import useTheme from "@schedule/lib/hooks/useTheme";
+import { UserAvatar } from "@schedule/ui/components/avatar";
+import { Icon } from "@schedule/ui/components/icon";
+import { OrgBanner } from "@schedule/ui/components/organization-banner";
+import { UnpublishedEntity } from "@schedule/ui/components/unpublished-entity";
+import { EventTypeDescriptionLazy as EventTypeDescription } from "@schedule/web/modules/event-types/components";
+import EmptyPage from "@schedule/web/modules/event-types/components/EmptyPage";
 import type { getServerSideProps } from "@server/lib/[user]/getServerSideProps";
 import classNames from "classnames";
 import type { InferGetServerSidePropsType } from "next";

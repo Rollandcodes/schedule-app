@@ -10,9 +10,9 @@ import {
   ERROR_STATUS,
   INTERNAL_SERVER_ERROR,
   NOT_FOUND,
-} from "@calcom/platform-constants";
-import type { Response } from "@calcom/platform-types";
-import { Prisma } from "@calcom/prisma/client";
+} from "@schedule/platform-constants";
+import type { Response } from "@schedule/platform-types";
+import { Prisma } from "@schedule/prisma/client";
 
 type PrismaError =
   | Prisma.PrismaClientInitializationError

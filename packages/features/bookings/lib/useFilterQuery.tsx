@@ -1,7 +1,7 @@
 import z from "zod";
 
-import dayjs from "@calcom/dayjs";
-import { queryNumberArray, useTypedQuery } from "@calcom/lib/hooks/useTypedQuery";
+import dayjs from "@schedule/dayjs";
+import { queryNumberArray, useTypedQuery } from "@schedule/lib/hooks/useTypedQuery";
 
 // TODO: Move this to zod utils
 export const filterQuerySchema = z.object({

@@ -5,21 +5,21 @@ import { Controller, useFieldArray, useForm, useFormContext } from "react-hook-f
 import type { z } from "zod";
 import { ZodError } from "zod";
 
-import { useIsPlatform } from "@calcom/atoms/hooks/useIsPlatform";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { LearnMoreLink } from "@calcom/features/eventtypes/components/LearnMoreLink";
-import { getCurrencySymbol } from "@calcom/lib/currencyConversions";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { md } from "@calcom/lib/markdownIt";
-import { markdownToSafeHTMLClient } from "@calcom/lib/markdownToSafeHTMLClient";
-import turndown from "@calcom/lib/turndownService";
-import { excludeOrRequireEmailSchema } from "@calcom/prisma/zod-utils";
-import classNames from "@calcom/ui/classNames";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogHeader, DialogClose } from "@calcom/ui/components/dialog";
-import { Editor } from "@calcom/ui/components/editor";
-import { ToggleGroup } from "@calcom/ui/components/form";
+import { useIsPlatform } from "@schedule/atoms/hooks/useIsPlatform";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { LearnMoreLink } from "@schedule/features/eventtypes/components/LearnMoreLink";
+import { getCurrencySymbol } from "@schedule/lib/currencyConversions";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { md } from "@schedule/lib/markdownIt";
+import { markdownToSafeHTMLClient } from "@schedule/lib/markdownToSafeHTMLClient";
+import turndown from "@schedule/lib/turndownService";
+import { excludeOrRequireEmailSchema } from "@schedule/prisma/zod-utils";
+import classNames from "@schedule/ui/classNames";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogHeader, DialogClose } from "@schedule/ui/components/dialog";
+import { Editor } from "@schedule/ui/components/editor";
+import { ToggleGroup } from "@schedule/ui/components/form";
 import {
   Switch,
   CheckboxField,
@@ -28,15 +28,15 @@ import {
   Input,
   InputField,
   Label,
-} from "@calcom/ui/components/form";
+} from "@schedule/ui/components/form";
 import { ArrowDownIcon, ArrowUpIcon, MailIcon, PhoneIcon } from "@coss/ui/icons";
-import { showToast } from "@calcom/ui/components/toast";
+import { showToast } from "@schedule/ui/components/toast";
 
-import { fieldTypesConfigMap } from "@calcom/features/form-builder/fieldTypes";
-import { fieldsThatSupportLabelAsSafeHtml } from "@calcom/features/form-builder/fieldsThatSupportLabelAsSafeHtml";
-import type { fieldsSchema } from "@calcom/features/form-builder/schema";
-import { getFieldIdentifier } from "@calcom/features/form-builder/utils/getFieldIdentifier";
-import { getConfig as getVariantsConfig } from "@calcom/features/form-builder/utils/variantsConfig";
+import { fieldTypesConfigMap } from "@schedule/features/form-builder/fieldTypes";
+import { fieldsThatSupportLabelAsSafeHtml } from "@schedule/features/form-builder/fieldsThatSupportLabelAsSafeHtml";
+import type { fieldsSchema } from "@schedule/features/form-builder/schema";
+import { getFieldIdentifier } from "@schedule/features/form-builder/utils/getFieldIdentifier";
+import { getConfig as getVariantsConfig } from "@schedule/features/form-builder/utils/variantsConfig";
 
 type RhfForm = {
   fields: z.infer<typeof fieldsSchema>;

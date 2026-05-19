@@ -2,8 +2,8 @@ import type { Page } from "@playwright/test";
 import { expect } from "@playwright/test";
 import { v4 as uuidv4 } from "uuid";
 
-import dayjs from "@calcom/dayjs";
-import { prisma } from "@calcom/prisma";
+import dayjs from "@schedule/dayjs";
+import { prisma } from "@schedule/prisma";
 
 import { addFilter } from "./filter-helpers";
 import { test } from "./lib/fixtures";

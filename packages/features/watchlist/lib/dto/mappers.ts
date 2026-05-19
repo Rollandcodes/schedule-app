@@ -1,5 +1,5 @@
-import type { User } from "@calcom/prisma/client";
-import { WatchlistType } from "@calcom/prisma/enums";
+import type { User } from "@schedule/prisma/client";
+import { WatchlistType } from "@schedule/prisma/enums";
 
 import type { Watchlist } from "../types";
 import { normalizeEmail, normalizeDomain, normalizeUsername } from "../utils/normalization";

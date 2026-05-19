@@ -1,27 +1,27 @@
 "use client";
 
-import AppCategoryNavigation from "@calcom/app-store/_components/AppCategoryNavigation";
-import { appKeysSchemas } from "@calcom/app-store/apps.keys-schemas.generated";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { AppCategories } from "@calcom/prisma/enums";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import cs from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
+import AppCategoryNavigation from "@schedule/app-store/_components/AppCategoryNavigation";
+import { appKeysSchemas } from "@schedule/app-store/apps.keys-schemas.generated";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { AppCategories } from "@schedule/prisma/enums";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import cs from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
 import {
   ConfirmationDialogContent,
   DialogClose,
   DialogContent,
   DialogFooter,
-} from "@calcom/ui/components/dialog";
-import { EmptyScreen } from "@calcom/ui/components/empty-screen";
-import { Form, Switch, TextField } from "@calcom/ui/components/form";
-import { List } from "@calcom/ui/components/list";
-import { SkeletonButton, SkeletonContainer, SkeletonText } from "@calcom/ui/components/skeleton";
-import { showToast } from "@calcom/ui/components/toast";
-import AppListCardWebWrapper from "@calcom/web/modules/apps/components/AppListCardWebWrapper";
+} from "@schedule/ui/components/dialog";
+import { EmptyScreen } from "@schedule/ui/components/empty-screen";
+import { Form, Switch, TextField } from "@schedule/ui/components/form";
+import { List } from "@schedule/ui/components/list";
+import { SkeletonButton, SkeletonContainer, SkeletonText } from "@schedule/ui/components/skeleton";
+import { showToast } from "@schedule/ui/components/toast";
+import AppListCardWebWrapper from "@schedule/web/modules/apps/components/AppListCardWebWrapper";
 import { PencilIcon } from "@coss/ui/icons";
 import { zodResolver } from "@hookform/resolvers/zod";
 // eslint-disable-next-line no-restricted-imports

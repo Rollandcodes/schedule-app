@@ -1,7 +1,7 @@
-import { prisma } from "@calcom/prisma";
-import { BookingStatus, MembershipRole } from "@calcom/prisma/enums";
-import type { FeatureId } from "@calcom/features/flags/config";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
+import { prisma } from "@schedule/prisma";
+import { BookingStatus, MembershipRole } from "@schedule/prisma/enums";
+import type { FeatureId } from "@schedule/features/flags/config";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
 
 export const generateUniqueId = () => {
   const timestamp = Date.now();

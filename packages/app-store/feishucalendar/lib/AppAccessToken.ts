@@ -1,7 +1,7 @@
 import { z } from "zod";
 
-import logger from "@calcom/lib/logger";
-import prisma from "@calcom/prisma";
+import logger from "@schedule/lib/logger";
+import prisma from "@schedule/prisma";
 
 import { getAppKeys, isExpired, FEISHU_HOST } from "../common";
 

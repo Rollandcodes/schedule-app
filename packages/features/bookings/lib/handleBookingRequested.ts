@@ -1,13 +1,13 @@
-import { sendAttendeeRequestEmailAndSMS, sendOrganizerRequestEmail } from "@calcom/emails/email-manager";
-import { getWebhookPayloadForBooking } from "@calcom/features/bookings/lib/getWebhookPayloadForBooking";
-import getWebhooks from "@calcom/features/webhooks/lib/getWebhooks";
-import sendPayload from "@calcom/features/webhooks/lib/sendOrSchedulePayload";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import type { Prisma } from "@calcom/prisma/client";
-import { WebhookTriggerEvents } from "@calcom/prisma/enums";
-import type { EventTypeMetadata } from "@calcom/prisma/zod-utils";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import { sendAttendeeRequestEmailAndSMS, sendOrganizerRequestEmail } from "@schedule/emails/email-manager";
+import { getWebhookPayloadForBooking } from "@schedule/features/bookings/lib/getWebhookPayloadForBooking";
+import getWebhooks from "@schedule/features/webhooks/lib/getWebhooks";
+import sendPayload from "@schedule/features/webhooks/lib/sendOrSchedulePayload";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import type { Prisma } from "@schedule/prisma/client";
+import { WebhookTriggerEvents } from "@schedule/prisma/enums";
+import type { EventTypeMetadata } from "@schedule/prisma/zod-utils";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 const log = logger.getSubLogger({ prefix: ["[handleBookingRequested] book:user"] });
 

@@ -1,6 +1,6 @@
-import BaseCalendarService from "@calcom/lib/CalendarService";
-import type { Calendar } from "@calcom/types/Calendar";
-import type { CredentialPayload } from "@calcom/types/Credential";
+import BaseCalendarService from "@schedule/lib/CalendarService";
+import type { Calendar } from "@schedule/types/Calendar";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 class AppleCalendarService extends BaseCalendarService {
   constructor(credential: CredentialPayload) {

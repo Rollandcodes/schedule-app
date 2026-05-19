@@ -1,20 +1,20 @@
-import { getCredentialForSelectedCalendar } from "@calcom/app-store/delegationCredential";
+import { getCredentialForSelectedCalendar } from "@schedule/app-store/delegationCredential";
 import type {
   AdapterFactory,
   CalendarSubscriptionProvider,
-} from "@calcom/features/calendar-subscription/adapters/AdaptersFactory";
+} from "@schedule/features/calendar-subscription/adapters/AdaptersFactory";
 import type {
   CalendarCredential,
   CalendarSubscriptionEvent,
-} from "@calcom/features/calendar-subscription/lib/CalendarSubscriptionPort.interface";
-import type { CalendarCacheEventService } from "@calcom/features/calendar-subscription/lib/cache/CalendarCacheEventService";
-import type { CalendarSyncService } from "@calcom/features/calendar-subscription/lib/sync/CalendarSyncService";
-import type { IFeatureRepository } from "@calcom/features/flags/repositories/PrismaFeatureRepository";
-import type { ITeamFeatureRepository } from "@calcom/features/flags/repositories/PrismaTeamFeatureRepository";
-import type { IUserFeatureRepository } from "@calcom/features/flags/repositories/PrismaUserFeatureRepository";
-import type { ISelectedCalendarRepository } from "@calcom/features/selectedCalendar/repositories/SelectedCalendarRepository.interface";
-import logger from "@calcom/lib/logger";
-import type { SelectedCalendar } from "@calcom/prisma/client";
+} from "@schedule/features/calendar-subscription/lib/CalendarSubscriptionPort.interface";
+import type { CalendarCacheEventService } from "@schedule/features/calendar-subscription/lib/cache/CalendarCacheEventService";
+import type { CalendarSyncService } from "@schedule/features/calendar-subscription/lib/sync/CalendarSyncService";
+import type { IFeatureRepository } from "@schedule/features/flags/repositories/PrismaFeatureRepository";
+import type { ITeamFeatureRepository } from "@schedule/features/flags/repositories/PrismaTeamFeatureRepository";
+import type { IUserFeatureRepository } from "@schedule/features/flags/repositories/PrismaUserFeatureRepository";
+import type { ISelectedCalendarRepository } from "@schedule/features/selectedCalendar/repositories/SelectedCalendarRepository.interface";
+import logger from "@schedule/lib/logger";
+import type { SelectedCalendar } from "@schedule/prisma/client";
 import { metrics } from "@sentry/nextjs";
 
 // biome-ignore lint/nursery/useExplicitType: logger type is inferred

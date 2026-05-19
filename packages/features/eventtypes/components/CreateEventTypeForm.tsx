@@ -2,19 +2,19 @@ import type { ReactNode } from "react";
 import { useState } from "react";
 import type { UseFormReturn } from "react-hook-form";
 
-import { useIsPlatform } from "@calcom/atoms/hooks/useIsPlatform";
-import { MAX_EVENT_DURATION_MINUTES, MIN_EVENT_DURATION_MINUTES } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { md } from "@calcom/lib/markdownIt";
-import slugify from "@calcom/lib/slugify";
-import turndown from "@calcom/lib/turndownService";
-import { Editor } from "@calcom/ui/components/editor";
-import { Form } from "@calcom/ui/components/form";
-import { TextAreaField } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import { useIsPlatform } from "@schedule/atoms/hooks/useIsPlatform";
+import { MAX_EVENT_DURATION_MINUTES, MIN_EVENT_DURATION_MINUTES } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { md } from "@schedule/lib/markdownIt";
+import slugify from "@schedule/lib/slugify";
+import turndown from "@schedule/lib/turndownService";
+import { Editor } from "@schedule/ui/components/editor";
+import { Form } from "@schedule/ui/components/form";
+import { TextAreaField } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import type { z } from "zod";
-import { createEventTypeInput } from "@calcom/features/eventtypes/lib/types";
+import { createEventTypeInput } from "@schedule/features/eventtypes/lib/types";
 
 type CreateEventTypeFormValues = z.infer<typeof createEventTypeInput>;
 

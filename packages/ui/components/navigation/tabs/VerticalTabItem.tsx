@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Fragment } from "react";
 import posthog from "posthog-js";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { useUrlMatchesCurrentUrl } from "@calcom/lib/hooks/useUrlMatchesCurrentUrl";
-import classNames from "@calcom/ui/classNames";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { useUrlMatchesCurrentUrl } from "@schedule/lib/hooks/useUrlMatchesCurrentUrl";
+import classNames from "@schedule/ui/classNames";
 
 import { Icon } from "../../icon";
 import type { IconName } from "../../icon";

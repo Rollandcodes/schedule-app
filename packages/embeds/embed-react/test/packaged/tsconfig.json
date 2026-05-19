@@ -1,5 +1,5 @@
 {
-  "extends": "@calcom/tsconfig/base.json",
+  "extends": "@schedule/tsconfig/base.json",
   "compilerOptions": {
     "module": "ESNext",
     "target": "ES2015",
@@ -9,5 +9,7 @@
     "jsx": "preserve",
     "outDir": "dist"
   },
-  "include": ["**/*.ts"]
+  "include": [
+    "**/*.ts"
+  ]
 }

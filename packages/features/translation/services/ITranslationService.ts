@@ -1,4 +1,4 @@
-import type { TranslationSupportedLocale } from "@calcom/lib/translationConstants";
+import type { TranslationSupportedLocale } from "@schedule/lib/translationConstants";
 
 export type TranslationResult = {
   translatedText: string;

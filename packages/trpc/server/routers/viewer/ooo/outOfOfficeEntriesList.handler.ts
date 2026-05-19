@@ -1,7 +1,7 @@
-import { checkAdminOrOwner } from "@calcom/features/auth/lib/checkAdminOrOwner";
-import { getTranslation } from "@calcom/i18n/server";
-import prisma from "@calcom/prisma";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+import { checkAdminOrOwner } from "@schedule/features/auth/lib/checkAdminOrOwner";
+import { getTranslation } from "@schedule/i18n/server";
+import prisma from "@schedule/prisma";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 
 import { TRPCError } from "@trpc/server";
 

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import type { z } from "zod";
 
-import { createEventTypeInput } from "@calcom/features/eventtypes/lib/types";
-import { useDebounce } from "@calcom/lib/hooks/useDebounce";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { HttpError } from "@calcom/lib/http-error";
-import type { EventType } from "@calcom/prisma/client";
-import { trpc } from "@calcom/trpc/react";
-import { useCreateEventTypeForm } from "@calcom/atoms/hooks/event-types/private/useCreateEventTypeForm";
+import { createEventTypeInput } from "@schedule/features/eventtypes/lib/types";
+import { useDebounce } from "@schedule/lib/hooks/useDebounce";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { HttpError } from "@schedule/lib/http-error";
+import type { EventType } from "@schedule/prisma/client";
+import { trpc } from "@schedule/trpc/react";
+import { useCreateEventTypeForm } from "@schedule/atoms/hooks/event-types/private/useCreateEventTypeForm";
 
 export const useCreateEventType = (
   onSuccessMutation: (eventType: EventType) => void,

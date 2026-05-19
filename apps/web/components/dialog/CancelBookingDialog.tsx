@@ -1,12 +1,12 @@
 import type { Dispatch, SetStateAction } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { CancellationReasonRequirement } from "@calcom/prisma/enums";
-import { trpc } from "@calcom/trpc/react";
-import type { RecurringEvent } from "@calcom/types/Calendar";
-import { DialogContent, DialogHeader } from "@calcom/ui/components/dialog";
-import { showToast } from "@calcom/ui/components/toast";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { CancellationReasonRequirement } from "@schedule/prisma/enums";
+import { trpc } from "@schedule/trpc/react";
+import type { RecurringEvent } from "@schedule/types/Calendar";
+import { DialogContent, DialogHeader } from "@schedule/ui/components/dialog";
+import { showToast } from "@schedule/ui/components/toast";
 
 import CancelBooking from "@components/booking/CancelBooking";
 

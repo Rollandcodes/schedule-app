@@ -4,24 +4,24 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { EventTypeDuplicateInput } from "@calcom/features/eventtypes/lib/types";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useDebounce } from "@calcom/lib/hooks/useDebounce";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { useTypedQuery } from "@calcom/lib/hooks/useTypedQuery";
-import { HttpError } from "@calcom/lib/http-error";
-import { md } from "@calcom/lib/markdownIt";
-import slugify from "@calcom/lib/slugify";
-import turndown from "@calcom/lib/turndownService";
-import { trpc } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { Editor } from "@calcom/ui/components/editor";
-import { Form } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
-import { showToast } from "@calcom/ui/components/toast";
-import { revalidateEventTypesList } from "@calcom/web/app/(use-page-wrapper)/(main-nav)/event-types/actions";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { EventTypeDuplicateInput } from "@schedule/features/eventtypes/lib/types";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useDebounce } from "@schedule/lib/hooks/useDebounce";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { useTypedQuery } from "@schedule/lib/hooks/useTypedQuery";
+import { HttpError } from "@schedule/lib/http-error";
+import { md } from "@schedule/lib/markdownIt";
+import slugify from "@schedule/lib/slugify";
+import turndown from "@schedule/lib/turndownService";
+import { trpc } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { Editor } from "@schedule/ui/components/editor";
+import { Form } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
+import { showToast } from "@schedule/ui/components/toast";
+import { revalidateEventTypesList } from "@schedule/web/app/(use-page-wrapper)/(main-nav)/event-types/actions";
 
 const querySchema = z.object({
   title: z.string().min(1),

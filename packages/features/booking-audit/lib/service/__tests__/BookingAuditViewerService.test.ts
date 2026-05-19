@@ -1,9 +1,9 @@
-import { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import type { IAttendeeRepository } from "@calcom/features/bookings/repositories/IAttendeeRepository";
-import { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
-import type { ISimpleLogger } from "@calcom/features/di/shared/services/logger.service";
-import { MembershipRepository } from "@calcom/features/membership/repositories/MembershipRepository";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
+import { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import type { IAttendeeRepository } from "@schedule/features/bookings/repositories/IAttendeeRepository";
+import { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
+import type { ISimpleLogger } from "@schedule/features/di/shared/services/logger.service";
+import { MembershipRepository } from "@schedule/features/membership/repositories/MembershipRepository";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
 import { beforeEach, describe, expect, it, type Mock, vi } from "vitest";
 import type { BookingAuditContext } from "../../dto/types";
 import type { AuditActorType } from "../../repository/IAuditActorRepository";
@@ -16,12 +16,12 @@ import type {
 import { BookingAuditErrorCode, BookingAuditPermissionError } from "../BookingAuditAccessService";
 import { BookingAuditViewerService } from "../BookingAuditViewerService";
 
-vi.mock("@calcom/features/users/repositories/UserRepository");
-vi.mock("@calcom/features/bookings/repositories/BookingRepository");
-vi.mock("@calcom/features/membership/repositories/MembershipRepository");
-vi.mock("@calcom/features/credentials/repositories/CredentialRepository");
+vi.mock("@schedule/features/users/repositories/UserRepository");
+vi.mock("@schedule/features/bookings/repositories/BookingRepository");
+vi.mock("@schedule/features/membership/repositories/MembershipRepository");
+vi.mock("@schedule/features/credentials/repositories/CredentialRepository");
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: {},
   prisma: {},
 }));

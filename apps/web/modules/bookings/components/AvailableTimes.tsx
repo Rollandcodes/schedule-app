@@ -1,19 +1,19 @@
 // We do not need to worry about importing framer-motion here as it is lazy imported in Booker.
 
-import { getPaymentAppData } from "@calcom/app-store/_utils/payments/getPaymentAppData";
-import { useIsPlatform } from "@calcom/atoms/hooks/useIsPlatform";
-import dayjs from "@calcom/dayjs";
-import type { IOutOfOfficeData } from "@calcom/features/availability/lib/getUserAvailability";
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { useBookerTime } from "@calcom/features/bookings/Booker/hooks/useBookerTime";
-import { getQueryParam } from "@calcom/features/bookings/Booker/utils/query-param";
-import { useCheckOverlapWithOverlay } from "@calcom/features/bookings/lib/useCheckOverlapWithOverlay";
-import type { BookerEvent, Slots } from "@calcom/features/bookings/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { localStorage } from "@calcom/lib/webstorage";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { SkeletonText } from "@calcom/ui/components/skeleton";
+import { getPaymentAppData } from "@schedule/app-store/_utils/payments/getPaymentAppData";
+import { useIsPlatform } from "@schedule/atoms/hooks/useIsPlatform";
+import dayjs from "@schedule/dayjs";
+import type { IOutOfOfficeData } from "@schedule/features/availability/lib/getUserAvailability";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { useBookerTime } from "@schedule/features/bookings/Booker/hooks/useBookerTime";
+import { getQueryParam } from "@schedule/features/bookings/Booker/utils/query-param";
+import { useCheckOverlapWithOverlay } from "@schedule/features/bookings/lib/useCheckOverlapWithOverlay";
+import type { BookerEvent, Slots } from "@schedule/features/bookings/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { localStorage } from "@schedule/lib/webstorage";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { SkeletonText } from "@schedule/ui/components/skeleton";
 import { CalendarX2Icon } from "@coss/ui/icons";
 import * as HoverCard from "@radix-ui/react-hover-card";
 import { AnimatePresence, m } from "framer-motion";

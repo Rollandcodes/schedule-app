@@ -1,7 +1,7 @@
-import type { Host } from "@calcom/features/bookings/lib/getHostsAndGuests";
-import { AttendeeRepository } from "@calcom/features/bookings/repositories/AttendeeRepository";
-import { prisma } from "@calcom/prisma";
-import { WebhookTriggerEvents } from "@calcom/prisma/enums";
+import type { Host } from "@schedule/features/bookings/lib/getHostsAndGuests";
+import { AttendeeRepository } from "@schedule/features/bookings/repositories/AttendeeRepository";
+import { prisma } from "@schedule/prisma";
+import { WebhookTriggerEvents } from "@schedule/prisma/enums";
 import {
   calculateMaxStartTime,
   log,

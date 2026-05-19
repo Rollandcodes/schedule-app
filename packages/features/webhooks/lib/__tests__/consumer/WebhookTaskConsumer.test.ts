@@ -1,4 +1,4 @@
-import { WebhookTriggerEvents } from "@calcom/prisma/enums";
+import { WebhookTriggerEvents } from "@schedule/prisma/enums";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import type { IWebhookDataFetcher } from "../../interface/IWebhookDataFetcher";

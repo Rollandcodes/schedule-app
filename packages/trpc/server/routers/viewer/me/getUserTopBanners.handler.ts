@@ -1,11 +1,11 @@
 import {
   getCalendarCredentials,
   getConnectedCalendars,
-} from "@calcom/features/calendars/lib/CalendarManager";
-import { buildNonDelegationCredentials } from "@calcom/lib/delegationCredential";
-import { prisma } from "@calcom/prisma";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+} from "@schedule/features/calendars/lib/CalendarManager";
+import { buildNonDelegationCredentials } from "@schedule/lib/delegationCredential";
+import { prisma } from "@schedule/prisma";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 import { checkInvalidAppCredentials } from "./checkForInvalidAppCredentials";
 import { shouldVerifyEmailHandler } from "./shouldVerifyEmail.handler";
 

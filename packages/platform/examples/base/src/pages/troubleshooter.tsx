@@ -1,7 +1,7 @@
-import { TroubleShooter } from "@calcom/atoms";
+import { TroubleShooter } from "@schedule/atoms";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-// eslint-disable-next-line @calcom/eslint/deprecated-imports-next-router
+// eslint-disable-next-line @schedule/eslint/deprecated-imports-next-router
 import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });

@@ -1,7 +1,7 @@
-import { SUCCESS_STATUS, X_CAL_SECRET_KEY } from "@calcom/platform-constants";
-import { MembershipRole } from "@calcom/platform-libraries";
-import { SkipTakePagination } from "@calcom/platform-types";
-import type { Webhook } from "@calcom/prisma/client";
+import { SUCCESS_STATUS, X_CAL_SECRET_KEY } from "@schedule/platform-constants";
+import { MembershipRole } from "@schedule/platform-libraries";
+import { SkipTakePagination } from "@schedule/platform-types";
+import type { Webhook } from "@schedule/prisma/client";
 import { Body, Controller, Delete, Get, Param, Patch, Post, Query, UseGuards } from "@nestjs/common";
 import { ApiHeader, ApiOperation, ApiParam, ApiTags as DocsTags } from "@nestjs/swagger";
 import { plainToClass } from "class-transformer";

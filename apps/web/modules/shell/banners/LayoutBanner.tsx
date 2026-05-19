@@ -1,16 +1,16 @@
 import AdminPasswordBanner, {
   type AdminPasswordBannerProps,
-} from "@calcom/web/modules/users/components/AdminPasswordBanner";
+} from "@schedule/web/modules/users/components/AdminPasswordBanner";
 import CalendarCredentialBanner, {
   type CalendarCredentialBannerProps,
-} from "@calcom/web/modules/users/components/CalendarCredentialBanner";
+} from "@schedule/web/modules/users/components/CalendarCredentialBanner";
 import {
   InvalidAppCredentialBanners,
   type InvalidAppCredentialBannersProps,
-} from "@calcom/web/modules/users/components/InvalidAppCredentialsBanner";
+} from "@schedule/web/modules/users/components/InvalidAppCredentialsBanner";
 import VerifyEmailBanner, {
   type VerifyEmailBannerProps,
-} from "@calcom/web/modules/users/components/VerifyEmailBanner";
+} from "@schedule/web/modules/users/components/VerifyEmailBanner";
 
 type BannerTypeProps = {
   verifyEmailBanner: VerifyEmailBannerProps;

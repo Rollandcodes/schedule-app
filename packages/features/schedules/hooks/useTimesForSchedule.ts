@@ -1,10 +1,10 @@
 import { shallow } from "zustand/shallow";
 
-import dayjs from "@calcom/dayjs";
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import type { BookerState } from "@calcom/features/bookings/Booker/types";
-import { getPrefetchMonthCount } from "@calcom/features/bookings/Booker/utils/getPrefetchMonthCount";
-import { isPrefetchNextMonthEnabled } from "@calcom/features/bookings/Booker/utils/isPrefetchNextMonthEnabled";
+import dayjs from "@schedule/dayjs";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import type { BookerState } from "@schedule/features/bookings/Booker/types";
+import { getPrefetchMonthCount } from "@schedule/features/bookings/Booker/utils/getPrefetchMonthCount";
+import { isPrefetchNextMonthEnabled } from "@schedule/features/bookings/Booker/utils/isPrefetchNextMonthEnabled";
 
 type UseScheduleWithCacheArgs = {
   username?: string | null;

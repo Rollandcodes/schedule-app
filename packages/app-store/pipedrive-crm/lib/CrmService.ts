@@ -3,18 +3,18 @@ import {
   CREDENTIAL_SYNC_ENDPOINT,
   CREDENTIAL_SYNC_SECRET,
   CREDENTIAL_SYNC_SECRET_HEADER_NAME,
-} from "@calcom/lib/constants";
-import { getLocation } from "@calcom/lib/CalEventParser";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
+} from "@schedule/lib/constants";
+import { getLocation } from "@schedule/lib/CalEventParser";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
 import type {
   CalendarEvent,
   EventBusyDate,
   IntegrationCalendar,
   NewCalendarEventType,
-} from "@calcom/types/Calendar";
-import type { CredentialPayload } from "@calcom/types/Credential";
-import type { ContactCreateInput, CRM, Contact } from "@calcom/types/CrmService";
+} from "@schedule/types/Calendar";
+import type { CredentialPayload } from "@schedule/types/Credential";
+import type { ContactCreateInput, CRM, Contact } from "@schedule/types/CrmService";
 
 import { invalidateCredential } from "../../_utils/invalidateCredential";
 import { OAuthManager } from "../../_utils/oauth/OAuthManager";

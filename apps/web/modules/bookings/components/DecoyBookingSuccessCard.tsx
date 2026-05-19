@@ -1,5 +1,5 @@
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Badge } from "@calcom/ui/components/badge";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Badge } from "@schedule/ui/components/badge";
 import { CheckIcon } from "@coss/ui/icons";
 
 export interface DecoyBookingSuccessCardProps {

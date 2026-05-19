@@ -1,8 +1,8 @@
-import { getFeatureOptInService } from "@calcom/features/di/containers/FeatureOptInService";
-import { getFeaturesRepository } from "@calcom/features/di/containers/FeaturesRepository";
-import type { FeatureId } from "@calcom/features/flags/config";
-import type { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import { prisma } from "@calcom/prisma";
+import { getFeatureOptInService } from "@schedule/features/di/containers/FeatureOptInService";
+import { getFeaturesRepository } from "@schedule/features/di/containers/FeaturesRepository";
+import type { FeatureId } from "@schedule/features/flags/config";
+import type { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import { prisma } from "@schedule/prisma";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import type { IFeatureOptInService } from "./IFeatureOptInService";

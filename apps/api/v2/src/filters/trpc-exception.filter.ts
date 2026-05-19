@@ -3,9 +3,9 @@ import { filterReqHeaders } from "@/lib/filterReqHeaders";
 import { ArgumentsHost, Catch, ExceptionFilter, Logger } from "@nestjs/common";
 import { Request } from "express";
 
-import { ERROR_STATUS } from "@calcom/platform-constants";
-import { TRPCError } from "@calcom/platform-libraries";
-import { Response } from "@calcom/platform-types";
+import { ERROR_STATUS } from "@schedule/platform-constants";
+import { TRPCError } from "@schedule/platform-libraries";
+import { Response } from "@schedule/platform-types";
 
 export type TRPCErrorCode = TRPCError["code"];
 

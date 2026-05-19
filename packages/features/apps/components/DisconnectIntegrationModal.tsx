@@ -1,7 +1,7 @@
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { App } from "@calcom/types/App";
-import { ConfirmationDialogContent } from "@calcom/ui/components/dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { App } from "@schedule/types/App";
+import { ConfirmationDialogContent } from "@schedule/ui/components/dialog";
 
 export type RemoveAppParams = {
   credentialId: number;

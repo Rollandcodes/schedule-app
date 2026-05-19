@@ -10,7 +10,7 @@
             "groups": [
               ["**/__mocks__/**", "**/bookingScenario*"],
               [":PACKAGE_WITH_PROTOCOL:", ":PACKAGE:"],
-              ["@calcom/**", "@ee/**"],
+              ["@schedule/**", "@ee/**"],
               ["@lib/**", "@components/**", "@server/**", "@trpc/**"],
               "~/**",
               ":PATH:"
@@ -321,8 +321,8 @@
                     "message": "features package should not import from trpc to avoid circular dependencies."
                   },
                   {
-                    "group": ["@calcom/web", "@calcom/web/**"],
-                    "message": "features package should not import from @calcom/web to avoid circular dependencies."
+                    "group": ["@schedule/web", "@schedule/web/**"],
+                    "message": "features package should not import from @schedule/web to avoid circular dependencies."
                   },
                   {
                     "group": ["../../apps/web/**"],
@@ -365,12 +365,12 @@
               "options": {
                 "patterns": [
                   {
-                    "group": ["@calcom/web", "@calcom/web/**"],
-                    "message": "testing package should not import from @calcom/web to avoid circular dependencies."
+                    "group": ["@schedule/web", "@schedule/web/**"],
+                    "message": "testing package should not import from @schedule/web to avoid circular dependencies."
                   },
                   {
-                    "group": ["@calcom/features", "@calcom/features/**"],
-                    "message": "testing package should not import from @calcom/features to avoid circular dependencies."
+                    "group": ["@schedule/features", "@schedule/features/**"],
+                    "message": "testing package should not import from @schedule/features to avoid circular dependencies."
                   },
                   {
                     "group": ["../../apps/web/**"],
@@ -400,8 +400,8 @@
               "options": {
                 "patterns": [
                   {
-                    "group": ["@calcom/trpc", "@calcom/trpc/**"],
-                    "message": "atoms package should not import from @calcom/trpc."
+                    "group": ["@schedule/trpc", "@schedule/trpc/**"],
+                    "message": "atoms package should not import from @schedule/trpc."
                   },
                   {
                     "group": ["../../trpc", "../../trpc/**"],
@@ -425,22 +425,22 @@
                 "patterns": [
                   {
                     "group": [
-                      "@calcom/*",
-                      "@calcom/**",
-                      "!@calcom/platform-constants",
-                      "!@calcom/platform-constants/**",
-                      "!@calcom/platform-enums",
-                      "!@calcom/platform-enums/**",
-                      "!@calcom/platform-libraries",
-                      "!@calcom/platform-libraries/**",
-                      "!@calcom/platform-types",
-                      "!@calcom/platform-types/**",
-                      "!@calcom/platform-utils",
-                      "!@calcom/platform-utils/**",
-                      "!@calcom/prisma",
-                      "!@calcom/prisma/**"
+                      "@schedule/*",
+                      "@schedule/**",
+                      "!@schedule/platform-constants",
+                      "!@schedule/platform-constants/**",
+                      "!@schedule/platform-enums",
+                      "!@schedule/platform-enums/**",
+                      "!@schedule/platform-libraries",
+                      "!@schedule/platform-libraries/**",
+                      "!@schedule/platform-types",
+                      "!@schedule/platform-types/**",
+                      "!@schedule/platform-utils",
+                      "!@schedule/platform-utils/**",
+                      "!@schedule/prisma",
+                      "!@schedule/prisma/**"
                     ],
-                    "message": "API v2 should only import from @calcom/platform-constants, @calcom/platform-enums, @calcom/platform-libraries, @calcom/platform-types, @calcom/platform-utils, and @calcom/prisma. Other @calcom packages are not allowed."
+                    "message": "API v2 should only import from @schedule/platform-constants, @schedule/platform-enums, @schedule/platform-libraries, @schedule/platform-types, @schedule/platform-utils, and @schedule/prisma. Other @schedule packages are not allowed."
                   }
                 ]
               }

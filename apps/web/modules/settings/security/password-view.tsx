@@ -4,21 +4,21 @@ import { signOut, useSession } from "next-auth/react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-import SectionBottomActions from "@calcom/features/settings/SectionBottomActions";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { IdentityProvider } from "@calcom/prisma/enums";
-import { userMetadata as userMetadataSchema } from "@calcom/prisma/zod-utils";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import classNames from "@calcom/ui/classNames";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { Form } from "@calcom/ui/components/form";
-import { PasswordField } from "@calcom/ui/components/form";
-import { Select } from "@calcom/ui/components/form";
-import { SettingsToggle } from "@calcom/ui/components/form";
-import { SkeletonButton, SkeletonContainer, SkeletonText } from "@calcom/ui/components/skeleton";
-import { showToast } from "@calcom/ui/components/toast";
+import SectionBottomActions from "@schedule/features/settings/SectionBottomActions";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { IdentityProvider } from "@schedule/prisma/enums";
+import { userMetadata as userMetadataSchema } from "@schedule/prisma/zod-utils";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import classNames from "@schedule/ui/classNames";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { Form } from "@schedule/ui/components/form";
+import { PasswordField } from "@schedule/ui/components/form";
+import { Select } from "@schedule/ui/components/form";
+import { SettingsToggle } from "@schedule/ui/components/form";
+import { SkeletonButton, SkeletonContainer, SkeletonText } from "@schedule/ui/components/skeleton";
+import { showToast } from "@schedule/ui/components/toast";
 
 type ChangePasswordSessionFormValues = {
   oldPassword: string;

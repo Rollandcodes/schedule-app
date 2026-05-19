@@ -1,8 +1,8 @@
 "use client";
 
-import { ColumnFilterType, type SystemFilterSegment } from "@calcom/features/data-table";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
+import { ColumnFilterType, type SystemFilterSegment } from "@schedule/features/data-table";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
 import dynamic from "next/dynamic";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useMemo } from "react";

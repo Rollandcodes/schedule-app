@@ -1,20 +1,20 @@
-import { PaymentServiceMap } from "@calcom/app-store/payment.services.generated";
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import dayjs from "@calcom/dayjs";
-import { sendNoShowFeeChargedEmail } from "@calcom/emails/billing-email-service";
-import { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
+import { PaymentServiceMap } from "@schedule/app-store/payment.services.generated";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import dayjs from "@schedule/dayjs";
+import { sendNoShowFeeChargedEmail } from "@schedule/emails/billing-email-service";
+import { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
 import {
   type EventTypeBrandingData,
   getEventTypeService,
-} from "@calcom/features/eventtypes/di/EventTypeService.container";
-import { ErrorCode } from "@calcom/lib/errorCodes";
-import { ErrorWithCode } from "@calcom/lib/errors";
-import logger from "@calcom/lib/logger";
-import { getTranslation } from "@calcom/i18n/server";
-import prisma from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { IAbstractPaymentService } from "@calcom/types/PaymentService";
+} from "@schedule/features/eventtypes/di/EventTypeService.container";
+import { ErrorCode } from "@schedule/lib/errorCodes";
+import { ErrorWithCode } from "@schedule/lib/errors";
+import logger from "@schedule/lib/logger";
+import { getTranslation } from "@schedule/i18n/server";
+import prisma from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { IAbstractPaymentService } from "@schedule/types/PaymentService";
 
 export const handleNoShowFee= async ({
   booking,

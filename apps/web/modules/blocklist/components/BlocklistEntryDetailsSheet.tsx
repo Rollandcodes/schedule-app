@@ -3,9 +3,9 @@
 import { format } from "date-fns";
 import Link from "next/link";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
 import { ExternalLinkIcon } from "@coss/ui/icons";
 import {
   Sheet,
@@ -14,10 +14,10 @@ import {
   SheetHeader,
   SheetTitle,
   SheetFooter,
-} from "@calcom/ui/components/sheet";
-import { SkeletonText } from "@calcom/ui/components/skeleton";
+} from "@schedule/ui/components/sheet";
+import { SkeletonText } from "@schedule/ui/components/skeleton";
 
-import type { BlocklistEntry, BlocklistEntryDetails, BlocklistScope } from "@calcom/features/blocklist/types";
+import type { BlocklistEntry, BlocklistEntryDetails, BlocklistScope } from "@schedule/features/blocklist/types";
 
 export interface BlocklistEntryDetailsSheetProps<T extends BlocklistEntry> {
   scope: BlocklistScope;

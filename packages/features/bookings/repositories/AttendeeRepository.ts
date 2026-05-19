@@ -1,4 +1,4 @@
-import type { PrismaClient } from "@calcom/prisma";
+import type { PrismaClient } from "@schedule/prisma";
 import type { IAttendeeRepository } from "./IAttendeeRepository";
 
 const safeSelect = {

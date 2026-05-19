@@ -1,8 +1,8 @@
-import { getAppFromSlug } from "@calcom/app-store/utils";
-import type { InvalidAppCredentialBannerProps } from "@calcom/features/users/types/invalidAppCredentials";
-import { prisma } from "@calcom/prisma";
-import { MembershipRole } from "@calcom/prisma/enums";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+import { getAppFromSlug } from "@schedule/app-store/utils";
+import type { InvalidAppCredentialBannerProps } from "@schedule/features/users/types/invalidAppCredentials";
+import { prisma } from "@schedule/prisma";
+import { MembershipRole } from "@schedule/prisma/enums";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 
 class PermissionCheckService {
   constructor(_prisma?: unknown) {}

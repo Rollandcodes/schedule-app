@@ -1,24 +1,24 @@
-import { LearnMoreLink } from "@calcom/features/eventtypes/components/LearnMoreLink";
-import { getDefinedBufferTimes } from "@calcom/features/eventtypes/lib/getDefinedBufferTimes";
+import { LearnMoreLink } from "@schedule/features/eventtypes/components/LearnMoreLink";
+import { getDefinedBufferTimes } from "@schedule/features/eventtypes/lib/getDefinedBufferTimes";
 import type {
   EventTypeSetupProps,
   FormValues,
   InputClassNames,
   SelectClassNames,
   SettingsToggleClassNames,
-} from "@calcom/features/eventtypes/lib/types";
-import CheckboxField from "@calcom/features/form/components/CheckboxField";
-import { ROLLING_WINDOW_PERIOD_MAX_DAYS_TO_CHECK } from "@calcom/lib/constants";
-import type { DurationType } from "@calcom/lib/convertToNewDurationType";
-import convertToNewDurationType from "@calcom/lib/convertToNewDurationType";
-import findDurationType from "@calcom/lib/findDurationType";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { ascendingLimitKeys, intervalLimitKeyToUnit } from "@calcom/lib/intervalLimits/intervalLimit";
-import type { IntervalLimit } from "@calcom/lib/intervalLimits/intervalLimitSchema";
-import { PeriodType, SchedulingType } from "@calcom/prisma/enums";
-import classNames from "@calcom/ui/classNames";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
+} from "@schedule/features/eventtypes/lib/types";
+import CheckboxField from "@schedule/features/form/components/CheckboxField";
+import { ROLLING_WINDOW_PERIOD_MAX_DAYS_TO_CHECK } from "@schedule/lib/constants";
+import type { DurationType } from "@schedule/lib/convertToNewDurationType";
+import convertToNewDurationType from "@schedule/lib/convertToNewDurationType";
+import findDurationType from "@schedule/lib/findDurationType";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { ascendingLimitKeys, intervalLimitKeyToUnit } from "@schedule/lib/intervalLimits/intervalLimit";
+import type { IntervalLimit } from "@schedule/lib/intervalLimits/intervalLimitSchema";
+import { PeriodType, SchedulingType } from "@schedule/prisma/enums";
+import classNames from "@schedule/ui/classNames";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
 import {
   DateRangePicker,
   InputField,
@@ -26,9 +26,9 @@ import {
   Select,
   SettingsToggle,
   TextField,
-} from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+} from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import Link from "next/link";

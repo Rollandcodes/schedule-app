@@ -1,17 +1,17 @@
 import process from "node:process";
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
-import { getRegularBookingService } from "@calcom/features/bookings/di/RegularBookingService.container";
-import { BotDetectionService } from "@calcom/features/bot-detection";
-import { EventTypeRepository } from "@calcom/features/eventtypes/repositories/eventTypeRepository";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import { checkRateLimitAndThrowError } from "@calcom/lib/checkRateLimitAndThrowError";
-import getIP from "@calcom/lib/getIP";
-import { checkCfTurnstileToken } from "@calcom/lib/server/checkCfTurnstileToken";
-import { defaultResponder } from "@calcom/lib/server/defaultResponder";
-import { piiHasher } from "@calcom/lib/server/PiiHasher";
-import type { TraceContext } from "@calcom/lib/tracing";
-import { prisma } from "@calcom/prisma";
-import { CreationSource } from "@calcom/prisma/enums";
+import { getServerSession } from "@schedule/features/auth/lib/getServerSession";
+import { getRegularBookingService } from "@schedule/features/bookings/di/RegularBookingService.container";
+import { BotDetectionService } from "@schedule/features/bot-detection";
+import { EventTypeRepository } from "@schedule/features/eventtypes/repositories/eventTypeRepository";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import { checkRateLimitAndThrowError } from "@schedule/lib/checkRateLimitAndThrowError";
+import getIP from "@schedule/lib/getIP";
+import { checkCfTurnstileToken } from "@schedule/lib/server/checkCfTurnstileToken";
+import { defaultResponder } from "@schedule/lib/server/defaultResponder";
+import { piiHasher } from "@schedule/lib/server/PiiHasher";
+import type { TraceContext } from "@schedule/lib/tracing";
+import { prisma } from "@schedule/prisma";
+import { CreationSource } from "@schedule/prisma/enums";
 import type { NextApiRequest } from "next";
 
 async function handler(req: NextApiRequest & { userId?: number; traceContext: TraceContext }) {

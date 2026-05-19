@@ -3,11 +3,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Badge } from "@calcom/ui/components/badge";
-import classNames from "@calcom/ui/classNames";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Badge } from "@schedule/ui/components/badge";
+import classNames from "@schedule/ui/classNames";
 
 import { useOnboardingStore, type Invite } from "../store/onboarding-store";
 

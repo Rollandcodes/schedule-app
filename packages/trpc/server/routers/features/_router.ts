@@ -1,7 +1,7 @@
-import { getFeaturesRepository } from "@calcom/features/di/containers/FeaturesRepository";
-import type { AppFlags } from "@calcom/features/flags/config";
-import publicProcedure from "@calcom/trpc/server/procedures/publicProcedure";
-import { router } from "@calcom/trpc/server/trpc";
+import { getFeaturesRepository } from "@schedule/features/di/containers/FeaturesRepository";
+import type { AppFlags } from "@schedule/features/flags/config";
+import publicProcedure from "@schedule/trpc/server/procedures/publicProcedure";
+import { router } from "@schedule/trpc/server/trpc";
 import { z } from "zod";
 import { map } from "./map";
 

@@ -4,11 +4,11 @@ import path from "node:path";
 import yaml from "js-yaml";
 import { z } from "zod";
 
-import { getAppWithMetadata } from "@calcom/app-store/_appRegistry";
-import { getAppAssetFullPath } from "@calcom/app-store/getAppAssetFullPath";
-import { IS_PRODUCTION } from "@calcom/lib/constants";
-import { prisma } from "@calcom/prisma";
-import logger from "@calcom/lib/logger";
+import { getAppWithMetadata } from "@schedule/app-store/_appRegistry";
+import { getAppAssetFullPath } from "@schedule/app-store/getAppAssetFullPath";
+import { IS_PRODUCTION } from "@schedule/lib/constants";
+import { prisma } from "@schedule/prisma";
+import logger from "@schedule/lib/logger";
 
 const log = logger.getSubLogger({ prefix: ["lib", "parseFrontmatter"] });
 

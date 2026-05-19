@@ -1,9 +1,9 @@
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Sheet, SheetBody, SheetContent, SheetFooter, SheetHeader } from "@calcom/ui/components/sheet";
-import { Loader } from "@calcom/ui/components/skeleton";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Sheet, SheetBody, SheetContent, SheetFooter, SheetHeader } from "@schedule/ui/components/sheet";
+import { Loader } from "@schedule/ui/components/skeleton";
 import type { Dispatch } from "react";
 import { shallow } from "zustand/shallow";
 import type { UserTableAction, UserTableState } from "../types";

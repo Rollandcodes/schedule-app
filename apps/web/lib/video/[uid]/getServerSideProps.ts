@@ -2,15 +2,15 @@ import {
   generateGuestMeetingTokenFromOwnerMeetingToken,
   setEnableRecordingUIAndUserIdForOrganizer,
   updateMeetingTokenIfExpired,
-} from "@calcom/app-store/dailyvideo/lib/VideoApiAdapter";
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
-import { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import { EventTypeRepository } from "@calcom/features/eventtypes/repositories/eventTypeRepository";
-import { getCalVideoReference } from "@calcom/features/get-cal-video-reference";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { CAL_VIDEO_MEETING_LINK_FOR_TESTING } from "@calcom/lib/constants";
-import { isENVDev } from "@calcom/lib/env";
-import prisma from "@calcom/prisma";
+} from "@schedule/app-store/dailyvideo/lib/VideoApiAdapter";
+import { getServerSession } from "@schedule/features/auth/lib/getServerSession";
+import { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import { EventTypeRepository } from "@schedule/features/eventtypes/repositories/eventTypeRepository";
+import { getCalVideoReference } from "@schedule/features/get-cal-video-reference";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { CAL_VIDEO_MEETING_LINK_FOR_TESTING } from "@schedule/lib/constants";
+import { isENVDev } from "@schedule/lib/env";
+import prisma from "@schedule/prisma";
 import MarkdownIt from "markdown-it";
 import type { GetServerSidePropsContext } from "next";
 

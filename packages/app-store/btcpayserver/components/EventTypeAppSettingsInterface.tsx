@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-import type { EventTypeAppSettingsComponent } from "@calcom/app-store/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Alert } from "@calcom/ui/components/alert";
-import { Select } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
+import type { EventTypeAppSettingsComponent } from "@schedule/app-store/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Alert } from "@schedule/ui/components/alert";
+import { Select } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
 
 import {
   currencyOptions,

@@ -2,40 +2,40 @@ import { cloneDeep, merge } from "lodash";
 import { v5 as uuidv5 } from "uuid";
 import type { z } from "zod";
 
-import { getCalendar } from "@calcom/app-store/_utils/getCalendar";
-import { FAKE_DAILY_CREDENTIAL } from "@calcom/app-store/dailyvideo/lib/VideoApiAdapter";
-import { appKeysSchema as calVideoKeysSchema } from "@calcom/app-store/dailyvideo/zod";
-import { getLocationFromApp, MeetLocationType, MSTeamsLocationType } from "@calcom/app-store/locations";
-import getApps from "@calcom/app-store/utils";
-import { createEvent, updateEvent, deleteEvent } from "@calcom/features/calendars/lib/CalendarManager";
-import { createMeeting, updateMeeting, deleteMeeting } from "@calcom/features/conferencing/lib/videoClient";
-import { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
-import CrmManager from "@calcom/features/crmManager/crmManager";
-import CRMScheduler from "@calcom/features/crmManager/crmScheduler";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import { getUid } from "@calcom/lib/CalEventParser";
-import { symmetricDecrypt } from "@calcom/lib/crypto";
-import { isDelegationCredential } from "@calcom/lib/delegationCredential";
-import logger from "@calcom/lib/logger";
+import { getCalendar } from "@schedule/app-store/_utils/getCalendar";
+import { FAKE_DAILY_CREDENTIAL } from "@schedule/app-store/dailyvideo/lib/VideoApiAdapter";
+import { appKeysSchema as calVideoKeysSchema } from "@schedule/app-store/dailyvideo/zod";
+import { getLocationFromApp, MeetLocationType, MSTeamsLocationType } from "@schedule/app-store/locations";
+import getApps from "@schedule/app-store/utils";
+import { createEvent, updateEvent, deleteEvent } from "@schedule/features/calendars/lib/CalendarManager";
+import { createMeeting, updateMeeting, deleteMeeting } from "@schedule/features/conferencing/lib/videoClient";
+import { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
+import CrmManager from "@schedule/features/crmManager/crmManager";
+import CRMScheduler from "@schedule/features/crmManager/crmScheduler";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import { getUid } from "@schedule/lib/CalEventParser";
+import { symmetricDecrypt } from "@schedule/lib/crypto";
+import { isDelegationCredential } from "@schedule/lib/delegationCredential";
+import logger from "@schedule/lib/logger";
 import {
   getPiiFreeDestinationCalendar,
   getPiiFreeUser,
   getPiiFreeCredential,
   getPiiFreeCalendarEvent,
-} from "@calcom/lib/piiFreeData";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import { prisma } from "@calcom/prisma";
-import type { DestinationCalendar, BookingReference } from "@calcom/prisma/client";
-import { createdEventSchema } from "@calcom/prisma/zod-utils";
-import type { AdditionalInformation, CalendarEvent, NewCalendarEventType } from "@calcom/types/Calendar";
-import type { CredentialForCalendarService } from "@calcom/types/Credential";
-import type { Event } from "@calcom/types/Event";
+} from "@schedule/lib/piiFreeData";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import { prisma } from "@schedule/prisma";
+import type { DestinationCalendar, BookingReference } from "@schedule/prisma/client";
+import { createdEventSchema } from "@schedule/prisma/zod-utils";
+import type { AdditionalInformation, CalendarEvent, NewCalendarEventType } from "@schedule/types/Calendar";
+import type { CredentialForCalendarService } from "@schedule/types/Credential";
+import type { Event } from "@schedule/types/Event";
 import type {
   CreateUpdateResult,
   EventResult,
   PartialBooking,
   PartialReference,
-} from "@calcom/types/EventManager";
+} from "@schedule/types/EventManager";
 
 const log = logger.getSubLogger({ prefix: ["EventManager"] });
 const CALENDSO_ENCRYPTION_KEY = process.env.CALENDSO_ENCRYPTION_KEY || "";

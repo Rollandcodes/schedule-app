@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc, type RouterOutputs } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { ConfirmationDialogContent } from "@calcom/ui/components/dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc, type RouterOutputs } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { ConfirmationDialogContent } from "@schedule/ui/components/dialog";
 import {
   Dropdown,
   DropdownItem,
@@ -12,8 +12,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@calcom/ui/components/dropdown";
-import { showToast } from "@calcom/ui/components/toast";
+} from "@schedule/ui/components/dropdown";
+import { showToast } from "@schedule/ui/components/toast";
 
 type Credentials = RouterOutputs["viewer"]["apps"]["appCredentialsByType"]["credentials"];
 

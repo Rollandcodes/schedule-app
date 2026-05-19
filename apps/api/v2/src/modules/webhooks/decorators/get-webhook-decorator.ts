@@ -1,7 +1,7 @@
 import { ExecutionContext } from "@nestjs/common";
 import { createParamDecorator } from "@nestjs/common";
 
-import type { Webhook } from "@calcom/prisma/client";
+import type { Webhook } from "@schedule/prisma/client";
 
 export type GetWebhookReturnType = Webhook;
 

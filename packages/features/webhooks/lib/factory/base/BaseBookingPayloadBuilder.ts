@@ -1,6 +1,6 @@
-import type { BookingStatus } from "@calcom/prisma/enums";
-import { WebhookTriggerEvents } from "@calcom/prisma/enums";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import type { BookingStatus } from "@schedule/prisma/enums";
+import { WebhookTriggerEvents } from "@schedule/prisma/enums";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 import type { BookingWebhookEventDTO, EventTypeInfo } from "../../dto/types";
 import type { WebhookPayload } from "../types";
 import type { IBookingPayloadBuilder } from "../versioned/PayloadBuilderFactory";

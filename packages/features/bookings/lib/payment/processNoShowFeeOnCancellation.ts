@@ -1,8 +1,8 @@
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import { MembershipRepository } from "@calcom/features/membership/repositories/MembershipRepository";
-import logger from "@calcom/lib/logger";
-import type { Payment } from "@calcom/prisma/client";
-import { MembershipRole } from "@calcom/prisma/enums";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import { MembershipRepository } from "@schedule/features/membership/repositories/MembershipRepository";
+import logger from "@schedule/lib/logger";
+import type { Payment } from "@schedule/prisma/client";
+import { MembershipRole } from "@schedule/prisma/enums";
 
 import { handleNoShowFee } from "./handleNoShowFee";
 import { shouldChargeNoShowCancellationFee } from "./shouldChargeNoShowCancellationFee";

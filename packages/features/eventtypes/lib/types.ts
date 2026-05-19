@@ -1,15 +1,15 @@
-import type { ConnectedApps } from "@calcom/app-store/_utils/getConnectedApps";
-import type { EventLocationType } from "@calcom/app-store/locations";
-import type { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import type { ChildrenEventType } from "@calcom/features/eventtypes/lib/childrenEventType";
-import type { IntervalLimit } from "@calcom/lib/intervalLimits/intervalLimitSchema";
-import type { EventTypeTranslation } from "@calcom/prisma/client";
+import type { ConnectedApps } from "@schedule/app-store/_utils/getConnectedApps";
+import type { EventLocationType } from "@schedule/app-store/locations";
+import type { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import type { ChildrenEventType } from "@schedule/features/eventtypes/lib/childrenEventType";
+import type { IntervalLimit } from "@schedule/lib/intervalLimits/intervalLimitSchema";
+import type { EventTypeTranslation } from "@schedule/prisma/client";
 import type {
   CancellationReasonRequirement,
   MembershipRole,
   PeriodType,
   SchedulingType,
-} from "@calcom/prisma/enums";
+} from "@schedule/prisma/enums";
 import type {
   BookerLayoutSettings,
   CustomInputSchema,
@@ -18,9 +18,9 @@ import type {
   EventTypeMetadata,
   eventTypeBookingFields,
   eventTypeColor,
-} from "@calcom/prisma/zod-utils";
-import type { RecurringEvent } from "@calcom/types/Calendar";
-import type { UserProfile } from "@calcom/types/UserProfile";
+} from "@schedule/prisma/zod-utils";
+import type { RecurringEvent } from "@schedule/types/Calendar";
+import type { UserProfile } from "@schedule/types/UserProfile";
 import type { z } from "zod";
 import type { EventType } from "./getEventTypeById";
 

@@ -1,16 +1,16 @@
 "use client";
 
-import type { BulkUpdatParams } from "@calcom/features/eventtypes/components/BulkEditDefaultForEventsModal";
-import { BulkEditDefaultForEventsModal } from "@calcom/features/eventtypes/components/BulkEditDefaultForEventsModal";
-import { ScheduleListItem } from "@calcom/features/schedules/components/ScheduleListItem";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { HttpError } from "@calcom/lib/http-error";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
-import { EmptyScreen } from "@calcom/ui/components/empty-screen";
-import { showToast } from "@calcom/ui/components/toast";
-import { NewScheduleButton } from "@calcom/web/modules/schedules/components/NewScheduleButton";
+import type { BulkUpdatParams } from "@schedule/features/eventtypes/components/BulkEditDefaultForEventsModal";
+import { BulkEditDefaultForEventsModal } from "@schedule/features/eventtypes/components/BulkEditDefaultForEventsModal";
+import { ScheduleListItem } from "@schedule/features/schedules/components/ScheduleListItem";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { HttpError } from "@schedule/lib/http-error";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
+import { EmptyScreen } from "@schedule/ui/components/empty-screen";
+import { showToast } from "@schedule/ui/components/toast";
+import { NewScheduleButton } from "@schedule/web/modules/schedules/components/NewScheduleButton";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { revalidateAvailabilityList } from "app/(use-page-wrapper)/(main-nav)/availability/actions";
 import Link from "next/link";

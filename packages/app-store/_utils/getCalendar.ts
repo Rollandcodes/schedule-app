@@ -1,14 +1,14 @@
-import { CalendarSubscriptionService } from "@calcom/features/calendar-subscription/lib/CalendarSubscriptionService";
-import { CalendarCacheEventRepository } from "@calcom/features/calendar-subscription/lib/cache/CalendarCacheEventRepository";
-import { CalendarCacheEventService } from "@calcom/features/calendar-subscription/lib/cache/CalendarCacheEventService";
-import { CalendarCacheWrapper } from "@calcom/features/calendar-subscription/lib/cache/CalendarCacheWrapper";
-import { CalendarTelemetryWrapper } from "@calcom/features/calendar-subscription/lib/telemetry/CalendarTelemetryWrapper";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import logger from "@calcom/lib/logger";
-import { isTelemetryEnabled } from "@calcom/lib/sentryWrapper";
-import { prisma } from "@calcom/prisma";
-import type { Calendar, CalendarFetchMode } from "@calcom/types/Calendar";
-import type { CredentialForCalendarService } from "@calcom/types/Credential";
+import { CalendarSubscriptionService } from "@schedule/features/calendar-subscription/lib/CalendarSubscriptionService";
+import { CalendarCacheEventRepository } from "@schedule/features/calendar-subscription/lib/cache/CalendarCacheEventRepository";
+import { CalendarCacheEventService } from "@schedule/features/calendar-subscription/lib/cache/CalendarCacheEventService";
+import { CalendarCacheWrapper } from "@schedule/features/calendar-subscription/lib/cache/CalendarCacheWrapper";
+import { CalendarTelemetryWrapper } from "@schedule/features/calendar-subscription/lib/telemetry/CalendarTelemetryWrapper";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import logger from "@schedule/lib/logger";
+import { isTelemetryEnabled } from "@schedule/lib/sentryWrapper";
+import { prisma } from "@schedule/prisma";
+import type { Calendar, CalendarFetchMode } from "@schedule/types/Calendar";
+import type { CredentialForCalendarService } from "@schedule/types/Credential";
 
 import { CalendarServiceMap } from "../calendar.services.generated";
 

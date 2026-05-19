@@ -1,10 +1,10 @@
 import { useRouter } from "next/navigation";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { sessionStorage } from "@calcom/lib/webstorage";
-import { trpc } from "@calcom/trpc/react";
-import { showToast } from "@calcom/ui/components/toast";
-import { setShowWelcomeToCalcomModalFlag } from "@calcom/web/modules/shell/hooks/useWelcomeToCalcomModal";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { sessionStorage } from "@schedule/lib/webstorage";
+import { trpc } from "@schedule/trpc/react";
+import { showToast } from "@schedule/ui/components/toast";
+import { setShowWelcomeToCalcomModalFlag } from "@schedule/web/modules/shell/hooks/useWelcomeToCalcomModal";
 
 const ONBOARDING_REDIRECT_KEY = "onBoardingRedirect";
 const ORG_MODAL_STORAGE_KEY = "showNewOrgModal";

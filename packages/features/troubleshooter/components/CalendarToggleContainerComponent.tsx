@@ -1,7 +1,7 @@
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { Switch } from "@calcom/ui/components/form";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { Switch } from "@schedule/ui/components/form";
 import { TroubleshooterListItemContainer } from "./TroubleshooterListItemContainer";
 
 interface CalendarToggleItemProps {

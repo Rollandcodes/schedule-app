@@ -1,8 +1,8 @@
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { TimeFormat } from "@calcom/lib/timeFormat";
-import { ToggleGroup } from "@calcom/ui/components/form";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { TimeFormat } from "@schedule/lib/timeFormat";
+import { ToggleGroup } from "@schedule/ui/components/form";
 
-import { useTimePreferences } from "@calcom/features/bookings/lib";
+import { useTimePreferences } from "@schedule/features/bookings/lib";
 
 export const TimeFormatToggle = ({ customClassName }: { customClassName?: string }) => {
   const timeFormat = useTimePreferences((state) => state.timeFormat);

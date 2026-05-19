@@ -7,9 +7,9 @@ import { RedisService } from "@/modules/redis/redis.service";
 import { BadRequestException, UnauthorizedException, Logger } from "@nestjs/common";
 import { Injectable } from "@nestjs/common";
 
-import { SUCCESS_STATUS, ICS_CALENDAR_TYPE, ICS_CALENDAR } from "@calcom/platform-constants";
-import { symmetricEncrypt } from "@calcom/platform-libraries";
-import { BuildIcsFeedCalendarService } from "@calcom/platform-libraries/app-store";
+import { SUCCESS_STATUS, ICS_CALENDAR_TYPE, ICS_CALENDAR } from "@schedule/platform-constants";
+import { symmetricEncrypt } from "@schedule/platform-libraries";
+import { BuildIcsFeedCalendarService } from "@schedule/platform-libraries/app-store";
 
 @Injectable()
 export class IcsFeedService implements ICSFeedCalendarApp {

@@ -39,29 +39,29 @@ vi.mock("next/navigation", () => ({
   usePathname: vi.fn().mockReturnValue("/settings/billing"),
 }));
 
-vi.mock("@calcom/app-store/BookingPageTagManager", () => ({
+vi.mock("@schedule/app-store/BookingPageTagManager", () => ({
   default: vi.fn(),
 }));
 
-vi.mock("@calcom/app-store/locations", () => ({
+vi.mock("@schedule/app-store/locations", () => ({
   DailyLocationType: "daily",
   guessEventLocationType: vi.fn(),
   getSuccessPageLocationMessage: vi.fn(),
 }));
 
-vi.mock("@calcom/app-store/utils", () => ({
+vi.mock("@schedule/app-store/utils", () => ({
   getEventTypeAppData: vi.fn(),
 }));
 
-vi.mock("@calcom/features/eventtypes/lib/eventNaming", () => ({
+vi.mock("@schedule/features/eventtypes/lib/eventNaming", () => ({
   getEventName: vi.fn(),
 }));
 
-vi.mock("@calcom/web/modules/event-types/components", () => ({
+vi.mock("@schedule/web/modules/event-types/components", () => ({
   EventTypeDescriptionLazy: vi.fn(),
 }));
 
-vi.mock("@calcom/embed-core/embed-iframe", () => {
+vi.mock("@schedule/embed-core/embed-iframe", () => {
   return {
     useIsBackgroundTransparent: vi.fn(),
     useIsEmbed: vi.fn(),
@@ -70,15 +70,15 @@ vi.mock("@calcom/embed-core/embed-iframe", () => {
   };
 });
 
-vi.mock("@calcom/web/modules/bookings/components/event-meta/Price", () => {
+vi.mock("@schedule/web/modules/bookings/components/event-meta/Price", () => {
   return {};
 });
 
-vi.mock("@calcom/lib/bookings/SystemField", () => {
+vi.mock("@schedule/lib/bookings/SystemField", () => {
   return {};
 });
 
-vi.mock("@calcom/lib/constants", () => {
+vi.mock("@schedule/lib/constants", () => {
   return {
     DEFAULT_LIGHT_BRAND_COLOR: "DEFAULT_LIGHT_BRAND_COLOR",
     DEFAULT_DARK_BRAND_COLOR: "DEFAULT_DARK_BRAND_COLOR",
@@ -86,23 +86,23 @@ vi.mock("@calcom/lib/constants", () => {
   };
 });
 
-vi.mock("@calcom/lib/dayjs", () => {
+vi.mock("@schedule/lib/dayjs", () => {
   return {};
 });
 
-vi.mock("@calcom/lib/getBrandColours", () => {
+vi.mock("@schedule/lib/getBrandColours", () => {
   return {
     default: vi.fn(),
   };
 });
 
-vi.mock("@calcom/lib/hooks/useCompatSearchParams", () => {
+vi.mock("@schedule/lib/hooks/useCompatSearchParams", () => {
   return {
     useCompatSearchParams: vi.fn(),
   };
 });
 
-vi.mock("@calcom/lib/hooks/useLocale", () => {
+vi.mock("@schedule/lib/hooks/useLocale", () => {
   return {
     useLocale: () => ({
       t: (text: string) => text,
@@ -113,27 +113,27 @@ vi.mock("@calcom/lib/hooks/useLocale", () => {
   };
 });
 
-vi.mock("@calcom/lib/hooks/useRouterQuery", () => {
+vi.mock("@schedule/lib/hooks/useRouterQuery", () => {
   return {
     useRouterQuery: vi.fn(),
   };
 });
 
-vi.mock("@calcom/lib/hooks/useTheme", () => {
+vi.mock("@schedule/lib/hooks/useTheme", () => {
   return {
     default: vi.fn(),
   };
 });
 
-vi.mock("@calcom/lib/recurringStrings", () => {
+vi.mock("@schedule/lib/recurringStrings", () => {
   return {};
 });
 
-vi.mock("@calcom/lib/recurringStrings", () => {
+vi.mock("@schedule/lib/recurringStrings", () => {
   return {};
 });
 
-vi.mock("@calcom/prisma/zod-utils", () => ({
+vi.mock("@schedule/prisma/zod-utils", () => ({
   BookerLayouts: {
     MONTH_VIEW: "month",
   },
@@ -145,13 +145,13 @@ vi.mock("@calcom/prisma/zod-utils", () => ({
   },
 }));
 
-vi.mock("@calcom/app-store/zod-utils", () => ({
+vi.mock("@schedule/app-store/zod-utils", () => ({
   eventTypeMetaDataSchemaWithTypedApps: {
     parse: vi.fn(),
   },
 }));
 
-vi.mock("@calcom/trpc/react", () => ({
+vi.mock("@schedule/trpc/react", () => ({
   trpc: {
     viewer: {
       public: {
@@ -166,47 +166,47 @@ vi.mock("@calcom/trpc/react", () => ({
   },
 }));
 
-vi.mock("@calcom/ui/styles", () => ({
+vi.mock("@schedule/ui/styles", () => ({
   useCalcomTheme: vi.fn(),
 }));
 
-vi.mock("@calcom/ui/components/icon", () => ({
+vi.mock("@schedule/ui/components/icon", () => ({
   Icon: vi.fn(),
 }));
 
-vi.mock("@calcom/ui/components/unpublished-entity", () => ({
+vi.mock("@schedule/ui/components/unpublished-entity", () => ({
   UnpublishedEntity: vi.fn(),
 }));
 
-vi.mock("@calcom/ui/components/avatar", () => ({
+vi.mock("@schedule/ui/components/avatar", () => ({
   UserAvatar: vi.fn(),
   Avatar: () => null,
 }));
 
-vi.mock("@calcom/web/components/PageWrapper", () => ({
+vi.mock("@schedule/web/components/PageWrapper", () => ({
   default: vi.fn(),
 }));
 
-vi.mock("@calcom/web/components/booking/CancelBooking", () => ({}));
+vi.mock("@schedule/web/components/booking/CancelBooking", () => ({}));
 
-vi.mock("@calcom/web/components/schemas/EventReservationSchema", () => ({
+vi.mock("@schedule/web/components/schemas/EventReservationSchema", () => ({
   default: vi.fn(),
 }));
 
-vi.mock("@calcom/web/lib/clock", () => ({
+vi.mock("@schedule/web/lib/clock", () => ({
   timeZone: vi.fn(),
 }));
 
 vi.mock("./bookings-single-view.getServerSideProps", () => ({}));
 
-vi.mock("@calcom/lib/webstorage", () => ({
+vi.mock("@schedule/lib/webstorage", () => ({
   localStorage: {
     getItem: vi.fn(),
     setItem: vi.fn(),
   },
 }));
 
-vi.mock("@calcom/lib/timeFormat", () => ({
+vi.mock("@schedule/lib/timeFormat", () => ({
   detectBrowserTimeFormat: vi.fn(),
   isBrowserLocale24h: vi.fn(),
   getIs24hClockFromLocalStorage: vi.fn(),

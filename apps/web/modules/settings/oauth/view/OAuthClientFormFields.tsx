@@ -4,13 +4,13 @@ import { useMemo } from "react";
 import type { Dispatch, SetStateAction } from "react";
 import type { RegisterOptions, UseFormReturn } from "react-hook-form";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
 
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Label, Switch, TextArea, TextField } from "@calcom/ui/components/form";
-import { ImageUploader } from "@calcom/ui/components/image-uploader";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Label, Switch, TextArea, TextField } from "@schedule/ui/components/form";
+import { ImageUploader } from "@schedule/ui/components/image-uploader";
 import { InfoIcon, KeyIcon } from "@coss/ui/icons";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 
 import type { OAuthClientCreateFormValues } from "../create/OAuthClientCreateModal";
 

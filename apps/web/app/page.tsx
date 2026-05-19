@@ -1,8 +1,8 @@
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 
-import { checkOnboardingRedirect } from "@calcom/features/auth/lib/onboardingUtils";
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
+import { checkOnboardingRedirect } from "@schedule/features/auth/lib/onboardingUtils";
+import { getServerSession } from "@schedule/features/auth/lib/getServerSession";
 
 import { buildLegacyRequest } from "@lib/buildLegacyCtx";
 

@@ -1,11 +1,11 @@
-import { enrichHostsWithDelegationCredentials } from "@calcom/app-store/delegationCredential";
-import getOrgIdFromMemberOrTeamId from "@calcom/lib/getOrgIdFromMemberOrTeamId";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import type { RRResetInterval } from "@calcom/prisma/client";
-import type { RRTimestampBasis } from "@calcom/prisma/enums";
-import { SchedulingType } from "@calcom/prisma/enums";
-import type { CredentialPayload } from "@calcom/types/Credential";
+import { enrichHostsWithDelegationCredentials } from "@schedule/app-store/delegationCredential";
+import getOrgIdFromMemberOrTeamId from "@schedule/lib/getOrgIdFromMemberOrTeamId";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import type { RRResetInterval } from "@schedule/prisma/client";
+import type { RRTimestampBasis } from "@schedule/prisma/enums";
+import { SchedulingType } from "@schedule/prisma/enums";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 const log = logger.getSubLogger({ prefix: ["[getRoutedUsers]"] });
 

@@ -1,15 +1,15 @@
 import type { Dispatch, SetStateAction } from "react";
 import { useState } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { Input } from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
-import type { IconName } from "@calcom/ui/components/icon";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { Input } from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
+import type { IconName } from "@schedule/ui/components/icon";
 
 interface ISearchDialog {
   isOpenDialog: boolean;

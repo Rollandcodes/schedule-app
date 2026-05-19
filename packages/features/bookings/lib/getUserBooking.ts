@@ -1,4 +1,4 @@
-import prisma from "@calcom/prisma";
+import prisma from "@schedule/prisma";
 
 const getUserBooking = async (uid: string) => {
   const bookingInfo = await prisma.booking.findUnique({

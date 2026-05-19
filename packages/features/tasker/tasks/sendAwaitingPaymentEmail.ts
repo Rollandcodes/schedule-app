@@ -1,11 +1,11 @@
-import { createPaymentLink } from "@calcom/app-store/stripepayment/lib/client";
-import { sendAwaitingPaymentEmailAndSMS } from "@calcom/emails/email-manager";
-import { getBooking } from "@calcom/features/bookings/lib/payment/getBooking";
-import { AttendeeRepository } from "@calcom/features/bookings/repositories/AttendeeRepository";
-import { PrismaBookingPaymentRepository } from "@calcom/features/bookings/repositories/PrismaBookingPaymentRepository";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import prisma from "@calcom/prisma";
+import { createPaymentLink } from "@schedule/app-store/stripepayment/lib/client";
+import { sendAwaitingPaymentEmailAndSMS } from "@schedule/emails/email-manager";
+import { getBooking } from "@schedule/features/bookings/lib/payment/getBooking";
+import { AttendeeRepository } from "@schedule/features/bookings/repositories/AttendeeRepository";
+import { PrismaBookingPaymentRepository } from "@schedule/features/bookings/repositories/PrismaBookingPaymentRepository";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import prisma from "@schedule/prisma";
 import { z } from "zod";
 
 const log = logger.getSubLogger({ prefix: ["sendAwaitingPaymentEmail"] });

@@ -1,7 +1,7 @@
 import { z } from "zod";
 
-import logger from "@calcom/lib/logger";
-import prisma from "@calcom/prisma";
+import logger from "@schedule/lib/logger";
+import prisma from "@schedule/prisma";
 
 import { LARK_HOST, getAppKeys, isExpired } from "../common";
 

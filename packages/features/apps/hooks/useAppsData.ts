@@ -1,6 +1,6 @@
-import type { GetAppData, SetAppData } from "@calcom/app-store/EventTypeAppContext";
-import type { EventTypeAppsList } from "@calcom/app-store/utils";
-import type { FormValues } from "@calcom/features/eventtypes/lib/types";
+import type { GetAppData, SetAppData } from "@schedule/app-store/EventTypeAppContext";
+import type { EventTypeAppsList } from "@schedule/app-store/utils";
+import type { FormValues } from "@schedule/features/eventtypes/lib/types";
 import { useFormContext } from "react-hook-form";
 
 const useAppsData = () => {

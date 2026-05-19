@@ -1,8 +1,8 @@
-import { MembershipService } from "@calcom/features/membership/services/membershipService";
-import { ErrorCode } from "@calcom/lib/errorCodes";
-import { validateHashedLinkData } from "@calcom/lib/hashedLinksUtils";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
+import { MembershipService } from "@schedule/features/membership/services/membershipService";
+import { ErrorCode } from "@schedule/lib/errorCodes";
+import { validateHashedLinkData } from "@schedule/lib/hashedLinksUtils";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
 
 import { HashedLinkRepository } from "../repository/HashedLinkRepository";
 import { type HashedLinkInputType } from "../repository/HashedLinkRepository";

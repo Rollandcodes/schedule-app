@@ -1,4 +1,4 @@
-import { prisma } from "@calcom/prisma";
+import { prisma } from "@schedule/prisma";
 
 import type { TSubmitRatingInputSchema } from "./submitRating.schema";
 

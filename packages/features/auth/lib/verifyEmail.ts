@@ -4,16 +4,16 @@ import {
   sendChangeOfEmailVerificationLink,
   sendEmailVerificationCode,
   sendEmailVerificationLink,
-} from "@calcom/emails/auth-email-service";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import { sentrySpan } from "@calcom/features/watchlist/lib/telemetry";
-import { checkIfEmailIsBlockedInWatchlistController } from "@calcom/features/watchlist/operations/check-if-email-in-watchlist.controller";
-import { checkRateLimitAndThrowError } from "@calcom/lib/checkRateLimitAndThrowError";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import logger from "@calcom/lib/logger";
-import { getTranslation } from "@calcom/i18n/server";
-import { hashEmail } from "@calcom/lib/server/PiiHasher";
-import { prisma } from "@calcom/prisma";
+} from "@schedule/emails/auth-email-service";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import { sentrySpan } from "@schedule/features/watchlist/lib/telemetry";
+import { checkIfEmailIsBlockedInWatchlistController } from "@schedule/features/watchlist/operations/check-if-email-in-watchlist.controller";
+import { checkRateLimitAndThrowError } from "@schedule/lib/checkRateLimitAndThrowError";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import logger from "@schedule/lib/logger";
+import { getTranslation } from "@schedule/i18n/server";
+import { hashEmail } from "@schedule/lib/server/PiiHasher";
+import { prisma } from "@schedule/prisma";
 import { totp } from "otplib";
 
 const log = logger.getSubLogger({ prefix: [`[[Auth] `] });

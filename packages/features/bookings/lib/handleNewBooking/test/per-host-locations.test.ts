@@ -11,15 +11,15 @@ import {
   getGoogleCalendarCredential,
   getZoomAppCredential,
   mockCalendarToHaveNoBusySlots,
-} from "@calcom/testing/lib/bookingScenario/bookingScenario";
-import { expectBookingToBeInDatabase } from "@calcom/testing/lib/bookingScenario/expects";
-import { getMockRequestDataForBooking } from "@calcom/testing/lib/bookingScenario/getMockRequestDataForBooking";
-import { setupAndTeardown } from "@calcom/testing/lib/bookingScenario/setupAndTeardown";
+} from "@schedule/testing/lib/bookingScenario/bookingScenario";
+import { expectBookingToBeInDatabase } from "@schedule/testing/lib/bookingScenario/expects";
+import { getMockRequestDataForBooking } from "@schedule/testing/lib/bookingScenario/getMockRequestDataForBooking";
+import { setupAndTeardown } from "@schedule/testing/lib/bookingScenario/setupAndTeardown";
 
 import { describe, test, expect } from "vitest";
 
-import prisma from "@calcom/prisma";
-import { SchedulingType } from "@calcom/prisma/enums";
+import prisma from "@schedule/prisma";
+import { SchedulingType } from "@schedule/prisma/enums";
 
 import { getNewBookingHandler } from "./getNewBookingHandler";
 

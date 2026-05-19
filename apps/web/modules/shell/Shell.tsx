@@ -7,16 +7,16 @@ import type React from "react";
 import { cloneElement } from "react";
 import { Toaster } from "sonner";
 
-import { useFormbricks } from "@calcom/web/modules/formbricks/hooks/useFormbricks";
-import { useRedirectToLoginIfUnauthenticated } from "@calcom/web/modules/auth/hooks/useRedirectToLoginIfUnauthenticated";
-import { useRedirectToOnboardingIfNeeded } from "@calcom/web/modules/auth/hooks/useRedirectToOnboardingIfNeeded";
+import { useFormbricks } from "@schedule/web/modules/formbricks/hooks/useFormbricks";
+import { useRedirectToLoginIfUnauthenticated } from "@schedule/web/modules/auth/hooks/useRedirectToLoginIfUnauthenticated";
+import { useRedirectToOnboardingIfNeeded } from "@schedule/web/modules/auth/hooks/useRedirectToOnboardingIfNeeded";
 
-import TimezoneChangeDialog from "@calcom/web/modules/settings/components/TimezoneChangeDialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { ErrorBoundary } from "@calcom/ui/components/errorBoundary";
-import { SkeletonText } from "@calcom/ui/components/skeleton";
+import TimezoneChangeDialog from "@schedule/web/modules/settings/components/TimezoneChangeDialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { ErrorBoundary } from "@schedule/ui/components/errorBoundary";
+import { SkeletonText } from "@schedule/ui/components/skeleton";
 
 import { DynamicModals } from "./DynamicModals";
 import { KBarContent, KBarRoot } from "./Kbar";

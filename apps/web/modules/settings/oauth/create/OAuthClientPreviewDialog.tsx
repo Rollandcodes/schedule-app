@@ -1,16 +1,16 @@
 "use client";
 
-import { useCopy } from "@calcom/lib/hooks/useCopy";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
+import { useCopy } from "@schedule/lib/hooks/useCopy";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
 
-import { Alert } from "@calcom/ui/components/alert";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter } from "@calcom/ui/components/dialog";
-import { showToast } from "@calcom/ui/components/toast";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import { Alert } from "@schedule/ui/components/alert";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter } from "@schedule/ui/components/dialog";
+import { showToast } from "@schedule/ui/components/toast";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 
 import type { OAuthClientDetails } from "../view/OAuthClientDetailsDialog";
 

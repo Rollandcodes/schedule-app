@@ -1,7 +1,7 @@
-import { PrismaBookingAttendeeRepository } from "@calcom/features/bookings/repositories/PrismaBookingAttendeeRepository";
-import { bindModuleToClassOnToken, createModule } from "@calcom/features/di/di";
-import { DI_TOKENS } from "@calcom/features/di/tokens";
-import { moduleLoader as prismaModuleLoader } from "@calcom/features/di/modules/Prisma";
+import { PrismaBookingAttendeeRepository } from "@schedule/features/bookings/repositories/PrismaBookingAttendeeRepository";
+import { bindModuleToClassOnToken, createModule } from "@schedule/features/di/di";
+import { DI_TOKENS } from "@schedule/features/di/tokens";
+import { moduleLoader as prismaModuleLoader } from "@schedule/features/di/modules/Prisma";
 
 export const bookingAttendeeRepositoryModule = createModule();
 const token = DI_TOKENS.BOOKING_ATTENDEE_REPOSITORY;

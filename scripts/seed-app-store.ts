@@ -5,11 +5,11 @@
 import dotEnv from "dotenv";
 import path from "node:path"
 
-import { appStoreMetadata } from "@calcom/app-store/appStoreMetaData";
-import { shouldEnableApp } from "@calcom/app-store/_utils/validateAppKeys";
-import prisma from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
-import { AppCategories } from "@calcom/prisma/enums";
+import { appStoreMetadata } from "@schedule/app-store/appStoreMetaData";
+import { shouldEnableApp } from "@schedule/app-store/_utils/validateAppKeys";
+import prisma from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
+import { AppCategories } from "@schedule/prisma/enums";
 
 dotEnv.config({ path: path.resolve(__dirname, "../.env") });
 dotEnv.config({ path: path.resolve(__dirname, "../.env.appStore") });

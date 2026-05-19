@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { throwIfNotHaveAdminAccessToTeam } from "@calcom/app-store/_utils/throwIfNotHaveAdminAccessToTeam";
-import { getServerErrorFromUnknown } from "@calcom/lib/server/getServerErrorFromUnknown";
-import prisma from "@calcom/prisma";
+import { throwIfNotHaveAdminAccessToTeam } from "@schedule/app-store/_utils/throwIfNotHaveAdminAccessToTeam";
+import { getServerErrorFromUnknown } from "@schedule/lib/server/getServerErrorFromUnknown";
+import prisma from "@schedule/prisma";
 
 import getInstalledAppPath from "../../_utils/getInstalledAppPath";
 

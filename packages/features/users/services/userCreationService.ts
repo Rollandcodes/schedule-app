@@ -1,11 +1,11 @@
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { sentrySpan } from "@calcom/features/watchlist/lib/telemetry";
-import { checkIfEmailIsBlockedInWatchlistController } from "@calcom/features/watchlist/operations/check-if-email-in-watchlist.controller";
-import { hashPassword } from "@calcom/lib/auth/hashPassword";
-import logger from "@calcom/lib/logger";
-import slugify from "@calcom/lib/slugify";
-import prisma from "@calcom/prisma";
-import type { CreationSource, UserPermissionRole, IdentityProvider } from "@calcom/prisma/enums";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { sentrySpan } from "@schedule/features/watchlist/lib/telemetry";
+import { checkIfEmailIsBlockedInWatchlistController } from "@schedule/features/watchlist/operations/check-if-email-in-watchlist.controller";
+import { hashPassword } from "@schedule/lib/auth/hashPassword";
+import logger from "@schedule/lib/logger";
+import slugify from "@schedule/lib/slugify";
+import prisma from "@schedule/prisma";
+import type { CreationSource, UserPermissionRole, IdentityProvider } from "@schedule/prisma/enums";
 
 interface CreateUserInput {
   email: string;

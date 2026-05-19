@@ -1,5 +1,5 @@
-import { prisma } from "@calcom/prisma";
-import { SMSLockState } from "@calcom/prisma/enums";
+import { prisma } from "@schedule/prisma";
+import { SMSLockState } from "@schedule/prisma/enums";
 import type { RateLimitHelper } from "./rateLimit";
 import { rateLimiter } from "./rateLimit";
 

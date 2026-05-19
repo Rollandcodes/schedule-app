@@ -1,4 +1,4 @@
-import { NoSlotsNotificationService } from "@calcom/features/slots/handleNotificationWhenNoSlots";
+import { NoSlotsNotificationService } from "@schedule/features/slots/handleNotificationWhenNoSlots";
 import { createModule } from "../di";
 import { DI_TOKENS } from "../tokens";
 

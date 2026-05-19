@@ -1,7 +1,7 @@
 import process from "node:process";
-import { RedisService } from "@calcom/features/redis/RedisService";
-import logger from "@calcom/lib/logger";
-import prisma from "@calcom/prisma";
+import { RedisService } from "@schedule/features/redis/RedisService";
+import logger from "@schedule/lib/logger";
+import prisma from "@schedule/prisma";
 import type { RatelimitResponse } from "@unkey/ratelimit";
 import { hashAPIKey } from "./apiKeys";
 

@@ -8,24 +8,24 @@ import {
   mockCalendarToHaveNoBusySlots,
   mockSuccessfulVideoMeetingCreation,
   TestData,
-} from "@calcom/testing/lib/bookingScenario/bookingScenario";
+} from "@schedule/testing/lib/bookingScenario/bookingScenario";
 import {
   expectBookingCreatedWebhookToHaveBeenFired,
   expectBookingToBeInDatabase,
   expectSuccessfulBookingCreationEmails,
   expectSuccessfulCalendarEventCreationInCalendar,
-} from "@calcom/testing/lib/bookingScenario/expects";
-import { getMockRequestDataForBooking } from "@calcom/testing/lib/bookingScenario/getMockRequestDataForBooking";
-import { setupAndTeardown } from "@calcom/testing/lib/bookingScenario/setupAndTeardown";
+} from "@schedule/testing/lib/bookingScenario/expects";
+import { getMockRequestDataForBooking } from "@schedule/testing/lib/bookingScenario/getMockRequestDataForBooking";
+import { setupAndTeardown } from "@schedule/testing/lib/bookingScenario/setupAndTeardown";
 
 import { v4 as uuidv4 } from "uuid";
 import { describe, expect } from "vitest";
 
-import { getRecurringBookingService } from "@calcom/features/bookings/di/RecurringBookingService.container";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import logger from "@calcom/lib/logger";
-import { BookingStatus } from "@calcom/prisma/enums";
-import { test } from "@calcom/testing/lib/fixtures/fixtures";
+import { getRecurringBookingService } from "@schedule/features/bookings/di/RecurringBookingService.container";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import logger from "@schedule/lib/logger";
+import { BookingStatus } from "@schedule/prisma/enums";
+import { test } from "@schedule/testing/lib/fixtures/fixtures";
 
 const DAY_IN_MS = 1000 * 60 * 60 * 24;
 

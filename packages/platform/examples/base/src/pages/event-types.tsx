@@ -1,17 +1,17 @@
 import { Navbar } from "@/components/Navbar";
 import { Inter } from "next/font/google";
-// eslint-disable-next-line @calcom/eslint/deprecated-imports-next-router
+// eslint-disable-next-line @schedule/eslint/deprecated-imports-next-router
 import { useRouter } from "next/router";
 import { useState, useRef, useCallback } from "react";
 
-import type { EventSettingsFromRef } from "@calcom/atoms";
+import type { EventSettingsFromRef } from "@schedule/atoms";
 import {
   useEventTypes,
   useTeamEventTypes,
   useTeams,
   EventTypeSettings,
   CreateEventType,
-} from "@calcom/atoms";
+} from "@schedule/atoms";
 
 const inter = Inter({ subsets: ["latin"] });
 

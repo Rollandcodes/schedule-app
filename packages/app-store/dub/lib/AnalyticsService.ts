@@ -1,9 +1,9 @@
 import { Dub } from "dub-package";
 
-import { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
-import logger from "@calcom/lib/logger";
-import type { AnalyticsService, SendEventProps } from "@calcom/types/AnalyticsService";
-import type { CredentialPayload } from "@calcom/types/Credential";
+import { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
+import logger from "@schedule/lib/logger";
+import type { AnalyticsService, SendEventProps } from "@schedule/types/AnalyticsService";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 import getAppKeysFromSlug from "../../_utils/getAppKeysFromSlug";
 import refreshOAuthTokens from "../../_utils/oauth/refreshOAuthTokens";

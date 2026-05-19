@@ -1,4 +1,4 @@
-import { SlotFormat } from "@calcom/platform-enums";
+import { SlotFormat } from "@schedule/platform-enums";
 import { ApiHideProperty, ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Transform } from "class-transformer";
 import {

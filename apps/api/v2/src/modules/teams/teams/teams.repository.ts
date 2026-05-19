@@ -1,5 +1,5 @@
-import { teamMetadataSchema } from "@calcom/platform-libraries";
-import type { Membership, Prisma } from "@calcom/prisma/client";
+import { teamMetadataSchema } from "@schedule/platform-libraries";
+import type { Membership, Prisma } from "@schedule/prisma/client";
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { PrismaReadService } from "@/modules/prisma/prisma-read.service";
 import { PrismaWriteService } from "@/modules/prisma/prisma-write.service";

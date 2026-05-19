@@ -3,18 +3,18 @@ import {
   type FilterableColumn,
   type FilterValue,
   ZFilterValue,
-} from "@calcom/features/data-table/lib/types";
+} from "@schedule/features/data-table/lib/types";
 import {
   isMultiSelectFilterValue,
   isNumberFilterValue,
   isSingleSelectFilterValue,
   isTextFilterValue,
-} from "@calcom/features/data-table/lib/utils";
-import type { FilterType } from "@calcom/types/data-table";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import type { IconName } from "@calcom/ui/components/icon";
-import { Popover, PopoverContent, PopoverTrigger } from "@calcom/ui/components/popover";
+} from "@schedule/features/data-table/lib/utils";
+import type { FilterType } from "@schedule/types/data-table";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import type { IconName } from "@schedule/ui/components/icon";
+import { Popover, PopoverContent, PopoverTrigger } from "@schedule/ui/components/popover";
 import startCase from "lodash/startCase";
 import { useFilterValue } from "~/data-table/hooks";
 import { FilterOptions } from "./FilterOptions";

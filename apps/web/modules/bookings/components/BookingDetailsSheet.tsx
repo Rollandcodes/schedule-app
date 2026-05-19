@@ -1,27 +1,27 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
-import { useBookingLocation } from "@calcom/features/bookings/hooks";
-import { shouldShowFieldInCustomResponses } from "@calcom/lib/bookings/SystemField";
-import { formatPrice } from "@calcom/lib/currencyConversions";
-import { formatToLocalizedTimezone } from "@calcom/lib/dayjs";
-import { getPlaceholderAvatar } from "@calcom/lib/defaultAvatarImage";
-import { getUserAvatarUrl } from "@calcom/lib/getAvatarUrl";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { getEveryFreqFor } from "@calcom/lib/recurringStrings";
-import { BookingStatus } from "@calcom/prisma/enums";
+import dayjs from "@schedule/dayjs";
+import { useBookingLocation } from "@schedule/features/bookings/hooks";
+import { shouldShowFieldInCustomResponses } from "@schedule/lib/bookings/SystemField";
+import { formatPrice } from "@schedule/lib/currencyConversions";
+import { formatToLocalizedTimezone } from "@schedule/lib/dayjs";
+import { getPlaceholderAvatar } from "@schedule/lib/defaultAvatarImage";
+import { getUserAvatarUrl } from "@schedule/lib/getAvatarUrl";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { getEveryFreqFor } from "@schedule/lib/recurringStrings";
+import { BookingStatus } from "@schedule/prisma/enums";
 import {
   bookingMetadataSchema,
   EventTypeMetaDataSchema,
   eventTypeBookingFields,
-} from "@calcom/prisma/zod-utils";
-import { trpc } from "@calcom/trpc/react";
-import type { RecurringEvent } from "@calcom/types/Calendar";
-import classNames from "@calcom/ui/classNames";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { SegmentedControl } from "@calcom/ui/components/segmented-control";
+} from "@schedule/prisma/zod-utils";
+import { trpc } from "@schedule/trpc/react";
+import type { RecurringEvent } from "@schedule/types/Calendar";
+import classNames from "@schedule/ui/classNames";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { SegmentedControl } from "@schedule/ui/components/segmented-control";
 import {
   Sheet,
   SheetBody,
@@ -29,8 +29,8 @@ import {
   SheetFooter,
   SheetHeader,
   SheetTitle,
-} from "@calcom/ui/components/sheet";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+} from "@schedule/ui/components/sheet";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import { ExternalLinkIcon, RepeatIcon } from "@coss/ui/icons";
 import assignmentReasonBadgeTitleMap from "@lib/booking/assignmentReasonBadgeTitleMap";
 import Link from "next/link";

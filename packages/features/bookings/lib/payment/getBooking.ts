@@ -1,19 +1,19 @@
 import process from "node:process";
-import { enrichUserWithDelegationCredentials } from "@calcom/app-store/delegationCredential";
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
+import { enrichUserWithDelegationCredentials } from "@schedule/app-store/delegationCredential";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
 import {
   type EventTypeBrandingData,
   getEventTypeService,
-} from "@calcom/features/eventtypes/di/EventTypeService.container";
-import { getTranslation } from "@calcom/i18n/server";
-import { HttpError as HttpCode } from "@calcom/lib/http-error";
-import { isPrismaObjOrUndefined } from "@calcom/lib/isPrismaObj";
-import { parseRecurringEvent } from "@calcom/lib/isRecurringEvent";
-import { getTimeFormatStringFromUserTimeFormat } from "@calcom/lib/timeFormat";
-import { bookingMinimalSelect, prisma } from "@calcom/prisma";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
-import { EventTypeMetaDataSchema } from "@calcom/prisma/zod-utils";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+} from "@schedule/features/eventtypes/di/EventTypeService.container";
+import { getTranslation } from "@schedule/i18n/server";
+import { HttpError as HttpCode } from "@schedule/lib/http-error";
+import { isPrismaObjOrUndefined } from "@schedule/lib/isPrismaObj";
+import { parseRecurringEvent } from "@schedule/lib/isRecurringEvent";
+import { getTimeFormatStringFromUserTimeFormat } from "@schedule/lib/timeFormat";
+import { bookingMinimalSelect, prisma } from "@schedule/prisma";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
+import { EventTypeMetaDataSchema } from "@schedule/prisma/zod-utils";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 const getBookerBaseUrl = async (_orgSlug?: string | number | null): Promise<string> =>
   process.env.NEXT_PUBLIC_WEBAPP_URL || "https://app.cal.com";

@@ -1,17 +1,17 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
-import { ColumnFilterType, ZDateRangeFilterValue } from "@calcom/features/data-table";
-import SettingsHeader from "@calcom/features/settings/appDir/SettingsHeader";
-import ServerTrans from "@calcom/lib/components/ServerTrans";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { EmptyScreen } from "@calcom/ui/components/empty-screen";
-import { SkeletonText } from "@calcom/ui/components/skeleton";
-import { showToast } from "@calcom/ui/components/toast";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import dayjs from "@schedule/dayjs";
+import { ColumnFilterType, ZDateRangeFilterValue } from "@schedule/features/data-table";
+import SettingsHeader from "@schedule/features/settings/appDir/SettingsHeader";
+import ServerTrans from "@schedule/lib/components/ServerTrans";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { EmptyScreen } from "@schedule/ui/components/empty-screen";
+import { SkeletonText } from "@schedule/ui/components/skeleton";
+import { showToast } from "@schedule/ui/components/toast";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import { ClockIcon } from "@coss/ui/icons";
 import { keepPreviousData } from "@tanstack/react-query";
 import {

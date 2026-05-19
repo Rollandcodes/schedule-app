@@ -4,11 +4,11 @@ import { useRouter } from "next/navigation";
 import { useMemo } from "react";
 
 import AdminAppsList from "~/apps/components/AdminAppsList";
-import { APP_NAME } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { inferSSRProps } from "@calcom/types/inferSSRProps";
-import { WizardForm } from "@calcom/ui/components/form";
-import type { WizardStep } from "@calcom/ui/components/form/wizard/WizardForm";
+import { APP_NAME } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { inferSSRProps } from "@schedule/types/inferSSRProps";
+import { WizardForm } from "@schedule/ui/components/form";
+import type { WizardStep } from "@schedule/ui/components/form/wizard/WizardForm";
 
 import { AdminUserContainer as AdminUser } from "@components/setup/AdminUser";
 

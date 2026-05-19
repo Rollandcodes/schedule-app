@@ -1,5 +1,5 @@
-import { prisma, type PrismaTransaction } from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
+import { prisma, type PrismaTransaction } from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
 
 const getOrgMemberOrTeamWhere = (memberId?: number | null, teamId?: number | null) => {
   const conditions: Prisma.TeamWhereInput[] = [];

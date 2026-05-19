@@ -1,9 +1,9 @@
 "use client";
 
-import useMediaQuery from "@calcom/lib/hooks/useMediaQuery";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { Popover, PopoverContent, PopoverTrigger } from "@calcom/ui/components/popover";
+import useMediaQuery from "@schedule/lib/hooks/useMediaQuery";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@schedule/ui/components/popover";
 import { useCallback, useMemo, useState } from "react";
 
 const MAX_VISIBLE_BADGES = 2;

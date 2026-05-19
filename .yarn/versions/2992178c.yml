@@ -1,6 +1,6 @@
 undecided:
-  - "@calcom/platform-constants"
-  - "@calcom/platform-enums"
-  - "@calcom/platform-types"
-  - "@calcom/platform-utils"
-  - "@calcom/prisma"
+  - "@schedule/platform-constants"
+  - "@schedule/platform-enums"
+  - "@schedule/platform-types"
+  - "@schedule/platform-utils"
+  - "@schedule/prisma"

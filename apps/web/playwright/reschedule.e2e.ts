@@ -1,9 +1,9 @@
 import { expect } from "@playwright/test";
 
-import dayjs from "@calcom/dayjs";
-import { prisma } from "@calcom/prisma";
-import { BookingStatus } from "@calcom/prisma/enums";
-import { bookingMetadataSchema } from "@calcom/prisma/zod-utils";
+import dayjs from "@schedule/dayjs";
+import { prisma } from "@schedule/prisma";
+import { BookingStatus } from "@schedule/prisma/enums";
+import { bookingMetadataSchema } from "@schedule/prisma/zod-utils";
 
 import { test } from "./lib/fixtures";
 import {

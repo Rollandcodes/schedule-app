@@ -1,6 +1,6 @@
-import { getWebhookFeature } from "@calcom/features/di/webhooks/containers/webhook";
-import type { Webhook } from "@calcom/features/webhooks/lib/dto/types";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+import { getWebhookFeature } from "@schedule/features/di/webhooks/containers/webhook";
+import type { Webhook } from "@schedule/features/webhooks/lib/dto/types";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 import type { TListInputSchema } from "./list.schema";
 
 type ListOptions = {

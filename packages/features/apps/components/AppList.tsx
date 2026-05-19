@@ -1,32 +1,32 @@
-import { AppSettings } from "@calcom/app-store/_components/AppSettings";
-import type { ConnectedApps } from "@calcom/app-store/_utils/getConnectedApps";
-import { InstallAppButton } from "@calcom/app-store/InstallAppButton";
-import { type EventLocationType, getLocationFromApp } from "@calcom/app-store/locations";
-import type { AppCardApp } from "@calcom/app-store/types";
-import type { UpdateUsersDefaultConferencingAppParams } from "@calcom/features/apps/components/AppSetDefaultLinkDialog";
-import { AppSetDefaultLinkDialog } from "@calcom/features/apps/components/AppSetDefaultLinkDialog";
+import { AppSettings } from "@schedule/app-store/_components/AppSettings";
+import type { ConnectedApps } from "@schedule/app-store/_utils/getConnectedApps";
+import { InstallAppButton } from "@schedule/app-store/InstallAppButton";
+import { type EventLocationType, getLocationFromApp } from "@schedule/app-store/locations";
+import type { AppCardApp } from "@schedule/app-store/types";
+import type { UpdateUsersDefaultConferencingAppParams } from "@schedule/features/apps/components/AppSetDefaultLinkDialog";
+import { AppSetDefaultLinkDialog } from "@schedule/features/apps/components/AppSetDefaultLinkDialog";
 import type {
   BulkUpdatParams,
   EventTypes,
-} from "@calcom/features/eventtypes/components/BulkEditDefaultForEventsModal";
-import { BulkEditDefaultForEventsModal } from "@calcom/features/eventtypes/components/BulkEditDefaultForEventsModal";
-import { isDelegationCredential } from "@calcom/lib/delegationCredential";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { AppCategories } from "@calcom/prisma/enums";
-import type { DefaultConferencingApp } from "@calcom/prisma/zod-utils";
-import type { App } from "@calcom/types/App";
-import { Alert } from "@calcom/ui/components/alert";
-import type { AppListCardProps } from "@calcom/ui/components/app-list-card";
-import { Button } from "@calcom/ui/components/button";
+} from "@schedule/features/eventtypes/components/BulkEditDefaultForEventsModal";
+import { BulkEditDefaultForEventsModal } from "@schedule/features/eventtypes/components/BulkEditDefaultForEventsModal";
+import { isDelegationCredential } from "@schedule/lib/delegationCredential";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { AppCategories } from "@schedule/prisma/enums";
+import type { DefaultConferencingApp } from "@schedule/prisma/zod-utils";
+import type { App } from "@schedule/types/App";
+import { Alert } from "@schedule/ui/components/alert";
+import type { AppListCardProps } from "@schedule/ui/components/app-list-card";
+import { Button } from "@schedule/ui/components/button";
 import {
   Dropdown,
   DropdownItem,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@calcom/ui/components/dropdown";
-import { List } from "@calcom/ui/components/list";
-import { showToast } from "@calcom/ui/components/toast";
+} from "@schedule/ui/components/dropdown";
+import { List } from "@schedule/ui/components/list";
+import { showToast } from "@schedule/ui/components/toast";
 import type { ComponentType, ReactNode } from "react";
 import { useCallback, useState } from "react";
 

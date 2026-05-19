@@ -1,5 +1,5 @@
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { randomString } from "@calcom/lib/random";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { randomString } from "@schedule/lib/random";
 import type { Page } from "@playwright/test";
 import { expect } from "@playwright/test";
 

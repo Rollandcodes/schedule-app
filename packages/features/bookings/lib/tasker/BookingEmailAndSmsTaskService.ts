@@ -1,14 +1,14 @@
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import dayjs from "@calcom/dayjs";
-import type { BookingEmailSmsHandler } from "@calcom/features/bookings/lib/BookingEmailSmsHandler";
-import { getOriginalRescheduledBooking } from "@calcom/features/bookings/lib/handleNewBooking/originalRescheduledBookingUtils";
-import type { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import { CalendarEventBuilder } from "@calcom/features/CalendarEventBuilder";
-import type { EventNameObjectType } from "@calcom/features/eventtypes/lib/eventNaming";
-import type { ITaskerDependencies } from "@calcom/lib/tasker/types";
-import { SchedulingType } from "@calcom/prisma/enums";
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { JsonObject } from "@calcom/types/Json";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import dayjs from "@schedule/dayjs";
+import type { BookingEmailSmsHandler } from "@schedule/features/bookings/lib/BookingEmailSmsHandler";
+import { getOriginalRescheduledBooking } from "@schedule/features/bookings/lib/handleNewBooking/originalRescheduledBookingUtils";
+import type { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import { CalendarEventBuilder } from "@schedule/features/CalendarEventBuilder";
+import type { EventNameObjectType } from "@schedule/features/eventtypes/lib/eventNaming";
+import type { ITaskerDependencies } from "@schedule/lib/tasker/types";
+import { SchedulingType } from "@schedule/prisma/enums";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { JsonObject } from "@schedule/types/Json";
 import type { BookingEmailAndSmsAsyncTasksPayload, BookingTasks } from "./types";
 
 export interface IBookingTaskServiceDependencies {

@@ -1,5 +1,5 @@
 {
-  "name": "@calcom/base",
+  "name": "@schedule/base",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,8 @@
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
-    "@calcom/atoms": "workspace:*",
     "@prisma/client": "6.16.1",
+    "@schedule/atoms": "workspace:*",
     "next": "16.2.3",
     "prisma": "6.16.1",
     "react": "18.2.0",

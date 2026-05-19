@@ -1,5 +1,5 @@
 {
-  "extends": "@calcom/tsconfig/base.json",
+  "extends": "@schedule/tsconfig/base.json",
   "compilerOptions": {
     "jsx": "react",
     "target": "ES2015",
@@ -8,10 +8,20 @@
     "declaration": true,
     "outDir": "dist",
     "paths": {
-      "@calcom/embed-core": ["../embed-core/src"],
-      "@calcom/embed-react": ["../embed-react/src"]
+      "@schedule/embed-core": [
+        "../embed-core/src"
+      ],
+      "@schedule/embed-react": [
+        "../embed-react/src"
+      ]
     }
   },
-  "include": ["."],
-  "exclude": ["dist", "build", "**/node_modules/**"]
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "**/node_modules/**"
+  ]
 }

@@ -1,19 +1,19 @@
-import { sendScheduledEmailsAndSMS } from "@calcom/emails/email-manager";
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
-import { scheduleNoShowTriggers } from "@calcom/features/bookings/lib/handleNewBooking/scheduleNoShowTriggers";
+import { sendScheduledEmailsAndSMS } from "@schedule/emails/email-manager";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
+import { scheduleNoShowTriggers } from "@schedule/features/bookings/lib/handleNewBooking/scheduleNoShowTriggers";
 import {
   type EventTypeBrandingData,
   getEventTypeService,
-} from "@calcom/features/eventtypes/di/EventTypeService.container";
-import { getTranslation } from "@calcom/i18n/server";
-import { isPrismaObjOrUndefined } from "@calcom/lib/isPrismaObj";
-import logger from "@calcom/lib/logger";
-import { getTimeFormatStringFromUserTimeFormat } from "@calcom/lib/timeFormat";
-import { prisma } from "@calcom/prisma";
-import { BookingStatus } from "@calcom/prisma/enums";
-import { bookingMetadataSchema, EventTypeMetaDataSchema } from "@calcom/prisma/zod-utils";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+} from "@schedule/features/eventtypes/di/EventTypeService.container";
+import { getTranslation } from "@schedule/i18n/server";
+import { isPrismaObjOrUndefined } from "@schedule/lib/isPrismaObj";
+import logger from "@schedule/lib/logger";
+import { getTimeFormatStringFromUserTimeFormat } from "@schedule/lib/timeFormat";
+import { prisma } from "@schedule/prisma";
+import { BookingStatus } from "@schedule/prisma/enums";
+import { bookingMetadataSchema, EventTypeMetaDataSchema } from "@schedule/prisma/zod-utils";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 import { TRPCError } from "@trpc/server";
 import type { TConnectAndJoinInputSchema } from "./connectAndJoin.schema";
 

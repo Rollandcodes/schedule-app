@@ -1,5 +1,5 @@
-import { MembershipRepository } from "@calcom/features/membership/repositories/MembershipRepository";
-import { MembershipRole } from "@calcom/prisma/enums";
+import { MembershipRepository } from "@schedule/features/membership/repositories/MembershipRepository";
+import { MembershipRole } from "@schedule/prisma/enums";
 
 export type MembershipCheckResult = {
   isMember: boolean;

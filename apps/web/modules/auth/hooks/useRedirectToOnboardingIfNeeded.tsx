@@ -3,10 +3,10 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-import dayjs from "@calcom/dayjs";
-import { useFlagMap } from "@calcom/features/flags/context/provider";
-import type { User } from "@calcom/prisma/client";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
+import dayjs from "@schedule/dayjs";
+import { useFlagMap } from "@schedule/features/flags/context/provider";
+import type { User } from "@schedule/prisma/client";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
 
 const shouldShowOnboarding = (
   user: Pick<User, "createdDate" | "completedOnboarding"> & {

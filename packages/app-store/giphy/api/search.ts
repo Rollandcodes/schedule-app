@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { z, ZodError } from "zod";
 
-import { getServerErrorFromUnknown } from "@calcom/lib/server/getServerErrorFromUnknown";
-import prisma from "@calcom/prisma";
+import { getServerErrorFromUnknown } from "@schedule/lib/server/getServerErrorFromUnknown";
+import prisma from "@schedule/prisma";
 
 import { GiphyManager } from "../lib";
 

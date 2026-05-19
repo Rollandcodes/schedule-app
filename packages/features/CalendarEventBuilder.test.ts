@@ -1,16 +1,16 @@
-import dayjs from "@calcom/dayjs";
-import type { BookingForCalEventBuilder } from "@calcom/features/CalendarEventBuilder";
-import { CalendarEventBuilder } from "@calcom/features/CalendarEventBuilder";
-import { TimeFormat } from "@calcom/lib/timeFormat";
-import type { CalendarEvent, Person } from "@calcom/types/Calendar";
+import dayjs from "@schedule/dayjs";
+import type { BookingForCalEventBuilder } from "@schedule/features/CalendarEventBuilder";
+import { CalendarEventBuilder } from "@schedule/features/CalendarEventBuilder";
+import { TimeFormat } from "@schedule/lib/timeFormat";
+import type { CalendarEvent, Person } from "@schedule/types/Calendar";
 import type { TFunction } from "i18next";
 import { describe, expect, it, vi } from "vitest";
 
-vi.mock("@calcom/i18n/server", () => ({
+vi.mock("@schedule/i18n/server", () => ({
   getTranslation: vi.fn(async () => vi.fn(() => "translated")),
 }));
 
-vi.mock("@calcom/features/bookings/lib/getCalEventResponses", () => ({
+vi.mock("@schedule/features/bookings/lib/getCalEventResponses", () => ({
   getCalEventResponses: vi.fn(() => ({
     responses: {
       name: { label: "your_name", value: "Test User", isHidden: false },
@@ -20,7 +20,7 @@ vi.mock("@calcom/features/bookings/lib/getCalEventResponses", () => ({
   })),
 }));
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: {},
   prisma: {},
 }));

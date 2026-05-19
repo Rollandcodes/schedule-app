@@ -1,20 +1,20 @@
 import process from "node:process";
-import type { LocationObject } from "@calcom/app-store/locations";
-import { privacyFilteredLocations } from "@calcom/app-store/locations";
-import { getAppFromSlug } from "@calcom/app-store/utils";
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import dayjs from "@calcom/dayjs";
-import { getBookingFieldsWithSystemFields } from "@calcom/features/bookings/lib/getBookingFields";
-import { getDefaultEvent, getUsernameList } from "@calcom/features/eventtypes/lib/defaultEvents";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { getOrgOrTeamAvatar, getPlaceholderAvatar } from "@calcom/lib/defaultAvatarImage";
-import { getUserAvatarUrl } from "@calcom/lib/getAvatarUrl";
-import { isRecurringEvent, parseRecurringEvent } from "@calcom/lib/isRecurringEvent";
-import { markdownToSafeHTML } from "@calcom/lib/markdownToSafeHTML";
-import type { PrismaClient } from "@calcom/prisma";
-import type { Prisma, Team, User as UserType } from "@calcom/prisma/client";
-import { MembershipRole } from "@calcom/prisma/enums";
-import type { BookerLayoutSettings } from "@calcom/prisma/zod-utils";
+import type { LocationObject } from "@schedule/app-store/locations";
+import { privacyFilteredLocations } from "@schedule/app-store/locations";
+import { getAppFromSlug } from "@schedule/app-store/utils";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import dayjs from "@schedule/dayjs";
+import { getBookingFieldsWithSystemFields } from "@schedule/features/bookings/lib/getBookingFields";
+import { getDefaultEvent, getUsernameList } from "@schedule/features/eventtypes/lib/defaultEvents";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { getOrgOrTeamAvatar, getPlaceholderAvatar } from "@schedule/lib/defaultAvatarImage";
+import { getUserAvatarUrl } from "@schedule/lib/getAvatarUrl";
+import { isRecurringEvent, parseRecurringEvent } from "@schedule/lib/isRecurringEvent";
+import { markdownToSafeHTML } from "@schedule/lib/markdownToSafeHTML";
+import type { PrismaClient } from "@schedule/prisma";
+import type { Prisma, Team, User as UserType } from "@schedule/prisma/client";
+import { MembershipRole } from "@schedule/prisma/enums";
+import type { BookerLayoutSettings } from "@schedule/prisma/zod-utils";
 import {
   BookerLayouts,
   bookerLayoutOptions,
@@ -22,8 +22,8 @@ import {
   customInputSchema,
   teamMetadataSchema,
   userMetadata as userMetadataSchema,
-} from "@calcom/prisma/zod-utils";
-import type { UserProfile } from "@calcom/types/UserProfile";
+} from "@schedule/prisma/zod-utils";
+import type { UserProfile } from "@schedule/types/UserProfile";
 
 class PermissionCheckService {
   constructor(_prisma?: unknown) {}

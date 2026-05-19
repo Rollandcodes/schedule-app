@@ -1,17 +1,17 @@
 import axios from "axios";
 import qs from "qs";
 
-import { getLocation } from "@calcom/lib/CalEventParser";
-import logger from "@calcom/lib/logger";
-import prisma from "@calcom/prisma";
+import { getLocation } from "@schedule/lib/CalEventParser";
+import logger from "@schedule/lib/logger";
+import prisma from "@schedule/prisma";
 import type {
   CalendarEvent,
   EventBusyDate,
   IntegrationCalendar,
   NewCalendarEventType,
-} from "@calcom/types/Calendar";
-import type { CredentialPayload } from "@calcom/types/Credential";
-import type { Contact, ContactCreateInput, CRM } from "@calcom/types/CrmService";
+} from "@schedule/types/Calendar";
+import type { CredentialPayload } from "@schedule/types/Credential";
+import type { Contact, ContactCreateInput, CRM } from "@schedule/types/CrmService";
 
 import getAppKeysFromSlug from "../../_utils/getAppKeysFromSlug";
 import refreshOAuthTokens from "../../_utils/oauth/refreshOAuthTokens";

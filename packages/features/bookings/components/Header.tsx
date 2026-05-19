@@ -1,23 +1,23 @@
 import { useCallback, useMemo } from "react";
 import { shallow } from "zustand/shallow";
 
-import { useIsPlatform } from "@calcom/atoms/hooks/useIsPlatform";
-import dayjs from "@calcom/dayjs";
-import { useIsEmbed } from "@calcom/embed-core/embed-iframe";
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { useInitializeWeekStart } from "@calcom/features/bookings/hooks/useInitializeWeekStart";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { formatDateTime } from "@calcom/lib/dateTimeFormatter";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { BookerLayouts } from "@calcom/prisma/zod-utils";
-import { Button } from "@calcom/ui/components/button";
-import { ButtonGroup } from "@calcom/ui/components/buttonGroup";
-import { ToggleGroup } from "@calcom/ui/components/form";
+import { useIsPlatform } from "@schedule/atoms/hooks/useIsPlatform";
+import dayjs from "@schedule/dayjs";
+import { useIsEmbed } from "@schedule/embed-core/embed-iframe";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { useInitializeWeekStart } from "@schedule/features/bookings/hooks/useInitializeWeekStart";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { formatDateTime } from "@schedule/lib/dateTimeFormatter";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { BookerLayouts } from "@schedule/prisma/zod-utils";
+import { Button } from "@schedule/ui/components/button";
+import { ButtonGroup } from "@schedule/ui/components/buttonGroup";
+import { ToggleGroup } from "@schedule/ui/components/form";
 import { CalendarIcon, Columns3Icon, Grid3x3Icon } from "@coss/ui/icons";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 
-import { TimeFormatToggle } from "@calcom/features/bookings/components/TimeFormatToggle";
-import type { BookerLayout } from "@calcom/features/bookings/Booker/types";
+import { TimeFormatToggle } from "@schedule/features/bookings/components/TimeFormatToggle";
+import type { BookerLayout } from "@schedule/features/bookings/Booker/types";
 
 export function Header({
   extraDays,

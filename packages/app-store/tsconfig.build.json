@@ -1,5 +1,5 @@
 {
-  "extends": "@calcom/tsconfig/react-library.json",
+  "extends": "@schedule/tsconfig/react-library.json",
   "compilerOptions": {
     "composite": true,
     "declaration": true,
@@ -8,9 +8,15 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["../../apps/web/components/*"],
-      "@lib/*": ["../../apps/web/lib/*"],
-      "@prisma/client/*": ["@calcom/prisma/client/*"]
+      "@components/*": [
+        "../../apps/web/components/*"
+      ],
+      "@lib/*": [
+        "../../apps/web/lib/*"
+      ],
+      "@prisma/client/*": [
+        "@schedule/prisma/client/*"
+      ]
     },
     "resolveJsonModule": true,
     "experimentalDecorators": true

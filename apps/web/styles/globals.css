@@ -4,6 +4,30 @@
 @import "../../../packages/coss-ui/src/styles/globals.css";
 @import "./raqb.css";
 
+:root {
+  --brand-primary: #0a0a0a;
+  --brand-accent: #2563eb;
+  --brand-accent-hover: #1d4ed8;
+  --brand-surface: #f8f8f8;
+  --brand-border: #e5e5e5;
+  --brand-text: #0a0a0a;
+  --brand-text-muted: #6b7280;
+  --brand-radius: 8px;
+  --brand-font-display: 'Georgia', 'Times New Roman', serif;
+  --brand-font-body: 'system-ui', sans-serif;
+
+  /* Backwards compatibility aliases for legacy variables */
+  --cal-brand: var(--brand-primary);
+  --cal-brand-text: var(--brand-text);
+  --brand-color: var(--brand-accent);
+}
+
+.document-body-base {
+  margin: 0;
+  padding: 0;
+  font-family: var(--brand-font-body);
+}
+
 ::-moz-selection {
   color: var(--cal-brand-text);
   background: var(--cal-brand);
@@ -23,6 +47,8 @@ body {
   Desktop App specific CSS
     https://docs.todesktop.com/
 */
+
+/* The following rules help desktop-app drag regions; keep together for clarity */
 
 html.todesktop-platform-win32 .todesktop\:\!bg-transparent {
   background: inherit !important;
@@ -86,8 +112,8 @@ html.todesktop.dark {
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+      display: none;
+    }
 
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */

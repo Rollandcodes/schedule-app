@@ -1,5 +1,5 @@
-import type { EventPayloadType, EventTypeInfo } from "@calcom/features/webhooks/lib/sendPayload";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import type { EventPayloadType, EventTypeInfo } from "@schedule/features/webhooks/lib/sendPayload";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 export const getWebhookPayloadForBooking = ({
   booking,

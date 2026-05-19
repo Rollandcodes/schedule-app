@@ -1,8 +1,8 @@
-import { BookingLimitsEnum_2024_06_14 } from "@calcom/platform-enums";
+import { BookingLimitsEnum_2024_06_14 } from "@schedule/platform-enums";
 import type {
   BookingLimitsKeysInputType,
   TransformBookingLimitsSchema_2024_06_14,
-} from "@calcom/platform-types";
+} from "@schedule/platform-types";
 
 export function transformIntervalLimitsInternalToApi(
   transformedBookingFields: TransformBookingLimitsSchema_2024_06_14 | null

@@ -1,7 +1,7 @@
 import type { Container } from "@evyweb/ioctopus";
 
-import { WATCHLIST_DI_TOKENS } from "@calcom/features/di/watchlist/Watchlist.tokens";
-import logger from "@calcom/lib/logger";
+import { WATCHLIST_DI_TOKENS } from "@schedule/features/di/watchlist/Watchlist.tokens";
+import logger from "@schedule/lib/logger";
 
 import type { IAuditRepository } from "../interface/IAuditRepository";
 import type {

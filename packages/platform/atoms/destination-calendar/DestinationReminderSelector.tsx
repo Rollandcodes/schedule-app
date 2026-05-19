@@ -1,8 +1,8 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { ReminderMinutes } from "@calcom/trpc/server/routers/viewer/calendars/setDestinationReminder.schema";
-import { Select } from "@calcom/ui/components/form";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { ReminderMinutes } from "@schedule/trpc/server/routers/viewer/calendars/setDestinationReminder.schema";
+import { Select } from "@schedule/ui/components/form";
 
 const REMINDER_OPTIONS: Array<{ value: ReminderMinutes; label: string }> = [
   { value: null, label: "use_default_reminders" },

@@ -1,8 +1,8 @@
-import type { PrismaBookingReportRepository } from "@calcom/features/bookingReport/repositories/PrismaBookingReportRepository";
-import type { WatchlistEntry } from "@calcom/features/watchlist/lib/repository/IWatchlistRepository";
-import type { WatchlistRepository } from "@calcom/features/watchlist/lib/repository/WatchlistRepository";
-import { domainRegex, emailRegex } from "@calcom/lib/emailSchema";
-import { WatchlistAction, WatchlistType } from "@calcom/prisma/enums";
+import type { PrismaBookingReportRepository } from "@schedule/features/bookingReport/repositories/PrismaBookingReportRepository";
+import type { WatchlistEntry } from "@schedule/features/watchlist/lib/repository/IWatchlistRepository";
+import type { WatchlistRepository } from "@schedule/features/watchlist/lib/repository/WatchlistRepository";
+import { domainRegex, emailRegex } from "@schedule/lib/emailSchema";
+import { WatchlistAction, WatchlistType } from "@schedule/prisma/enums";
 
 import { WatchlistErrors } from "../errors/WatchlistErrors";
 

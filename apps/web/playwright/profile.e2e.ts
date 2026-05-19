@@ -1,5 +1,5 @@
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import type { PrismaClient } from "@calcom/prisma";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import type { PrismaClient } from "@schedule/prisma";
 import type { Page } from "@playwright/test";
 import { expect } from "@playwright/test";
 import { JSDOM } from "jsdom";

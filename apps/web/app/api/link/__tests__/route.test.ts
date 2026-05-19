@@ -1,4 +1,4 @@
-import { confirmHandler } from "@calcom/trpc/server/routers/viewer/bookings/confirm.handler";
+import { confirmHandler } from "@schedule/trpc/server/routers/viewer/bookings/confirm.handler";
 import type { NextRequest } from "next/server";
 import type { Mock } from "vitest";
 import { beforeEach, describe, expect, it, vi } from "vitest";
@@ -31,7 +31,7 @@ vi.mock("next/server", () => ({
   },
 }));
 
-vi.mock("@calcom/lib/crypto", () => ({
+vi.mock("@schedule/lib/crypto", () => ({
   symmetricDecrypt: vi.fn().mockReturnValue(
     JSON.stringify({
       bookingUid: "test-booking-uid",
@@ -40,7 +40,7 @@ vi.mock("@calcom/lib/crypto", () => ({
   ),
 }));
 
-vi.mock("@calcom/prisma", () => {
+vi.mock("@schedule/prisma", () => {
   const mockBookingFindUniqueOrThrow = vi.fn().mockResolvedValue({
     id: 1,
     uid: "test-booking-uid",
@@ -68,21 +68,21 @@ vi.mock("@calcom/prisma", () => {
   };
 });
 
-vi.mock("@calcom/trpc/server/routers/viewer/bookings/confirm.handler", () => ({
+vi.mock("@schedule/trpc/server/routers/viewer/bookings/confirm.handler", () => ({
   confirmHandler: vi.fn(),
 }));
 
-vi.mock("@calcom/lib/tracing/factory", () => ({
+vi.mock("@schedule/lib/tracing/factory", () => ({
   distributedTracing: {
     createTrace: vi.fn().mockReturnValue({}),
   },
 }));
 
-vi.mock("@calcom/features/booking-audit/lib/makeActor", () => ({
+vi.mock("@schedule/features/booking-audit/lib/makeActor", () => ({
   makeUserActor: vi.fn().mockReturnValue({ type: "user", id: "test-uuid" }),
 }));
 
-import prisma from "@calcom/prisma";
+import prisma from "@schedule/prisma";
 // Import after mocks are set up
 import { GET } from "../route";
 

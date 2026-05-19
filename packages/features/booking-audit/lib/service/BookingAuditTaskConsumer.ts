@@ -1,10 +1,10 @@
-import type { IAttendeeRepository } from "@calcom/features/bookings/repositories/IAttendeeRepository";
-import type { IFeaturesRepository } from "@calcom/features/flags/features.repository.interface";
-import { Task } from "@calcom/features/tasker/repository";
-import type { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import type { JsonValue } from "@calcom/types/Json";
+import type { IAttendeeRepository } from "@schedule/features/bookings/repositories/IAttendeeRepository";
+import type { IFeaturesRepository } from "@schedule/features/flags/features.repository.interface";
+import { Task } from "@schedule/features/tasker/repository";
+import type { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import type { JsonValue } from "@schedule/types/Json";
 import type { BookingAuditContext, PiiFreeActor } from "../dto/types";
 import type { IAuditActorRepository } from "../repository/IAuditActorRepository";
 import type {

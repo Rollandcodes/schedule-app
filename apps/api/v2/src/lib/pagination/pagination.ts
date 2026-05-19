@@ -1,4 +1,4 @@
-import { PaginationMetaDto } from "@calcom/platform-types";
+import { PaginationMetaDto } from "@schedule/platform-types";
 
 type Pagination = {
   skip: number;

@@ -1,4 +1,4 @@
-import logger from "@calcom/lib/logger";
+import logger from "@schedule/lib/logger";
 import { metrics } from "@sentry/nextjs";
 import type {
   Calendar,
@@ -9,7 +9,7 @@ import type {
   GetAvailabilityParams,
   IntegrationCalendar,
   NewCalendarEventType,
-} from "@calcom/types/Calendar";
+} from "@schedule/types/Calendar";
 
 const log = logger.getSubLogger({ prefix: ["CalendarTelemetryWrapper"] });
 

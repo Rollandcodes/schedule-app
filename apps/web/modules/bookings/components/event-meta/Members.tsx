@@ -1,11 +1,11 @@
-import { useIsPlatform } from "@calcom/atoms/hooks/useIsPlatform";
-import { useIsEmbed } from "@calcom/embed-core/embed-iframe";
-import { useBookerStore } from "@calcom/features/bookings/Booker/store";
-import type { BookerEvent } from "@calcom/features/bookings/types";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { getUserAvatarUrl } from "@calcom/lib/getAvatarUrl";
-import { SchedulingType } from "@calcom/prisma/enums";
-import { AvatarGroup } from "@calcom/ui/components/avatar";
+import { useIsPlatform } from "@schedule/atoms/hooks/useIsPlatform";
+import { useIsEmbed } from "@schedule/embed-core/embed-iframe";
+import { useBookerStore } from "@schedule/features/bookings/Booker/store";
+import type { BookerEvent } from "@schedule/features/bookings/types";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { getUserAvatarUrl } from "@schedule/lib/getAvatarUrl";
+import { SchedulingType } from "@schedule/prisma/enums";
+import { AvatarGroup } from "@schedule/ui/components/avatar";
 
 export interface EventMembersProps {
   /**

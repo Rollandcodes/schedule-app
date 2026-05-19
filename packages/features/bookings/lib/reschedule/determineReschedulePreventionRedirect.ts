@@ -1,10 +1,10 @@
 import { URLSearchParams } from "node:url";
 
-import { getFullName } from "@calcom/features/form-builder/utils";
-import { ENV_PAST_BOOKING_RESCHEDULE_CHANGE_TEAM_IDS } from "@calcom/lib/constants";
-import { getSafe } from "@calcom/lib/getSafe";
-import { BookingStatus } from "@calcom/prisma/enums";
-import type { JsonValue } from "@calcom/types/Json";
+import { getFullName } from "@schedule/features/form-builder/utils";
+import { ENV_PAST_BOOKING_RESCHEDULE_CHANGE_TEAM_IDS } from "@schedule/lib/constants";
+import { getSafe } from "@schedule/lib/getSafe";
+import { BookingStatus } from "@schedule/prisma/enums";
+import type { JsonValue } from "@schedule/types/Json";
 
 import { isWithinMinimumRescheduleNotice } from "./isWithinMinimumRescheduleNotice";
 

@@ -1,22 +1,22 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
+import dayjs from "@schedule/dayjs";
 import {
   RECORDING_DEFAULT_ICON,
   TRANSCRIPTION_STOPPED_ICON,
   WEBAPP_URL,
   WEBSITE_URL,
-} from "@calcom/lib/constants";
-import { formatToLocalizedDate, formatToLocalizedTime } from "@calcom/lib/dayjs";
-import { emailRegex } from "@calcom/lib/emailSchema";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { markdownToSafeHTML } from "@calcom/lib/markdownToSafeHTML";
-import type { inferSSRProps } from "@calcom/types/inferSSRProps";
-import classNames from "@calcom/ui/classNames";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { Dialog, DialogContent } from "@calcom/ui/components/dialog";
-import { Input } from "@calcom/ui/components/form";
+} from "@schedule/lib/constants";
+import { formatToLocalizedDate, formatToLocalizedTime } from "@schedule/lib/dayjs";
+import { emailRegex } from "@schedule/lib/emailSchema";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { markdownToSafeHTML } from "@schedule/lib/markdownToSafeHTML";
+import type { inferSSRProps } from "@schedule/types/inferSSRProps";
+import classNames from "@schedule/ui/classNames";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { Dialog, DialogContent } from "@schedule/ui/components/dialog";
+import { Input } from "@schedule/ui/components/form";
 import { CalendarDaysIcon, ChevronRightIcon } from "@coss/ui/icons";
 import type { DailyCall } from "@daily-co/daily-js";
 import DailyIframe from "@daily-co/daily-js";

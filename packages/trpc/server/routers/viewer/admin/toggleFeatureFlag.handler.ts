@@ -1,5 +1,5 @@
-import { getFeatureRepository } from "@calcom/features/di/containers/FeatureRepository";
-import type { FeatureId } from "@calcom/features/flags/config";
+import { getFeatureRepository } from "@schedule/features/di/containers/FeatureRepository";
+import type { FeatureId } from "@schedule/features/flags/config";
 
 import type { TAdminToggleFeatureFlagSchema } from "./toggleFeatureFlag.schema";
 

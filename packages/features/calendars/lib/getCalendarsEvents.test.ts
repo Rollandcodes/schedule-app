@@ -1,19 +1,19 @@
-import "@calcom/testing/lib/__mocks__/prisma";
+import "@schedule/testing/lib/__mocks__/prisma";
 
 import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 
-import { symmetricDecrypt } from "@calcom/lib/crypto";
-import logger from "@calcom/lib/logger";
-import type { SelectedCalendar } from "@calcom/prisma/client";
-import type { EventBusyDate } from "@calcom/types/Calendar";
-import type { CredentialForCalendarService, CredentialPayload } from "@calcom/types/Credential";
+import { symmetricDecrypt } from "@schedule/lib/crypto";
+import logger from "@schedule/lib/logger";
+import type { SelectedCalendar } from "@schedule/prisma/client";
+import type { EventBusyDate } from "@schedule/types/Calendar";
+import type { CredentialForCalendarService, CredentialPayload } from "@schedule/types/Credential";
 
 import getCalendarsEvents, {
   getCalendarsEventsWithTimezones,
   filterSelectedCalendarsForCredential,
 } from "./getCalendarsEvents";
 
-vi.mock("@calcom/lib/crypto", () => ({
+vi.mock("@schedule/lib/crypto", () => ({
   symmetricDecrypt: vi.fn(),
 }));
 
@@ -24,7 +24,7 @@ const mockGoogleGetAvailabilityWithTimeZones = vi.fn().mockResolvedValue([]);
 const mockOfficeGetAvailability = vi.fn().mockResolvedValue([]);
 const mockOfficeGetAvailabilityWithTimeZones = vi.fn().mockResolvedValue([]);
 
-vi.mock("@calcom/app-store/calendar.services.generated", () => {
+vi.mock("@schedule/app-store/calendar.services.generated", () => {
   return {
     CalendarServiceMap: {
       googlecalendar: Promise.resolve({

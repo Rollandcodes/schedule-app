@@ -1,10 +1,10 @@
 import { expect } from "@playwright/test";
 import { createHash, randomBytes } from "node:crypto";
 
-import { OAUTH_ERROR_REASONS } from "@calcom/features/oauth/services/OAuthService";
-import { generateSecret } from "@calcom/features/oauth/utils/generateSecret";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { prisma } from "@calcom/prisma";
+import { OAUTH_ERROR_REASONS } from "@schedule/features/oauth/services/OAuthService";
+import { generateSecret } from "@schedule/features/oauth/utils/generateSecret";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { prisma } from "@schedule/prisma";
 
 import { test } from "./lib/fixtures";
 

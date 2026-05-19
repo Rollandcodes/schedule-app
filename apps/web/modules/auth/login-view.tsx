@@ -1,14 +1,14 @@
 "use client";
 
-import { ErrorCode } from "@calcom/features/auth/lib/ErrorCode";
-import { HOSTED_CAL_FEATURES, WEBAPP_URL, WEBSITE_URL } from "@calcom/lib/constants";
-import { emailRegex } from "@calcom/lib/emailSchema";
-import { getSafeRedirectUrl } from "@calcom/lib/getSafeRedirectUrl";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Alert } from "@calcom/ui/components/alert";
-import { Icon } from "@calcom/ui/components/icon";
-import { LastUsed, useLastUsed } from "@calcom/web/modules/auth/hooks/useLastUsed";
+import { ErrorCode } from "@schedule/features/auth/lib/ErrorCode";
+import { HOSTED_CAL_FEATURES, WEBAPP_URL, WEBSITE_URL } from "@schedule/lib/constants";
+import { emailRegex } from "@schedule/lib/emailSchema";
+import { getSafeRedirectUrl } from "@schedule/lib/getSafeRedirectUrl";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Alert } from "@schedule/ui/components/alert";
+import { Icon } from "@schedule/ui/components/icon";
+import { LastUsed, useLastUsed } from "@schedule/web/modules/auth/hooks/useLastUsed";
 import AddToHomescreen from "@components/AddToHomescreen";
 import BackupCode from "@components/auth/BackupCode";
 import TwoFactor from "@components/auth/TwoFactor";

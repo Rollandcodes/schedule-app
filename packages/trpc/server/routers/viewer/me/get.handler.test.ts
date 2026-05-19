@@ -1,4 +1,4 @@
-import { IdentityProvider } from "@calcom/prisma/enums";
+import { IdentityProvider } from "@schedule/prisma/enums";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import type { TrpcSessionUser } from "../../../types";
 
@@ -36,7 +36,7 @@ const {
   };
 });
 
-vi.mock("@calcom/features/profile/repositories/ProfileRepository", () => ({
+vi.mock("@schedule/features/profile/repositories/ProfileRepository", () => ({
   ProfileRepository: {
     findAllProfilesForUserIncludingMovedUser: (...args: unknown[]) =>
       mockFindAllProfilesForUserIncludingMovedUser(...args),
@@ -44,19 +44,19 @@ vi.mock("@calcom/features/profile/repositories/ProfileRepository", () => ({
   },
 }));
 
-vi.mock("@calcom/features/users/repositories/UserRepository", () => ({
+vi.mock("@schedule/features/users/repositories/UserRepository", () => ({
   UserRepository: MockUserRepository,
 }));
 
-vi.mock("@calcom/features/pbac/services/permission-check.service", () => ({
+vi.mock("@schedule/features/pbac/services/permission-check.service", () => ({
   PermissionCheckService: MockPermissionCheckService,
 }));
 
-vi.mock("@calcom/lib/getAvatarUrl", () => ({
+vi.mock("@schedule/lib/getAvatarUrl", () => ({
   getUserAvatarUrl: vi.fn(() => "https://avatar.example.com/1"),
 }));
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: {
     secondaryEmail: {
       findMany: (...args: unknown[]) => mockFindMany(...args),

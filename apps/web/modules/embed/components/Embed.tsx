@@ -8,54 +8,54 @@ import type { ControlProps } from "react-select";
 import { components } from "react-select";
 import { shallow } from "zustand/shallow";
 
-import type { Dayjs } from "@calcom/dayjs";
-import dayjs from "@calcom/dayjs";
-import { AvailableTimes } from "@calcom/web/modules/bookings/components/AvailableTimes";
-import { AvailableTimesHeader } from "@calcom/web/modules/bookings/components/AvailableTimesHeader";
+import type { Dayjs } from "@schedule/dayjs";
+import dayjs from "@schedule/dayjs";
+import { AvailableTimes } from "@schedule/web/modules/bookings/components/AvailableTimes";
+import { AvailableTimesHeader } from "@schedule/web/modules/bookings/components/AvailableTimesHeader";
 import {
   BookerStoreProvider,
   useInitializeBookerStoreContext,
   useBookerStoreContext,
-} from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { useInitializeBookerStore } from "@calcom/features/bookings/Booker/store";
-import { useEvent, useScheduleForEvent } from "@calcom/web/modules/schedules/hooks/useEvent";
-import DatePicker from "@calcom/features/calendars/components/DatePicker";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { TimezoneSelect } from "@calcom/web/modules/timezone/components/TimezoneSelect";
+} from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { useInitializeBookerStore } from "@schedule/features/bookings/Booker/store";
+import { useEvent, useScheduleForEvent } from "@schedule/web/modules/schedules/hooks/useEvent";
+import DatePicker from "@schedule/features/calendars/components/DatePicker";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { TimezoneSelect } from "@schedule/web/modules/timezone/components/TimezoneSelect";
 import type { Slot } from "~/schedules/lib/types";
-import { useNonEmptyScheduleDays } from "@calcom/web/modules/schedules/hooks/useNonEmptyScheduleDays";
-import { useSlotsForDate } from "@calcom/web/modules/schedules/hooks/useSlotsForDate";
-import { APP_NAME, DEFAULT_LIGHT_BRAND_COLOR, DEFAULT_DARK_BRAND_COLOR } from "@calcom/lib/constants";
-import { weekdayToWeekIndex } from "@calcom/lib/dayjs";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { BookerLayouts } from "@calcom/prisma/zod-utils";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { Select, ColorPicker } from "@calcom/ui/components/form";
-import { Label } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
-import { Switch } from "@calcom/ui/components/form";
+import { useNonEmptyScheduleDays } from "@schedule/web/modules/schedules/hooks/useNonEmptyScheduleDays";
+import { useSlotsForDate } from "@schedule/web/modules/schedules/hooks/useSlotsForDate";
+import { APP_NAME, DEFAULT_LIGHT_BRAND_COLOR, DEFAULT_DARK_BRAND_COLOR } from "@schedule/lib/constants";
+import { weekdayToWeekIndex } from "@schedule/lib/dayjs";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { BookerLayouts } from "@schedule/prisma/zod-utils";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { Select, ColorPicker } from "@schedule/ui/components/form";
+import { Label } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
+import { Switch } from "@schedule/ui/components/form";
 import { ArrowLeftIcon, SunIcon } from "@coss/ui/icons";
-import { HorizontalTabs } from "@calcom/ui/components/navigation";
-import { showToast } from "@calcom/ui/components/toast";
+import { HorizontalTabs } from "@schedule/ui/components/navigation";
+import { showToast } from "@schedule/ui/components/toast";
 
-import { useBookerTime } from "@calcom/features/bookings/Booker/hooks/useBookerTime";
-import { EmbedTabName } from "@calcom/features/embed/lib/EmbedTabs";
-import { buildCssVarsPerTheme } from "@calcom/features/embed/lib/buildCssVarsPerTheme";
-import { EmbedTheme } from "@calcom/features/embed/lib/constants";
-import { getDimension } from "@calcom/features/embed/lib/getDimension";
-import { useEmbedDialogCtx } from "@calcom/features/embed/lib/hooks/useEmbedDialogCtx";
-import { useEmbedParams } from "@calcom/features/embed/lib/hooks/useEmbedParams";
+import { useBookerTime } from "@schedule/features/bookings/Booker/hooks/useBookerTime";
+import { EmbedTabName } from "@schedule/features/embed/lib/EmbedTabs";
+import { buildCssVarsPerTheme } from "@schedule/features/embed/lib/buildCssVarsPerTheme";
+import { EmbedTheme } from "@schedule/features/embed/lib/constants";
+import { getDimension } from "@schedule/features/embed/lib/getDimension";
+import { useEmbedDialogCtx } from "@schedule/features/embed/lib/hooks/useEmbedDialogCtx";
+import { useEmbedParams } from "@schedule/features/embed/lib/hooks/useEmbedParams";
 import type {
   EmbedTabs,
   EmbedType,
   EmbedTypes,
   PreviewState,
   EmbedConfig,
-} from "@calcom/features/embed/types";
+} from "@schedule/features/embed/types";
 
 type EventType = RouterOutputs["viewer"]["eventTypes"]["get"]["eventType"] | undefined;
 type EmbedDialogProps = {

@@ -41,13 +41,13 @@ COPY apps/api/v2 ./apps/api/v2
 COPY packages ./packages
 
 RUN yarn config set httpTimeout 1200000
-RUN npx turbo prune --scope=@calcom/web --scope=@calcom/trpc --docker
+RUN npx turbo prune --scope=@schedule/web --scope=@schedule/trpc --docker
 RUN yarn install
 # Build and make embed servable from web/public/embed folder
-RUN yarn workspace @calcom/trpc run build
-RUN yarn --cwd packages/embeds/embed-core workspace @calcom/embed-core run build
-RUN yarn --cwd apps/web workspace @calcom/web run copy-app-store-static
-RUN yarn --cwd apps/web workspace @calcom/web run build
+RUN yarn workspace @schedule/trpc run build
+RUN yarn --cwd packages/embeds/embed-core workspace @schedule/embed-core run build
+RUN yarn --cwd apps/web workspace @schedule/web run copy-app-store-static
+RUN yarn --cwd apps/web workspace @schedule/web run build
 RUN rm -rf node_modules/.cache .yarn/cache apps/web/.next/cache
 
 FROM node:20 AS builder-two

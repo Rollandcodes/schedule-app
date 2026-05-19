@@ -1,5 +1,5 @@
 {
-  "extends": "@calcom/tsconfig/base.json",
+  "extends": "@schedule/tsconfig/base.json",
   "compilerOptions": {
     "target": "ES5",
     "resolveJsonModule": true,
@@ -7,6 +7,14 @@
     "experimentalDecorators": true,
     "outDir": "dist"
   },
-  "include": [".", "../../types/business-days-plugin.d.ts", "../../types/window.d.ts"],
-  "exclude": ["dist", "build", "**/node_modules/**"]
+  "include": [
+    ".",
+    "../../types/business-days-plugin.d.ts",
+    "../../types/window.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "**/node_modules/**"
+  ]
 }

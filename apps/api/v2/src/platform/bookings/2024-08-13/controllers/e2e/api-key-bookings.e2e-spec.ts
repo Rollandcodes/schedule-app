@@ -1,4 +1,4 @@
-import { CAL_API_VERSION_HEADER, SUCCESS_STATUS, VERSION_2024_08_13 } from "@calcom/platform-constants";
+import { CAL_API_VERSION_HEADER, SUCCESS_STATUS, VERSION_2024_08_13 } from "@schedule/platform-constants";
 import {
   AttendeeCancelledEmail,
   AttendeeRescheduledEmail,
@@ -6,14 +6,14 @@ import {
   OrganizerCancelledEmail,
   OrganizerRescheduledEmail,
   OrganizerScheduledEmail,
-} from "@calcom/platform-libraries/emails";
+} from "@schedule/platform-libraries/emails";
 import {
   BookingOutput_2024_08_13,
   CancelBookingInput_2024_08_13,
   CreateBookingInput_2024_08_13,
   RescheduleBookingInput_2024_08_13,
-} from "@calcom/platform-types";
-import type { Team, User } from "@calcom/prisma/client";
+} from "@schedule/platform-types";
+import type { Team, User } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";

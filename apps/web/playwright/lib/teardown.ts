@@ -1,5 +1,5 @@
-import prisma from "@calcom/prisma";
-import type { Prisma } from "@calcom/prisma/client";
+import prisma from "@schedule/prisma";
+import type { Prisma } from "@schedule/prisma/client";
 
 /**
  * @deprecated

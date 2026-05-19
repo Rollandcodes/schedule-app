@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import type { Dispatch, SetStateAction } from "react";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { userMetadata } from "@calcom/prisma/zod-utils";
-import { trpc } from "@calcom/trpc/react";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { List } from "@calcom/ui/components/list";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { userMetadata } from "@schedule/prisma/zod-utils";
+import { trpc } from "@schedule/trpc/react";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { List } from "@schedule/ui/components/list";
 
 import { AppConnectionItem } from "../components/AppConnectionItem";
 import { StepConnectionLoader } from "../components/StepConnectionLoader";

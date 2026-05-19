@@ -1,8 +1,8 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { IAttendeeRepository } from "@calcom/features/bookings/repositories/IAttendeeRepository";
-import type { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
-import type { UserRepository } from "@calcom/features/users/repositories/UserRepository";
+import type { IAttendeeRepository } from "@schedule/features/bookings/repositories/IAttendeeRepository";
+import type { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
+import type { UserRepository } from "@schedule/features/users/repositories/UserRepository";
 
 import { EnrichmentDataStore } from "../EnrichmentDataStore";
 

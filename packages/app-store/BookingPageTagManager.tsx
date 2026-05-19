@@ -1,10 +1,10 @@
 import Script from "next/script";
 
-import { getEventTypeAppData } from "@calcom/app-store/_utils/getEventTypeAppData";
-import { appStoreMetadata } from "@calcom/app-store/bookerAppsMetaData";
-import type { Tag } from "@calcom/app-store/types";
-import { sdkActionManager } from "@calcom/lib/sdk-event";
-import type { AppMeta } from "@calcom/types/App";
+import { getEventTypeAppData } from "@schedule/app-store/_utils/getEventTypeAppData";
+import { appStoreMetadata } from "@schedule/app-store/bookerAppsMetaData";
+import type { Tag } from "@schedule/app-store/types";
+import { sdkActionManager } from "@schedule/lib/sdk-event";
+import type { AppMeta } from "@schedule/types/App";
 
 import type { appDataSchemas } from "./apps.schemas.generated";
 

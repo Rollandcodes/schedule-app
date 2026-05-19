@@ -3,21 +3,21 @@
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 
-import SectionBottomActions from "@calcom/features/settings/SectionBottomActions";
-import customTemplate, { hasTemplateIntegration } from "@calcom/features/webhooks/lib/integrationTemplate";
-import { WebhookVersion } from "@calcom/features/webhooks/lib/interface/IWebhookRepository";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { TimeUnit, WebhookTriggerEvents } from "@calcom/prisma/enums";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { Select } from "@calcom/ui/components/form";
-import { TextArea } from "@calcom/ui/components/form";
-import { ToggleGroup } from "@calcom/ui/components/form";
-import { Form } from "@calcom/ui/components/form";
-import { Label } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
-import { Switch } from "@calcom/ui/components/form";
+import SectionBottomActions from "@schedule/features/settings/SectionBottomActions";
+import customTemplate, { hasTemplateIntegration } from "@schedule/features/webhooks/lib/integrationTemplate";
+import { WebhookVersion } from "@schedule/features/webhooks/lib/interface/IWebhookRepository";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { TimeUnit, WebhookTriggerEvents } from "@schedule/prisma/enums";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { Select } from "@schedule/ui/components/form";
+import { TextArea } from "@schedule/ui/components/form";
+import { ToggleGroup } from "@schedule/ui/components/form";
+import { Form } from "@schedule/ui/components/form";
+import { Label } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
+import { Switch } from "@schedule/ui/components/form";
 
 
 import WebhookTestDisclosure from "./WebhookTestDisclosure";

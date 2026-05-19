@@ -1,5 +1,5 @@
-import { BOOKING_READ, BOOKING_WRITE, SUCCESS_STATUS } from "@calcom/platform-constants";
-import { AddAttendeeInput_2024_08_13 } from "@calcom/platform-types";
+import { BOOKING_READ, BOOKING_WRITE, SUCCESS_STATUS } from "@schedule/platform-constants";
+import { AddAttendeeInput_2024_08_13 } from "@schedule/platform-types";
 import {
   Body,
   Controller,

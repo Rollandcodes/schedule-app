@@ -1,4 +1,4 @@
-import { BOOKING_READ, BOOKING_WRITE, SUCCESS_STATUS } from "@calcom/platform-constants";
+import { BOOKING_READ, BOOKING_WRITE, SUCCESS_STATUS } from "@schedule/platform-constants";
 import {
   CancelBookingInput,
   CancelBookingInput_2024_08_13,
@@ -21,7 +21,7 @@ import {
   RescheduleBookingInput_2024_08_13,
   RescheduleBookingInputPipe,
   RescheduleSeatedBookingInput_2024_08_13,
-} from "@calcom/platform-types";
+} from "@schedule/platform-types";
 import {
   Body,
   Controller,

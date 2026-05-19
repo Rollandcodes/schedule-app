@@ -1,7 +1,7 @@
 import type { NextApiRequest } from "next";
 
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import prisma from "@calcom/prisma";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import prisma from "@schedule/prisma";
 
 import type {
   NewCanvas,

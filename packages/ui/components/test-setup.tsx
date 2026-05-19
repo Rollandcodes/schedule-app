@@ -43,11 +43,11 @@ vi.mock("next/navigation", async () => ({
   },
 }));
 
-vi.mock("@calcom/lib/OgImages", async () => {
+vi.mock("@schedule/lib/OgImages", async () => {
   return {};
 });
 
-vi.mock("@calcom/lib/hooks/useLocale", () => ({
+vi.mock("@schedule/lib/hooks/useLocale", () => ({
   useLocale: () => {
     return {
       t: (str: string) => str,
@@ -62,15 +62,15 @@ vi.mock("@calcom/lib/hooks/useLocale", () => ({
   },
 }));
 
-vi.mock("@calcom/atoms/hooks/useIsPlatform", () => ({
+vi.mock("@schedule/atoms/hooks/useIsPlatform", () => ({
   useIsPlatform: () => {
     return false;
   },
 }));
 
-vi.mock("@calcom/features/eventtypes/lib/getEventTypesByViewer", () => ({}));
-vi.mock("@calcom/features/eventtypes/lib/getEventTypesPublic", () => ({}));
-vi.mock("@calcom/ui/classNames", () => ({
+vi.mock("@schedule/features/eventtypes/lib/getEventTypesByViewer", () => ({}));
+vi.mock("@schedule/features/eventtypes/lib/getEventTypesPublic", () => ({}));
+vi.mock("@schedule/ui/classNames", () => ({
   default: (...args: string[]) => {
     return args.filter(Boolean).join(" ");
   },

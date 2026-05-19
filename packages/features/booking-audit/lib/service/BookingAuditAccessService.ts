@@ -1,5 +1,5 @@
-import type { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import type { MembershipRepository } from "@calcom/features/membership/repositories/MembershipRepository";
+import type { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import type { MembershipRepository } from "@schedule/features/membership/repositories/MembershipRepository";
 
 export enum BookingAuditErrorCode {
   ORGANIZATION_ID_REQUIRED = "ORGANIZATION_ID_REQUIRED",

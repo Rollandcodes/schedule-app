@@ -1,5 +1,5 @@
 {
-  "extends": "@calcom/tsconfig/react-library.json",
+  "extends": "@schedule/tsconfig/react-library.json",
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -15,5 +15,12 @@
     "../../types/business-days-plugin.d.ts",
     "../../types/window.d.ts"
   ],
-  "exclude": ["dist", "build", "**/node_modules/**", "**/*.test.*", "**/__mocks__/*", "**/__tests__/*"]
+  "exclude": [
+    "dist",
+    "build",
+    "**/node_modules/**",
+    "**/*.test.*",
+    "**/__mocks__/*",
+    "**/__tests__/*"
+  ]
 }

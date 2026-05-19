@@ -3,24 +3,24 @@ import { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import type { Options } from "react-select";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
 import type {
   FormValues,
   Host,
   InputClassNames,
   SelectClassNames,
-} from "@calcom/features/eventtypes/lib/types";
-import { groupHostsByGroupId, getHostsFromOtherGroups, sortHosts } from "@calcom/lib/bookings/hostGroupUtils";
-import { DEFAULT_GROUP_ID } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { Label } from "@calcom/ui/components/form";
-import { Select } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
+} from "@schedule/features/eventtypes/lib/types";
+import { groupHostsByGroupId, getHostsFromOtherGroups, sortHosts } from "@schedule/lib/bookings/hostGroupUtils";
+import { DEFAULT_GROUP_ID } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { Label } from "@schedule/ui/components/form";
+import { Select } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
 
-import type { CheckedSelectOption } from "@calcom/features/eventtypes/components/CheckedTeamSelect";
+import type { CheckedSelectOption } from "@schedule/features/eventtypes/components/CheckedTeamSelect";
 
 interface IDialog {
   isOpenDialog: boolean;

@@ -1907,1614 +1907,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@calcom/alby@workspace:packages/app-store/alby":
+"@calcom/prisma@workspace:packages/prisma-compat":
   version: 0.0.0-use.local
-  resolution: "@calcom/alby@workspace:packages/app-store/alby"
+  resolution: "@calcom/prisma@workspace:packages/prisma-compat"
   dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@getalby/lightning-tools": "npm:5.1.2"
-    "@getalby/sdk": "npm:4.0.0"
-    "@webbtc/webln-types": "npm:3.0.0"
-    react-qr-code: "npm:2.0.18"
-    svix: "npm:0.85.1"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/api-proxy@workspace:apps/api":
-  version: 0.0.0-use.local
-  resolution: "@calcom/api-proxy@workspace:apps/api"
-  dependencies:
-    connect: "npm:3.7.0"
-    http: "npm:0.0.1-security"
-    http-proxy-middleware: "npm:2.0.9"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/api-v2@workspace:apps/api/v2":
-  version: 0.0.0-use.local
-  resolution: "@calcom/api-v2@workspace:apps/api/v2"
-  dependencies:
-    "@axiomhq/winston": "npm:1.2.0"
-    "@biomejs/biome": "npm:^2.3.8"
-    "@calcom/platform-constants": "workspace:*"
-    "@calcom/platform-enums": "workspace:*"
-    "@calcom/platform-libraries": "workspace:*"
-    "@calcom/platform-types": "workspace:*"
-    "@calcom/platform-utils": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@golevelup/ts-jest": "npm:0.4.0"
-    "@microsoft/microsoft-graph-types-beta": "npm:0.42.0-preview"
-    "@nest-lab/throttler-storage-redis": "npm:1.0.0"
-    "@nestjs/axios": "npm:4.0.0"
-    "@nestjs/bull": "npm:11.0.4"
-    "@nestjs/cli": "npm:10.3.2"
-    "@nestjs/common": "npm:10.4.20"
-    "@nestjs/config": "npm:3.2.0"
-    "@nestjs/core": "npm:10.4.20"
-    "@nestjs/jwt": "npm:10.2.0"
-    "@nestjs/passport": "npm:10.0.3"
-    "@nestjs/platform-express": "npm:10.4.20"
-    "@nestjs/schematics": "npm:10.1.1"
-    "@nestjs/swagger": "npm:7.4.2"
-    "@nestjs/testing": "npm:10.4.20"
-    "@nestjs/throttler": "npm:6.2.1"
-    "@sentry/nestjs": "npm:9.46.0"
-    "@sentry/node": "npm:9.46.0"
-    "@sentry/profiling-node": "npm:9.46.0"
-    "@snyk/protect": "npm:latest"
-    "@types/cookie-parser": "npm:1.4.7"
-    "@types/express": "npm:4.17.21"
-    "@types/fs-extra": "npm:11.0.4"
-    "@types/jest": "npm:29.5.12"
-    "@types/luxon": "npm:3.4.2"
-    "@types/passport-jwt": "npm:3.0.13"
-    "@types/supertest": "npm:2.0.16"
-    axios: "npm:1.15.0"
-    body-parser: "npm:1.20.3"
-    bull: "npm:4.15.1"
-    class-transformer: "npm:0.5.1"
-    class-validator: "npm:0.14.3"
-    concurrently: "npm:9.1.2"
-    cookie-parser: "npm:1.4.6"
-    dotenv: "npm:16.6.1"
-    fs-extra: "npm:11.3.2"
-    googleapis: "npm:84.0.0"
-    helmet: "npm:7.1.0"
-    ioredis: "npm:5.3.2"
-    jest: "npm:29.7.0"
-    jest-date-mock: "npm:1.0.10"
-    jest-junit: "npm:^16.0.0"
-    lodash: "npm:4.18.1"
-    luxon: "npm:3.4.4"
-    nest-winston: "npm:1.9.4"
-    node-mocks-http: "npm:1.16.2"
-    passport: "npm:0.7.0"
-    passport-jwt: "npm:4.0.1"
-    qs-stringify: "npm:1.2.1"
-    querystring: "npm:0.2.1"
-    reflect-metadata: "npm:0.1.14"
-    rxjs: "npm:7.8.2"
-    source-map-support: "npm:0.5.21"
-    stripe: "npm:15.4.0"
-    supertest: "npm:6.3.4"
-    ts-jest: "npm:29.1.4"
-    ts-loader: "npm:9.5.1"
-    ts-node: "npm:10.9.2"
-    tsconfig-paths: "npm:4.2.0"
-    typescript: "npm:5.9.3"
-    uuid: "npm:8.3.2"
-    winston: "npm:3.17.0"
-    winston-transport: "npm:4.9.0"
-    zod: "npm:3.25.76"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/app-store-cli@workspace:*, @calcom/app-store-cli@workspace:packages/app-store-cli":
-  version: 0.0.0-use.local
-  resolution: "@calcom/app-store-cli@workspace:packages/app-store-cli"
-  dependencies:
-    "@biomejs/biome": "npm:^2.3.8"
-    "@calcom/lib": "workspace:*"
-    "@types/react": "npm:18.0.26"
-    chokidar: "npm:3.6.0"
-    ink: "npm:3.2.0"
-    ink-select-input: "npm:4.2.1"
-    ink-text-input: "npm:4.0.3"
-    meow: "npm:9.0.0"
-    react: "npm:18.2.0"
-    ts-node: "npm:10.9.2"
-    typescript: "npm:5.9.3"
-  bin:
-    app-store-cli: dist/cli.js
-  languageName: unknown
-  linkType: soft
-
-"@calcom/app-store@workspace:*, @calcom/app-store@workspace:packages/app-store":
-  version: 0.0.0-use.local
-  resolution: "@calcom/app-store@workspace:packages/app-store"
-  dependencies:
-    "@calcom/dailyvideo": "workspace:*"
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/features": "workspace:*"
-    "@calcom/i18n": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/office365video": "workspace:*"
-    "@calcom/testing": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@calcom/ui": "workspace:*"
-    "@calcom/zoomvideo": "workspace:*"
-    lodash: "npm:4.18.1"
-    qs-stringify: "npm:1.2.1"
-    react-i18next: "npm:12.3.1"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    stripe: ^9.0.0 || ^15.0.0
-    zod: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/applecalendar@workspace:packages/app-store/applecalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/applecalendar@workspace:packages/app-store/applecalendar"
-  dependencies:
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    react-hook-form: "npm:7.43.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/atoms@workspace:*, @calcom/atoms@workspace:packages/platform/atoms":
-  version: 0.0.0-use.local
-  resolution: "@calcom/atoms@workspace:packages/platform/atoms"
-  dependencies:
-    "@calcom/i18n": "workspace:*"
-    "@radix-ui/react-dialog-atoms": "npm:@radix-ui/react-dialog@1.0.4"
-    "@radix-ui/react-popover-atoms": "npm:@radix-ui/react-popover@1.0.6"
-    "@radix-ui/react-slot": "npm:1.1.2"
-    "@radix-ui/react-switch": "npm:1.1.0"
-    "@radix-ui/react-toast": "npm:1.1.5"
-    "@radix-ui/react-tooltip-atoms": "npm:@radix-ui/react-tooltip@1.0.6"
-    "@rollup/plugin-node-resolve": "npm:15.0.1"
-    "@tailwindcss/cli": "npm:4.1.16"
-    "@tailwindcss/postcss": "npm:4.1.15"
-    "@tanstack/react-query": "npm:5.17.19"
-    "@types/jest": "npm:29.5.12"
-    "@types/node": "npm:20.17.23"
-    "@types/react": "npm:18.0.26"
-    "@types/react-dom": "npm:18.2.6"
-    "@vitejs/plugin-react": "npm:5.1.2"
-    "@vitejs/plugin-react-swc": "npm:4.2.2"
-    autoprefixer: "npm:10.4.19"
-    class-variance-authority: "npm:0.4.0"
-    clsx: "npm:2.1.1"
-    cssnano: "npm:7.1.2"
-    dompurify: "npm:3.3.2"
-    jest: "npm:29.7.0"
-    marked: "npm:15.0.6"
-    postcss: "npm:8.5.6"
-    postcss-cli: "npm:11.0.1"
-    postcss-import: "npm:16.1.0"
-    postcss-prefixer: "npm:3.0.0"
-    postcss-prefixwrap: "npm:1.57.0"
-    react-use: "npm:17.6.0"
-    tailwind-merge: "npm:1.13.2"
-    tailwindcss: "npm:4.1.17"
-    ts-jest: "npm:29.1.4"
-    typescript: "npm:5.9.3"
-    vite: "npm:6.4.2"
-    vite-plugin-dts: "npm:4.5.4"
-    vite-plugin-inspect: "npm:0.8.4"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/attio@workspace:packages/app-store/attio":
-  version: 0.0.0-use.local
-  resolution: "@calcom/attio@workspace:packages/app-store/attio"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/base@workspace:packages/platform/examples/base":
-  version: 0.0.0-use.local
-  resolution: "@calcom/base@workspace:packages/platform/examples/base"
-  dependencies:
-    "@calcom/atoms": "workspace:*"
-    "@playwright/test": "npm:1.57.0"
-    "@prisma/client": "npm:6.16.1"
-    "@tailwindcss/postcss": "npm:4.1.15"
-    "@types/node": "npm:20.17.23"
-    "@types/react": "npm:18.0.26"
-    "@types/react-dom": "npm:18.2.6"
-    dotenv: "npm:17.2.2"
-    next: "npm:16.2.3"
-    postcss: "npm:8.5.6"
-    prisma: "npm:6.16.1"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    react-select: "npm:5.8.0"
-    tailwindcss: "npm:4.1.17"
-    typescript: "npm:5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/basecamp3@workspace:packages/app-store/basecamp3":
-  version: 0.0.0-use.local
-  resolution: "@calcom/basecamp3@workspace:packages/app-store/basecamp3"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/btcpayserver@workspace:packages/app-store/btcpayserver":
-  version: 0.0.0-use.local
-  resolution: "@calcom/btcpayserver@workspace:packages/app-store/btcpayserver"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/caldavcalendar@workspace:packages/app-store/caldavcalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/caldavcalendar@workspace:packages/app-store/caldavcalendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@calcom/ui": "workspace:*"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    react-hook-form: ^7.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/campfire@workspace:packages/app-store/campfire":
-  version: 0.0.0-use.local
-  resolution: "@calcom/campfire@workspace:packages/app-store/campfire"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/closecom@workspace:packages/app-store/closecom":
-  version: 0.0.0-use.local
-  resolution: "@calcom/closecom@workspace:packages/app-store/closecom"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/config@workspace:*, @calcom/config@workspace:packages/config":
-  version: 0.0.0-use.local
-  resolution: "@calcom/config@workspace:packages/config"
-  dependencies:
-    "@tailwindcss/typography": "npm:0.5.4"
-    "@todesktop/tailwind-variants": "npm:1.0.1"
-    tailwind-scrollbar: "npm:4.0.2"
-    tailwindcss-radix: "npm:4.0.2"
-    tw-animate-css: "npm:1.4.0"
-    typescript: "npm:5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/dailyvideo@workspace:*, @calcom/dailyvideo@workspace:packages/app-store/dailyvideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/dailyvideo@workspace:packages/app-store/dailyvideo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/databuddy@workspace:packages/app-store/databuddy":
-  version: 0.0.0-use.local
-  resolution: "@calcom/databuddy@workspace:packages/app-store/databuddy"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/dayjs@workspace:*, @calcom/dayjs@workspace:packages/dayjs":
-  version: 0.0.0-use.local
-  resolution: "@calcom/dayjs@workspace:packages/dayjs"
-  dependencies:
-    dayjs: "npm:1.11.2"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/debugging@workspace:packages/debugging":
-  version: 0.0.0-use.local
-  resolution: "@calcom/debugging@workspace:packages/debugging"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/demodesk@workspace:packages/app-store/demodesk":
-  version: 0.0.0-use.local
-  resolution: "@calcom/demodesk@workspace:packages/app-store/demodesk"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/dialpad@workspace:packages/app-store/dialpad":
-  version: 0.0.0-use.local
-  resolution: "@calcom/dialpad@workspace:packages/app-store/dialpad"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/discord@workspace:packages/app-store/discord":
-  version: 0.0.0-use.local
-  resolution: "@calcom/discord@workspace:packages/app-store/discord"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/docs@workspace:apps/docs":
-  version: 0.0.0-use.local
-  resolution: "@calcom/docs@workspace:apps/docs"
-  dependencies:
-    "@types/react": "npm:^19.0.0"
-    next: "npm:^15.1.0"
-    nextra: "npm:^4.2.0"
-    nextra-theme-docs: "npm:^4.2.0"
-    pagefind: "npm:^1.5.2"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
-    typescript: "npm:^5.0.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/dub@workspace:packages/app-store/dub":
-  version: 0.0.0-use.local
-  resolution: "@calcom/dub@workspace:packages/app-store/dub"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-    dub-package: "npm:dub@^0.61.12"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/eightxeight@workspace:packages/app-store/eightxeight":
-  version: 0.0.0-use.local
-  resolution: "@calcom/eightxeight@workspace:packages/app-store/eightxeight"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/element-call@workspace:packages/app-store/element-call":
-  version: 0.0.0-use.local
-  resolution: "@calcom/element-call@workspace:packages/app-store/element-call"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/emails@workspace:*, @calcom/emails@workspace:packages/emails":
-  version: 0.0.0-use.local
-  resolution: "@calcom/emails@workspace:packages/emails"
-  dependencies:
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/testing": "workspace:*"
-    "@calcom/tsconfig": "workspace:*"
-    "@calcom/types": "workspace:*"
-    rrule: "npm:2.7.1"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/embed-core@workspace:*, @calcom/embed-core@workspace:packages/embeds/embed-core":
-  version: 0.0.0-use.local
-  resolution: "@calcom/embed-core@workspace:packages/embeds/embed-core"
-  dependencies:
-    "@biomejs/biome": "npm:2.3.10"
-    "@playwright/test": "npm:1.57.0"
-    "@tailwindcss/cli": "npm:4.1.16"
-    "@tailwindcss/postcss": "npm:4.1.15"
-    "@vitejs/plugin-basic-ssl": "npm:2.1.0"
-    autoprefixer: "npm:10.4.19"
-    npm-run-all: "npm:4.1.5"
-    postcss: "npm:8.5.6"
-    tailwindcss: "npm:4.1.17"
-    typescript: "npm:5.9.3"
-    vite: "npm:6.4.2"
-    vite-plugin-environment: "npm:1.1.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/embed-react@workspace:*, @calcom/embed-react@workspace:packages/embeds/embed-react":
-  version: 0.0.0-use.local
-  resolution: "@calcom/embed-react@workspace:packages/embeds/embed-react"
-  dependencies:
-    "@calcom/embed-core": "workspace:*"
-    "@calcom/embed-snippet": "workspace:*"
-    "@playwright/test": "npm:1.57.0"
-    "@types/react": "npm:18.0.26"
-    "@types/react-dom": "npm:18.2.6"
-    "@vitejs/plugin-react": "npm:5.1.2"
-    npm-run-all: "npm:4.1.5"
-    typescript: "npm:5.9.3"
-    vite: "npm:6.4.2"
-  peerDependencies:
-    react: ^18.2.0 || ^19.0.0
-    react-dom: ^18.2.0 || ^19.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/embed-snippet@workspace:*, @calcom/embed-snippet@workspace:packages/embeds/embed-snippet":
-  version: 0.0.0-use.local
-  resolution: "@calcom/embed-snippet@workspace:packages/embeds/embed-snippet"
-  dependencies:
-    "@calcom/embed-core": "workspace:*"
-    typescript: "npm:5.9.3"
-    vite: "npm:6.4.2"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/example-app-credential-sync@workspace:example-apps/credential-sync":
-  version: 0.0.0-use.local
-  resolution: "@calcom/example-app-credential-sync@workspace:example-apps/credential-sync"
-  dependencies:
-    "@calcom/atoms": "workspace:*"
-    "@prisma/client": "npm:6.16.1"
-    "@types/node": "npm:20.17.23"
-    "@types/react": "npm:18.0.26"
-    "@types/react-dom": "npm:18.2.6"
-    autoprefixer: "npm:10.4.19"
-    dotenv: "npm:16.6.1"
-    next: "npm:15.5.15"
-    postcss: "npm:8.5.6"
-    prisma: "npm:6.16.1"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    tailwindcss: "npm:3.4.1"
-    typescript: "npm:5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/exchange2013calendar@workspace:packages/app-store/exchange2013calendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/exchange2013calendar@workspace:packages/app-store/exchange2013calendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@calcom/ui": "workspace:*"
-    ews-javascript-api: "npm:0.11.0"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    react-hook-form: ^7.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/exchange2016calendar@workspace:packages/app-store/exchange2016calendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/exchange2016calendar@workspace:packages/app-store/exchange2016calendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@calcom/ui": "workspace:*"
-    ews-javascript-api: "npm:0.11.0"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    react-hook-form: ^7.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/exchangecalendar@workspace:packages/app-store/exchangecalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/exchangecalendar@workspace:packages/app-store/exchangecalendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@ewsjs/xhr": "npm:3.1.3"
-    ews-javascript-api: "npm:0.11.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/facetime@workspace:packages/app-store/facetime":
-  version: 0.0.0-use.local
-  resolution: "@calcom/facetime@workspace:packages/app-store/facetime"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/famulor@workspace:packages/app-store/famulor":
-  version: 0.0.0-use.local
-  resolution: "@calcom/famulor@workspace:packages/app-store/famulor"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/fathom@workspace:packages/app-store/fathom":
-  version: 0.0.0-use.local
-  resolution: "@calcom/fathom@workspace:packages/app-store/fathom"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/feature-auth@workspace:packages/features/auth":
-  version: 0.0.0-use.local
-  resolution: "@calcom/feature-auth@workspace:packages/features/auth"
-  dependencies:
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/i18n": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/trpc": "workspace:*"
-    "@calcom/ui": "workspace:*"
-    bcryptjs: "npm:2.4.3"
-    dub: "npm:0.59.1"
-    handlebars: "npm:4.7.9"
-    jose: "npm:4.15.9"
-    lru-cache: "npm:9.0.3"
-    next-auth: "npm:4.24.13"
-    nodemailer: "npm:7.0.12"
-    otplib: "npm:12.0.1"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/features@workspace:*, @calcom/features@workspace:packages/features":
-  version: 0.0.0-use.local
-  resolution: "@calcom/features@workspace:packages/features"
-  dependencies:
-    "@calcom/atoms": "workspace:*"
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/i18n": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/testing": "workspace:*"
-    "@calcom/trpc": "workspace:*"
-    "@calcom/ui": "workspace:*"
-    "@coss/ui": "workspace:*"
-    "@evyweb/ioctopus": "npm:1.2.0"
-    "@tanstack/react-table": "npm:8.20.6"
-    "@tanstack/react-virtual": "npm:3.10.9"
-    "@testing-library/react-hooks": "npm:8.0.1"
-    "@trigger.dev/sdk": "npm:4.3.2"
-    "@types/deasync": "npm:^0"
-    "@types/web-push": "npm:3.6.3"
-    "@vercel/functions": "npm:1.4.0"
-    city-timezones: "npm:1.2.1"
-    class-variance-authority: "npm:0.7.1"
-    date-fns-tz: "npm:3.2.0"
-    deasync: "npm:^0.1.31"
-    framer-motion: "npm:10.12.8"
-    p-limit: "npm:6.2.0"
-    react-select: "npm:5.8.0"
-    react-sticky-box: "npm:2.0.4"
-    recharts: "npm:3.0.2"
-    stripe: "npm:9.16.0"
-    stripe-event-types: "npm:3.1.0"
-    trigger.dev: "npm:4.3.2"
-    web-push: "npm:3.6.7"
-    zustand: "npm:4.5.2"
-  peerDependencies:
-    next: ">=14.0.0"
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    react-is: ^18.2.0
-    zod: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/feishucalendar@workspace:packages/app-store/feishucalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/feishucalendar@workspace:packages/app-store/feishucalendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/ga4@workspace:packages/app-store/ga4":
-  version: 0.0.0-use.local
-  resolution: "@calcom/ga4@workspace:packages/app-store/ga4"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/giphy@workspace:packages/app-store/giphy":
-  version: 0.0.0-use.local
-  resolution: "@calcom/giphy@workspace:packages/app-store/giphy"
-  dependencies:
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/googlecalendar@workspace:packages/app-store/googlecalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/googlecalendar@workspace:packages/app-store/googlecalendar"
-  dependencies:
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@googleapis/calendar": "npm:9.7.9"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/googlevideo@workspace:packages/app-store/googlevideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/googlevideo@workspace:packages/app-store/googlevideo"
-  dependencies:
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/gtm@workspace:packages/app-store/gtm":
-  version: 0.0.0-use.local
-  resolution: "@calcom/gtm@workspace:packages/app-store/gtm"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/hitpay@workspace:packages/app-store/hitpay":
-  version: 0.0.0-use.local
-  resolution: "@calcom/hitpay@workspace:packages/app-store/hitpay"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/horizon-workrooms@workspace:packages/app-store/horizon-workrooms":
-  version: 0.0.0-use.local
-  resolution: "@calcom/horizon-workrooms@workspace:packages/app-store/horizon-workrooms"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/hubspot@workspace:packages/app-store/hubspot":
-  version: 0.0.0-use.local
-  resolution: "@calcom/hubspot@workspace:packages/app-store/hubspot"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@hubspot/api-client": "npm:6.0.1"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/huddle01video@workspace:packages/app-store/huddle01video":
-  version: 0.0.0-use.local
-  resolution: "@calcom/huddle01video@workspace:packages/app-store/huddle01video"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/i18n@workspace:*, @calcom/i18n@workspace:packages/i18n":
-  version: 0.0.0-use.local
-  resolution: "@calcom/i18n@workspace:packages/i18n"
-  dependencies:
-    "@calcom/tsconfig": "workspace:*"
-    i18next: "npm:23.2.3"
-    typescript: "npm:5.9.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/ics-feed@workspace:packages/app-store/ics-feedcalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/ics-feed@workspace:packages/app-store/ics-feedcalendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@calcom/ui": "workspace:*"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    react-hook-form: ^7.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/insihts@workspace:packages/app-store/insihts":
-  version: 0.0.0-use.local
-  resolution: "@calcom/insihts@workspace:packages/app-store/insihts"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/intercom@workspace:packages/app-store/intercom":
-  version: 0.0.0-use.local
-  resolution: "@calcom/intercom@workspace:packages/app-store/intercom"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/jelly@workspace:packages/app-store/jelly":
-  version: 0.0.0-use.local
-  resolution: "@calcom/jelly@workspace:packages/app-store/jelly"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/jitsivideo@workspace:packages/app-store/jitsivideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/jitsivideo@workspace:packages/app-store/jitsivideo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/kysely@workspace:packages/kysely":
-  version: 0.0.0-use.local
-  resolution: "@calcom/kysely@workspace:packages/kysely"
-  dependencies:
-    "@types/pg": "npm:8.11.14"
-    kysely: "npm:0.28.14"
-    pg: "npm:8.16.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/larkcalendar@workspace:packages/app-store/larkcalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/larkcalendar@workspace:packages/app-store/larkcalendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/lib@npm:*, @calcom/lib@workspace:*, @calcom/lib@workspace:packages/lib":
-  version: 0.0.0-use.local
-  resolution: "@calcom/lib@workspace:packages/lib"
-  dependencies:
-    "@biomejs/biome": "npm:2.3.10"
-    "@calcom/config": "workspace:*"
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/i18n": "workspace:*"
-    "@calcom/tsconfig": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@faker-js/faker": "npm:7.6.0"
-    "@formbricks/api": "npm:3.0.0"
-    "@formbricks/js": "npm:4.3.0"
-    "@sendgrid/client": "npm:7.7.0"
-    "@unkey/ratelimit": "npm:2.1.3"
-    "@vercel/og": "npm:0.6.3"
-    city-timezones: "npm:1.2.1"
-    i18next: "npm:23.2.3"
-    ical.js: "npm:1.5.0"
-    ics: "npm:2.37.0"
-    ipaddr.js: "npm:2.3.0"
-    jimp: "npm:0.16.1"
-    lingo.dev: "npm:0.117.14"
-    rrule: "npm:2.7.1"
-    sharp: "npm:0.33.5"
-    tsdav: "npm:2.0.3"
-    tslog: "npm:4.9.2"
-    typescript: "npm:5.9.3"
-    uuid: "npm:8.3.2"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/linear@workspace:packages/app-store/linear":
-  version: 0.0.0-use.local
-  resolution: "@calcom/linear@workspace:packages/app-store/linear"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/lyra@workspace:packages/app-store/lyra":
-  version: 0.0.0-use.local
-  resolution: "@calcom/lyra@workspace:packages/app-store/lyra"
-  dependencies:
-    "@calcom/lib": "npm:*"
-    "@calcom/prisma": "npm:*"
-    "@calcom/types": "npm:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/make@workspace:packages/app-store/make":
-  version: 0.0.0-use.local
-  resolution: "@calcom/make@workspace:packages/app-store/make"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@types/node-schedule": "npm:2.1.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/matomo@workspace:packages/app-store/matomo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/matomo@workspace:packages/app-store/matomo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/metapixel@workspace:packages/app-store/metapixel":
-  version: 0.0.0-use.local
-  resolution: "@calcom/metapixel@workspace:packages/app-store/metapixel"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/mirotalk@workspace:packages/app-store/mirotalk":
-  version: 0.0.0-use.local
-  resolution: "@calcom/mirotalk@workspace:packages/app-store/mirotalk"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/mock-payment-app@workspace:packages/app-store/mock-payment-app":
-  version: 0.0.0-use.local
-  resolution: "@calcom/mock-payment-app@workspace:packages/app-store/mock-payment-app"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/nextcloudtalk@workspace:packages/app-store/nextcloudtalk":
-  version: 0.0.0-use.local
-  resolution: "@calcom/nextcloudtalk@workspace:packages/app-store/nextcloudtalk"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/office365calendar@workspace:packages/app-store/office365calendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/office365calendar@workspace:packages/app-store/office365calendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    msw: "npm:2.7.0"
-    windows-iana: "npm:5.1.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/office365video@workspace:*, @calcom/office365video@workspace:packages/app-store/office365video":
-  version: 0.0.0-use.local
-  resolution: "@calcom/office365video@workspace:packages/app-store/office365video"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/paypal@workspace:packages/app-store/paypal":
-  version: 0.0.0-use.local
-  resolution: "@calcom/paypal@workspace:packages/app-store/paypal"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/ping@workspace:packages/app-store/ping":
-  version: 0.0.0-use.local
-  resolution: "@calcom/ping@workspace:packages/app-store/ping"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/pipedrive-crm@workspace:packages/app-store/pipedrive-crm":
-  version: 0.0.0-use.local
-  resolution: "@calcom/pipedrive-crm@workspace:packages/app-store/pipedrive-crm"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/platform-constants@workspace:*, @calcom/platform-constants@workspace:packages/platform/constants":
-  version: 0.0.0-use.local
-  resolution: "@calcom/platform-constants@workspace:packages/platform/constants"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/platform-enums@workspace:*, @calcom/platform-enums@workspace:packages/platform/enums":
-  version: 0.0.0-use.local
-  resolution: "@calcom/platform-enums@workspace:packages/platform/enums"
-  dependencies:
-    "@calcom/platform-constants": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/platform-libraries@workspace:*, @calcom/platform-libraries@workspace:packages/platform/libraries":
-  version: 0.0.0-use.local
-  resolution: "@calcom/platform-libraries@workspace:packages/platform/libraries"
-  dependencies:
-    "@calcom/features": "workspace:*"
-    "@calcom/i18n": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@types/node": "npm:20.17.23"
-    "@vitejs/plugin-react": "npm:5.1.2"
-    typescript: "npm:5.9.3"
-    vite: "npm:6.4.2"
-    vite-plugin-dts: "npm:4.5.4"
-    vite-plugin-environment: "npm:1.1.3"
-  peerDependencies:
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-    stripe: ^9.0.0 || ^15.0.0
-    zod: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/platform-types@workspace:*, @calcom/platform-types@workspace:packages/platform/types":
-  version: 0.0.0-use.local
-  resolution: "@calcom/platform-types@workspace:packages/platform/types"
-  dependencies:
-    "@calcom/platform-constants": "workspace:*"
-    "@calcom/platform-enums": "workspace:*"
-    "@nestjs/common": "npm:10.4.20"
-    "@nestjs/swagger": "npm:7.4.2"
-    "@types/express": "npm:4.17.21"
-    class-transformer: "npm:0.5.1"
-    class-validator: "npm:0.14.3"
-    libphonenumber-js: "npm:1.12.38"
-    luxon: "npm:3.4.4"
-    zod: "npm:3.25.76"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/platform-utils@workspace:*, @calcom/platform-utils@workspace:packages/platform/utils":
-  version: 0.0.0-use.local
-  resolution: "@calcom/platform-utils@workspace:packages/platform/utils"
-  dependencies:
-    "@calcom/platform-constants": "workspace:*"
-    "@calcom/platform-types": "workspace:*"
-    "@types/jest": "npm:29.5.12"
-    jest: "npm:29.7.0"
-    ts-jest: "npm:29.1.4"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/plausible@workspace:packages/app-store/plausible":
-  version: 0.0.0-use.local
-  resolution: "@calcom/plausible@workspace:packages/app-store/plausible"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/posthog@workspace:packages/app-store/posthog":
-  version: 0.0.0-use.local
-  resolution: "@calcom/posthog@workspace:packages/app-store/posthog"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/prisma@npm:*, @calcom/prisma@workspace:*, @calcom/prisma@workspace:packages/prisma":
-  version: 0.0.0-use.local
-  resolution: "@calcom/prisma@workspace:packages/prisma"
-  dependencies:
-    "@prisma/adapter-pg": "npm:6.16.1"
-    "@prisma/client": "npm:6.16.1"
-    "@prisma/extension-accelerate": "npm:1.3.0"
-    "@prisma/generator-helper": "npm:6.16.2"
-    npm-run-all: "npm:4.1.5"
-    prisma: "npm:6.16.1"
-    prisma-kysely: "npm:2.2.0"
-    ts-node: "npm:10.9.2"
-    uuid: "npm:8.3.2"
-    zod: "npm:3.25.76"
-    zod-prisma-types: "npm:3.2.4"
-  bin:
-    prisma-enum-generator: ./run-enum-generator.js
-  languageName: unknown
-  linkType: soft
-
-"@calcom/qr_code@workspace:packages/app-store/qr_code":
-  version: 0.0.0-use.local
-  resolution: "@calcom/qr_code@workspace:packages/app-store/qr_code"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/riverside@workspace:packages/app-store/riverside":
-  version: 0.0.0-use.local
-  resolution: "@calcom/riverside@workspace:packages/app-store/riverside"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/roam@workspace:packages/app-store/roam":
-  version: 0.0.0-use.local
-  resolution: "@calcom/roam@workspace:packages/app-store/roam"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/salesforce@workspace:packages/app-store/salesforce":
-  version: 0.0.0-use.local
-  resolution: "@calcom/salesforce@workspace:packages/app-store/salesforce"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@graphql-codegen/cli": "npm:5.0.5"
-    "@jetstreamapp/soql-parser-js": "npm:6.1.0"
-    "@jsforce/jsforce-node": "npm:3.10.10"
-    "@parcel/watcher": "npm:2.5.1"
-    "@urql/core": "npm:5.1.1"
-    "@urql/exchange-retry": "npm:2.0.0"
-    graphql-config: "npm:5.1.3"
-    graphql-introspection-json-to-sdl: "npm:1.0.3"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/salesroom@workspace:packages/app-store/salesroom":
-  version: 0.0.0-use.local
-  resolution: "@calcom/salesroom@workspace:packages/app-store/salesroom"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/sendgrid@workspace:packages/app-store/sendgrid":
-  version: 0.0.0-use.local
-  resolution: "@calcom/sendgrid@workspace:packages/app-store/sendgrid"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@sendgrid/client": "npm:7.7.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/shimmer-video@workspace:packages/app-store/shimmervideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/shimmer-video@workspace:packages/app-store/shimmervideo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/signal@workspace:packages/app-store/signal":
-  version: 0.0.0-use.local
-  resolution: "@calcom/signal@workspace:packages/app-store/signal"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/sirius_video@workspace:packages/app-store/sirius_video":
-  version: 0.0.0-use.local
-  resolution: "@calcom/sirius_video@workspace:packages/app-store/sirius_video"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/skype@workspace:packages/app-store/skype":
-  version: 0.0.0-use.local
-  resolution: "@calcom/skype@workspace:packages/app-store/skype"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/stripepayment@workspace:packages/app-store/stripepayment":
-  version: 0.0.0-use.local
-  resolution: "@calcom/stripepayment@workspace:packages/app-store/stripepayment"
-  dependencies:
-    "@calcom/app-store": "workspace:*"
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/emails": "workspace:*"
-    "@calcom/features": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@stripe/react-stripe-js": "npm:1.10.0"
-    "@stripe/stripe-js": "npm:1.35.0"
-    stripe: "npm:9.16.0"
-    ts-node: "npm:10.9.2"
-    uuid: "npm:8.3.2"
-    zod: "npm:3.25.76"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/sylapsvideo@workspace:packages/app-store/sylapsvideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/sylapsvideo@workspace:packages/app-store/sylapsvideo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/tandemvideo@workspace:packages/app-store/tandemvideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/tandemvideo@workspace:packages/app-store/tandemvideo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/telegram@workspace:packages/app-store/telegram":
-  version: 0.0.0-use.local
-  resolution: "@calcom/telegram@workspace:packages/app-store/telegram"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/testing@workspace:*, @calcom/testing@workspace:packages/testing":
-  version: 0.0.0-use.local
-  resolution: "@calcom/testing@workspace:packages/testing"
-  dependencies:
-    "@biomejs/biome": "npm:2.3.10"
-    "@calcom/i18n": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/tsconfig": "workspace:*"
-    prismock: "npm:1.35.3"
-    vitest: "npm:4.0.16"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/trpc@workspace:*, @calcom/trpc@workspace:packages/trpc":
-  version: 0.0.0-use.local
-  resolution: "@calcom/trpc@workspace:packages/trpc"
-  dependencies:
-    "@biomejs/biome": "npm:2.3.10"
-    "@calcom/i18n": "workspace:*"
-    "@formbricks/api": "npm:3.0.0"
-    "@tanstack/react-query": "npm:5.17.19"
-    "@trpc/client": "npm:11.0.0-next-beta.222"
-    "@trpc/next": "npm:11.0.0-next-beta.222"
-    "@trpc/react-query": "npm:11.0.0-next-beta.222"
-    "@trpc/server": "npm:11.0.0-next-beta.222"
-    "@types/cookie": "npm:0.6.0"
-    "@types/uuid": "npm:8.3.4"
-    cookie: "npm:0.7.2"
-    superjson: "npm:1.9.1"
-    typescript: "npm:5.9.3"
-    uuid: "npm:8.3.2"
-    zod: "npm:3.25.76"
-  peerDependencies:
-    "@tanstack/react-query": ^5.0.0
-    next: ">=14.0.0"
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/tsconfig@workspace:*, @calcom/tsconfig@workspace:packages/tsconfig":
-  version: 0.0.0-use.local
-  resolution: "@calcom/tsconfig@workspace:packages/tsconfig"
-  dependencies:
-    tsconfig-paths: "npm:4.2.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/twipla@workspace:packages/app-store/twipla":
-  version: 0.0.0-use.local
-  resolution: "@calcom/twipla@workspace:packages/app-store/twipla"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/types@npm:*, @calcom/types@workspace:*, @calcom/types@workspace:packages/types":
-  version: 0.0.0-use.local
-  resolution: "@calcom/types@workspace:packages/types"
-  dependencies:
-    "@types/node": "npm:20.17.23"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/ui@workspace:*, @calcom/ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "@calcom/ui@workspace:packages/ui"
-  dependencies:
-    "@biomejs/biome": "npm:^2.3.8"
-    "@calcom/config": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/tsconfig": "workspace:*"
-    "@formkit/auto-animate": "npm:1.0.0-beta.5"
-    "@lexical/code": "npm:0.9.0"
-    "@lexical/html": "npm:0.9.0"
-    "@lexical/link": "npm:0.9.0"
-    "@lexical/list": "npm:0.9.0"
-    "@lexical/markdown": "npm:0.9.0"
-    "@lexical/react": "npm:0.9.0"
-    "@lexical/rich-text": "npm:0.9.0"
-    "@lexical/selection": "npm:0.9.0"
-    "@lexical/table": "npm:0.9.0"
-    "@lexical/utils": "npm:0.9.0"
-    "@radix-ui/react-avatar": "npm:1.1.3"
-    "@radix-ui/react-checkbox": "npm:1.0.4"
-    "@radix-ui/react-dialog": "npm:1.0.4"
-    "@radix-ui/react-popover": "npm:1.0.6"
-    "@radix-ui/react-portal": "npm:1.0.4"
-    "@radix-ui/react-select": "npm:0.1.1"
-    "@radix-ui/react-slider": "npm:1.2.2"
-    "@tanstack/react-table": "npm:8.20.6"
-    "@testing-library/user-event": "npm:14.6.1"
-    "@types/react": "npm:18.0.26"
-    "@types/react-dom": "npm:18.2.6"
-    "@types/uuid": "npm:10.0.0"
-    "@wojtekmaj/react-daterange-picker": "npm:3.4.0"
-    class-variance-authority: "npm:0.4.0"
-    classnames: "npm:2.3.1"
-    cmdk: "npm:0.2.0"
-    cmk: "npm:0.1.1"
-    date-fns: "npm:3.6.0"
-    downshift: "npm:6.1.9"
-    execa: "npm:9.3.0"
-    fast-glob: "npm:3.3.2"
-    fs-extra: "npm:11.3.2"
-    lexical: "npm:0.9.0"
-    lucide-static: "npm:0.424.0"
-    node-html-parser: "npm:6.1.13"
-    react-colorful: "npm:5.6.1"
-    react-day-picker: "npm:8.10.1"
-    react-easy-crop: "npm:5.0.0"
-    react-hook-form: "npm:7.43.3"
-    react-inlinesvg: "npm:4.1.3"
-    react-select: "npm:5.8.0"
-    sonner: "npm:1.7.4"
-    tailwind-merge: "npm:1.13.2"
-    typescript: "npm:5.9.3"
-    uuid: "npm:11.1.0"
-    zod: "npm:3.25.76"
-  peerDependencies:
-    "@tanstack/react-query": ^5.0.0
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-  languageName: unknown
-  linkType: soft
-
-"@calcom/umami@workspace:packages/app-store/umami":
-  version: 0.0.0-use.local
-  resolution: "@calcom/umami@workspace:packages/app-store/umami"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/vital@workspace:packages/app-store/vital":
-  version: 0.0.0-use.local
-  resolution: "@calcom/vital@workspace:packages/app-store/vital"
-  dependencies:
-    "@calcom/i18n": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@tryvital/vital-node": "npm:1.4.6"
-    queue: "npm:6.0.2"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/weather_in_your_calendar@workspace:packages/app-store/weather_in_your_calendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/weather_in_your_calendar@workspace:packages/app-store/weather_in_your_calendar"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/web@workspace:apps/web":
-  version: 0.0.0-use.local
-  resolution: "@calcom/web@workspace:apps/web"
-  dependencies:
-    "@babel/core": "npm:7.26.10"
-    "@biomejs/biome": "npm:2.3.10"
-    "@boxyhq/saml-jackson": "npm:1.52.2"
-    "@calcom/app-store": "workspace:*"
-    "@calcom/app-store-cli": "workspace:*"
-    "@calcom/config": "workspace:*"
-    "@calcom/dayjs": "workspace:*"
-    "@calcom/embed-core": "workspace:*"
-    "@calcom/embed-react": "workspace:*"
-    "@calcom/embed-snippet": "workspace:*"
-    "@calcom/features": "workspace:*"
-    "@calcom/lib": "workspace:*"
-    "@calcom/platform-enums": "workspace:*"
-    "@calcom/platform-types": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/testing": "workspace:*"
-    "@calcom/trpc": "workspace:*"
-    "@calcom/tsconfig": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@calcom/ui": "workspace:*"
-    "@coss/ui": "workspace:*"
-    "@daily-co/daily-js": "npm:0.83.1"
-    "@daily-co/daily-react": "npm:0.23.2"
-    "@dub/analytics": "npm:0.0.27"
-    "@dub/embed-core": "npm:0.0.18"
-    "@dub/embed-react": "npm:0.0.18"
-    "@formkit/auto-animate": "npm:1.0.0-beta.5"
-    "@glidejs/glide": "npm:3.5.2"
-    "@googleapis/admin": "npm:23.5.0"
-    "@googleapis/calendar": "npm:9.7.9"
-    "@googleapis/oauth2": "npm:1.0.7"
-    "@hookform/error-message": "npm:2.0.0"
-    "@hookform/resolvers": "npm:2.9.7"
-    "@microsoft/microsoft-graph-types-beta": "npm:0.15.0-preview"
-    "@next-auth/prisma-adapter": "npm:1.0.4"
-    "@next/bundle-analyzer": "npm:16.1.5"
-    "@next/third-parties": "npm:14.2.5"
-    "@playwright/test": "npm:1.57.0"
-    "@prisma/nextjs-monorepo-workaround-plugin": "npm:6.16.1"
-    "@radix-ui/react-avatar": "npm:1.1.3"
-    "@radix-ui/react-collapsible": "npm:1.0.3"
-    "@radix-ui/react-dialog": "npm:1.0.4"
-    "@radix-ui/react-dropdown-menu": "npm:2.0.5"
-    "@radix-ui/react-hover-card": "npm:1.0.7"
-    "@radix-ui/react-id": "npm:1.0.1"
-    "@radix-ui/react-popover": "npm:1.0.6"
-    "@radix-ui/react-radio-group": "npm:1.1.3"
-    "@radix-ui/react-slider": "npm:1.2.2"
-    "@radix-ui/react-switch": "npm:1.1.0"
-    "@radix-ui/react-toggle-group": "npm:1.0.4"
-    "@radix-ui/react-tooltip": "npm:1.0.6"
-    "@sentry/nextjs": "npm:10.33.0"
-    "@stripe/react-stripe-js": "npm:1.10.0"
-    "@stripe/stripe-js": "npm:1.35.0"
-    "@tailwindcss/postcss": "npm:4.1.15"
-    "@tanstack/react-query": "npm:5.17.19"
-    "@testing-library/react": "npm:13.3.0"
-    "@todesktop/client-core": "npm:1.20.0"
-    "@types/accept-language-parser": "npm:1.5.2"
-    "@types/async": "npm:3.2.15"
-    "@types/backblaze-b2": "npm:^1"
-    "@types/bcryptjs": "npm:2.4.2"
-    "@types/detect-port": "npm:1.3.2"
-    "@types/dompurify": "npm:3.0.5"
-    "@types/glidejs__glide": "npm:3.4.2"
-    "@types/jsdom": "npm:21.1.7"
-    "@types/lodash": "npm:4.14.182"
-    "@types/markdown-it": "npm:14.1.2"
-    "@types/md5": "npm:2.3.2"
-    "@types/memory-cache": "npm:0.2.2"
-    "@types/micro": "npm:7.3.7"
-    "@types/module-alias": "npm:2.0.1"
-    "@types/nodemailer": "npm:6.4.5"
-    "@types/qrcode": "npm:1.4.3"
-    "@types/react": "npm:18.0.26"
-    "@types/remove-markdown": "npm:0.3.1"
-    "@types/sanitize-html": "npm:2.9.0"
-    "@types/stripe": "npm:8.0.417"
-    "@types/turndown": "npm:5.0.1"
-    "@types/uuid": "npm:8.3.1"
-    "@upstash/redis": "npm:1.35.2"
-    "@vercel/edge-config": "npm:0.1.1"
-    "@vercel/og": "npm:0.6.3"
-    accept-language-parser: "npm:1.5.0"
-    async: "npm:3.2.4"
-    autoprefixer: "npm:10.4.19"
-    backblaze-b2: "npm:^1.7.1"
-    bcp-47-match: "npm:2.0.3"
-    bcryptjs: "npm:2.4.3"
-    botid: "npm:1.5.7"
-    classnames: "npm:2.3.2"
-    cron: "npm:3.1.7"
-    detect-port: "npm:1.3.0"
-    dompurify: "npm:3.3.2"
-    dotenv-cli: "npm:6.0.0"
-    entities: "npm:4.5.0"
-    env-cmd: "npm:10.1.0"
-    glob: "npm:10.4.5"
-    google-auth-library: "npm:9.15.0"
-    handlebars: "npm:4.7.9"
-    i18next: "npm:23.2.3"
-    ical.js: "npm:1.5.0"
-    ics: "npm:2.37.0"
-    isbot: "npm:5.1.30"
-    jose: "npm:4.15.9"
-    jotai: "npm:2.12.2"
-    jsdom: "npm:22.0.0"
-    kbar: "npm:0.1.0-beta.36"
-    libphonenumber-js: "npm:^1.12.38"
-    lodash: "npm:4.18.1"
-    markdown-it: "npm:14.1.1"
-    md5: "npm:2.3.0"
-    memory-cache: "npm:0.2.0"
-    micro: "npm:10.0.1"
-    module-alias: "npm:2.2.2"
-    next: "npm:16.2.3"
-    next-auth: "npm:4.24.13"
-    next-axiom: "npm:0.17.0"
-    next-i18next: "npm:15.4.2"
-    next-seo: "npm:6.1.0"
-    next-themes: "npm:0.2.0"
-    node-html-parser: "npm:6.1.13"
-    node-mocks-http: "npm:1.16.2"
-    nodemailer: "npm:7.0.12"
-    nuqs: "npm:2.8.2"
-    openid-client: "npm:6.5.0"
-    otplib: "npm:12.0.1"
-    postcss: "npm:8.5.6"
-    posthog-js: "npm:1.274.1"
-    qrcode: "npm:1.5.1"
-    raw-body: "npm:2.5.2"
-    react: "npm:18.2.0"
-    react-digit-input: "npm:2.1.0"
-    react-dom: "npm:18.2.0"
-    react-easy-crop: "npm:3.5.3"
-    react-hook-form: "npm:7.43.3"
-    react-i18next: "npm:12.3.1"
-    react-live-chat-loader: "npm:2.8.1"
-    react-phone-input-2: "npm:2.15.1"
-    react-phone-number-input: "npm:3.4.12"
-    react-schemaorg: "npm:2.0.0"
-    react-select: "npm:5.8.0"
-    react-timezone-select: "npm:1.4.0"
-    react-turnstile: "npm:1.1.3"
-    react-use-intercom: "npm:5.5.0"
-    remove-markdown: "npm:0.5.0"
-    retell-client-js-sdk: "npm:2.0.7"
-    retell-sdk: "npm:4.41.0"
-    rrule: "npm:2.7.1"
-    sanitize-html: "npm:2.17.0"
-    schema-dts: "npm:1.1.0"
-    sharp: "npm:0.33.5"
-    short-uuid: "npm:4.2.0"
-    sonner: "npm:1.7.4"
-    stripe: "npm:9.16.0"
-    superjson: "npm:1.9.1"
-    tailwindcss: "npm:4.1.17"
-    ts-node: "npm:10.9.2"
-    turbo: "npm:2.5.5"
-    turndown: "npm:7.2.0"
-    typescript: "npm:5.9.3"
-    uuid: "npm:8.3.2"
-    zod: "npm:3.25.76"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/webex@workspace:packages/app-store/webex":
-  version: 0.0.0-use.local
-  resolution: "@calcom/webex@workspace:packages/app-store/webex"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/whatsapp@workspace:packages/app-store/whatsapp":
-  version: 0.0.0-use.local
-  resolution: "@calcom/whatsapp@workspace:packages/app-store/whatsapp"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/whereby@workspace:packages/app-store/whereby":
-  version: 0.0.0-use.local
-  resolution: "@calcom/whereby@workspace:packages/app-store/whereby"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/zapier@workspace:packages/app-store/zapier":
-  version: 0.0.0-use.local
-  resolution: "@calcom/zapier@workspace:packages/app-store/zapier"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-    "@types/node-schedule": "npm:2.1.0"
-    node-schedule: "npm:2.1.0"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/zoho-bigin@workspace:packages/app-store/zoho-bigin":
-  version: 0.0.0-use.local
-  resolution: "@calcom/zoho-bigin@workspace:packages/app-store/zoho-bigin"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/zohocalendar@workspace:packages/app-store/zohocalendar":
-  version: 0.0.0-use.local
-  resolution: "@calcom/zohocalendar@workspace:packages/app-store/zohocalendar"
-  dependencies:
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/zohocrm@workspace:packages/app-store/zohocrm":
-  version: 0.0.0-use.local
-  resolution: "@calcom/zohocrm@workspace:packages/app-store/zohocrm"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@calcom/zoomvideo@workspace:*, @calcom/zoomvideo@workspace:packages/app-store/zoomvideo":
-  version: 0.0.0-use.local
-  resolution: "@calcom/zoomvideo@workspace:packages/app-store/zoomvideo"
-  dependencies:
-    "@calcom/lib": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
+    "@schedule/prisma": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -13501,6 +11898,1617 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@schedule/alby@workspace:packages/app-store/alby":
+  version: 0.0.0-use.local
+  resolution: "@schedule/alby@workspace:packages/app-store/alby"
+  dependencies:
+    "@getalby/lightning-tools": "npm:5.1.2"
+    "@getalby/sdk": "npm:4.0.0"
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@webbtc/webln-types": "npm:3.0.0"
+    react-qr-code: "npm:2.0.18"
+    svix: "npm:0.85.1"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/api-proxy@workspace:apps/api":
+  version: 0.0.0-use.local
+  resolution: "@schedule/api-proxy@workspace:apps/api"
+  dependencies:
+    connect: "npm:3.7.0"
+    http: "npm:0.0.1-security"
+    http-proxy-middleware: "npm:2.0.9"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/api-v2@workspace:apps/api/v2":
+  version: 0.0.0-use.local
+  resolution: "@schedule/api-v2@workspace:apps/api/v2"
+  dependencies:
+    "@axiomhq/winston": "npm:1.2.0"
+    "@biomejs/biome": "npm:^2.3.8"
+    "@golevelup/ts-jest": "npm:0.4.0"
+    "@microsoft/microsoft-graph-types-beta": "npm:0.42.0-preview"
+    "@nest-lab/throttler-storage-redis": "npm:1.0.0"
+    "@nestjs/axios": "npm:4.0.0"
+    "@nestjs/bull": "npm:11.0.4"
+    "@nestjs/cli": "npm:10.3.2"
+    "@nestjs/common": "npm:10.4.20"
+    "@nestjs/config": "npm:3.2.0"
+    "@nestjs/core": "npm:10.4.20"
+    "@nestjs/jwt": "npm:10.2.0"
+    "@nestjs/passport": "npm:10.0.3"
+    "@nestjs/platform-express": "npm:10.4.20"
+    "@nestjs/schematics": "npm:10.1.1"
+    "@nestjs/swagger": "npm:7.4.2"
+    "@nestjs/testing": "npm:10.4.20"
+    "@nestjs/throttler": "npm:6.2.1"
+    "@schedule/platform-constants": "workspace:*"
+    "@schedule/platform-enums": "workspace:*"
+    "@schedule/platform-libraries": "workspace:*"
+    "@schedule/platform-types": "workspace:*"
+    "@schedule/platform-utils": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@sentry/nestjs": "npm:9.46.0"
+    "@sentry/node": "npm:9.46.0"
+    "@sentry/profiling-node": "npm:9.46.0"
+    "@snyk/protect": "npm:latest"
+    "@types/cookie-parser": "npm:1.4.7"
+    "@types/express": "npm:4.17.21"
+    "@types/fs-extra": "npm:11.0.4"
+    "@types/jest": "npm:29.5.12"
+    "@types/luxon": "npm:3.4.2"
+    "@types/passport-jwt": "npm:3.0.13"
+    "@types/supertest": "npm:2.0.16"
+    axios: "npm:1.15.0"
+    body-parser: "npm:1.20.3"
+    bull: "npm:4.15.1"
+    class-transformer: "npm:0.5.1"
+    class-validator: "npm:0.14.3"
+    concurrently: "npm:9.1.2"
+    cookie-parser: "npm:1.4.6"
+    dotenv: "npm:16.6.1"
+    fs-extra: "npm:11.3.2"
+    googleapis: "npm:84.0.0"
+    helmet: "npm:7.1.0"
+    ioredis: "npm:5.3.2"
+    jest: "npm:29.7.0"
+    jest-date-mock: "npm:1.0.10"
+    jest-junit: "npm:^16.0.0"
+    lodash: "npm:4.18.1"
+    luxon: "npm:3.4.4"
+    nest-winston: "npm:1.9.4"
+    node-mocks-http: "npm:1.16.2"
+    passport: "npm:0.7.0"
+    passport-jwt: "npm:4.0.1"
+    qs-stringify: "npm:1.2.1"
+    querystring: "npm:0.2.1"
+    reflect-metadata: "npm:0.1.14"
+    rxjs: "npm:7.8.2"
+    source-map-support: "npm:0.5.21"
+    stripe: "npm:15.4.0"
+    supertest: "npm:6.3.4"
+    ts-jest: "npm:29.1.4"
+    ts-loader: "npm:9.5.1"
+    ts-node: "npm:10.9.2"
+    tsconfig-paths: "npm:4.2.0"
+    typescript: "npm:5.9.3"
+    uuid: "npm:8.3.2"
+    winston: "npm:3.17.0"
+    winston-transport: "npm:4.9.0"
+    zod: "npm:3.25.76"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/app-store-cli@workspace:*, @schedule/app-store-cli@workspace:packages/app-store-cli":
+  version: 0.0.0-use.local
+  resolution: "@schedule/app-store-cli@workspace:packages/app-store-cli"
+  dependencies:
+    "@biomejs/biome": "npm:^2.3.8"
+    "@schedule/lib": "workspace:*"
+    "@types/react": "npm:18.0.26"
+    chokidar: "npm:3.6.0"
+    ink: "npm:3.2.0"
+    ink-select-input: "npm:4.2.1"
+    ink-text-input: "npm:4.0.3"
+    meow: "npm:9.0.0"
+    react: "npm:18.2.0"
+    ts-node: "npm:10.9.2"
+    typescript: "npm:5.9.3"
+  bin:
+    app-store-cli: dist/cli.js
+  languageName: unknown
+  linkType: soft
+
+"@schedule/app-store@workspace:*, @schedule/app-store@workspace:packages/app-store":
+  version: 0.0.0-use.local
+  resolution: "@schedule/app-store@workspace:packages/app-store"
+  dependencies:
+    "@schedule/dailyvideo": "workspace:*"
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/features": "workspace:*"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/office365video": "workspace:*"
+    "@schedule/testing": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@schedule/ui": "workspace:*"
+    "@schedule/zoomvideo": "workspace:*"
+    lodash: "npm:4.18.1"
+    qs-stringify: "npm:1.2.1"
+    react-i18next: "npm:12.3.1"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    stripe: ^9.0.0 || ^15.0.0
+    zod: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/applecalendar@workspace:packages/app-store/applecalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/applecalendar@workspace:packages/app-store/applecalendar"
+  dependencies:
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    react-hook-form: "npm:7.43.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/atoms@workspace:*, @schedule/atoms@workspace:packages/platform/atoms":
+  version: 0.0.0-use.local
+  resolution: "@schedule/atoms@workspace:packages/platform/atoms"
+  dependencies:
+    "@radix-ui/react-dialog-atoms": "npm:@radix-ui/react-dialog@1.0.4"
+    "@radix-ui/react-popover-atoms": "npm:@radix-ui/react-popover@1.0.6"
+    "@radix-ui/react-slot": "npm:1.1.2"
+    "@radix-ui/react-switch": "npm:1.1.0"
+    "@radix-ui/react-toast": "npm:1.1.5"
+    "@radix-ui/react-tooltip-atoms": "npm:@radix-ui/react-tooltip@1.0.6"
+    "@rollup/plugin-node-resolve": "npm:15.0.1"
+    "@schedule/i18n": "workspace:*"
+    "@tailwindcss/cli": "npm:4.1.16"
+    "@tailwindcss/postcss": "npm:4.1.15"
+    "@tanstack/react-query": "npm:5.17.19"
+    "@types/jest": "npm:29.5.12"
+    "@types/node": "npm:20.17.23"
+    "@types/react": "npm:18.0.26"
+    "@types/react-dom": "npm:18.2.6"
+    "@vitejs/plugin-react": "npm:5.1.2"
+    "@vitejs/plugin-react-swc": "npm:4.2.2"
+    autoprefixer: "npm:10.4.19"
+    class-variance-authority: "npm:0.4.0"
+    clsx: "npm:2.1.1"
+    cssnano: "npm:7.1.2"
+    dompurify: "npm:3.3.2"
+    jest: "npm:29.7.0"
+    marked: "npm:15.0.6"
+    postcss: "npm:8.5.6"
+    postcss-cli: "npm:11.0.1"
+    postcss-import: "npm:16.1.0"
+    postcss-prefixer: "npm:3.0.0"
+    postcss-prefixwrap: "npm:1.57.0"
+    react-use: "npm:17.6.0"
+    tailwind-merge: "npm:1.13.2"
+    tailwindcss: "npm:4.1.17"
+    ts-jest: "npm:29.1.4"
+    typescript: "npm:5.9.3"
+    vite: "npm:6.4.2"
+    vite-plugin-dts: "npm:4.5.4"
+    vite-plugin-inspect: "npm:0.8.4"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/attio@workspace:packages/app-store/attio":
+  version: 0.0.0-use.local
+  resolution: "@schedule/attio@workspace:packages/app-store/attio"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/base@workspace:packages/platform/examples/base":
+  version: 0.0.0-use.local
+  resolution: "@schedule/base@workspace:packages/platform/examples/base"
+  dependencies:
+    "@playwright/test": "npm:1.57.0"
+    "@prisma/client": "npm:6.16.1"
+    "@schedule/atoms": "workspace:*"
+    "@tailwindcss/postcss": "npm:4.1.15"
+    "@types/node": "npm:20.17.23"
+    "@types/react": "npm:18.0.26"
+    "@types/react-dom": "npm:18.2.6"
+    dotenv: "npm:17.2.2"
+    next: "npm:16.2.3"
+    postcss: "npm:8.5.6"
+    prisma: "npm:6.16.1"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-select: "npm:5.8.0"
+    tailwindcss: "npm:4.1.17"
+    typescript: "npm:5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/basecamp3@workspace:packages/app-store/basecamp3":
+  version: 0.0.0-use.local
+  resolution: "@schedule/basecamp3@workspace:packages/app-store/basecamp3"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/btcpayserver@workspace:packages/app-store/btcpayserver":
+  version: 0.0.0-use.local
+  resolution: "@schedule/btcpayserver@workspace:packages/app-store/btcpayserver"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/caldavcalendar@workspace:packages/app-store/caldavcalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/caldavcalendar@workspace:packages/app-store/caldavcalendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@schedule/ui": "workspace:*"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    react-hook-form: ^7.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/campfire@workspace:packages/app-store/campfire":
+  version: 0.0.0-use.local
+  resolution: "@schedule/campfire@workspace:packages/app-store/campfire"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/closecom@workspace:packages/app-store/closecom":
+  version: 0.0.0-use.local
+  resolution: "@schedule/closecom@workspace:packages/app-store/closecom"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/config@workspace:*, @schedule/config@workspace:packages/config":
+  version: 0.0.0-use.local
+  resolution: "@schedule/config@workspace:packages/config"
+  dependencies:
+    "@tailwindcss/typography": "npm:0.5.4"
+    "@todesktop/tailwind-variants": "npm:1.0.1"
+    tailwind-scrollbar: "npm:4.0.2"
+    tailwindcss-radix: "npm:4.0.2"
+    tw-animate-css: "npm:1.4.0"
+    typescript: "npm:5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/dailyvideo@workspace:*, @schedule/dailyvideo@workspace:packages/app-store/dailyvideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/dailyvideo@workspace:packages/app-store/dailyvideo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/databuddy@workspace:packages/app-store/databuddy":
+  version: 0.0.0-use.local
+  resolution: "@schedule/databuddy@workspace:packages/app-store/databuddy"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/dayjs@workspace:*, @schedule/dayjs@workspace:packages/dayjs":
+  version: 0.0.0-use.local
+  resolution: "@schedule/dayjs@workspace:packages/dayjs"
+  dependencies:
+    dayjs: "npm:1.11.2"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/debugging@workspace:packages/debugging":
+  version: 0.0.0-use.local
+  resolution: "@schedule/debugging@workspace:packages/debugging"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/demodesk@workspace:packages/app-store/demodesk":
+  version: 0.0.0-use.local
+  resolution: "@schedule/demodesk@workspace:packages/app-store/demodesk"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/dialpad@workspace:packages/app-store/dialpad":
+  version: 0.0.0-use.local
+  resolution: "@schedule/dialpad@workspace:packages/app-store/dialpad"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/discord@workspace:packages/app-store/discord":
+  version: 0.0.0-use.local
+  resolution: "@schedule/discord@workspace:packages/app-store/discord"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/docs@workspace:apps/docs":
+  version: 0.0.0-use.local
+  resolution: "@schedule/docs@workspace:apps/docs"
+  dependencies:
+    "@types/react": "npm:^19.0.0"
+    next: "npm:^15.1.0"
+    nextra: "npm:^4.2.0"
+    nextra-theme-docs: "npm:^4.2.0"
+    pagefind: "npm:^1.5.2"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    typescript: "npm:^5.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/dub@workspace:packages/app-store/dub":
+  version: 0.0.0-use.local
+  resolution: "@schedule/dub@workspace:packages/app-store/dub"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+    dub-package: "npm:dub@^0.61.12"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/eightxeight@workspace:packages/app-store/eightxeight":
+  version: 0.0.0-use.local
+  resolution: "@schedule/eightxeight@workspace:packages/app-store/eightxeight"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/element-call@workspace:packages/app-store/element-call":
+  version: 0.0.0-use.local
+  resolution: "@schedule/element-call@workspace:packages/app-store/element-call"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/emails@workspace:*, @schedule/emails@workspace:packages/emails":
+  version: 0.0.0-use.local
+  resolution: "@schedule/emails@workspace:packages/emails"
+  dependencies:
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/testing": "workspace:*"
+    "@schedule/tsconfig": "workspace:*"
+    "@schedule/types": "workspace:*"
+    rrule: "npm:2.7.1"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/embed-core@workspace:*, @schedule/embed-core@workspace:packages/embeds/embed-core":
+  version: 0.0.0-use.local
+  resolution: "@schedule/embed-core@workspace:packages/embeds/embed-core"
+  dependencies:
+    "@biomejs/biome": "npm:2.3.10"
+    "@playwright/test": "npm:1.57.0"
+    "@tailwindcss/cli": "npm:4.1.16"
+    "@tailwindcss/postcss": "npm:4.1.15"
+    "@vitejs/plugin-basic-ssl": "npm:2.1.0"
+    autoprefixer: "npm:10.4.19"
+    npm-run-all: "npm:4.1.5"
+    postcss: "npm:8.5.6"
+    tailwindcss: "npm:4.1.17"
+    typescript: "npm:5.9.3"
+    vite: "npm:6.4.2"
+    vite-plugin-environment: "npm:1.1.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/embed-react@workspace:*, @schedule/embed-react@workspace:packages/embeds/embed-react":
+  version: 0.0.0-use.local
+  resolution: "@schedule/embed-react@workspace:packages/embeds/embed-react"
+  dependencies:
+    "@playwright/test": "npm:1.57.0"
+    "@schedule/embed-core": "workspace:*"
+    "@schedule/embed-snippet": "workspace:*"
+    "@types/react": "npm:18.0.26"
+    "@types/react-dom": "npm:18.2.6"
+    "@vitejs/plugin-react": "npm:5.1.2"
+    npm-run-all: "npm:4.1.5"
+    typescript: "npm:5.9.3"
+    vite: "npm:6.4.2"
+  peerDependencies:
+    react: ^18.2.0 || ^19.0.0
+    react-dom: ^18.2.0 || ^19.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/embed-snippet@workspace:*, @schedule/embed-snippet@workspace:packages/embeds/embed-snippet":
+  version: 0.0.0-use.local
+  resolution: "@schedule/embed-snippet@workspace:packages/embeds/embed-snippet"
+  dependencies:
+    "@schedule/embed-core": "workspace:*"
+    typescript: "npm:5.9.3"
+    vite: "npm:6.4.2"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/example-app-credential-sync@workspace:example-apps/credential-sync":
+  version: 0.0.0-use.local
+  resolution: "@schedule/example-app-credential-sync@workspace:example-apps/credential-sync"
+  dependencies:
+    "@prisma/client": "npm:6.16.1"
+    "@schedule/atoms": "workspace:*"
+    "@types/node": "npm:20.17.23"
+    "@types/react": "npm:18.0.26"
+    "@types/react-dom": "npm:18.2.6"
+    autoprefixer: "npm:10.4.19"
+    dotenv: "npm:16.6.1"
+    next: "npm:15.5.15"
+    postcss: "npm:8.5.6"
+    prisma: "npm:6.16.1"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    tailwindcss: "npm:3.4.1"
+    typescript: "npm:5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/exchange2013calendar@workspace:packages/app-store/exchange2013calendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/exchange2013calendar@workspace:packages/app-store/exchange2013calendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@schedule/ui": "workspace:*"
+    ews-javascript-api: "npm:0.11.0"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    react-hook-form: ^7.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/exchange2016calendar@workspace:packages/app-store/exchange2016calendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/exchange2016calendar@workspace:packages/app-store/exchange2016calendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@schedule/ui": "workspace:*"
+    ews-javascript-api: "npm:0.11.0"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    react-hook-form: ^7.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/exchangecalendar@workspace:packages/app-store/exchangecalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/exchangecalendar@workspace:packages/app-store/exchangecalendar"
+  dependencies:
+    "@ewsjs/xhr": "npm:3.1.3"
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    ews-javascript-api: "npm:0.11.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/facetime@workspace:packages/app-store/facetime":
+  version: 0.0.0-use.local
+  resolution: "@schedule/facetime@workspace:packages/app-store/facetime"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/famulor@workspace:packages/app-store/famulor":
+  version: 0.0.0-use.local
+  resolution: "@schedule/famulor@workspace:packages/app-store/famulor"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/fathom@workspace:packages/app-store/fathom":
+  version: 0.0.0-use.local
+  resolution: "@schedule/fathom@workspace:packages/app-store/fathom"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/feature-auth@workspace:packages/features/auth":
+  version: 0.0.0-use.local
+  resolution: "@schedule/feature-auth@workspace:packages/features/auth"
+  dependencies:
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/trpc": "workspace:*"
+    "@schedule/ui": "workspace:*"
+    bcryptjs: "npm:2.4.3"
+    dub: "npm:0.59.1"
+    handlebars: "npm:4.7.9"
+    jose: "npm:4.15.9"
+    lru-cache: "npm:9.0.3"
+    next-auth: "npm:4.24.13"
+    nodemailer: "npm:7.0.12"
+    otplib: "npm:12.0.1"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/features@workspace:*, @schedule/features@workspace:packages/features":
+  version: 0.0.0-use.local
+  resolution: "@schedule/features@workspace:packages/features"
+  dependencies:
+    "@coss/ui": "workspace:*"
+    "@evyweb/ioctopus": "npm:1.2.0"
+    "@schedule/atoms": "workspace:*"
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/testing": "workspace:*"
+    "@schedule/trpc": "workspace:*"
+    "@schedule/ui": "workspace:*"
+    "@tanstack/react-table": "npm:8.20.6"
+    "@tanstack/react-virtual": "npm:3.10.9"
+    "@testing-library/react-hooks": "npm:8.0.1"
+    "@trigger.dev/sdk": "npm:4.3.2"
+    "@types/deasync": "npm:^0"
+    "@types/web-push": "npm:3.6.3"
+    "@vercel/functions": "npm:1.4.0"
+    city-timezones: "npm:1.2.1"
+    class-variance-authority: "npm:0.7.1"
+    date-fns-tz: "npm:3.2.0"
+    deasync: "npm:^0.1.31"
+    framer-motion: "npm:10.12.8"
+    p-limit: "npm:6.2.0"
+    react-select: "npm:5.8.0"
+    react-sticky-box: "npm:2.0.4"
+    recharts: "npm:3.0.2"
+    stripe: "npm:9.16.0"
+    stripe-event-types: "npm:3.1.0"
+    trigger.dev: "npm:4.3.2"
+    web-push: "npm:3.6.7"
+    zustand: "npm:4.5.2"
+  peerDependencies:
+    next: ">=14.0.0"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    react-is: ^18.2.0
+    zod: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/feishucalendar@workspace:packages/app-store/feishucalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/feishucalendar@workspace:packages/app-store/feishucalendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/ga4@workspace:packages/app-store/ga4":
+  version: 0.0.0-use.local
+  resolution: "@schedule/ga4@workspace:packages/app-store/ga4"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/giphy@workspace:packages/app-store/giphy":
+  version: 0.0.0-use.local
+  resolution: "@schedule/giphy@workspace:packages/app-store/giphy"
+  dependencies:
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/googlecalendar@workspace:packages/app-store/googlecalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/googlecalendar@workspace:packages/app-store/googlecalendar"
+  dependencies:
+    "@googleapis/calendar": "npm:9.7.9"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/googlevideo@workspace:packages/app-store/googlevideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/googlevideo@workspace:packages/app-store/googlevideo"
+  dependencies:
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/gtm@workspace:packages/app-store/gtm":
+  version: 0.0.0-use.local
+  resolution: "@schedule/gtm@workspace:packages/app-store/gtm"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/hitpay@workspace:packages/app-store/hitpay":
+  version: 0.0.0-use.local
+  resolution: "@schedule/hitpay@workspace:packages/app-store/hitpay"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/horizon-workrooms@workspace:packages/app-store/horizon-workrooms":
+  version: 0.0.0-use.local
+  resolution: "@schedule/horizon-workrooms@workspace:packages/app-store/horizon-workrooms"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/hubspot@workspace:packages/app-store/hubspot":
+  version: 0.0.0-use.local
+  resolution: "@schedule/hubspot@workspace:packages/app-store/hubspot"
+  dependencies:
+    "@hubspot/api-client": "npm:6.0.1"
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/huddle01video@workspace:packages/app-store/huddle01video":
+  version: 0.0.0-use.local
+  resolution: "@schedule/huddle01video@workspace:packages/app-store/huddle01video"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/i18n@workspace:*, @schedule/i18n@workspace:packages/i18n":
+  version: 0.0.0-use.local
+  resolution: "@schedule/i18n@workspace:packages/i18n"
+  dependencies:
+    "@schedule/tsconfig": "workspace:*"
+    i18next: "npm:23.2.3"
+    typescript: "npm:5.9.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/ics-feed@workspace:packages/app-store/ics-feedcalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/ics-feed@workspace:packages/app-store/ics-feedcalendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@schedule/ui": "workspace:*"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    react-hook-form: ^7.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/insihts@workspace:packages/app-store/insihts":
+  version: 0.0.0-use.local
+  resolution: "@schedule/insihts@workspace:packages/app-store/insihts"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/intercom@workspace:packages/app-store/intercom":
+  version: 0.0.0-use.local
+  resolution: "@schedule/intercom@workspace:packages/app-store/intercom"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/jelly@workspace:packages/app-store/jelly":
+  version: 0.0.0-use.local
+  resolution: "@schedule/jelly@workspace:packages/app-store/jelly"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/jitsivideo@workspace:packages/app-store/jitsivideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/jitsivideo@workspace:packages/app-store/jitsivideo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/kysely@workspace:packages/kysely":
+  version: 0.0.0-use.local
+  resolution: "@schedule/kysely@workspace:packages/kysely"
+  dependencies:
+    "@types/pg": "npm:8.11.14"
+    kysely: "npm:0.28.14"
+    pg: "npm:8.16.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/larkcalendar@workspace:packages/app-store/larkcalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/larkcalendar@workspace:packages/app-store/larkcalendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/lib@npm:*, @schedule/lib@workspace:*, @schedule/lib@workspace:packages/lib":
+  version: 0.0.0-use.local
+  resolution: "@schedule/lib@workspace:packages/lib"
+  dependencies:
+    "@biomejs/biome": "npm:2.3.10"
+    "@faker-js/faker": "npm:7.6.0"
+    "@formbricks/api": "npm:3.0.0"
+    "@formbricks/js": "npm:4.3.0"
+    "@schedule/config": "workspace:*"
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/tsconfig": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@sendgrid/client": "npm:7.7.0"
+    "@unkey/ratelimit": "npm:2.1.3"
+    "@vercel/og": "npm:0.6.3"
+    city-timezones: "npm:1.2.1"
+    i18next: "npm:23.2.3"
+    ical.js: "npm:1.5.0"
+    ics: "npm:2.37.0"
+    ipaddr.js: "npm:2.3.0"
+    jimp: "npm:0.16.1"
+    lingo.dev: "npm:0.117.14"
+    rrule: "npm:2.7.1"
+    sharp: "npm:0.33.5"
+    tsdav: "npm:2.0.3"
+    tslog: "npm:4.9.2"
+    typescript: "npm:5.9.3"
+    uuid: "npm:8.3.2"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/linear@workspace:packages/app-store/linear":
+  version: 0.0.0-use.local
+  resolution: "@schedule/linear@workspace:packages/app-store/linear"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/lyra@workspace:packages/app-store/lyra":
+  version: 0.0.0-use.local
+  resolution: "@schedule/lyra@workspace:packages/app-store/lyra"
+  dependencies:
+    "@schedule/lib": "npm:*"
+    "@schedule/prisma": "npm:*"
+    "@schedule/types": "npm:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/make@workspace:packages/app-store/make":
+  version: 0.0.0-use.local
+  resolution: "@schedule/make@workspace:packages/app-store/make"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@types/node-schedule": "npm:2.1.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/matomo@workspace:packages/app-store/matomo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/matomo@workspace:packages/app-store/matomo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/metapixel@workspace:packages/app-store/metapixel":
+  version: 0.0.0-use.local
+  resolution: "@schedule/metapixel@workspace:packages/app-store/metapixel"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/mirotalk@workspace:packages/app-store/mirotalk":
+  version: 0.0.0-use.local
+  resolution: "@schedule/mirotalk@workspace:packages/app-store/mirotalk"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/mock-payment-app@workspace:packages/app-store/mock-payment-app":
+  version: 0.0.0-use.local
+  resolution: "@schedule/mock-payment-app@workspace:packages/app-store/mock-payment-app"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/nextcloudtalk@workspace:packages/app-store/nextcloudtalk":
+  version: 0.0.0-use.local
+  resolution: "@schedule/nextcloudtalk@workspace:packages/app-store/nextcloudtalk"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/office365calendar@workspace:packages/app-store/office365calendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/office365calendar@workspace:packages/app-store/office365calendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    msw: "npm:2.7.0"
+    windows-iana: "npm:5.1.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/office365video@workspace:*, @schedule/office365video@workspace:packages/app-store/office365video":
+  version: 0.0.0-use.local
+  resolution: "@schedule/office365video@workspace:packages/app-store/office365video"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/paypal@workspace:packages/app-store/paypal":
+  version: 0.0.0-use.local
+  resolution: "@schedule/paypal@workspace:packages/app-store/paypal"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/ping@workspace:packages/app-store/ping":
+  version: 0.0.0-use.local
+  resolution: "@schedule/ping@workspace:packages/app-store/ping"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/pipedrive-crm@workspace:packages/app-store/pipedrive-crm":
+  version: 0.0.0-use.local
+  resolution: "@schedule/pipedrive-crm@workspace:packages/app-store/pipedrive-crm"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/platform-constants@workspace:*, @schedule/platform-constants@workspace:packages/platform/constants":
+  version: 0.0.0-use.local
+  resolution: "@schedule/platform-constants@workspace:packages/platform/constants"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/platform-enums@workspace:*, @schedule/platform-enums@workspace:packages/platform/enums":
+  version: 0.0.0-use.local
+  resolution: "@schedule/platform-enums@workspace:packages/platform/enums"
+  dependencies:
+    "@schedule/platform-constants": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/platform-libraries@workspace:*, @schedule/platform-libraries@workspace:packages/platform/libraries":
+  version: 0.0.0-use.local
+  resolution: "@schedule/platform-libraries@workspace:packages/platform/libraries"
+  dependencies:
+    "@schedule/features": "workspace:*"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@types/node": "npm:20.17.23"
+    "@vitejs/plugin-react": "npm:5.1.2"
+    typescript: "npm:5.9.3"
+    vite: "npm:6.4.2"
+    vite-plugin-dts: "npm:4.5.4"
+    vite-plugin-environment: "npm:1.1.3"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+    stripe: ^9.0.0 || ^15.0.0
+    zod: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/platform-types@workspace:*, @schedule/platform-types@workspace:packages/platform/types":
+  version: 0.0.0-use.local
+  resolution: "@schedule/platform-types@workspace:packages/platform/types"
+  dependencies:
+    "@nestjs/common": "npm:10.4.20"
+    "@nestjs/swagger": "npm:7.4.2"
+    "@schedule/platform-constants": "workspace:*"
+    "@schedule/platform-enums": "workspace:*"
+    "@types/express": "npm:4.17.21"
+    class-transformer: "npm:0.5.1"
+    class-validator: "npm:0.14.3"
+    libphonenumber-js: "npm:1.12.38"
+    luxon: "npm:3.4.4"
+    zod: "npm:3.25.76"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/platform-utils@workspace:*, @schedule/platform-utils@workspace:packages/platform/utils":
+  version: 0.0.0-use.local
+  resolution: "@schedule/platform-utils@workspace:packages/platform/utils"
+  dependencies:
+    "@schedule/platform-constants": "workspace:*"
+    "@schedule/platform-types": "workspace:*"
+    "@types/jest": "npm:29.5.12"
+    jest: "npm:29.7.0"
+    ts-jest: "npm:29.1.4"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/plausible@workspace:packages/app-store/plausible":
+  version: 0.0.0-use.local
+  resolution: "@schedule/plausible@workspace:packages/app-store/plausible"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/posthog@workspace:packages/app-store/posthog":
+  version: 0.0.0-use.local
+  resolution: "@schedule/posthog@workspace:packages/app-store/posthog"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/prisma@npm:*, @schedule/prisma@workspace:*, @schedule/prisma@workspace:packages/prisma":
+  version: 0.0.0-use.local
+  resolution: "@schedule/prisma@workspace:packages/prisma"
+  dependencies:
+    "@prisma/adapter-pg": "npm:6.16.1"
+    "@prisma/client": "npm:6.16.1"
+    "@prisma/extension-accelerate": "npm:1.3.0"
+    "@prisma/generator-helper": "npm:6.16.2"
+    npm-run-all: "npm:4.1.5"
+    prisma: "npm:6.16.1"
+    prisma-kysely: "npm:2.2.0"
+    ts-node: "npm:10.9.2"
+    uuid: "npm:8.3.2"
+    zod: "npm:3.25.76"
+    zod-prisma-types: "npm:3.2.4"
+  bin:
+    prisma-enum-generator: ./run-enum-generator.js
+  languageName: unknown
+  linkType: soft
+
+"@schedule/qr_code@workspace:packages/app-store/qr_code":
+  version: 0.0.0-use.local
+  resolution: "@schedule/qr_code@workspace:packages/app-store/qr_code"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/riverside@workspace:packages/app-store/riverside":
+  version: 0.0.0-use.local
+  resolution: "@schedule/riverside@workspace:packages/app-store/riverside"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/roam@workspace:packages/app-store/roam":
+  version: 0.0.0-use.local
+  resolution: "@schedule/roam@workspace:packages/app-store/roam"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/salesforce@workspace:packages/app-store/salesforce":
+  version: 0.0.0-use.local
+  resolution: "@schedule/salesforce@workspace:packages/app-store/salesforce"
+  dependencies:
+    "@graphql-codegen/cli": "npm:5.0.5"
+    "@jetstreamapp/soql-parser-js": "npm:6.1.0"
+    "@jsforce/jsforce-node": "npm:3.10.10"
+    "@parcel/watcher": "npm:2.5.1"
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@urql/core": "npm:5.1.1"
+    "@urql/exchange-retry": "npm:2.0.0"
+    graphql-config: "npm:5.1.3"
+    graphql-introspection-json-to-sdl: "npm:1.0.3"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/salesroom@workspace:packages/app-store/salesroom":
+  version: 0.0.0-use.local
+  resolution: "@schedule/salesroom@workspace:packages/app-store/salesroom"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/sendgrid@workspace:packages/app-store/sendgrid":
+  version: 0.0.0-use.local
+  resolution: "@schedule/sendgrid@workspace:packages/app-store/sendgrid"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@sendgrid/client": "npm:7.7.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/shimmer-video@workspace:packages/app-store/shimmervideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/shimmer-video@workspace:packages/app-store/shimmervideo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/signal@workspace:packages/app-store/signal":
+  version: 0.0.0-use.local
+  resolution: "@schedule/signal@workspace:packages/app-store/signal"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/sirius_video@workspace:packages/app-store/sirius_video":
+  version: 0.0.0-use.local
+  resolution: "@schedule/sirius_video@workspace:packages/app-store/sirius_video"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/skype@workspace:packages/app-store/skype":
+  version: 0.0.0-use.local
+  resolution: "@schedule/skype@workspace:packages/app-store/skype"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/stripepayment@workspace:packages/app-store/stripepayment":
+  version: 0.0.0-use.local
+  resolution: "@schedule/stripepayment@workspace:packages/app-store/stripepayment"
+  dependencies:
+    "@schedule/app-store": "workspace:*"
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/emails": "workspace:*"
+    "@schedule/features": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@stripe/react-stripe-js": "npm:1.10.0"
+    "@stripe/stripe-js": "npm:1.35.0"
+    stripe: "npm:9.16.0"
+    ts-node: "npm:10.9.2"
+    uuid: "npm:8.3.2"
+    zod: "npm:3.25.76"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/sylapsvideo@workspace:packages/app-store/sylapsvideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/sylapsvideo@workspace:packages/app-store/sylapsvideo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/tandemvideo@workspace:packages/app-store/tandemvideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/tandemvideo@workspace:packages/app-store/tandemvideo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/telegram@workspace:packages/app-store/telegram":
+  version: 0.0.0-use.local
+  resolution: "@schedule/telegram@workspace:packages/app-store/telegram"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/testing@workspace:*, @schedule/testing@workspace:packages/testing":
+  version: 0.0.0-use.local
+  resolution: "@schedule/testing@workspace:packages/testing"
+  dependencies:
+    "@biomejs/biome": "npm:2.3.10"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/tsconfig": "workspace:*"
+    prismock: "npm:1.35.3"
+    vitest: "npm:4.0.16"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/trpc@workspace:*, @schedule/trpc@workspace:packages/trpc":
+  version: 0.0.0-use.local
+  resolution: "@schedule/trpc@workspace:packages/trpc"
+  dependencies:
+    "@biomejs/biome": "npm:2.3.10"
+    "@formbricks/api": "npm:3.0.0"
+    "@schedule/i18n": "workspace:*"
+    "@tanstack/react-query": "npm:5.17.19"
+    "@trpc/client": "npm:11.0.0-next-beta.222"
+    "@trpc/next": "npm:11.0.0-next-beta.222"
+    "@trpc/react-query": "npm:11.0.0-next-beta.222"
+    "@trpc/server": "npm:11.0.0-next-beta.222"
+    "@types/cookie": "npm:0.6.0"
+    "@types/uuid": "npm:8.3.4"
+    cookie: "npm:0.7.2"
+    superjson: "npm:1.9.1"
+    typescript: "npm:5.9.3"
+    uuid: "npm:8.3.2"
+    zod: "npm:3.25.76"
+  peerDependencies:
+    "@tanstack/react-query": ^5.0.0
+    next: ">=14.0.0"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/tsconfig@workspace:*, @schedule/tsconfig@workspace:packages/tsconfig":
+  version: 0.0.0-use.local
+  resolution: "@schedule/tsconfig@workspace:packages/tsconfig"
+  dependencies:
+    tsconfig-paths: "npm:4.2.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/twipla@workspace:packages/app-store/twipla":
+  version: 0.0.0-use.local
+  resolution: "@schedule/twipla@workspace:packages/app-store/twipla"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/types@npm:*, @schedule/types@workspace:*, @schedule/types@workspace:packages/types":
+  version: 0.0.0-use.local
+  resolution: "@schedule/types@workspace:packages/types"
+  dependencies:
+    "@types/node": "npm:20.17.23"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/ui@workspace:*, @schedule/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@schedule/ui@workspace:packages/ui"
+  dependencies:
+    "@biomejs/biome": "npm:^2.3.8"
+    "@formkit/auto-animate": "npm:1.0.0-beta.5"
+    "@lexical/code": "npm:0.9.0"
+    "@lexical/html": "npm:0.9.0"
+    "@lexical/link": "npm:0.9.0"
+    "@lexical/list": "npm:0.9.0"
+    "@lexical/markdown": "npm:0.9.0"
+    "@lexical/react": "npm:0.9.0"
+    "@lexical/rich-text": "npm:0.9.0"
+    "@lexical/selection": "npm:0.9.0"
+    "@lexical/table": "npm:0.9.0"
+    "@lexical/utils": "npm:0.9.0"
+    "@radix-ui/react-avatar": "npm:1.1.3"
+    "@radix-ui/react-checkbox": "npm:1.0.4"
+    "@radix-ui/react-dialog": "npm:1.0.4"
+    "@radix-ui/react-popover": "npm:1.0.6"
+    "@radix-ui/react-portal": "npm:1.0.4"
+    "@radix-ui/react-select": "npm:0.1.1"
+    "@radix-ui/react-slider": "npm:1.2.2"
+    "@schedule/config": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/tsconfig": "workspace:*"
+    "@tanstack/react-table": "npm:8.20.6"
+    "@testing-library/user-event": "npm:14.6.1"
+    "@types/react": "npm:18.0.26"
+    "@types/react-dom": "npm:18.2.6"
+    "@types/uuid": "npm:10.0.0"
+    "@wojtekmaj/react-daterange-picker": "npm:3.4.0"
+    class-variance-authority: "npm:0.4.0"
+    classnames: "npm:2.3.1"
+    cmdk: "npm:0.2.0"
+    cmk: "npm:0.1.1"
+    date-fns: "npm:3.6.0"
+    downshift: "npm:6.1.9"
+    execa: "npm:9.3.0"
+    fast-glob: "npm:3.3.2"
+    fs-extra: "npm:11.3.2"
+    lexical: "npm:0.9.0"
+    lucide-static: "npm:0.424.0"
+    node-html-parser: "npm:6.1.13"
+    react-colorful: "npm:5.6.1"
+    react-day-picker: "npm:8.10.1"
+    react-easy-crop: "npm:5.0.0"
+    react-hook-form: "npm:7.43.3"
+    react-inlinesvg: "npm:4.1.3"
+    react-select: "npm:5.8.0"
+    sonner: "npm:1.7.4"
+    tailwind-merge: "npm:1.13.2"
+    typescript: "npm:5.9.3"
+    uuid: "npm:11.1.0"
+    zod: "npm:3.25.76"
+  peerDependencies:
+    "@tanstack/react-query": ^5.0.0
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  languageName: unknown
+  linkType: soft
+
+"@schedule/umami@workspace:packages/app-store/umami":
+  version: 0.0.0-use.local
+  resolution: "@schedule/umami@workspace:packages/app-store/umami"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/vital@workspace:packages/app-store/vital":
+  version: 0.0.0-use.local
+  resolution: "@schedule/vital@workspace:packages/app-store/vital"
+  dependencies:
+    "@schedule/i18n": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@tryvital/vital-node": "npm:1.4.6"
+    queue: "npm:6.0.2"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/weather_in_your_calendar@workspace:packages/app-store/weather_in_your_calendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/weather_in_your_calendar@workspace:packages/app-store/weather_in_your_calendar"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/web@workspace:apps/web":
+  version: 0.0.0-use.local
+  resolution: "@schedule/web@workspace:apps/web"
+  dependencies:
+    "@babel/core": "npm:7.26.10"
+    "@biomejs/biome": "npm:2.3.10"
+    "@boxyhq/saml-jackson": "npm:1.52.2"
+    "@coss/ui": "workspace:*"
+    "@daily-co/daily-js": "npm:0.83.1"
+    "@daily-co/daily-react": "npm:0.23.2"
+    "@dub/analytics": "npm:0.0.27"
+    "@dub/embed-core": "npm:0.0.18"
+    "@dub/embed-react": "npm:0.0.18"
+    "@formkit/auto-animate": "npm:1.0.0-beta.5"
+    "@glidejs/glide": "npm:3.5.2"
+    "@googleapis/admin": "npm:23.5.0"
+    "@googleapis/calendar": "npm:9.7.9"
+    "@googleapis/oauth2": "npm:1.0.7"
+    "@hookform/error-message": "npm:2.0.0"
+    "@hookform/resolvers": "npm:2.9.7"
+    "@microsoft/microsoft-graph-types-beta": "npm:0.15.0-preview"
+    "@next-auth/prisma-adapter": "npm:1.0.4"
+    "@next/bundle-analyzer": "npm:16.1.5"
+    "@next/third-parties": "npm:14.2.5"
+    "@playwright/test": "npm:1.57.0"
+    "@prisma/nextjs-monorepo-workaround-plugin": "npm:6.16.1"
+    "@radix-ui/react-avatar": "npm:1.1.3"
+    "@radix-ui/react-collapsible": "npm:1.0.3"
+    "@radix-ui/react-dialog": "npm:1.0.4"
+    "@radix-ui/react-dropdown-menu": "npm:2.0.5"
+    "@radix-ui/react-hover-card": "npm:1.0.7"
+    "@radix-ui/react-id": "npm:1.0.1"
+    "@radix-ui/react-popover": "npm:1.0.6"
+    "@radix-ui/react-radio-group": "npm:1.1.3"
+    "@radix-ui/react-slider": "npm:1.2.2"
+    "@radix-ui/react-switch": "npm:1.1.0"
+    "@radix-ui/react-toggle-group": "npm:1.0.4"
+    "@radix-ui/react-tooltip": "npm:1.0.6"
+    "@schedule/app-store": "workspace:*"
+    "@schedule/app-store-cli": "workspace:*"
+    "@schedule/config": "workspace:*"
+    "@schedule/dayjs": "workspace:*"
+    "@schedule/embed-core": "workspace:*"
+    "@schedule/embed-react": "workspace:*"
+    "@schedule/embed-snippet": "workspace:*"
+    "@schedule/features": "workspace:*"
+    "@schedule/lib": "workspace:*"
+    "@schedule/platform-enums": "workspace:*"
+    "@schedule/platform-types": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/testing": "workspace:*"
+    "@schedule/trpc": "workspace:*"
+    "@schedule/tsconfig": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@schedule/ui": "workspace:*"
+    "@sentry/nextjs": "npm:10.33.0"
+    "@stripe/react-stripe-js": "npm:1.10.0"
+    "@stripe/stripe-js": "npm:1.35.0"
+    "@tailwindcss/postcss": "npm:4.1.15"
+    "@tanstack/react-query": "npm:5.17.19"
+    "@testing-library/react": "npm:13.3.0"
+    "@todesktop/client-core": "npm:1.20.0"
+    "@types/accept-language-parser": "npm:1.5.2"
+    "@types/async": "npm:3.2.15"
+    "@types/backblaze-b2": "npm:^1"
+    "@types/bcryptjs": "npm:2.4.2"
+    "@types/detect-port": "npm:1.3.2"
+    "@types/dompurify": "npm:3.0.5"
+    "@types/glidejs__glide": "npm:3.4.2"
+    "@types/jsdom": "npm:21.1.7"
+    "@types/lodash": "npm:4.14.182"
+    "@types/markdown-it": "npm:14.1.2"
+    "@types/md5": "npm:2.3.2"
+    "@types/memory-cache": "npm:0.2.2"
+    "@types/micro": "npm:7.3.7"
+    "@types/module-alias": "npm:2.0.1"
+    "@types/nodemailer": "npm:6.4.5"
+    "@types/qrcode": "npm:1.4.3"
+    "@types/react": "npm:18.0.26"
+    "@types/remove-markdown": "npm:0.3.1"
+    "@types/sanitize-html": "npm:2.9.0"
+    "@types/stripe": "npm:8.0.417"
+    "@types/turndown": "npm:5.0.1"
+    "@types/uuid": "npm:8.3.1"
+    "@upstash/redis": "npm:1.35.2"
+    "@vercel/edge-config": "npm:0.1.1"
+    "@vercel/og": "npm:0.6.3"
+    accept-language-parser: "npm:1.5.0"
+    async: "npm:3.2.4"
+    autoprefixer: "npm:10.4.19"
+    backblaze-b2: "npm:^1.7.1"
+    bcp-47-match: "npm:2.0.3"
+    bcryptjs: "npm:2.4.3"
+    botid: "npm:1.5.7"
+    classnames: "npm:2.3.2"
+    cron: "npm:3.1.7"
+    detect-port: "npm:1.3.0"
+    dompurify: "npm:3.3.2"
+    dotenv-cli: "npm:6.0.0"
+    entities: "npm:4.5.0"
+    env-cmd: "npm:10.1.0"
+    glob: "npm:10.4.5"
+    google-auth-library: "npm:9.15.0"
+    handlebars: "npm:4.7.9"
+    i18next: "npm:23.2.3"
+    ical.js: "npm:1.5.0"
+    ics: "npm:2.37.0"
+    isbot: "npm:5.1.30"
+    jose: "npm:4.15.9"
+    jotai: "npm:2.12.2"
+    jsdom: "npm:22.0.0"
+    kbar: "npm:0.1.0-beta.36"
+    libphonenumber-js: "npm:^1.12.38"
+    lodash: "npm:4.18.1"
+    markdown-it: "npm:14.1.1"
+    md5: "npm:2.3.0"
+    memory-cache: "npm:0.2.0"
+    micro: "npm:10.0.1"
+    module-alias: "npm:2.2.2"
+    next: "npm:16.2.3"
+    next-auth: "npm:4.24.13"
+    next-axiom: "npm:0.17.0"
+    next-i18next: "npm:15.4.2"
+    next-seo: "npm:6.1.0"
+    next-themes: "npm:0.2.0"
+    node-html-parser: "npm:6.1.13"
+    node-mocks-http: "npm:1.16.2"
+    nodemailer: "npm:7.0.12"
+    nuqs: "npm:2.8.2"
+    openid-client: "npm:6.5.0"
+    otplib: "npm:12.0.1"
+    postcss: "npm:8.5.6"
+    posthog-js: "npm:1.274.1"
+    qrcode: "npm:1.5.1"
+    raw-body: "npm:2.5.2"
+    react: "npm:18.2.0"
+    react-digit-input: "npm:2.1.0"
+    react-dom: "npm:18.2.0"
+    react-easy-crop: "npm:3.5.3"
+    react-hook-form: "npm:7.43.3"
+    react-i18next: "npm:12.3.1"
+    react-live-chat-loader: "npm:2.8.1"
+    react-phone-input-2: "npm:2.15.1"
+    react-phone-number-input: "npm:3.4.12"
+    react-schemaorg: "npm:2.0.0"
+    react-select: "npm:5.8.0"
+    react-timezone-select: "npm:1.4.0"
+    react-turnstile: "npm:1.1.3"
+    react-use-intercom: "npm:5.5.0"
+    remove-markdown: "npm:0.5.0"
+    retell-client-js-sdk: "npm:2.0.7"
+    retell-sdk: "npm:4.41.0"
+    rrule: "npm:2.7.1"
+    sanitize-html: "npm:2.17.0"
+    schema-dts: "npm:1.1.0"
+    sharp: "npm:0.33.5"
+    short-uuid: "npm:4.2.0"
+    sonner: "npm:1.7.4"
+    stripe: "npm:9.16.0"
+    superjson: "npm:1.9.1"
+    tailwindcss: "npm:4.1.17"
+    ts-node: "npm:10.9.2"
+    turbo: "npm:2.5.5"
+    turndown: "npm:7.2.0"
+    typescript: "npm:5.9.3"
+    uuid: "npm:8.3.2"
+    zod: "npm:3.25.76"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/webex@workspace:packages/app-store/webex":
+  version: 0.0.0-use.local
+  resolution: "@schedule/webex@workspace:packages/app-store/webex"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/whatsapp@workspace:packages/app-store/whatsapp":
+  version: 0.0.0-use.local
+  resolution: "@schedule/whatsapp@workspace:packages/app-store/whatsapp"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/whereby@workspace:packages/app-store/whereby":
+  version: 0.0.0-use.local
+  resolution: "@schedule/whereby@workspace:packages/app-store/whereby"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/zapier@workspace:packages/app-store/zapier":
+  version: 0.0.0-use.local
+  resolution: "@schedule/zapier@workspace:packages/app-store/zapier"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+    "@types/node-schedule": "npm:2.1.0"
+    node-schedule: "npm:2.1.0"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/zoho-bigin@workspace:packages/app-store/zoho-bigin":
+  version: 0.0.0-use.local
+  resolution: "@schedule/zoho-bigin@workspace:packages/app-store/zoho-bigin"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/zohocalendar@workspace:packages/app-store/zohocalendar":
+  version: 0.0.0-use.local
+  resolution: "@schedule/zohocalendar@workspace:packages/app-store/zohocalendar"
+  dependencies:
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/zohocrm@workspace:packages/app-store/zohocrm":
+  version: 0.0.0-use.local
+  resolution: "@schedule/zohocrm@workspace:packages/app-store/zohocrm"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@schedule/zoomvideo@workspace:*, @schedule/zoomvideo@workspace:packages/app-store/zoomvideo":
+  version: 0.0.0-use.local
+  resolution: "@schedule/zoomvideo@workspace:packages/app-store/zoomvideo"
+  dependencies:
+    "@schedule/lib": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
 "@scure/base@npm:1.1.1":
   version: 1.1.1
   resolution: "@scure/base@npm:1.1.1"
@@ -17888,9 +17896,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "WipeMyCal@workspace:packages/app-store/wipemycalother"
   dependencies:
-    "@calcom/i18n": "workspace:*"
-    "@calcom/prisma": "workspace:*"
-    "@calcom/types": "workspace:*"
+    "@schedule/i18n": "workspace:*"
+    "@schedule/prisma": "workspace:*"
+    "@schedule/types": "workspace:*"
     queue: "npm:6.0.2"
   languageName: unknown
   linkType: soft
@@ -19389,45 +19397,6 @@ __metadata:
   checksum: 10/ca2f7b2d3003f84d362da9580b5561058ccaecd46cba661cbcff0375c90734b610520d46b472a339fd032d91597ad6ed12dde8af81571197f3c9772b5d35b104
   languageName: node
   linkType: hard
-
-"calcom-monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "calcom-monorepo@workspace:."
-  dependencies:
-    "@biomejs/biome": "npm:2.3.10"
-    "@changesets/changelog-github": "npm:0.5.1"
-    "@changesets/cli": "npm:2.29.4"
-    "@faker-js/faker": "npm:9.2.0"
-    "@jetstreamapp/soql-parser-js": "npm:6.1.0"
-    "@playwright/test": "npm:1.57.0"
-    "@prisma/internals": "npm:6.16.2"
-    "@snaplet/copycat": "npm:4.1.0"
-    "@testing-library/jest-dom": "npm:5.17.0"
-    "@testing-library/react": "npm:16.0.1"
-    "@vitest/coverage-v8": "npm:4.0.16"
-    "@vitest/ui": "npm:4.0.16"
-    c8: "npm:7.13.0"
-    checkly: "npm:latest"
-    dotenv-checker: "npm:1.1.5"
-    husky: "npm:9.1.7"
-    i18n-unused: "npm:0.13.0"
-    jest-diff: "npm:29.7.0"
-    jest-summarizing-reporter: "npm:1.1.4"
-    lint-staged: "npm:12.5.0"
-    mailhog: "npm:4.16.0"
-    next-router-mock: "npm:0.9.12"
-    node-gyp: "npm:10.2.0"
-    node-ical: "npm:0.16.1"
-    prismock: "npm:1.35.3"
-    resize-observer-polyfill: "npm:1.5.1"
-    tsc-absolute: "npm:1.0.0"
-    turbo: "npm:2.7.1"
-    typescript: "npm:5.9.3"
-    vitest: "npm:4.0.16"
-    vitest-fetch-mock: "npm:0.4.5"
-    vitest-mock-extended: "npm:3.1.0"
-  languageName: unknown
-  linkType: soft
 
 "call-bind-apply-helpers@npm:^1.0.0, call-bind-apply-helpers@npm:^1.0.1, call-bind-apply-helpers@npm:^1.0.2":
   version: 1.0.2
@@ -21793,9 +21762,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@patch:dayjs@npm%3A1.11.4#./.yarn/patches/dayjs-npm-1.11.4-97921cd375.patch::locator=calcom-monorepo%40workspace%3A.":
+"dayjs@patch:dayjs@npm%3A1.11.4#./.yarn/patches/dayjs-npm-1.11.4-97921cd375.patch::locator=schedule-monorepo%40workspace%3A.":
   version: 1.11.4
-  resolution: "dayjs@patch:dayjs@npm%3A1.11.4#./.yarn/patches/dayjs-npm-1.11.4-97921cd375.patch::version=1.11.4&hash=24cc20&locator=calcom-monorepo%40workspace%3A."
+  resolution: "dayjs@patch:dayjs@npm%3A1.11.4#./.yarn/patches/dayjs-npm-1.11.4-97921cd375.patch::version=1.11.4&hash=24cc20&locator=schedule-monorepo%40workspace%3A."
   checksum: 10/7771e8ad12998e840dbe06455d1a0ae4183f98467b6c3160cf674cd721525abc5424013e68b244c174485f4e8452a3bef3c78ce82d92a5cb00bc62a23c951f60
   languageName: node
   linkType: hard
@@ -28682,9 +28651,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"libphonenumber-js@patch:libphonenumber-js@1.12.38#./.yarn/patches/libphonenumber-js+1.12.38.patch::locator=calcom-monorepo%40workspace%3A.":
+"libphonenumber-js@patch:libphonenumber-js@1.12.38#./.yarn/patches/libphonenumber-js+1.12.38.patch::locator=schedule-monorepo%40workspace%3A.":
   version: 1.12.38
-  resolution: "libphonenumber-js@patch:libphonenumber-js@npm%3A1.12.38#./.yarn/patches/libphonenumber-js+1.12.38.patch::version=1.12.38&hash=18a67d&locator=calcom-monorepo%40workspace%3A."
+  resolution: "libphonenumber-js@patch:libphonenumber-js@npm%3A1.12.38#./.yarn/patches/libphonenumber-js+1.12.38.patch::version=1.12.38&hash=18a67d&locator=schedule-monorepo%40workspace%3A."
   checksum: 10/707404eda471b34d6441b5f9f3a75fdf5da8b8329900c17790ea91cc7db6f90db62dbb5ad561e2d9d0df942dea633f91eca4d6382f1833cbbf1f354be9437ff5
   languageName: node
   linkType: hard
@@ -36837,6 +36806,45 @@ __metadata:
   checksum: 10/97b50daf6ca3a153e89842efa18a862e446248296622b7473c169c84c823ee8a16e4a43bac2f73f11fc8cb9168c73fbb0d73340f26552bac17970e9052367aa9
   languageName: node
   linkType: hard
+
+"schedule-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "schedule-monorepo@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:2.3.10"
+    "@changesets/changelog-github": "npm:0.5.1"
+    "@changesets/cli": "npm:2.29.4"
+    "@faker-js/faker": "npm:9.2.0"
+    "@jetstreamapp/soql-parser-js": "npm:6.1.0"
+    "@playwright/test": "npm:1.57.0"
+    "@prisma/internals": "npm:6.16.2"
+    "@snaplet/copycat": "npm:4.1.0"
+    "@testing-library/jest-dom": "npm:5.17.0"
+    "@testing-library/react": "npm:16.0.1"
+    "@vitest/coverage-v8": "npm:4.0.16"
+    "@vitest/ui": "npm:4.0.16"
+    c8: "npm:7.13.0"
+    checkly: "npm:latest"
+    dotenv-checker: "npm:1.1.5"
+    husky: "npm:9.1.7"
+    i18n-unused: "npm:0.13.0"
+    jest-diff: "npm:29.7.0"
+    jest-summarizing-reporter: "npm:1.1.4"
+    lint-staged: "npm:12.5.0"
+    mailhog: "npm:4.16.0"
+    next-router-mock: "npm:0.9.12"
+    node-gyp: "npm:10.2.0"
+    node-ical: "npm:0.16.1"
+    prismock: "npm:1.35.3"
+    resize-observer-polyfill: "npm:1.5.1"
+    tsc-absolute: "npm:1.0.0"
+    turbo: "npm:2.7.1"
+    typescript: "npm:5.9.3"
+    vitest: "npm:4.0.16"
+    vitest-fetch-mock: "npm:0.4.5"
+    vitest-mock-extended: "npm:3.1.0"
+  languageName: unknown
+  linkType: soft
 
 "scheduler@npm:^0.20.2":
   version: 0.20.2

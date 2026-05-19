@@ -1,5 +1,6 @@
+## yaml-language-server: $schema=https://json.schemastore.org/github-action
 name: "Docker Build and Test"
-description: "Reusable action to build and test Docker images for Cal.com"
+description: "Reusable action to build and test Docker images for Schedule"
 
 inputs:
   platform:
@@ -61,9 +62,9 @@ runs:
       uses: docker/metadata-action@v5
       with:
         images: |
-          docker.io/calendso/calendso
-          docker.io/calcom/cal.diy
-          ghcr.io/calcom/cal.diy
+          docker.io/rollandcodes/schedule-app
+          docker.io/Rollandcodes/schedule-app
+          ghcr.io/Rollandcodes/schedule-app
         flavor: |
           latest=${{ !github.event.release.prerelease && inputs.use-as-latest == 'true' }}
           suffix=${{ inputs.platform-suffix }}

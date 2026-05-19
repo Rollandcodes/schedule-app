@@ -1,9 +1,9 @@
-import type { LocationObject } from "@calcom/app-store/locations";
-import { locationKeyToString } from "@calcom/app-store/locations";
-import { getEventLocationType } from "@calcom/app-store/locations";
-import { getTranslatedLocation } from "@calcom/app-store/locations";
-import type { useLocale } from "@calcom/lib/hooks/useLocale";
-import notEmpty from "@calcom/lib/notEmpty";
+import type { LocationObject } from "@schedule/app-store/locations";
+import { locationKeyToString } from "@schedule/app-store/locations";
+import { getEventLocationType } from "@schedule/app-store/locations";
+import { getTranslatedLocation } from "@schedule/app-store/locations";
+import type { useLocale } from "@schedule/lib/hooks/useLocale";
+import notEmpty from "@schedule/lib/notEmpty";
 
 export default function getLocationsOptionsForSelect(
   locations: LocationObject[],

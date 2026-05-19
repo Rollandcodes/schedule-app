@@ -1,8 +1,8 @@
 "use client";
 
-import { DOCS_URL, IS_CALCOM, WEBSITE_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Icon } from "@calcom/ui/components/icon";
+import { DOCS_URL, IS_CALCOM, WEBSITE_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Icon } from "@schedule/ui/components/icon";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLayoutEffect } from "react";

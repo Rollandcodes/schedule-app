@@ -5,9 +5,9 @@ import {
   ScheduleComponent,
   type FieldPathByValue,
   type ScheduleLabelsType,
-} from "@calcom/features/schedules/components/ScheduleComponent";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
-import type { TimeRange } from "@calcom/types/schedule";
+} from "@schedule/features/schedules/components/ScheduleComponent";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
+import type { TimeRange } from "@schedule/types/schedule";
 
 const Schedule = <
   TFieldValues extends FieldValues,

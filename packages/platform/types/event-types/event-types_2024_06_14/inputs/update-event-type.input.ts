@@ -1,5 +1,5 @@
-import { SUPPORTED_LOCALES } from "@calcom/platform-constants";
-import { SchedulingType } from "@calcom/platform-enums";
+import { SUPPORTED_LOCALES } from "@schedule/platform-constants";
+import { SchedulingType } from "@schedule/platform-enums";
 import {
   ApiExtraModels,
   ApiHideProperty,

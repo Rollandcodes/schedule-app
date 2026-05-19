@@ -1,14 +1,14 @@
 import type { TFunction } from "i18next";
 import { useState } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import type { InputClassNames, SettingsToggleClassNames } from "@calcom/features/eventtypes/lib/types";
-import ServerTrans from "@calcom/lib/components/ServerTrans";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { InputField } from "@calcom/ui/components/form";
-import { SettingsToggle } from "@calcom/ui/components/form";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import type { InputClassNames, SettingsToggleClassNames } from "@schedule/features/eventtypes/lib/types";
+import ServerTrans from "@schedule/lib/components/ServerTrans";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { InputField } from "@schedule/ui/components/form";
+import { SettingsToggle } from "@schedule/ui/components/form";
 
 export type EmailNotificationToggleCustomClassNames = SettingsToggleClassNames & {
   confirmationDialog?: {

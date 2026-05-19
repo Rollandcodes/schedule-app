@@ -1,8 +1,8 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { MembershipRole } from "@calcom/prisma/enums";
-import { trpc } from "@calcom/trpc/react";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { MembershipRole } from "@schedule/prisma/enums";
+import { trpc } from "@schedule/trpc/react";
 import { Avatar, AvatarFallback, AvatarImage } from "@coss/ui/components/avatar";
 import { Button } from "@coss/ui/components/button";
 import { Menu, MenuGroup, MenuGroupLabel, MenuItem, MenuPopup, MenuTrigger } from "@coss/ui/components/menu";

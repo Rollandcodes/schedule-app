@@ -1,4 +1,4 @@
-import type { eventTypeAppMetadataOptionalSchema } from "@calcom/app-store/zod-utils";
+import type { eventTypeAppMetadataOptionalSchema } from "@schedule/app-store/zod-utils";
 import type { z } from "zod";
 
 export function getAppActor({

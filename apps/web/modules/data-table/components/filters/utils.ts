@@ -1,5 +1,5 @@
-import { type TextFilterOperator, textFilterOperators } from "@calcom/features/data-table/lib/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
+import { type TextFilterOperator, textFilterOperators } from "@schedule/features/data-table/lib/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
 import type { NumberFilterOperatorOption, TextFilterOperatorOption } from "./types";
 
 export const numberFilterOperatorOptions: NumberFilterOperatorOption[] = [

@@ -37,10 +37,10 @@ Configure in `.env`:
 
 ```bash
 # Development
-yarn workspace @calcom/prisma db-migrate
+yarn workspace @schedule/prisma db-migrate
 
 # Production
-yarn workspace @calcom/prisma db-deploy
+yarn workspace @schedule/prisma db-deploy
 ```
 
 ## Test Users
@@ -62,12 +62,12 @@ Control logging verbosity by setting `NEXT_PUBLIC_LOGGER_LEVEL` in .env:
 
 ## API v2 Imports
 
-If you need to import from `@calcom/features` or `@calcom/trpc` into `apps/api/v2`, use the platform-libraries package instead:
+If you need to import from `@schedule/features` or `@schedule/trpc` into `apps/api/v2`, use the platform-libraries package instead:
 
 ```typescript
 // ✅ Good
-import { SomeService } from "@calcom/platform-libraries";
+import { SomeService } from "@schedule/platform-libraries";
 
 // ❌ Bad - Will cause module resolution errors
-import { SomeService } from "@calcom/features/...";
+import { SomeService } from "@schedule/features/...";
 ```

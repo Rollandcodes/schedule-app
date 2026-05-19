@@ -1,11 +1,11 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import type { IconName } from "@calcom/ui/components/icon";
-import { RadioAreaGroup } from "@calcom/ui/components/radio";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import type { IconName } from "@schedule/ui/components/icon";
+import { RadioAreaGroup } from "@schedule/ui/components/radio";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import posthog from "posthog-js";

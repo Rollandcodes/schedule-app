@@ -135,7 +135,25 @@ async function writeIfChanged(filepath, newContent) {
     .catch(() => "");
   if (currentContent === newContent) return false;
   await fsExtra.writeFile(filepath, newContent, "utf8");
-  await $`node ${biomeBin} format --write ${filepath}`;
+  try {
+    await $`node ${biomeBin} format --write ${filepath}`;
+  } catch (err) {
+    // biome may return a non-zero exit code when no files are processed
+    // (for example when the path is ignored by config). Treat common
+    // "no files" messages as non-fatal and continue the build.
+    const out = (err.stdout || "") + (err.stderr || "") + (err.message || "");
+    const tolerated = [
+      "No files were processed",
+      "Formatted 0 files",
+      "No files were formatted",
+      "No files matched",
+    ];
+    if (tolerated.some((s) => out.includes(s))) {
+      console.warn("biome: no files were processed for", filepath, "— continuing");
+    } else {
+      throw err;
+    }
+  }
   return true;
 }
 

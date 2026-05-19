@@ -1,8 +1,8 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { ButtonProps } from "@calcom/ui/components/button";
-import { Button } from "@calcom/ui/components/button";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { ButtonProps } from "@schedule/ui/components/button";
+import { Button } from "@schedule/ui/components/button";
 
 const CreateNewOutOfOfficeEntryButton = ({
   size,

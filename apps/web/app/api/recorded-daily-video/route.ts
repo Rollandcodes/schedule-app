@@ -4,36 +4,36 @@ import { headers } from "next/headers";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-import { getRoomNameFromRecordingId, getBatchProcessorJobAccessLink } from "@calcom/app-store/dailyvideo/lib";
-import { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
+import { getRoomNameFromRecordingId, getBatchProcessorJobAccessLink } from "@schedule/app-store/dailyvideo/lib";
+import { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
 import {
   sendDailyVideoRecordingEmails,
   sendDailyVideoTranscriptEmails,
-} from "@calcom/emails/daily-video-emails";
+} from "@schedule/emails/daily-video-emails";
 import {
   getAllTranscriptsAccessLinkFromMeetingId,
   submitBatchProcessorTranscriptionJob,
-} from "@calcom/features/conferencing/lib/videoClient";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { getTeamIdFromEventType } from "@calcom/lib/getTeamIdFromEventType";
-import { HttpError } from "@calcom/lib/http-error";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import { generateVideoToken } from "@calcom/lib/videoTokens";
-import prisma from "@calcom/prisma";
-import { getBooking } from "@calcom/web/lib/daily-webhook/getBooking";
-import { getBookingReference } from "@calcom/web/lib/daily-webhook/getBookingReference";
-import { getCalendarEvent } from "@calcom/web/lib/daily-webhook/getCalendarEvent";
+} from "@schedule/features/conferencing/lib/videoClient";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { getTeamIdFromEventType } from "@schedule/lib/getTeamIdFromEventType";
+import { HttpError } from "@schedule/lib/http-error";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import { generateVideoToken } from "@schedule/lib/videoTokens";
+import prisma from "@schedule/prisma";
+import { getBooking } from "@schedule/web/lib/daily-webhook/getBooking";
+import { getBookingReference } from "@schedule/web/lib/daily-webhook/getBookingReference";
+import { getCalendarEvent } from "@schedule/web/lib/daily-webhook/getCalendarEvent";
 import {
   meetingEndedSchema,
   recordingReadySchema,
   batchProcessorJobFinishedSchema,
   testRequestSchema,
-} from "@calcom/web/lib/daily-webhook/schema";
+} from "@schedule/web/lib/daily-webhook/schema";
 import {
   triggerRecordingReadyWebhook,
   triggerTranscriptionGeneratedWebhook,
-} from "@calcom/web/lib/daily-webhook/triggerWebhooks";
+} from "@schedule/web/lib/daily-webhook/triggerWebhooks";
 
 const log = logger.getSubLogger({ prefix: ["daily-video-webhook-handler"] });
 

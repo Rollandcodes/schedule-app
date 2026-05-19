@@ -1,6 +1,6 @@
-import type { ICalendarCacheEventRepository } from "@calcom/features/calendar-subscription/lib/cache/CalendarCacheEventRepository.interface";
-import type { PrismaClient } from "@calcom/prisma";
-import type { CalendarCacheEvent } from "@calcom/prisma/client";
+import type { ICalendarCacheEventRepository } from "@schedule/features/calendar-subscription/lib/cache/CalendarCacheEventRepository.interface";
+import type { PrismaClient } from "@schedule/prisma";
+import type { CalendarCacheEvent } from "@schedule/prisma/client";
 
 export class CalendarCacheEventRepository implements ICalendarCacheEventRepository {
   constructor(private prismaClient: PrismaClient) {}

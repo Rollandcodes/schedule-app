@@ -2,21 +2,21 @@ import { calendar_v3 } from "@googleapis/calendar";
 import { OAuth2Client } from "googleapis-common";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { createGoogleCalendarServiceWithGoogleType } from "@calcom/app-store/googlecalendar/lib/CalendarService";
-import { CredentialRepository } from "@calcom/features/credentials/repositories/CredentialRepository";
-import { buildCredentialCreateData } from "@calcom/features/credentials/services/CredentialDataService";
-import { renewSelectedCalendarCredentialId } from "@calcom/lib/connectedCalendar";
+import { createGoogleCalendarServiceWithGoogleType } from "@schedule/app-store/googlecalendar/lib/CalendarService";
+import { CredentialRepository } from "@schedule/features/credentials/repositories/CredentialRepository";
+import { buildCredentialCreateData } from "@schedule/features/credentials/services/CredentialDataService";
+import { renewSelectedCalendarCredentialId } from "@schedule/lib/connectedCalendar";
 import {
   GOOGLE_CALENDAR_SCOPES,
   SCOPE_USERINFO_PROFILE,
   WEBAPP_URL,
   WEBAPP_URL_FOR_OAUTH,
-} from "@calcom/lib/constants";
-import { getSafeRedirectUrl } from "@calcom/lib/getSafeRedirectUrl";
-import { HttpError } from "@calcom/lib/http-error";
-import { defaultHandler } from "@calcom/lib/server/defaultHandler";
-import { defaultResponder } from "@calcom/lib/server/defaultResponder";
-import { Prisma } from "@calcom/prisma/client";
+} from "@schedule/lib/constants";
+import { getSafeRedirectUrl } from "@schedule/lib/getSafeRedirectUrl";
+import { HttpError } from "@schedule/lib/http-error";
+import { defaultHandler } from "@schedule/lib/server/defaultHandler";
+import { defaultResponder } from "@schedule/lib/server/defaultResponder";
+import { Prisma } from "@schedule/prisma/client";
 
 import getInstalledAppPath from "../../_utils/getInstalledAppPath";
 import { decodeOAuthState } from "../../_utils/oauth/decodeOAuthState";

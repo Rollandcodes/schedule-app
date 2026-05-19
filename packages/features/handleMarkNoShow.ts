@@ -1,14 +1,14 @@
-import { AttendeeRepository } from "@calcom/features/bookings/repositories/AttendeeRepository";
-import { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import { BookingAccessService } from "@calcom/features/bookings/services/BookingAccessService";
-import { WebhookService } from "@calcom/features/webhooks/lib/WebhookService";
-import { HttpError } from "@calcom/lib/http-error";
-import logger from "@calcom/lib/logger";
-import { getTranslation } from "@calcom/i18n/server";
-import { getTimeFormatStringFromUserTimeFormat } from "@calcom/lib/timeFormat";
-import { prisma } from "@calcom/prisma";
-import { WebhookTriggerEvents } from "@calcom/prisma/enums";
-import { bookingMetadataSchema, type PlatformClientParams } from "@calcom/prisma/zod-utils";
+import { AttendeeRepository } from "@schedule/features/bookings/repositories/AttendeeRepository";
+import { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import { BookingAccessService } from "@schedule/features/bookings/services/BookingAccessService";
+import { WebhookService } from "@schedule/features/webhooks/lib/WebhookService";
+import { HttpError } from "@schedule/lib/http-error";
+import logger from "@schedule/lib/logger";
+import { getTranslation } from "@schedule/i18n/server";
+import { getTimeFormatStringFromUserTimeFormat } from "@schedule/lib/timeFormat";
+import { prisma } from "@schedule/prisma";
+import { WebhookTriggerEvents } from "@schedule/prisma/enums";
+import { bookingMetadataSchema, type PlatformClientParams } from "@schedule/prisma/zod-utils";
 import type { TFunction } from "i18next";
 import { z } from "zod";
 

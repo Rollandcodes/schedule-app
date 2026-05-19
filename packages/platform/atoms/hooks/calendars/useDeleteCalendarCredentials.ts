@@ -1,8 +1,8 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-import type { CALENDARS } from "@calcom/platform-constants";
-import { SUCCESS_STATUS } from "@calcom/platform-constants";
-import type { ApiErrorResponse, ApiResponse } from "@calcom/platform-types";
+import type { CALENDARS } from "@schedule/platform-constants";
+import { SUCCESS_STATUS } from "@schedule/platform-constants";
+import type { ApiErrorResponse, ApiResponse } from "@schedule/platform-types";
 
 import http from "../../lib/http";
 import { QUERY_KEY } from "../useConnectedCalendars";

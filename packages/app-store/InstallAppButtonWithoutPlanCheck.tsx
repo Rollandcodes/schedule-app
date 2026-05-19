@@ -1,9 +1,9 @@
 "use client";
 
-import type { UseAddAppMutationOptions } from "@calcom/app-store/_utils/useAddAppMutation";
-import useAddAppMutation from "@calcom/app-store/_utils/useAddAppMutation";
-import { deriveAppDictKeyFromType } from "@calcom/lib/deriveAppDictKeyFromType";
-import type { App } from "@calcom/types/App";
+import type { UseAddAppMutationOptions } from "@schedule/app-store/_utils/useAddAppMutation";
+import useAddAppMutation from "@schedule/app-store/_utils/useAddAppMutation";
+import { deriveAppDictKeyFromType } from "@schedule/lib/deriveAppDictKeyFromType";
+import type { App } from "@schedule/types/App";
 
 import { InstallAppButtonMap } from "./apps.browser.generated";
 import type { InstallAppButtonProps } from "./types";

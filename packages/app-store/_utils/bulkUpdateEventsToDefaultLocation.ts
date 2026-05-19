@@ -1,6 +1,6 @@
-import type { PrismaClient } from "@calcom/prisma";
-import type { User } from "@calcom/prisma/client";
-import { userMetadata as userMetadataSchema } from "@calcom/prisma/zod-utils";
+import type { PrismaClient } from "@schedule/prisma";
+import type { User } from "@schedule/prisma/client";
+import { userMetadata as userMetadataSchema } from "@schedule/prisma/zod-utils";
 
 import type { LocationObject } from "../locations";
 import { getAppFromSlug } from "../utils";

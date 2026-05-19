@@ -1,41 +1,41 @@
 import process from "node:process";
-import { getPremiumMonthlyPlanPriceId } from "@calcom/app-store/stripepayment/lib/utils";
-import { getLocaleFromRequest } from "@calcom/features/auth/lib/getLocaleFromRequest";
-import { sendEmailVerification } from "@calcom/features/auth/lib/verifyEmail";
-import { SIGNUP_ERROR_CODES } from "@calcom/features/auth/signup/constants";
-import { createOrUpdateMemberships } from "@calcom/features/auth/signup/utils/createOrUpdateMemberships";
-import { joinAnyChildTeamOnOrgInvite } from "@calcom/features/auth/signup/utils/organization";
-import { prefillAvatar } from "@calcom/features/auth/signup/utils/prefillAvatar";
+import { getPremiumMonthlyPlanPriceId } from "@schedule/app-store/stripepayment/lib/utils";
+import { getLocaleFromRequest } from "@schedule/features/auth/lib/getLocaleFromRequest";
+import { sendEmailVerification } from "@schedule/features/auth/lib/verifyEmail";
+import { SIGNUP_ERROR_CODES } from "@schedule/features/auth/signup/constants";
+import { createOrUpdateMemberships } from "@schedule/features/auth/signup/utils/createOrUpdateMemberships";
+import { joinAnyChildTeamOnOrgInvite } from "@schedule/features/auth/signup/utils/organization";
+import { prefillAvatar } from "@schedule/features/auth/signup/utils/prefillAvatar";
 import {
   findTokenByToken,
   throwIfTokenExpired,
   validateAndGetCorrectedUsernameForTeam,
-} from "@calcom/features/auth/signup/utils/token";
-import { validateAndGetCorrectedUsernameAndEmail } from "@calcom/features/auth/signup/utils/validateUsername";
-import { getFeatureRepository } from "@calcom/features/di/containers/FeatureRepository";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { GlobalWatchlistRepository } from "@calcom/features/watchlist/lib/repository/GlobalWatchlistRepository";
-import { sentrySpan } from "@calcom/features/watchlist/lib/telemetry";
-import { normalizeEmail } from "@calcom/features/watchlist/lib/utils/normalization";
-import { checkIfEmailIsBlockedInWatchlistController } from "@calcom/features/watchlist/operations/check-if-email-in-watchlist.controller";
-import { hashPassword } from "@calcom/lib/auth/hashPassword";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { HttpError } from "@calcom/lib/http-error";
-import logger from "@calcom/lib/logger";
-import { isPrismaError } from "@calcom/lib/server/getServerErrorFromUnknown";
-import type { CustomNextApiHandler } from "@calcom/lib/server/username";
-import { usernameHandler } from "@calcom/lib/server/username";
-import { getTrackingFromCookies } from "@calcom/lib/tracking";
-import prisma from "@calcom/prisma";
+} from "@schedule/features/auth/signup/utils/token";
+import { validateAndGetCorrectedUsernameAndEmail } from "@schedule/features/auth/signup/utils/validateUsername";
+import { getFeatureRepository } from "@schedule/features/di/containers/FeatureRepository";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { GlobalWatchlistRepository } from "@schedule/features/watchlist/lib/repository/GlobalWatchlistRepository";
+import { sentrySpan } from "@schedule/features/watchlist/lib/telemetry";
+import { normalizeEmail } from "@schedule/features/watchlist/lib/utils/normalization";
+import { checkIfEmailIsBlockedInWatchlistController } from "@schedule/features/watchlist/operations/check-if-email-in-watchlist.controller";
+import { hashPassword } from "@schedule/lib/auth/hashPassword";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { HttpError } from "@schedule/lib/http-error";
+import logger from "@schedule/lib/logger";
+import { isPrismaError } from "@schedule/lib/server/getServerErrorFromUnknown";
+import type { CustomNextApiHandler } from "@schedule/lib/server/username";
+import { usernameHandler } from "@schedule/lib/server/username";
+import { getTrackingFromCookies } from "@schedule/lib/tracking";
+import prisma from "@schedule/prisma";
 import {
   CreationSource,
   IdentityProvider,
   WatchlistAction,
   WatchlistSource,
   WatchlistType,
-} from "@calcom/prisma/enums";
-import { signupSchema } from "@calcom/prisma/zod-utils";
-import { buildLegacyRequest } from "@calcom/web/lib/buildLegacyCtx";
+} from "@schedule/prisma/enums";
+import { signupSchema } from "@schedule/prisma/zod-utils";
+import { buildLegacyRequest } from "@schedule/web/lib/buildLegacyCtx";
 import { cookies, headers } from "next/headers";
 import { NextResponse } from "next/server";
 

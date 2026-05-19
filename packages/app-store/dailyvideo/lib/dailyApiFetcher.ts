@@ -1,4 +1,4 @@
-import { handleErrorsJson } from "@calcom/lib/errors";
+import { handleErrorsJson } from "@schedule/lib/errors";
 
 import { getDailyAppKeys } from "./getDailyAppKeys";
 

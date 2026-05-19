@@ -1,8 +1,8 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Badge } from "@calcom/ui/components/badge";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Badge } from "@schedule/ui/components/badge";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,

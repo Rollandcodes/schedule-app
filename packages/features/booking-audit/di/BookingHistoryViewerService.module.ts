@@ -1,6 +1,6 @@
-import { BookingHistoryViewerService } from "@calcom/features/booking-audit/lib/service/BookingHistoryViewerService";
-import { BOOKING_AUDIT_DI_TOKENS } from "@calcom/features/booking-audit/di/tokens";
-import { moduleLoader as bookingAuditViewerServiceModuleLoader } from "@calcom/features/booking-audit/di/BookingAuditViewerService.module";
+import { BookingHistoryViewerService } from "@schedule/features/booking-audit/lib/service/BookingHistoryViewerService";
+import { BOOKING_AUDIT_DI_TOKENS } from "@schedule/features/booking-audit/di/tokens";
+import { moduleLoader as bookingAuditViewerServiceModuleLoader } from "@schedule/features/booking-audit/di/BookingAuditViewerService.module";
 
 import { createModule, bindModuleToClassOnToken } from "../../di/di";
 

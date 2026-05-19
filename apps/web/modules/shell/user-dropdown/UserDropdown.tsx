@@ -1,8 +1,8 @@
-import { ROADMAP } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
-import classNames from "@calcom/ui/classNames";
-import { Avatar } from "@calcom/ui/components/avatar";
+import { ROADMAP } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
+import classNames from "@schedule/ui/classNames";
+import { Avatar } from "@schedule/ui/components/avatar";
 import {
   Menu,
   MenuItem,

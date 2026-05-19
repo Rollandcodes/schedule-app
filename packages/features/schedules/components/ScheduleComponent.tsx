@@ -12,20 +12,20 @@ import type {
 import { Controller, useFieldArray, useFormContext } from "react-hook-form";
 import { createFilter, type GroupBase, type Props } from "react-select";
 
-import type { scheduleClassNames } from "@calcom/atoms/availability/types";
-import type { ConfigType } from "@calcom/dayjs";
-import dayjs from "@calcom/dayjs";
-import { defaultDayRange as DEFAULT_DAY_RANGE } from "@calcom/lib/availability";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { weekdayNames } from "@calcom/lib/weekday";
-import type { TimeRange } from "@calcom/types/schedule";
-import cn from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { Dropdown, DropdownMenuContent, DropdownMenuTrigger } from "@calcom/ui/components/dropdown";
-import { Select } from "@calcom/ui/components/form";
-import { CheckboxField } from "@calcom/ui/components/form";
-import { Switch } from "@calcom/ui/components/form";
-import { SkeletonText } from "@calcom/ui/components/skeleton";
+import type { scheduleClassNames } from "@schedule/atoms/availability/types";
+import type { ConfigType } from "@schedule/dayjs";
+import dayjs from "@schedule/dayjs";
+import { defaultDayRange as DEFAULT_DAY_RANGE } from "@schedule/lib/availability";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { weekdayNames } from "@schedule/lib/weekday";
+import type { TimeRange } from "@schedule/types/schedule";
+import cn from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { Dropdown, DropdownMenuContent, DropdownMenuTrigger } from "@schedule/ui/components/dropdown";
+import { Select } from "@schedule/ui/components/form";
+import { CheckboxField } from "@schedule/ui/components/form";
+import { Switch } from "@schedule/ui/components/form";
+import { SkeletonText } from "@schedule/ui/components/skeleton";
 
 export type { TimeRange };
 

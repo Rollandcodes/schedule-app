@@ -1,11 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 
-import { SUCCESS_STATUS } from "@calcom/platform-constants";
+import { SUCCESS_STATUS } from "@schedule/platform-constants";
 import type {
   GetAvailableSlotsInput_2024_04_15,
   ApiResponse,
   ApiSuccessResponse,
-} from "@calcom/platform-types";
+} from "@schedule/platform-types";
 
 import http from "../lib/http";
 import type { GetAvailableSlotsResponse } from "../booker/types";

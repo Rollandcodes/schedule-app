@@ -1,12 +1,12 @@
-import { BookingAuditViewerService } from "@calcom/features/booking-audit/lib/service/BookingAuditViewerService";
-import { BOOKING_AUDIT_DI_TOKENS } from "@calcom/features/booking-audit/di/tokens";
-import { moduleLoader as bookingAuditRepositoryModuleLoader } from "@calcom/features/booking-audit/di/BookingAuditRepository.module";
-import { moduleLoader as userRepositoryModuleLoader } from "@calcom/features/di/modules/User";
-import { moduleLoader as bookingRepositoryModuleLoader } from "@calcom/features/di/modules/Booking";
-import { moduleLoader as attendeeRepositoryModuleLoader } from "@calcom/features/bookings/di/Attendee.module";
-import { moduleLoader as membershipRepositoryModuleLoader } from "@calcom/features/users/di/MembershipRepository.module";
-import { moduleLoader as loggerModuleLoader } from "@calcom/features/di/shared/services/logger.service";
-import { moduleLoader as credentialRepositoryModuleLoader } from "@calcom/features/credentials/di/CredentialRepository.module";
+import { BookingAuditViewerService } from "@schedule/features/booking-audit/lib/service/BookingAuditViewerService";
+import { BOOKING_AUDIT_DI_TOKENS } from "@schedule/features/booking-audit/di/tokens";
+import { moduleLoader as bookingAuditRepositoryModuleLoader } from "@schedule/features/booking-audit/di/BookingAuditRepository.module";
+import { moduleLoader as userRepositoryModuleLoader } from "@schedule/features/di/modules/User";
+import { moduleLoader as bookingRepositoryModuleLoader } from "@schedule/features/di/modules/Booking";
+import { moduleLoader as attendeeRepositoryModuleLoader } from "@schedule/features/bookings/di/Attendee.module";
+import { moduleLoader as membershipRepositoryModuleLoader } from "@schedule/features/users/di/MembershipRepository.module";
+import { moduleLoader as loggerModuleLoader } from "@schedule/features/di/shared/services/logger.service";
+import { moduleLoader as credentialRepositoryModuleLoader } from "@schedule/features/credentials/di/CredentialRepository.module";
 
 import { createModule, bindModuleToClassOnToken } from "../../di/di";
 

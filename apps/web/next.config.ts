@@ -3,7 +3,7 @@ import { config as dotenvConfig } from "dotenv";
 import type { NextConfig } from "next";
 import type { RouteHas } from "next/dist/lib/load-custom-routes";
 import { withAxiom } from "next-axiom";
-import i18nConfig from "@calcom/i18n/next-i18next.config";
+import i18nConfig from "@schedule/i18n/next-i18next.config";
 import packageJson from "./package.json";
 import {
   nextJsOrgRewriteConfig,
@@ -234,18 +234,18 @@ const nextConfig = (phase: string): NextConfig => {
       "jose",
     ],
     experimental: {
-      optimizePackageImports: ["@calcom/ui"],
+      optimizePackageImports: ["@schedule/ui"],
     },
     productionBrowserSourceMaps: true,
     transpilePackages: [
-      "@calcom/app-store",
-      "@calcom/dayjs",
-      "@calcom/emails",
-      "@calcom/embed-core",
-      "@calcom/features",
-      "@calcom/lib",
-      "@calcom/prisma",
-      "@calcom/trpc",
+      "@schedule/app-store",
+      "@schedule/dayjs",
+      "@schedule/emails",
+      "@schedule/embed-core",
+      "@schedule/features",
+      "@schedule/lib",
+      "@schedule/prisma",
+      "@schedule/trpc",
       "@coss/ui",
     ],
     modularizeImports: {

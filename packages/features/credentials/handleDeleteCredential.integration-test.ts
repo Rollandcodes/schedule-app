@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeAll, afterAll, afterEach } from "vitest";
 
-import handleDeleteCredential from "@calcom/features/credentials/handleDeleteCredential";
-import prisma from "@calcom/prisma";
-import type { Credential, EventType, User } from "@calcom/prisma/client";
-import { BookingStatus } from "@calcom/prisma/enums";
+import handleDeleteCredential from "@schedule/features/credentials/handleDeleteCredential";
+import prisma from "@schedule/prisma";
+import type { Credential, EventType, User } from "@schedule/prisma/client";
+import { BookingStatus } from "@schedule/prisma/enums";
 
 describe("handleDeleteCredential Integration Tests - BookingReference Soft Delete", () => {
   let testUser: User;

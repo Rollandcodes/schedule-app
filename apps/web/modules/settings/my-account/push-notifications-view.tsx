@@ -1,9 +1,9 @@
 "use client";
 
-import { useWebPush } from "@calcom/web/modules/notifications/hooks/useWebPush";
-import SettingsHeader from "@calcom/features/settings/appDir/SettingsHeader";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
+import { useWebPush } from "@schedule/web/modules/notifications/hooks/useWebPush";
+import SettingsHeader from "@schedule/features/settings/appDir/SettingsHeader";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
 
 const PushNotificationsView = () => {
   const { t } = useLocale();

@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 
-import { SUCCESS_STATUS } from "@calcom/platform-constants";
-import type { ApiResponse } from "@calcom/platform-types";
+import { SUCCESS_STATUS } from "@schedule/platform-constants";
+import type { ApiResponse } from "@schedule/platform-types";
 
 import http from "../../lib/http";
 import type { GetAvailabilityListHandlerReturn } from "./types";

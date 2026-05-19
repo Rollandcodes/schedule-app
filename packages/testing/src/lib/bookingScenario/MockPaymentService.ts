@@ -2,11 +2,11 @@ import prismaMock from "../__mocks__/prisma";
 
 import "vitest-fetch-mock";
 
-import { sendAwaitingPaymentEmailAndSMS } from "@calcom/emails/email-manager";
-import logger from "@calcom/lib/logger";
-import type { Booking, Payment, PaymentOption, Prisma } from "@calcom/prisma/client";
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { IAbstractPaymentService } from "@calcom/types/PaymentService";
+import { sendAwaitingPaymentEmailAndSMS } from "@schedule/emails/email-manager";
+import logger from "@schedule/lib/logger";
+import type { Booking, Payment, PaymentOption, Prisma } from "@schedule/prisma/client";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { IAbstractPaymentService } from "@schedule/types/PaymentService";
 
 export function getMockPaymentService() {
   function createPaymentLink(/*{ paymentUid, name, email, date }*/) {

@@ -1,8 +1,8 @@
 import type { Logger } from "tslog";
 
-import dayjs from "@calcom/dayjs";
-import { HttpError } from "@calcom/lib/http-error";
-import { withReporting } from "@calcom/lib/sentryWrapper";
+import dayjs from "@schedule/dayjs";
+import { HttpError } from "@schedule/lib/http-error";
+import { withReporting } from "@schedule/lib/sentryWrapper";
 
 type Props = {
   reqBodyStart: string;

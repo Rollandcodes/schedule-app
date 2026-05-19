@@ -3,11 +3,11 @@ import {
   ERROR_STATUS,
   SUCCESS_STATUS,
   VERSION_2024_08_13,
-} from "@calcom/platform-constants";
-import type { BookingOutput_2024_08_13 } from "@calcom/platform-types";
-import { UpdateBookingLocationInput_2024_08_13 } from "@calcom/platform-types";
-import type { Team } from "@calcom/prisma/client";
-import { Booking } from "@calcom/prisma/client";
+} from "@schedule/platform-constants";
+import type { BookingOutput_2024_08_13 } from "@schedule/platform-types";
+import { UpdateBookingLocationInput_2024_08_13 } from "@schedule/platform-types";
+import type { Team } from "@schedule/prisma/client";
+import { Booking } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";
@@ -16,8 +16,8 @@ import request from "supertest";
 const MOCK_GOOGLE_MEET_URL = "https://meet.google.com/mock-meet-id";
 const MOCK_MS_TEAMS_URL = "https://teams.microsoft.com/l/meetup-join/mock-teams-id";
 
-jest.mock("@calcom/platform-libraries/conferencing", () => ({
-  ...jest.requireActual("@calcom/platform-libraries/conferencing"),
+jest.mock("@schedule/platform-libraries/conferencing", () => ({
+  ...jest.requireActual("@schedule/platform-libraries/conferencing"),
   createMeeting: jest.fn().mockResolvedValue({
     appName: "daily-video",
     type: "daily_video",
@@ -34,8 +34,8 @@ jest.mock("@calcom/platform-libraries/conferencing", () => ({
   }),
 }));
 
-jest.mock("@calcom/platform-libraries", () => {
-  const actual = jest.requireActual("@calcom/platform-libraries");
+jest.mock("@schedule/platform-libraries", () => {
+  const actual = jest.requireActual("@schedule/platform-libraries");
   return {
     ...actual,
     updateEvent: jest.fn().mockImplementation((_credential, evt) => {

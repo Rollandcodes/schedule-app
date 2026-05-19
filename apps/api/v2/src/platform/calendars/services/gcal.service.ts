@@ -14,8 +14,8 @@ import { Request } from "express";
 import { OAuth2Client } from "googleapis-common";
 import { z } from "zod";
 
-import { SUCCESS_STATUS, GOOGLE_CALENDAR_TYPE } from "@calcom/platform-constants";
-import { Prisma } from "@calcom/prisma/client";
+import { SUCCESS_STATUS, GOOGLE_CALENDAR_TYPE } from "@schedule/platform-constants";
+import { Prisma } from "@schedule/prisma/client";
 
 const CALENDAR_SCOPES = [
   "https://www.googleapis.com/auth/calendar.readonly",

@@ -1,31 +1,31 @@
-import { BookingStatus, CreationSource } from "@calcom/prisma/enums";
+import { BookingStatus, CreationSource } from "@schedule/prisma/enums";
 import { describe, expect, it, vi } from "vitest";
 import { buildDryRunBooking } from "../../service/RegularBookingService";
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: {}, // empty object as default export
   prisma: {},
 }));
 
-vi.mock("@calcom/app-store/delegationCredential", () => ({
+vi.mock("@schedule/app-store/delegationCredential", () => ({
   enrichHostsWithDelegationCredentials: vi.fn(),
   getUsersCredentialsIncludeServiceAccountKey: vi.fn(),
   getCredentialForSelectedCalendar: vi.fn(),
 }));
 
-vi.mock("@calcom/features/abuse-scoring/lib/hooks", () => ({
+vi.mock("@schedule/features/abuse-scoring/lib/hooks", () => ({
   onEventTypeChange: vi.fn(),
   onSignup: vi.fn(),
   onBookingCreated: vi.fn(),
 }));
 
-vi.mock("@calcom/features/di/watchlist/containers/SpamCheckService.container", () => ({
+vi.mock("@schedule/features/di/watchlist/containers/SpamCheckService.container", () => ({
   getSpamCheckService: vi.fn().mockReturnValue({
     checkForSpam: vi.fn().mockResolvedValue({ isSpam: false }),
   }),
 }));
 
-vi.mock("@calcom/features/watchlist/lib/freeEmailDomainCheck/checkIfFreeEmailDomain", () => ({
+vi.mock("@schedule/features/watchlist/lib/freeEmailDomainCheck/checkIfFreeEmailDomain", () => ({
   checkIfFreeEmailDomain: vi.fn().mockResolvedValue(false),
 }));
 

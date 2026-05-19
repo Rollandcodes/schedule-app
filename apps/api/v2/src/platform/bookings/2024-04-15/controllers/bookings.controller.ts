@@ -4,7 +4,7 @@ import {
   SUCCESS_STATUS,
   X_CAL_CLIENT_ID,
   X_CAL_PLATFORM_EMBED,
-} from "@calcom/platform-constants";
+} from "@schedule/platform-constants";
 import {
   BookingResponse,
   CreationSource,
@@ -13,16 +13,16 @@ import {
   getBookingInfo,
   handleCancelBooking,
   handleMarkNoShow,
-} from "@calcom/platform-libraries";
-import { makeUserActor } from "@calcom/platform-libraries/bookings";
-import { ErrorCode, HttpError } from "@calcom/platform-libraries/errors";
-import type { ApiResponse } from "@calcom/platform-types";
+} from "@schedule/platform-libraries";
+import { makeUserActor } from "@schedule/platform-libraries/bookings";
+import { ErrorCode, HttpError } from "@schedule/platform-libraries/errors";
+import type { ApiResponse } from "@schedule/platform-types";
 import {
   CancelBookingInput_2024_04_15,
   GetBookingsInput_2024_04_15,
   Status_2024_04_15,
-} from "@calcom/platform-types";
-import type { PrismaClient } from "@calcom/prisma";
+} from "@schedule/platform-types";
+import type { PrismaClient } from "@schedule/prisma";
 import {
   BadRequestException,
   Body,

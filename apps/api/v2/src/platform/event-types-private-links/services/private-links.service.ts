@@ -6,8 +6,8 @@ import {
 } from "@/platform/event-types-private-links/services/private-links-output.service";
 import { Injectable, NotFoundException, BadRequestException } from "@nestjs/common";
 
-import { generateHashedLink, isLinkExpired } from "@calcom/platform-libraries/private-links";
-import { CreatePrivateLinkInput, PrivateLinkOutput, UpdatePrivateLinkInput } from "@calcom/platform-types";
+import { generateHashedLink, isLinkExpired } from "@schedule/platform-libraries/private-links";
+import { CreatePrivateLinkInput, PrivateLinkOutput, UpdatePrivateLinkInput } from "@schedule/platform-types";
 
 @Injectable()
 export class PrivateLinksService {

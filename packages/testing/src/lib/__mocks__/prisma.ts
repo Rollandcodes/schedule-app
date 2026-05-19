@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
-import logger from "@calcom/lib/logger";
-import type { PrismaClient } from "@calcom/prisma";
-import * as selects from "@calcom/prisma/selects";
+import logger from "@schedule/lib/logger";
+import type { PrismaClient } from "@schedule/prisma";
+import * as selects from "@schedule/prisma/selects";
 import type { DMMF } from "@prisma/client/runtime/client";
 import { getDMMF } from "@prisma/internals";
 import { createPrismock } from "prismock/build/main/lib/client";
@@ -70,8 +70,8 @@ const prismaMockProxy = new Proxy(proxyTarget, {
   },
 });
 
-vi.mock("@calcom/prisma", async (importOriginal) => {
-  const original = await importOriginal<typeof import("@calcom/prisma/client")>();
+vi.mock("@schedule/prisma", async (importOriginal) => {
+  const original = await importOriginal<typeof import("@schedule/prisma/client")>();
   const { Prisma } = original;
 
   const schemaContent = readFileSync("packages/prisma/schema.prisma", "utf-8");

@@ -1,10 +1,10 @@
 import type { NextApiRequest } from "next";
 
-import { EventTypeRepository } from "@calcom/features/eventtypes/repositories/eventTypeRepository";
-import { PrismaSelectedSlotRepository } from "@calcom/features/selectedSlots/repositories/PrismaSelectedSlotRepository";
-import { HttpError } from "@calcom/lib/http-error";
-import { getPastTimeAndMinimumBookingNoticeBoundsStatus } from "@calcom/lib/isOutOfBounds";
-import type { PrismaClient } from "@calcom/prisma";
+import { EventTypeRepository } from "@schedule/features/eventtypes/repositories/eventTypeRepository";
+import { PrismaSelectedSlotRepository } from "@schedule/features/selectedSlots/repositories/PrismaSelectedSlotRepository";
+import { HttpError } from "@schedule/lib/http-error";
+import { getPastTimeAndMinimumBookingNoticeBoundsStatus } from "@schedule/lib/isOutOfBounds";
+import type { PrismaClient } from "@schedule/prisma";
 
 import type { TIsAvailableInputSchema, TIsAvailableOutputSchema } from "./isAvailable.schema";
 

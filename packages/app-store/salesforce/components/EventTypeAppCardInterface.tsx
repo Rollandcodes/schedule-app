@@ -1,20 +1,20 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-import { useAppContextWithSchema } from "@calcom/app-store/EventTypeAppContext";
-import AppCard from "@calcom/app-store/_components/AppCard";
-import useIsAppEnabled from "@calcom/app-store/_utils/useIsAppEnabled";
-import type { EventTypeAppCardComponent } from "@calcom/app-store/types";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { SchedulingType } from "@calcom/prisma/enums";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { InputField, Label } from "@calcom/ui/components/form";
-import { Select } from "@calcom/ui/components/form";
-import { Switch } from "@calcom/ui/components/form";
-import { Section } from "@calcom/ui/components/section";
-import { showToast } from "@calcom/ui/components/toast";
+import { useAppContextWithSchema } from "@schedule/app-store/EventTypeAppContext";
+import AppCard from "@schedule/app-store/_components/AppCard";
+import useIsAppEnabled from "@schedule/app-store/_utils/useIsAppEnabled";
+import type { EventTypeAppCardComponent } from "@schedule/app-store/types";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { SchedulingType } from "@schedule/prisma/enums";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { InputField, Label } from "@schedule/ui/components/form";
+import { Select } from "@schedule/ui/components/form";
+import { Switch } from "@schedule/ui/components/form";
+import { Section } from "@schedule/ui/components/section";
+import { showToast } from "@schedule/ui/components/toast";
 
 import { SalesforceRecordEnum } from "../lib/enums";
 import type { appDataSchema, RRSkipFieldRule } from "../zod";

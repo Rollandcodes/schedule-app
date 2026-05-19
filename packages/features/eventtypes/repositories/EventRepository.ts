@@ -1,5 +1,5 @@
-import { getPublicEvent } from "@calcom/features/eventtypes/lib/getPublicEvent";
-import prisma from "@calcom/prisma";
+import { getPublicEvent } from "@schedule/features/eventtypes/lib/getPublicEvent";
+import prisma from "@schedule/prisma";
 
 export type GetPublicEventInput = {
   username: string;

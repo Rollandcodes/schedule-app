@@ -1,9 +1,9 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Button, type ButtonProps } from "@calcom/ui/components/button";
-import { FilterSearchField } from "@calcom/ui/components/form";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Button, type ButtonProps } from "@schedule/ui/components/button";
+import { FilterSearchField } from "@schedule/ui/components/form";
 import type { Table } from "@tanstack/react-table";
 import type { ComponentPropsWithoutRef } from "react";
 import { type ChangeEvent, forwardRef, type Ref, useEffect, useState } from "react";

@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 import { describe, test, expect, vi, beforeEach } from "vitest";
 
-import { CalendarSubscriptionService } from "@calcom/features/calendar-subscription/lib/CalendarSubscriptionService";
+import { CalendarSubscriptionService } from "@schedule/features/calendar-subscription/lib/CalendarSubscriptionService";
 
 vi.mock("next/server", () => ({
   NextRequest: class MockNextRequest {
@@ -33,10 +33,10 @@ vi.mock("next/server", () => ({
   },
 }));
 
-vi.mock("@calcom/features/calendar-subscription/lib/CalendarSubscriptionService");
-vi.mock("@calcom/features/calendar-subscription/lib/cache/CalendarCacheEventService");
-vi.mock("@calcom/features/calendar-subscription/lib/sync/CalendarSyncService");
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/features/calendar-subscription/lib/CalendarSubscriptionService");
+vi.mock("@schedule/features/calendar-subscription/lib/cache/CalendarCacheEventService");
+vi.mock("@schedule/features/calendar-subscription/lib/sync/CalendarSyncService");
+vi.mock("@schedule/prisma", () => ({
   prisma: {},
 }));
 

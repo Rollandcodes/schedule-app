@@ -5,16 +5,16 @@ import { Controller, useForm } from "react-hook-form";
 import { Toaster } from "sonner";
 import z from "zod";
 
-import { ExchangeAuthentication, ExchangeVersion } from "@calcom/app-store/exchangecalendar/enums";
-import { emailSchema } from "@calcom/lib/emailSchema";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { EmailField } from "@calcom/ui/components/form";
-import { Form } from "@calcom/ui/components/form";
-import { PasswordField } from "@calcom/ui/components/form";
-import { TextField } from "@calcom/ui/components/form";
-import { SelectField } from "@calcom/ui/components/form";
+import { ExchangeAuthentication, ExchangeVersion } from "@schedule/app-store/exchangecalendar/enums";
+import { emailSchema } from "@schedule/lib/emailSchema";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { EmailField } from "@schedule/ui/components/form";
+import { Form } from "@schedule/ui/components/form";
+import { PasswordField } from "@schedule/ui/components/form";
+import { TextField } from "@schedule/ui/components/form";
+import { SelectField } from "@schedule/ui/components/form";
 
 interface IFormData {
   url: string;

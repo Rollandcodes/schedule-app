@@ -1,12 +1,12 @@
-import { PaymentServiceMap } from "@calcom/app-store/payment.services.generated";
-import type { EventTypeAppsList } from "@calcom/app-store/utils";
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import type { Fields } from "@calcom/features/bookings/lib/getBookingFields";
-import { fieldTypesConfigMap } from "@calcom/features/form-builder/fieldTypes";
-import { convertToSmallestCurrencyUnit } from "@calcom/lib/currencyConversions";
-import type { AppCategories, Prisma, EventType, PaymentOption } from "@calcom/prisma/client";
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { IAbstractPaymentService } from "@calcom/types/PaymentService";
+import { PaymentServiceMap } from "@schedule/app-store/payment.services.generated";
+import type { EventTypeAppsList } from "@schedule/app-store/utils";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import type { Fields } from "@schedule/features/bookings/lib/getBookingFields";
+import { fieldTypesConfigMap } from "@schedule/features/form-builder/fieldTypes";
+import { convertToSmallestCurrencyUnit } from "@schedule/lib/currencyConversions";
+import type { AppCategories, Prisma, EventType, PaymentOption } from "@schedule/prisma/client";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { IAbstractPaymentService } from "@schedule/types/PaymentService";
 
 const isPaymentService = (
   x: unknown

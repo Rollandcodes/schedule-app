@@ -1,12 +1,12 @@
-import dayjs from "@calcom/dayjs";
-import { useAvailableTimeSlots } from "@calcom/features/bookings/Booker/hooks/useAvailableTimeSlots";
-import { useTimePreferences } from "@calcom/features/bookings/lib/timePreferences";
+import dayjs from "@schedule/dayjs";
+import { useAvailableTimeSlots } from "@schedule/features/bookings/Booker/hooks/useAvailableTimeSlots";
+import { useTimePreferences } from "@schedule/features/bookings/lib/timePreferences";
 import { useSchedule } from "~/schedules/hooks/useSchedule";
-import { useTroubleshooterStore } from "@calcom/features/troubleshooter/store";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { BookingStatus } from "@calcom/prisma/enums";
-import { trpc } from "@calcom/trpc/react";
-import { Calendar } from "@calcom/web/modules/calendars/weeklyview/components/Calendar";
+import { useTroubleshooterStore } from "@schedule/features/troubleshooter/store";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { BookingStatus } from "@schedule/prisma/enums";
+import { trpc } from "@schedule/trpc/react";
+import { Calendar } from "@schedule/web/modules/calendars/weeklyview/components/Calendar";
 import { useSession } from "next-auth/react";
 import { useMemo } from "react";
 

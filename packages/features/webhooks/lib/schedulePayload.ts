@@ -1,4 +1,4 @@
-import tasker from "@calcom/features/tasker";
+import tasker from "@schedule/features/tasker";
 
 import type sendPayload from "./sendPayload";
 

@@ -1,6 +1,6 @@
-import getStripe from "@calcom/app-store/stripepayment/lib/client";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
+import getStripe from "@schedule/app-store/stripepayment/lib/client";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
 import { Elements, useElements, useStripe } from "@stripe/react-stripe-js";
 import type { SyntheticEvent } from "react";
 import { useEffect, useState } from "react";

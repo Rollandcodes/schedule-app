@@ -1,20 +1,27 @@
 {
-  "extends": "@calcom/tsconfig/base.json",
+  "extends": "@schedule/tsconfig/base.json",
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ES2021",
     "jsx": "react-jsx",
     "resolveJsonModule": true,
-    "types": ["jest"],
+    "types": [
+      "jest"
+    ],
     "outDir": "./dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "@calcom/i18n/server": ["../../i18n/server.ts"]
+      "@schedule/i18n/server": [
+        "../../i18n/server.ts"
+      ]
     }
   },
-  "include": [".", "../../types/*.d.ts"],
+  "include": [
+    ".",
+    "../../types/*.d.ts"
+  ],
   "exclude": [
     "dist",
     "build",

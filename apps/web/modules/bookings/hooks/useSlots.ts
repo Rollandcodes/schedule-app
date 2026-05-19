@@ -1,18 +1,18 @@
 import { useEffect, useRef } from "react";
 import { shallow } from "zustand/shallow";
 
-import dayjs from "@calcom/dayjs";
-import { useBookerStoreContext } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { useSlotReservationId } from "@calcom/features/bookings/Booker/useSlotReservationId";
-import { isBookingDryRun } from "@calcom/features/bookings/Booker/utils/isBookingDryRun";
+import dayjs from "@schedule/dayjs";
+import { useBookerStoreContext } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { useSlotReservationId } from "@schedule/features/bookings/Booker/useSlotReservationId";
+import { isBookingDryRun } from "@schedule/features/bookings/Booker/utils/isBookingDryRun";
 import {
   MINUTES_TO_BOOK,
   PUBLIC_QUERY_RESERVATION_INTERVAL_SECONDS,
   PUBLIC_QUERY_RESERVATION_STALE_TIME_SECONDS,
-} from "@calcom/lib/constants";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { trpc } from "@calcom/trpc/react";
-import type { QuickAvailabilityCheck } from "@calcom/features/bookings/Booker/types";
+} from "@schedule/lib/constants";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { trpc } from "@schedule/trpc/react";
+import type { QuickAvailabilityCheck } from "@schedule/features/bookings/Booker/types";
 import { useIsQuickAvailabilityCheckFeatureEnabled } from "./useIsQuickAvailabilityCheckFeatureEnabled";
 
 const useQuickAvailabilityChecks = ({

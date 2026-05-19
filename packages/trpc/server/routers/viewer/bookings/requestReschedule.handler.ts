@@ -1,33 +1,33 @@
-import { getCalendar } from "@calcom/app-store/_utils/getCalendar";
+import { getCalendar } from "@schedule/app-store/_utils/getCalendar";
 import {
   getDelegationCredentialOrRegularCredential,
   getUsersCredentialsIncludeServiceAccountKey,
-} from "@calcom/app-store/delegationCredential";
-import dayjs from "@calcom/dayjs";
-import { sendRequestRescheduleEmailAndSMS } from "@calcom/emails/email-manager";
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
-import { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import { deleteMeeting } from "@calcom/features/conferencing/lib/videoClient";
-import getWebhooks from "@calcom/features/webhooks/lib/getWebhooks";
+} from "@schedule/app-store/delegationCredential";
+import dayjs from "@schedule/dayjs";
+import { sendRequestRescheduleEmailAndSMS } from "@schedule/emails/email-manager";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
+import { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import { deleteMeeting } from "@schedule/features/conferencing/lib/videoClient";
+import getWebhooks from "@schedule/features/webhooks/lib/getWebhooks";
 import {
   cancelNoShowTasksForBooking,
   deleteWebhookScheduledTriggers,
-} from "@calcom/features/webhooks/lib/scheduleTrigger";
-import sendPayload from "@calcom/features/webhooks/lib/sendOrSchedulePayload";
-import { CalendarEventBuilder } from "@calcom/lib/builders/CalendarEvent/builder";
-import { CalendarEventDirector } from "@calcom/lib/builders/CalendarEvent/director";
-import getOrgIdFromMemberOrTeamId from "@calcom/lib/getOrgIdFromMemberOrTeamId";
-import { getTeamIdFromEventType } from "@calcom/lib/getTeamIdFromEventType";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import { getTranslation } from "@calcom/i18n/server";
-import { BookingWebhookFactory } from "@calcom/lib/server/service/BookingWebhookFactory";
-import { prisma } from "@calcom/prisma";
-import type { BookingReference, EventType } from "@calcom/prisma/client";
-import type { WebhookTriggerEvents } from "@calcom/prisma/enums";
-import { BookingStatus } from "@calcom/prisma/enums";
-import type { EventTypeMetadata } from "@calcom/prisma/zod-utils";
-import type { Person } from "@calcom/types/Calendar";
+} from "@schedule/features/webhooks/lib/scheduleTrigger";
+import sendPayload from "@schedule/features/webhooks/lib/sendOrSchedulePayload";
+import { CalendarEventBuilder } from "@schedule/lib/builders/CalendarEvent/builder";
+import { CalendarEventDirector } from "@schedule/lib/builders/CalendarEvent/director";
+import getOrgIdFromMemberOrTeamId from "@schedule/lib/getOrgIdFromMemberOrTeamId";
+import { getTeamIdFromEventType } from "@schedule/lib/getTeamIdFromEventType";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import { getTranslation } from "@schedule/i18n/server";
+import { BookingWebhookFactory } from "@schedule/lib/server/service/BookingWebhookFactory";
+import { prisma } from "@schedule/prisma";
+import type { BookingReference, EventType } from "@schedule/prisma/client";
+import type { WebhookTriggerEvents } from "@schedule/prisma/enums";
+import { BookingStatus } from "@schedule/prisma/enums";
+import type { EventTypeMetadata } from "@schedule/prisma/zod-utils";
+import type { Person } from "@schedule/types/Calendar";
 import { TRPCError } from "@trpc/server";
 import type { TFunction } from "i18next";
 import type { TrpcSessionUser } from "../../../types";

@@ -1,18 +1,18 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
-import SettingsHeader from "@calcom/features/settings/appDir/SettingsHeader";
-import { getHolidayEmoji } from "@calcom/lib/holidays/getHolidayEmoji";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { Select, Switch } from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
-import { SkeletonContainer, SkeletonText } from "@calcom/ui/components/skeleton";
+import dayjs from "@schedule/dayjs";
+import SettingsHeader from "@schedule/features/settings/appDir/SettingsHeader";
+import { getHolidayEmoji } from "@schedule/lib/holidays/getHolidayEmoji";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { Select, Switch } from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
+import { SkeletonContainer, SkeletonText } from "@schedule/ui/components/skeleton";
 import { TriangleAlertIcon } from "@coss/ui/icons";
-import { showToast } from "@calcom/ui/components/toast";
+import { showToast } from "@schedule/ui/components/toast";
 import { memo, useCallback, useMemo } from "react";
 import { OutOfOfficeToggleGroup } from "~/settings/outOfOffice/OutOfOfficeToggleGroup";
 

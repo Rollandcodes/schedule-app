@@ -1,6 +1,6 @@
-import prisma from "@calcom/prisma";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
-import type { CredentialPayload } from "@calcom/types/Credential";
+import prisma from "@schedule/prisma";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 /**
  * Refreshes a Credential with fresh data from the database.

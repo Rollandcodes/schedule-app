@@ -1,6 +1,6 @@
-import type { FeatureId } from "@calcom/features/flags/config";
-import type { FeatureDto } from "@calcom/lib/dto/FeatureDto";
-import type { PrismaClient } from "@calcom/prisma/client";
+import type { FeatureId } from "@schedule/features/flags/config";
+import type { FeatureDto } from "@schedule/lib/dto/FeatureDto";
+import type { PrismaClient } from "@schedule/prisma/client";
 
 export interface IFeatureRepository {
   findAll(): Promise<FeatureDto[]>;

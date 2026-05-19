@@ -1,4 +1,4 @@
-import { SUCCESS_STATUS } from "@calcom/platform-constants";
+import { SUCCESS_STATUS } from "@schedule/platform-constants";
 import {
   Body,
   Controller,

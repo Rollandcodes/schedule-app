@@ -1,7 +1,7 @@
 import { ExecutionContext } from "@nestjs/common";
 import { createParamDecorator } from "@nestjs/common";
 
-import type { Team } from "@calcom/prisma/client";
+import type { Team } from "@schedule/prisma/client";
 
 export type GetOrgReturnType = Team;
 

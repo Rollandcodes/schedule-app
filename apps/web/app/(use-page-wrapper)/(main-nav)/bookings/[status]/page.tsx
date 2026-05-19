@@ -1,6 +1,6 @@
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import { prisma } from "@calcom/prisma";
+import { getServerSession } from "@schedule/features/auth/lib/getServerSession";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import { prisma } from "@schedule/prisma";
 import { buildLegacyRequest } from "@lib/buildLegacyCtx";
 import type { PageProps } from "app/_types";
 import { _generateMetadata, getTranslate } from "app/_utils";

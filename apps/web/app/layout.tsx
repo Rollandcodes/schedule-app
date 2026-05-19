@@ -1,6 +1,6 @@
-import { getLocale } from "@calcom/features/auth/lib/getLocale";
-import { loadTranslations } from "@calcom/i18n/server";
-import { IconSprites } from "@calcom/ui/components/icon";
+import { getLocale } from "@schedule/features/auth/lib/getLocale";
+import { loadTranslations } from "@schedule/i18n/server";
+import { IconSprites } from "@schedule/ui/components/icon";
 import { buildLegacyRequest } from "@lib/buildLegacyCtx";
 import { dir } from "i18next";
 import { Inter } from "next/font/google";

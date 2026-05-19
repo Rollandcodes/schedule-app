@@ -1,14 +1,14 @@
-import { moduleLoader as bookingEventHandlerModuleLoader } from "@calcom/features/bookings/di/BookingEventHandlerService.module";
-import { RegularBookingService } from "@calcom/features/bookings/lib/service/RegularBookingService";
-import { bindModuleToClassOnToken, createModule, type ModuleLoader } from "@calcom/features/di/di";
-import { moduleLoader as bookingRepositoryModuleLoader } from "@calcom/features/di/modules/Booking";
-import { moduleLoader as checkBookingAndDurationLimitsModuleLoader } from "@calcom/features/di/modules/CheckBookingAndDurationLimits";
-import { moduleLoader as luckyUserServiceModuleLoader } from "@calcom/features/di/modules/LuckyUser";
-import { moduleLoader as prismaModuleLoader } from "@calcom/features/di/modules/Prisma";
-import { moduleLoader as userRepositoryModuleLoader } from "@calcom/features/di/modules/User";
-import { DI_TOKENS } from "@calcom/features/di/tokens";
-import { moduleLoader as webhookProducerModuleLoader } from "@calcom/features/di/webhooks/modules/WebhookProducerService.module";
-import { moduleLoader as hashedLinkServiceModuleLoader } from "@calcom/features/hashedLink/di/HashedLinkService.module";
+import { moduleLoader as bookingEventHandlerModuleLoader } from "@schedule/features/bookings/di/BookingEventHandlerService.module";
+import { RegularBookingService } from "@schedule/features/bookings/lib/service/RegularBookingService";
+import { bindModuleToClassOnToken, createModule, type ModuleLoader } from "@schedule/features/di/di";
+import { moduleLoader as bookingRepositoryModuleLoader } from "@schedule/features/di/modules/Booking";
+import { moduleLoader as checkBookingAndDurationLimitsModuleLoader } from "@schedule/features/di/modules/CheckBookingAndDurationLimits";
+import { moduleLoader as luckyUserServiceModuleLoader } from "@schedule/features/di/modules/LuckyUser";
+import { moduleLoader as prismaModuleLoader } from "@schedule/features/di/modules/Prisma";
+import { moduleLoader as userRepositoryModuleLoader } from "@schedule/features/di/modules/User";
+import { DI_TOKENS } from "@schedule/features/di/tokens";
+import { moduleLoader as webhookProducerModuleLoader } from "@schedule/features/di/webhooks/modules/WebhookProducerService.module";
+import { moduleLoader as hashedLinkServiceModuleLoader } from "@schedule/features/hashedLink/di/HashedLinkService.module";
 import { moduleLoader as bookingEmailAndSmsTaskerModuleLoader } from "./tasker/BookingEmailAndSmsTasker.module";
 
 const thisModule = createModule();

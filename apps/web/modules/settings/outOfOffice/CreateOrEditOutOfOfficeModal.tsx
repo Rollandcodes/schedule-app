@@ -1,14 +1,14 @@
-import dayjs from "@calcom/dayjs";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useDebounce } from "@calcom/lib/hooks/useDebounce";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import useMeQuery from "@calcom/trpc/react/hooks/useMeQuery";
-import classNames from "@calcom/ui/classNames";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogHeader } from "@calcom/ui/components/dialog";
+import dayjs from "@schedule/dayjs";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useDebounce } from "@schedule/lib/hooks/useDebounce";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import useMeQuery from "@schedule/trpc/react/hooks/useMeQuery";
+import classNames from "@schedule/ui/classNames";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogHeader } from "@schedule/ui/components/dialog";
 import {
   Checkbox,
   DateRangePicker,
@@ -17,8 +17,8 @@ import {
   Select,
   Switch,
   TextArea,
-} from "@calcom/ui/components/form";
-import { showToast } from "@calcom/ui/components/toast";
+} from "@schedule/ui/components/form";
+import { showToast } from "@schedule/ui/components/toast";
 import { useMemo, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { OutOfOfficeTab } from "~/settings/outOfOffice/OutOfOfficeToggleGroup";

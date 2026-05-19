@@ -1,18 +1,18 @@
-import { getCalendar } from "@calcom/app-store/_utils/getCalendar";
-import { MeetLocationType } from "@calcom/app-store/locations";
-import getApps from "@calcom/app-store/utils";
-import dayjs from "@calcom/dayjs";
+import { getCalendar } from "@schedule/app-store/_utils/getCalendar";
+import { MeetLocationType } from "@schedule/app-store/locations";
+import getApps from "@schedule/app-store/utils";
+import dayjs from "@schedule/dayjs";
 import getCalendarsEvents, {
   getCalendarsEventsWithTimezones,
-} from "@calcom/features/calendars/lib/getCalendarsEvents";
-import { getRichDescription, getUid } from "@calcom/lib/CalEventParser";
-import { CalendarAppDelegationCredentialError } from "@calcom/lib/CalendarAppError";
-import { ORGANIZER_EMAIL_EXEMPT_DOMAINS } from "@calcom/lib/constants";
-import { buildNonDelegationCredentials } from "@calcom/lib/delegationCredential";
-import { formatCalEvent } from "@calcom/lib/formatCalendarEvent";
-import logger from "@calcom/lib/logger";
-import { getPiiFreeCalendarEvent, getPiiFreeCredential } from "@calcom/lib/piiFreeData";
-import { safeStringify } from "@calcom/lib/safeStringify";
+} from "@schedule/features/calendars/lib/getCalendarsEvents";
+import { getRichDescription, getUid } from "@schedule/lib/CalEventParser";
+import { CalendarAppDelegationCredentialError } from "@schedule/lib/CalendarAppError";
+import { ORGANIZER_EMAIL_EXEMPT_DOMAINS } from "@schedule/lib/constants";
+import { buildNonDelegationCredentials } from "@schedule/lib/delegationCredential";
+import { formatCalEvent } from "@schedule/lib/formatCalendarEvent";
+import logger from "@schedule/lib/logger";
+import { getPiiFreeCalendarEvent, getPiiFreeCredential } from "@schedule/lib/piiFreeData";
+import { safeStringify } from "@schedule/lib/safeStringify";
 import type {
   CalendarEvent,
   CalendarFetchMode,
@@ -21,9 +21,9 @@ import type {
   IntegrationCalendar,
   NewCalendarEventType,
   SelectedCalendar,
-} from "@calcom/types/Calendar";
-import type { CredentialForCalendarService, CredentialPayload } from "@calcom/types/Credential";
-import type { EventResult } from "@calcom/types/EventManager";
+} from "@schedule/types/Calendar";
+import type { CredentialForCalendarService, CredentialPayload } from "@schedule/types/Credential";
+import type { EventResult } from "@schedule/types/EventManager";
 import { sortBy } from "lodash";
 
 const log = logger.getSubLogger({ prefix: ["CalendarManager"] });

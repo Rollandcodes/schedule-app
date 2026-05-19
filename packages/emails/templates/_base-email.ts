@@ -1,13 +1,13 @@
 import { decodeHTML } from "entities";
 import { z } from "zod";
 
-import dayjs from "@calcom/dayjs";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
-import isSmsCalEmail from "@calcom/lib/isSmsCalEmail";
-import { serverConfig } from "@calcom/lib/serverConfig";
-import { getServerErrorFromUnknown } from "@calcom/lib/server/getServerErrorFromUnknown";
-import { setTestEmail } from "@calcom/lib/testEmails";
-import { prisma } from "@calcom/prisma";
+import dayjs from "@schedule/dayjs";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
+import isSmsCalEmail from "@schedule/lib/isSmsCalEmail";
+import { serverConfig } from "@schedule/lib/serverConfig";
+import { getServerErrorFromUnknown } from "@schedule/lib/server/getServerErrorFromUnknown";
+import { setTestEmail } from "@schedule/lib/testEmails";
+import { prisma } from "@schedule/prisma";
 
 import { sanitizeDisplayName } from "../lib/sanitizeDisplayName";
 

@@ -1,5 +1,5 @@
-import logger from "@calcom/lib/logger";
-import prisma from "@calcom/prisma";
+import logger from "@schedule/lib/logger";
+import prisma from "@schedule/prisma";
 
 export type CloseComLead = {
   companyName?: string | null | undefined;

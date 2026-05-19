@@ -1,5 +1,5 @@
 import process from "node:process";
-import type { AppMeta } from "@calcom/types/App";
+import type { AppMeta } from "@schedule/types/App";
 
 export const metadata = {
   name: "Cal Video",

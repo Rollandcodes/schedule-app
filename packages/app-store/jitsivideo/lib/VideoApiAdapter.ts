@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { PartialReference } from "@calcom/types/EventManager";
-import type { VideoApiAdapter, VideoCallData } from "@calcom/types/VideoApiAdapter";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { PartialReference } from "@schedule/types/EventManager";
+import type { VideoApiAdapter, VideoCallData } from "@schedule/types/VideoApiAdapter";
 
 import getAppKeysFromSlug from "../../_utils/getAppKeysFromSlug";
 import { metadata } from "../_metadata";

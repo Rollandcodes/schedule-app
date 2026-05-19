@@ -1,8 +1,8 @@
-import { SUCCESS_STATUS } from "@calcom/platform-constants";
-import { BookingResponse } from "@calcom/platform-libraries";
-import { type RegularBookingCreateResult } from "@calcom/platform-libraries/bookings";
-import type { ApiErrorResponse, ApiSuccessResponse } from "@calcom/platform-types";
-import type { User } from "@calcom/prisma/client";
+import { SUCCESS_STATUS } from "@schedule/platform-constants";
+import { BookingResponse } from "@schedule/platform-libraries";
+import { type RegularBookingCreateResult } from "@schedule/platform-libraries/bookings";
+import type { ApiErrorResponse, ApiSuccessResponse } from "@schedule/platform-types";
+import type { User } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";

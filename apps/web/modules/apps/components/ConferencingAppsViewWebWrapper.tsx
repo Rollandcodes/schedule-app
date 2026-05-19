@@ -1,16 +1,16 @@
 "use client";
 
-import { AppList } from "@calcom/features/apps/components/AppList";
-import DisconnectIntegrationModal from "@calcom/features/apps/components/DisconnectIntegrationModal";
-import SettingsHeader from "@calcom/features/settings/appDir/SettingsHeader";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { EmptyScreen } from "@calcom/ui/components/empty-screen";
-import { SkeletonContainer, SkeletonText } from "@calcom/ui/components/skeleton";
-import { showToast } from "@calcom/ui/components/toast";
-import AppListCardWebWrapper from "@calcom/web/modules/apps/components/AppListCardWebWrapper";
+import { AppList } from "@schedule/features/apps/components/AppList";
+import DisconnectIntegrationModal from "@schedule/features/apps/components/DisconnectIntegrationModal";
+import SettingsHeader from "@schedule/features/settings/appDir/SettingsHeader";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { EmptyScreen } from "@schedule/ui/components/empty-screen";
+import { SkeletonContainer, SkeletonText } from "@schedule/ui/components/skeleton";
+import { showToast } from "@schedule/ui/components/toast";
+import AppListCardWebWrapper from "@schedule/web/modules/apps/components/AppListCardWebWrapper";
 import { useReducer } from "react";
 
 export type UpdateUsersDefaultConferencingAppParams = {

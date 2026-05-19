@@ -1,11 +1,11 @@
-import { timeZoneSchema } from "@calcom/lib/dayjs/timeZone.schema";
-import { emailSchema } from "@calcom/lib/emailSchema";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { MembershipRole } from "@calcom/prisma/enums";
-import { trpc } from "@calcom/trpc/react";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Button } from "@calcom/ui/components/button";
-import { Divider } from "@calcom/ui/components/divider";
+import { timeZoneSchema } from "@schedule/lib/dayjs/timeZone.schema";
+import { emailSchema } from "@schedule/lib/emailSchema";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { MembershipRole } from "@schedule/prisma/enums";
+import { trpc } from "@schedule/trpc/react";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Button } from "@schedule/ui/components/button";
+import { Divider } from "@schedule/ui/components/divider";
 import {
   Form,
   Label,
@@ -13,11 +13,11 @@ import {
   TextAreaField,
   TextField,
   ToggleGroup,
-} from "@calcom/ui/components/form";
-import { ImageUploader } from "@calcom/ui/components/image-uploader";
-import { SheetBody, SheetFooter, SheetHeader, SheetTitle } from "@calcom/ui/components/sheet";
-import { showToast } from "@calcom/ui/components/toast";
-import { TimezoneSelect } from "@calcom/web/modules/timezone/components/TimezoneSelect";
+} from "@schedule/ui/components/form";
+import { ImageUploader } from "@schedule/ui/components/image-uploader";
+import { SheetBody, SheetFooter, SheetHeader, SheetTitle } from "@schedule/ui/components/sheet";
+import { showToast } from "@schedule/ui/components/toast";
+import { TimezoneSelect } from "@schedule/web/modules/timezone/components/TimezoneSelect";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useSession } from "next-auth/react";
 import type { Dispatch } from "react";

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import type z from "zod";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
-import { Switch } from "@calcom/ui/components/form";
-import { InputField } from "@calcom/ui/components/form";
-import { Select } from "@calcom/ui/components/form";
-import { Section } from "@calcom/ui/components/section";
-import { showToast } from "@calcom/ui/components/toast";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
+import { Switch } from "@schedule/ui/components/form";
+import { InputField } from "@schedule/ui/components/form";
+import { Select } from "@schedule/ui/components/form";
+import { Section } from "@schedule/ui/components/section";
+import { showToast } from "@schedule/ui/components/toast";
 
 import { WhenToWriteToRecord, SalesforceFieldType, DateFieldTypeData } from "../../lib/enums";
 import type { writeToRecordEntrySchema, writeToBookingEntry } from "../../zod";

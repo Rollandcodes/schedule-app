@@ -1,8 +1,8 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
-import { BOOKER_NUMBER_OF_DAYS_TO_LOAD } from "@calcom/lib/constants";
-import { BookerLayouts } from "@calcom/prisma/zod-utils";
+import dayjs from "@schedule/dayjs";
+import { BOOKER_NUMBER_OF_DAYS_TO_LOAD } from "@schedule/lib/constants";
+import { BookerLayouts } from "@schedule/prisma/zod-utils";
 import { useEffect } from "react";
 import { createWithEqualityFn } from "zustand/traditional";
 import type { GetBookingType } from "../lib/get-booking";

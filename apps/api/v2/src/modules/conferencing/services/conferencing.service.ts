@@ -20,10 +20,10 @@ import {
   GOOGLE_MEET,
   ZOOM,
   OFFICE_365_VIDEO,
-} from "@calcom/platform-constants";
-import { userMetadata } from "@calcom/platform-libraries";
-import { getUsersCredentialsIncludeServiceAccountKey } from "@calcom/platform-libraries/app-store";
-import { getApps, handleDeleteCredential } from "@calcom/platform-libraries/app-store";
+} from "@schedule/platform-constants";
+import { userMetadata } from "@schedule/platform-libraries";
+import { getUsersCredentialsIncludeServiceAccountKey } from "@schedule/platform-libraries/app-store";
+import { getApps, handleDeleteCredential } from "@schedule/platform-libraries/app-store";
 
 @Injectable()
 export class ConferencingService {

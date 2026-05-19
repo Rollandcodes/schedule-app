@@ -1,12 +1,12 @@
 import type { z } from "zod";
 
-import { enrichUserWithDelegationCredentialsIncludeServiceAccountKey } from "@calcom/app-store/delegationCredential";
-import { eventTypeAppMetadataOptionalSchema } from "@calcom/app-store/zod-utils";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import prisma from "@calcom/prisma";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
-import type { EventTypeMetaDataSchema } from "@calcom/prisma/zod-utils";
-import type { CredentialPayload } from "@calcom/types/Credential";
+import { enrichUserWithDelegationCredentialsIncludeServiceAccountKey } from "@schedule/app-store/delegationCredential";
+import { eventTypeAppMetadataOptionalSchema } from "@schedule/app-store/zod-utils";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import prisma from "@schedule/prisma";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
+import type { EventTypeMetaDataSchema } from "@schedule/prisma/zod-utils";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 export type EventType = {
   userId?: number | null;

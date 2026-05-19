@@ -1,13 +1,13 @@
 import { z } from "zod";
 
-import dayjs from "@calcom/dayjs";
-import logger from "@calcom/lib/logger";
-import { prisma } from "@calcom/prisma";
-import type { Credential } from "@calcom/prisma/client";
-import type { CalendarEvent } from "@calcom/types/Calendar";
-import type { CredentialPayload } from "@calcom/types/Credential";
-import type { PartialReference } from "@calcom/types/EventManager";
-import type { VideoApiAdapter, VideoCallData } from "@calcom/types/VideoApiAdapter";
+import dayjs from "@schedule/dayjs";
+import logger from "@schedule/lib/logger";
+import { prisma } from "@schedule/prisma";
+import type { Credential } from "@schedule/prisma/client";
+import type { CalendarEvent } from "@schedule/types/Calendar";
+import type { CredentialPayload } from "@schedule/types/Credential";
+import type { PartialReference } from "@schedule/types/EventManager";
+import type { VideoApiAdapter, VideoCallData } from "@schedule/types/VideoApiAdapter";
 
 import refreshOAuthTokens from "../../_utils/oauth/refreshOAuthTokens";
 import { getWebexAppKeys } from "./getWebexAppKeys";

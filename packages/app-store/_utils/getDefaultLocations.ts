@@ -1,8 +1,8 @@
 import type { z } from "zod";
 
-import { getUsersCredentialsIncludeServiceAccountKey } from "@calcom/app-store/delegationCredential";
-import type { Prisma } from "@calcom/prisma/client";
-import { userMetadata as userMetadataSchema, type eventTypeLocations } from "@calcom/prisma/zod-utils";
+import { getUsersCredentialsIncludeServiceAccountKey } from "@schedule/app-store/delegationCredential";
+import type { Prisma } from "@schedule/prisma/client";
+import { userMetadata as userMetadataSchema, type eventTypeLocations } from "@schedule/prisma/zod-utils";
 
 import { DailyLocationType } from "../constants";
 import getApps from "../utils";

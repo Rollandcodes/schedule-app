@@ -13,38 +13,38 @@ import {
 } from "react";
 import { Controller, useFieldArray, useForm, useFormContext, useWatch } from "react-hook-form";
 
-import dayjs from "@calcom/dayjs";
-import { BookerStoreProvider } from "@calcom/features/bookings/Booker/BookerStoreProvider";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { TimezoneSelect as WebTimezoneSelect } from "@calcom/web/modules/timezone/components/TimezoneSelect";
+import dayjs from "@schedule/dayjs";
+import { BookerStoreProvider } from "@schedule/features/bookings/Booker/BookerStoreProvider";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { TimezoneSelect as WebTimezoneSelect } from "@schedule/web/modules/timezone/components/TimezoneSelect";
 import type {
   BulkUpdatParams,
   EventTypes,
-} from "@calcom/features/eventtypes/components/BulkEditDefaultForEventsModal";
-import { BulkEditDefaultForEventsModal } from "@calcom/features/eventtypes/components/BulkEditDefaultForEventsModal";
-import DateOverrideInputDialog from "@calcom/features/schedules/components/DateOverrideInputDialog";
-import DateOverrideList from "@calcom/features/schedules/components/DateOverrideList";
+} from "@schedule/features/eventtypes/components/BulkEditDefaultForEventsModal";
+import { BulkEditDefaultForEventsModal } from "@schedule/features/eventtypes/components/BulkEditDefaultForEventsModal";
+import DateOverrideInputDialog from "@schedule/features/schedules/components/DateOverrideInputDialog";
+import DateOverrideList from "@schedule/features/schedules/components/DateOverrideList";
 import {
   ScheduleComponent as PlatformSchedule,
-} from "@calcom/features/schedules/components/ScheduleComponent";
-import WebSchedule from "@calcom/web/modules/schedules/components/Schedule";
-import { availabilityAsString } from "@calcom/lib/availability";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { sortAvailabilityStrings } from "@calcom/lib/weekstart";
-import type { TravelScheduleRepository } from "@calcom/features/travelSchedule/repositories/TravelScheduleRepository";
-import type { TimeRange, WorkingHours } from "@calcom/types/schedule";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { DialogTrigger, ConfirmationDialogContent } from "@calcom/ui/components/dialog";
-import { VerticalDivider } from "@calcom/ui/components/divider";
-import { EditableHeading } from "@calcom/ui/components/editable-heading";
-import { Form } from "@calcom/ui/components/form";
-import { Label } from "@calcom/ui/components/form";
-import { Switch } from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
-import { SkeletonText, SelectSkeletonLoader, Skeleton } from "@calcom/ui/components/skeleton";
-import { Tooltip } from "@calcom/ui/components/tooltip";
-import WebShell from "@calcom/web/modules/shell/Shell";
+} from "@schedule/features/schedules/components/ScheduleComponent";
+import WebSchedule from "@schedule/web/modules/schedules/components/Schedule";
+import { availabilityAsString } from "@schedule/lib/availability";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { sortAvailabilityStrings } from "@schedule/lib/weekstart";
+import type { TravelScheduleRepository } from "@schedule/features/travelSchedule/repositories/TravelScheduleRepository";
+import type { TimeRange, WorkingHours } from "@schedule/types/schedule";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { DialogTrigger, ConfirmationDialogContent } from "@schedule/ui/components/dialog";
+import { VerticalDivider } from "@schedule/ui/components/divider";
+import { EditableHeading } from "@schedule/ui/components/editable-heading";
+import { Form } from "@schedule/ui/components/form";
+import { Label } from "@schedule/ui/components/form";
+import { Switch } from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
+import { SkeletonText, SelectSkeletonLoader, Skeleton } from "@schedule/ui/components/skeleton";
+import { Tooltip } from "@schedule/ui/components/tooltip";
+import WebShell from "@schedule/web/modules/shell/Shell";
 
 import { Shell as PlatformShell } from "../src/components/ui/shell";
 import { cn } from "../src/lib/utils";

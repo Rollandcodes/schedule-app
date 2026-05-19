@@ -1,12 +1,12 @@
 import type {
   ListBookingReportsFilters,
   SystemBookingReportsFilters,
-} from "@calcom/features/bookingReport/repositories/IBookingReportRepository";
-import type { PrismaBookingReportRepository } from "@calcom/features/bookingReport/repositories/PrismaBookingReportRepository";
-import type { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import type { WatchlistRepository } from "@calcom/features/watchlist/lib/repository/WatchlistRepository";
-import type { PrismaClient } from "@calcom/prisma";
-import type { WatchlistType, WatchlistSource } from "@calcom/prisma/enums";
+} from "@schedule/features/bookingReport/repositories/IBookingReportRepository";
+import type { PrismaBookingReportRepository } from "@schedule/features/bookingReport/repositories/PrismaBookingReportRepository";
+import type { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import type { WatchlistRepository } from "@schedule/features/watchlist/lib/repository/WatchlistRepository";
+import type { PrismaClient } from "@schedule/prisma";
+import type { WatchlistType, WatchlistSource } from "@schedule/prisma/enums";
 
 import { WatchlistErrors } from "../errors/WatchlistErrors";
 

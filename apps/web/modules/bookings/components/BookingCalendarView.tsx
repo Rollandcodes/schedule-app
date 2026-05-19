@@ -1,11 +1,11 @@
 "use client";
 
-import dayjs from "@calcom/dayjs";
-import { useTimePreferences } from "@calcom/features/bookings/lib";
-import type { CalendarEvent } from "@calcom/features/calendars/weeklyview/types/events";
-import { useGetTheme } from "@calcom/lib/hooks/useTheme";
-import { Calendar } from "@calcom/web/modules/calendars/weeklyview/components/Calendar";
-import { useBanners } from "@calcom/web/modules/shell/banners/useBanners";
+import dayjs from "@schedule/dayjs";
+import { useTimePreferences } from "@schedule/features/bookings/lib";
+import type { CalendarEvent } from "@schedule/features/calendars/weeklyview/types/events";
+import { useGetTheme } from "@schedule/lib/hooks/useTheme";
+import { Calendar } from "@schedule/web/modules/calendars/weeklyview/components/Calendar";
+import { useBanners } from "@schedule/web/modules/shell/banners/useBanners";
 import { useEffect, useMemo } from "react";
 import { useBookingDetailsSheetStore } from "../store/bookingDetailsSheetStore";
 import type { BookingOutput } from "../types";

@@ -1,4 +1,4 @@
-import db, { prisma } from "@calcom/prisma";
+import db, { prisma } from "@schedule/prisma";
 import { captureException } from "@sentry/nextjs";
 import type { IUsersRepository } from "./users.repository.interface";
 

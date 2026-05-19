@@ -1,4 +1,4 @@
-import type { User } from "@calcom/prisma/client";
+import type { User } from "@schedule/prisma/client";
 
 export interface IUsersRepository {
   updateLastActiveAt(userId: number): Promise<User>;

@@ -1,10 +1,10 @@
 import type { ErrorOption, FieldPath } from "react-hook-form";
 
-import type { RegularBookingCreateResult } from "@calcom/features/bookings/lib/dto/types";
-import type { Slots } from "@calcom/features/calendars/lib/types";
-import type { PublicEventType } from "@calcom/features/eventtypes/lib/getPublicEvent";
-import type { SchedulingType } from "@calcom/prisma/enums";
-import type { AppsStatus } from "@calcom/types/Calendar";
+import type { RegularBookingCreateResult } from "@schedule/features/bookings/lib/dto/types";
+import type { Slots } from "@schedule/features/calendars/lib/types";
+import type { PublicEventType } from "@schedule/features/eventtypes/lib/getPublicEvent";
+import type { SchedulingType } from "@schedule/prisma/enums";
+import type { AppsStatus } from "@schedule/types/Calendar";
 import type { BookingCreateBody } from "./lib/bookingCreateBodySchema";
 
 export type PublicEvent = NonNullable<PublicEventType>;
@@ -100,5 +100,5 @@ export type RecurringBookingCreateBody = BookingCreateBody & {
 export type BookingResponse = RegularBookingCreateResult;
 
 export type MarkNoShowResponse = Awaited<
-  ReturnType<typeof import("@calcom/features/handleMarkNoShow").default>
+  ReturnType<typeof import("@schedule/features/handleMarkNoShow").default>
 >;

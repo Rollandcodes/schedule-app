@@ -1,7 +1,7 @@
 import type { ReadonlyURLSearchParams } from "next/navigation";
 import { z } from "zod";
 
-import { EmbedTheme } from "@calcom/features/embed/lib/constants";
+import { EmbedTheme } from "@schedule/features/embed/lib/constants";
 
 const enum ThemeSupport {
   // e.g. Login Page

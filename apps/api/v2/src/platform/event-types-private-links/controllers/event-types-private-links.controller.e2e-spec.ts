@@ -1,5 +1,5 @@
-import { SUCCESS_STATUS } from "@calcom/platform-constants";
-import { CreatePrivateLinkInput } from "@calcom/platform-types";
+import { SUCCESS_STATUS } from "@schedule/platform-constants";
+import { CreatePrivateLinkInput } from "@schedule/platform-types";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test } from "@nestjs/testing";

@@ -1,20 +1,20 @@
-import { enrichUserWithDelegationCredentialsIncludeServiceAccountKey } from "@calcom/app-store/delegationCredential";
-import type { CredentialDataWithTeamName } from "@calcom/app-store/utils";
+import { enrichUserWithDelegationCredentialsIncludeServiceAccountKey } from "@schedule/app-store/delegationCredential";
+import type { CredentialDataWithTeamName } from "@schedule/app-store/utils";
 import {
   cleanIntegrationKeys,
   getCalendarCredentials,
   getConnectedCalendars,
-} from "@calcom/features/calendars/lib/CalendarManager";
-import { DestinationCalendarRepository } from "@calcom/features/calendars/repositories/DestinationCalendarRepository";
-import { isDelegationCredential } from "@calcom/lib/delegationCredential";
-import logger from "@calcom/lib/logger";
-import { SelectedCalendarRepository } from "@calcom/features/selectedCalendar/repositories/SelectedCalendarRepository";
-import type { PrismaClient } from "@calcom/prisma";
-import prisma from "@calcom/prisma";
-import type { DestinationCalendar, SelectedCalendar, User } from "@calcom/prisma/client";
-import { AppCategories } from "@calcom/prisma/enums";
-import { credentialForCalendarServiceSelect } from "@calcom/prisma/selects/credential";
-import type { IntegrationCalendar } from "@calcom/types/Calendar";
+} from "@schedule/features/calendars/lib/CalendarManager";
+import { DestinationCalendarRepository } from "@schedule/features/calendars/repositories/DestinationCalendarRepository";
+import { isDelegationCredential } from "@schedule/lib/delegationCredential";
+import logger from "@schedule/lib/logger";
+import { SelectedCalendarRepository } from "@schedule/features/selectedCalendar/repositories/SelectedCalendarRepository";
+import type { PrismaClient } from "@schedule/prisma";
+import prisma from "@schedule/prisma";
+import type { DestinationCalendar, SelectedCalendar, User } from "@schedule/prisma/client";
+import { AppCategories } from "@schedule/prisma/enums";
+import { credentialForCalendarServiceSelect } from "@schedule/prisma/selects/credential";
+import type { IntegrationCalendar } from "@schedule/types/Calendar";
 
 const log = logger.getSubLogger({ prefix: ["getConnectedDestinationCalendarsAndEnsureDefaultsInDb"] });
 
@@ -437,5 +437,5 @@ export async function getConnectedDestinationCalendarsAndEnsureDefaultsInDb({
   };
 }
 
-// Legacy export for @calcom/platform-libraries
+// Legacy export for @schedule/platform-libraries
 export const getConnectedDestinationCalendars = getConnectedDestinationCalendarsAndEnsureDefaultsInDb;

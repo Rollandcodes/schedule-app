@@ -2,10 +2,10 @@ import { useRouter } from "next/navigation";
 import type { Dispatch, SetStateAction } from "react";
 import type { MutableRefObject } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter } from "@calcom/ui/components/dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter } from "@schedule/ui/components/dialog";
 
 interface AssignmentWarningDialogProps {
   isOpenAssignmentWarnDialog: boolean;

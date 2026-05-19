@@ -1,17 +1,17 @@
 import { useState } from "react";
 import type { UseFormReturn } from "react-hook-form";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
 import {
   Dropdown,
   DropdownItem,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@calcom/ui/components/dropdown";
-import { InputError, Input } from "@calcom/ui/components/form";
+} from "@schedule/ui/components/dropdown";
+import { InputError, Input } from "@schedule/ui/components/form";
 
 import type { FormValues } from "~/settings/my-account/profile-view";
 

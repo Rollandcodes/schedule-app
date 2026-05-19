@@ -3,11 +3,11 @@ import {
   addTeamsToDb,
   addUsersToDb,
   createCredentials,
-} from "@calcom/testing/lib/bookingScenario/bookingScenario";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
+} from "@schedule/testing/lib/bookingScenario/bookingScenario";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
 import { describe, expect, test, vi } from "vitest";
 
-vi.mock("@calcom/features/users/repositories/UserRepository", () => {
+vi.mock("@schedule/features/users/repositories/UserRepository", () => {
   return {
     UserRepository: vi.fn().mockImplementation(function () {
       return {

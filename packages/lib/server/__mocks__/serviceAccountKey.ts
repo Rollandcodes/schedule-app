@@ -1,6 +1,6 @@
 import { vi } from "vitest";
 
-vi.mock("@calcom/lib/server/serviceAccountKey", async (importOriginal) => {
+vi.mock("@schedule/lib/server/serviceAccountKey", async (importOriginal) => {
   const actual = await importOriginal<any>();
   return {
     ...actual,

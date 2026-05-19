@@ -1,26 +1,26 @@
 "use client";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { APP_NAME } from "@calcom/lib/constants";
-import { extractHostTimezone, filterActiveLinks } from "@calcom/lib/hashedLinksUtils";
-import { useCopy } from "@calcom/lib/hooks/useCopy";
-import { useInViewObserver } from "@calcom/lib/hooks/useInViewObserver";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { useGetTheme } from "@calcom/lib/hooks/useTheme";
-import { useTypedQuery } from "@calcom/lib/hooks/useTypedQuery";
-import { HttpError } from "@calcom/lib/http-error";
-import { parseEventTypeColor } from "@calcom/lib/isEventTypeColor";
-import { localStorage } from "@calcom/lib/webstorage";
-import { MembershipRole, SchedulingType } from "@calcom/prisma/enums";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { trpc } from "@calcom/trpc/react";
-import classNames from "@calcom/ui/classNames";
-import { ArrowButton } from "@calcom/ui/components/arrow-button";
-import { UserAvatarGroup } from "@calcom/ui/components/avatar";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { ButtonGroup } from "@calcom/ui/components/buttonGroup";
-import { ConfirmationDialogContent } from "@calcom/ui/components/dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { APP_NAME } from "@schedule/lib/constants";
+import { extractHostTimezone, filterActiveLinks } from "@schedule/lib/hashedLinksUtils";
+import { useCopy } from "@schedule/lib/hooks/useCopy";
+import { useInViewObserver } from "@schedule/lib/hooks/useInViewObserver";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { useGetTheme } from "@schedule/lib/hooks/useTheme";
+import { useTypedQuery } from "@schedule/lib/hooks/useTypedQuery";
+import { HttpError } from "@schedule/lib/http-error";
+import { parseEventTypeColor } from "@schedule/lib/isEventTypeColor";
+import { localStorage } from "@schedule/lib/webstorage";
+import { MembershipRole, SchedulingType } from "@schedule/prisma/enums";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { trpc } from "@schedule/trpc/react";
+import classNames from "@schedule/ui/classNames";
+import { ArrowButton } from "@schedule/ui/components/arrow-button";
+import { UserAvatarGroup } from "@schedule/ui/components/avatar";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { ButtonGroup } from "@schedule/ui/components/buttonGroup";
+import { ConfirmationDialogContent } from "@schedule/ui/components/dialog";
 import {
   Dropdown,
   DropdownItem,
@@ -29,24 +29,24 @@ import {
   DropdownMenuPortal,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@calcom/ui/components/dropdown";
-import { EmptyScreen } from "@calcom/ui/components/empty-screen";
-import { Label, Switch, TextField } from "@calcom/ui/components/form";
-import { HorizontalTabs } from "@calcom/ui/components/navigation";
-import { Skeleton } from "@calcom/ui/components/skeleton";
-import { showToast } from "@calcom/ui/components/toast";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+} from "@schedule/ui/components/dropdown";
+import { EmptyScreen } from "@schedule/ui/components/empty-screen";
+import { Label, Switch, TextField } from "@schedule/ui/components/form";
+import { HorizontalTabs } from "@schedule/ui/components/navigation";
+import { Skeleton } from "@schedule/ui/components/skeleton";
+import { showToast } from "@schedule/ui/components/toast";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import {
   EventTypeEmbedButton,
   EventTypeEmbedDialog,
-} from "@calcom/web/modules/embed/components/EventTypeEmbed";
-import { EventTypeDescription } from "@calcom/web/modules/event-types/components";
+} from "@schedule/web/modules/embed/components/EventTypeEmbed";
+import { EventTypeDescription } from "@schedule/web/modules/event-types/components";
 import {
   CreateEventTypeDialog,
   type ProfileOption,
-} from "@calcom/web/modules/event-types/components/CreateEventTypeDialog";
-import { DuplicateDialog } from "@calcom/web/modules/event-types/components/DuplicateDialog";
-import { InfiniteSkeletonLoader } from "@calcom/web/modules/event-types/components/SkeletonLoader";
+} from "@schedule/web/modules/event-types/components/CreateEventTypeDialog";
+import { DuplicateDialog } from "@schedule/web/modules/event-types/components/DuplicateDialog";
+import { InfiniteSkeletonLoader } from "@schedule/web/modules/event-types/components/SkeletonLoader";
 import { SearchIcon } from "@coss/ui/icons";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { TRPCClientError } from "@trpc/client";

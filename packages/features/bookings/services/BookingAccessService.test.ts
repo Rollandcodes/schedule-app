@@ -1,14 +1,14 @@
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import type { PrismaClient } from "@calcom/prisma";
-import { MembershipRole } from "@calcom/prisma/enums";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import type { PrismaClient } from "@schedule/prisma";
+import { MembershipRole } from "@schedule/prisma/enums";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { BookingRepository } from "../repositories/BookingRepository";
 import { BookingAccessService } from "./BookingAccessService";
 
 vi.mock("../repositories/BookingRepository");
-vi.mock("@calcom/features/users/repositories/UserRepository");
+vi.mock("@schedule/features/users/repositories/UserRepository");
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: {},
   prisma: {},
 }));

@@ -1,5 +1,5 @@
-import type { ICalendarCacheEventRepository } from "@calcom/features/calendar-subscription/lib/cache/CalendarCacheEventRepository.interface";
-import logger from "@calcom/lib/logger";
+import type { ICalendarCacheEventRepository } from "@schedule/features/calendar-subscription/lib/cache/CalendarCacheEventRepository.interface";
+import logger from "@schedule/lib/logger";
 import { metrics } from "@sentry/nextjs";
 import type {
   Calendar,
@@ -9,7 +9,7 @@ import type {
   GetAvailabilityParams,
   IntegrationCalendar,
   NewCalendarEventType,
-} from "@calcom/types/Calendar";
+} from "@schedule/types/Calendar";
 
 const log = logger.getSubLogger({ prefix: ["CachedCalendarWrapper"] });
 

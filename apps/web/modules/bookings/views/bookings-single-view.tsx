@@ -9,51 +9,51 @@ import { Fragment, useEffect, useState } from "react";
 import { Toaster } from "sonner";
 import { z } from "zod";
 
-import BookingPageTagManager from "@calcom/app-store/BookingPageTagManager";
-import type { getEventLocationValue } from "@calcom/app-store/locations";
-import { getSuccessPageLocationMessage, guessEventLocationType } from "@calcom/app-store/locations";
-import { getEventTypeAppData } from "@calcom/app-store/utils";
-import { eventTypeMetaDataSchemaWithTypedApps } from "@calcom/app-store/zod-utils";
-import type { ConfigType } from "@calcom/dayjs";
-import dayjs from "@calcom/dayjs";
+import BookingPageTagManager from "@schedule/app-store/BookingPageTagManager";
+import type { getEventLocationValue } from "@schedule/app-store/locations";
+import { getSuccessPageLocationMessage, guessEventLocationType } from "@schedule/app-store/locations";
+import { getEventTypeAppData } from "@schedule/app-store/utils";
+import { eventTypeMetaDataSchemaWithTypedApps } from "@schedule/app-store/zod-utils";
+import type { ConfigType } from "@schedule/dayjs";
+import dayjs from "@schedule/dayjs";
 import {
   useEmbedNonStylesConfig,
   useIsBackgroundTransparent,
   useIsEmbed,
-} from "@calcom/embed-core/embed-iframe";
-import { Price } from "@calcom/features/bookings/components/event-meta/Price";
-import { getCalendarLinks, CalendarLinkType } from "@calcom/features/bookings/lib/getCalendarLinks";
-import { RATING_OPTIONS, validateRating } from "@calcom/features/bookings/lib/rating";
-import { isWithinMinimumRescheduleNotice as isWithinMinimumRescheduleNoticeUtil } from "@calcom/features/bookings/lib/reschedule/isWithinMinimumRescheduleNotice";
-import type { nameObjectSchema } from "@calcom/features/eventtypes/lib/eventNaming";
-import { getEventName } from "@calcom/features/eventtypes/lib/eventNaming";
-import { shouldShowFieldInCustomResponses } from "@calcom/lib/bookings/SystemField";
-import { APP_NAME } from "@calcom/lib/constants";
-import { formatToLocalizedDate, formatToLocalizedTime, formatToLocalizedTimezone } from "@calcom/lib/dayjs";
-import useGetBrandingColours from "@calcom/lib/getBrandColours";
-import { useCompatSearchParams } from "@calcom/lib/hooks/useCompatSearchParams";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { useRouterQuery } from "@calcom/lib/hooks/useRouterQuery";
-import useTheme from "@calcom/lib/hooks/useTheme";
-import isSmsCalEmail from "@calcom/lib/isSmsCalEmail";
-import { markdownToSafeHTML } from "@calcom/lib/markdownToSafeHTML";
-import { getEveryFreqFor } from "@calcom/lib/recurringStrings";
-import { getIs24hClockFromLocalStorage, isBrowserLocale24h } from "@calcom/lib/timeFormat";
-import { getTimeShiftFlags, getFirstShiftFlags } from "@calcom/lib/timeShift";
-import { CURRENT_TIMEZONE } from "@calcom/lib/timezoneConstants";
-import { localStorage } from "@calcom/lib/webstorage";
-import { AssignmentReasonEnum, BookingStatus, SchedulingType } from "@calcom/prisma/enums";
+} from "@schedule/embed-core/embed-iframe";
+import { Price } from "@schedule/features/bookings/components/event-meta/Price";
+import { getCalendarLinks, CalendarLinkType } from "@schedule/features/bookings/lib/getCalendarLinks";
+import { RATING_OPTIONS, validateRating } from "@schedule/features/bookings/lib/rating";
+import { isWithinMinimumRescheduleNotice as isWithinMinimumRescheduleNoticeUtil } from "@schedule/features/bookings/lib/reschedule/isWithinMinimumRescheduleNotice";
+import type { nameObjectSchema } from "@schedule/features/eventtypes/lib/eventNaming";
+import { getEventName } from "@schedule/features/eventtypes/lib/eventNaming";
+import { shouldShowFieldInCustomResponses } from "@schedule/lib/bookings/SystemField";
+import { APP_NAME } from "@schedule/lib/constants";
+import { formatToLocalizedDate, formatToLocalizedTime, formatToLocalizedTimezone } from "@schedule/lib/dayjs";
+import useGetBrandingColours from "@schedule/lib/getBrandColours";
+import { useCompatSearchParams } from "@schedule/lib/hooks/useCompatSearchParams";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { useRouterQuery } from "@schedule/lib/hooks/useRouterQuery";
+import useTheme from "@schedule/lib/hooks/useTheme";
+import isSmsCalEmail from "@schedule/lib/isSmsCalEmail";
+import { markdownToSafeHTML } from "@schedule/lib/markdownToSafeHTML";
+import { getEveryFreqFor } from "@schedule/lib/recurringStrings";
+import { getIs24hClockFromLocalStorage, isBrowserLocale24h } from "@schedule/lib/timeFormat";
+import { getTimeShiftFlags, getFirstShiftFlags } from "@schedule/lib/timeShift";
+import { CURRENT_TIMEZONE } from "@schedule/lib/timezoneConstants";
+import { localStorage } from "@schedule/lib/webstorage";
+import { AssignmentReasonEnum, BookingStatus, SchedulingType } from "@schedule/prisma/enums";
 
-import assignmentReasonBadgeTitleMap from "@calcom/web/lib/booking/assignmentReasonBadgeTitleMap";
-import { bookingMetadataSchema } from "@calcom/prisma/zod-utils";
-import { trpc } from "@calcom/trpc/react";
-import { Alert } from "@calcom/ui/components/alert";
-import { Avatar } from "@calcom/ui/components/avatar";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { EmptyScreen } from "@calcom/ui/components/empty-screen";
-import { EmailInput, TextArea } from "@calcom/ui/components/form";
-import { Icon } from "@calcom/ui/components/icon";
+import assignmentReasonBadgeTitleMap from "@schedule/web/lib/booking/assignmentReasonBadgeTitleMap";
+import { bookingMetadataSchema } from "@schedule/prisma/zod-utils";
+import { trpc } from "@schedule/trpc/react";
+import { Alert } from "@schedule/ui/components/alert";
+import { Avatar } from "@schedule/ui/components/avatar";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { EmptyScreen } from "@schedule/ui/components/empty-screen";
+import { EmailInput, TextArea } from "@schedule/ui/components/form";
+import { Icon } from "@schedule/ui/components/icon";
 import {
   CalendarIcon,
   CheckIcon,
@@ -61,11 +61,11 @@ import {
   ExternalLinkIcon,
   XIcon,
 } from "@coss/ui/icons";
-import { showToast } from "@calcom/ui/components/toast";
-import { useCalcomTheme } from "@calcom/ui/styles";
-import CancelBooking from "@calcom/web/components/booking/CancelBooking";
-import EventReservationSchema from "@calcom/web/components/schemas/EventReservationSchema";
-import { timeZone } from "@calcom/web/lib/clock";
+import { showToast } from "@schedule/ui/components/toast";
+import { useCalcomTheme } from "@schedule/ui/styles";
+import CancelBooking from "@schedule/web/components/booking/CancelBooking";
+import EventReservationSchema from "@schedule/web/components/schemas/EventReservationSchema";
+import { timeZone } from "@schedule/web/lib/clock";
 
 import { usePaymentStatus } from "../hooks/usePaymentStatus";
 import type { PageProps } from "./bookings-single-view.getServerSideProps";

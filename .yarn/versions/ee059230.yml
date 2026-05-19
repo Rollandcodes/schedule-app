@@ -1,9 +1,9 @@
 undecided:
   - calcom-monorepo
-  - "@calcom/api-v2"
-  - "@calcom/app-store-cli"
-  - "@calcom/platform-constants"
-  - "@calcom/platform-enums"
-  - "@calcom/platform-types"
-  - "@calcom/platform-utils"
-  - "@calcom/prisma"
+  - "@schedule/api-v2"
+  - "@schedule/app-store-cli"
+  - "@schedule/platform-constants"
+  - "@schedule/platform-enums"
+  - "@schedule/platform-types"
+  - "@schedule/platform-utils"
+  - "@schedule/prisma"

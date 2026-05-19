@@ -6,8 +6,8 @@ import type {
   HashedLinkInput,
   HostGroupInput,
   HostInput,
-} from "@calcom/features/eventtypes/lib/types";
-import { MAX_SEATS_PER_TIME_SLOT } from "@calcom/lib/constants";
+} from "@schedule/features/eventtypes/lib/types";
+import { MAX_SEATS_PER_TIME_SLOT } from "@schedule/lib/constants";
 import {
   customInputSchema,
   EventTypeMetaDataSchema,
@@ -17,7 +17,7 @@ import {
   intervalLimitsType,
   recurringEventType,
   rrSegmentQueryValueSchema,
-} from "@calcom/prisma/zod-utils";
+} from "@schedule/prisma/zod-utils";
 import { z } from "zod";
 
 export type TUpdateInputSchema = EventTypeUpdateInput;

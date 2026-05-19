@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { stringify } from "node:querystring";
 
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import prisma from "@calcom/prisma";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import prisma from "@schedule/prisma";
 
 import getAppKeysFromSlug from "../../_utils/getAppKeysFromSlug";
 

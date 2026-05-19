@@ -2,9 +2,9 @@
 
 import { useFormContext } from "react-hook-form";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
-import { Label, TextField, Select } from "@calcom/ui/components/form";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
+import { Label, TextField, Select } from "@schedule/ui/components/form";
 import { XIcon } from "@coss/ui/icons";
 
 import type { InviteRole } from "../store/onboarding-store";

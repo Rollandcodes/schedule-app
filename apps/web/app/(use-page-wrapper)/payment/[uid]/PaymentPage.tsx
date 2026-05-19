@@ -1,17 +1,17 @@
 "use client";
 
-import { getPaymentAppData } from "@calcom/app-store/_utils/payments/getPaymentAppData";
-import { getSuccessPageLocationMessage } from "@calcom/app-store/locations";
-import dayjs from "@calcom/dayjs";
-import { sdkActionManager, useIsEmbed } from "@calcom/embed-core/embed-iframe";
-import { PayIcon } from "@calcom/features/bookings/components/event-meta/PayIcon";
-import { Price } from "@calcom/features/bookings/components/event-meta/Price";
-import { APP_NAME, WEBSITE_URL } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import useTheme from "@calcom/lib/hooks/useTheme";
-import { getIs24hClockFromLocalStorage, isBrowserLocale24h } from "@calcom/lib/timeFormat";
-import { CURRENT_TIMEZONE } from "@calcom/lib/timezoneConstants";
-import { localStorage } from "@calcom/lib/webstorage";
+import { getPaymentAppData } from "@schedule/app-store/_utils/payments/getPaymentAppData";
+import { getSuccessPageLocationMessage } from "@schedule/app-store/locations";
+import dayjs from "@schedule/dayjs";
+import { sdkActionManager, useIsEmbed } from "@schedule/embed-core/embed-iframe";
+import { PayIcon } from "@schedule/features/bookings/components/event-meta/PayIcon";
+import { Price } from "@schedule/features/bookings/components/event-meta/Price";
+import { APP_NAME, WEBSITE_URL } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import useTheme from "@schedule/lib/hooks/useTheme";
+import { getIs24hClockFromLocalStorage, isBrowserLocale24h } from "@schedule/lib/timeFormat";
+import { CURRENT_TIMEZONE } from "@schedule/lib/timezoneConstants";
+import { localStorage } from "@schedule/lib/webstorage";
 import classNames from "classnames";
 import dynamic from "next/dynamic";
 import type { FC } from "react";
@@ -29,14 +29,14 @@ type PaymentPageProps = {
 
 const PaypalPaymentComponent = dynamic(
   () =>
-    import("@calcom/web/components/apps/paypal/PaypalPaymentComponent").then((m) => m.PaypalPaymentComponent),
+    import("@schedule/web/components/apps/paypal/PaypalPaymentComponent").then((m) => m.PaypalPaymentComponent),
   {
     ssr: false,
   }
 );
 
 const AlbyPaymentComponent = dynamic(
-  () => import("@calcom/web/components/apps/alby/AlbyPaymentComponent").then((m) => m.AlbyPaymentComponent),
+  () => import("@schedule/web/components/apps/alby/AlbyPaymentComponent").then((m) => m.AlbyPaymentComponent),
   {
     ssr: false,
   }
@@ -44,7 +44,7 @@ const AlbyPaymentComponent = dynamic(
 
 const HitpayPaymentComponent = dynamic(
   () =>
-    import("@calcom/web/components/apps/hitpay/HitpayPaymentComponent").then((m) => m.HitpayPaymentComponent),
+    import("@schedule/web/components/apps/hitpay/HitpayPaymentComponent").then((m) => m.HitpayPaymentComponent),
   {
     ssr: false,
   }
@@ -52,7 +52,7 @@ const HitpayPaymentComponent = dynamic(
 
 const BtcpayPaymentComponent = dynamic(
   () =>
-    import("@calcom/web/components/apps/btcpayserver/BtcpayPaymentComponent").then(
+    import("@schedule/web/components/apps/btcpayserver/BtcpayPaymentComponent").then(
       (m) => m.BtcpayPaymentComponent
     ),
   {

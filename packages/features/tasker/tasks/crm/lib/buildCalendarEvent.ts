@@ -1,10 +1,10 @@
-import { getCalEventResponses } from "@calcom/features/bookings/lib/getCalEventResponses";
-import type { BuiltCalendarEvent } from "@calcom/features/CalendarEventBuilder";
-import { CalendarEventBuilder } from "@calcom/features/CalendarEventBuilder";
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import { getTranslation } from "@calcom/i18n/server";
-import prisma from "@calcom/prisma";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import { getCalEventResponses } from "@schedule/features/bookings/lib/getCalEventResponses";
+import type { BuiltCalendarEvent } from "@schedule/features/CalendarEventBuilder";
+import { CalendarEventBuilder } from "@schedule/features/CalendarEventBuilder";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import { getTranslation } from "@schedule/i18n/server";
+import prisma from "@schedule/prisma";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 const buildCalendarEvent: (bookingUid: string) => Promise<CalendarEvent> = async (bookingUid: string) => {
   const booking = await prisma.booking.findUnique({

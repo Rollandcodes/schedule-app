@@ -1,5 +1,5 @@
 {
-  "extends": "@calcom/tsconfig/react-library.json",
+  "extends": "@schedule/tsconfig/react-library.json",
   "compilerOptions": {
     "resolveJsonModule": true,
     "experimentalDecorators": true
@@ -12,5 +12,9 @@
     "**/*.ts",
     "**/*.tsx"
   ],
-  "exclude": ["dist", "build", "**/node_modules/**"]
+  "exclude": [
+    "dist",
+    "build",
+    "**/node_modules/**"
+  ]
 }

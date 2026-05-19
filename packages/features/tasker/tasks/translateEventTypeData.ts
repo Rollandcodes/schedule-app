@@ -1,7 +1,7 @@
-import { getTranslationService } from "@calcom/features/di/containers/TranslationService";
-import { getEventTypeTranslationRepository } from "@calcom/features/eventTypeTranslation/di/EventTypeTranslationRepository.container";
-import logger from "@calcom/lib/logger";
-import { EventTypeAutoTranslatedField } from "@calcom/prisma/enums";
+import { getTranslationService } from "@schedule/features/di/containers/TranslationService";
+import { getEventTypeTranslationRepository } from "@schedule/features/eventTypeTranslation/di/EventTypeTranslationRepository.container";
+import logger from "@schedule/lib/logger";
+import { EventTypeAutoTranslatedField } from "@schedule/prisma/enums";
 import { z } from "zod";
 
 export const ZTranslateEventDataPayloadSchema = z.object({

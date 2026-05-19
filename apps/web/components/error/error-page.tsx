@@ -2,9 +2,9 @@
 
 import { useLayoutEffect } from "react";
 
-import "@calcom/embed-core/src/embed-iframe";
-import { HttpError } from "@calcom/lib/http-error";
-import { Button } from "@calcom/ui/components/button";
+import "@schedule/embed-core/src/embed-iframe";
+import { HttpError } from "@schedule/lib/http-error";
+import { Button } from "@schedule/ui/components/button";
 
 type Props = {
   statusCode?: number | null;

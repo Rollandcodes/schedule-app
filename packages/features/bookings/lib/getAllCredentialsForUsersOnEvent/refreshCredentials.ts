@@ -1,9 +1,9 @@
 import async from "async";
 
-import { buildAllCredentials } from "@calcom/app-store/delegationCredential";
-import { isDelegationCredential } from "@calcom/lib/delegationCredential";
-import { withReporting } from "@calcom/lib/sentryWrapper";
-import type { CredentialForCalendarService } from "@calcom/types/Credential";
+import { buildAllCredentials } from "@schedule/app-store/delegationCredential";
+import { isDelegationCredential } from "@schedule/lib/delegationCredential";
+import { withReporting } from "@schedule/lib/sentryWrapper";
+import type { CredentialForCalendarService } from "@schedule/types/Credential";
 
 import { refreshCredential } from "./refreshCredential";
 

@@ -1,8 +1,8 @@
-import { EventScheduleItemComponent } from "@calcom/features/troubleshooter/components/EventScheduleItemComponent";
-import { useTroubleshooterStore } from "@calcom/features/troubleshooter/store";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import { Badge } from "@calcom/ui/components/badge";
+import { EventScheduleItemComponent } from "@schedule/features/troubleshooter/components/EventScheduleItemComponent";
+import { useTroubleshooterStore } from "@schedule/features/troubleshooter/store";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import { Badge } from "@schedule/ui/components/badge";
 import Link from "next/link";
 
 export { EventScheduleItemComponent };

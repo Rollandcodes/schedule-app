@@ -8,24 +8,24 @@ import { Controller, useForm } from "react-hook-form";
 import type { z } from "zod";
 
 import { BookerLayoutSelector } from "~/settings/components/BookerLayoutSelector";
-import SectionBottomActions from "@calcom/features/settings/SectionBottomActions";
-import ThemeLabel from "@calcom/features/settings/ThemeLabel";
-import SettingsHeader from "@calcom/features/settings/appDir/SettingsHeader";
-import { APP_NAME } from "@calcom/lib/constants";
-import { DEFAULT_LIGHT_BRAND_COLOR, DEFAULT_DARK_BRAND_COLOR } from "@calcom/lib/constants";
-import { checkWCAGContrastColor } from "@calcom/lib/getBrandColours";
-import useGetBrandingColours from "@calcom/lib/getBrandColours";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import useTheme from "@calcom/lib/hooks/useTheme";
-import { validateBookerLayouts } from "@calcom/lib/validateBookerLayouts";
-import type { userMetadata } from "@calcom/prisma/zod-utils";
-import { trpc } from "@calcom/trpc/react";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import { Alert } from "@calcom/ui/components/alert";
-import { Button } from "@calcom/ui/components/button";
-import { SettingsToggle, ColorPicker, Form } from "@calcom/ui/components/form";
-import { showToast } from "@calcom/ui/components/toast";
-import { useCalcomTheme } from "@calcom/ui/styles";
+import SectionBottomActions from "@schedule/features/settings/SectionBottomActions";
+import ThemeLabel from "@schedule/features/settings/ThemeLabel";
+import SettingsHeader from "@schedule/features/settings/appDir/SettingsHeader";
+import { APP_NAME } from "@schedule/lib/constants";
+import { DEFAULT_LIGHT_BRAND_COLOR, DEFAULT_DARK_BRAND_COLOR } from "@schedule/lib/constants";
+import { checkWCAGContrastColor } from "@schedule/lib/getBrandColours";
+import useGetBrandingColours from "@schedule/lib/getBrandColours";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import useTheme from "@schedule/lib/hooks/useTheme";
+import { validateBookerLayouts } from "@schedule/lib/validateBookerLayouts";
+import type { userMetadata } from "@schedule/prisma/zod-utils";
+import { trpc } from "@schedule/trpc/react";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import { Alert } from "@schedule/ui/components/alert";
+import { Button } from "@schedule/ui/components/button";
+import { SettingsToggle, ColorPicker, Form } from "@schedule/ui/components/form";
+import { showToast } from "@schedule/ui/components/toast";
+import { useCalcomTheme } from "@schedule/ui/styles";
 
 
 const useBrandColors = (

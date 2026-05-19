@@ -1,5 +1,5 @@
-import { X_CAL_SECRET_KEY } from "@calcom/platform-constants";
-import type { PlatformOAuthClient, Team, User } from "@calcom/prisma/client";
+import { X_CAL_SECRET_KEY } from "@schedule/platform-constants";
+import type { PlatformOAuthClient, Team, User } from "@schedule/prisma/client";
 import { INestApplication } from "@nestjs/common";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { Test, TestingModule } from "@nestjs/testing";

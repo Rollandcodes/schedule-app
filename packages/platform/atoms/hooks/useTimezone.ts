@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import dayjs from "@calcom/dayjs";
+import dayjs from "@schedule/dayjs";
 
 import { useMe } from "./useMe";
 

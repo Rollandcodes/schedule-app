@@ -1,7 +1,7 @@
 import { randomBytes } from "node:crypto";
 
-import type { PrismaClient } from "@calcom/prisma";
-import type { OAuthClientStatus } from "@calcom/prisma/enums";
+import type { PrismaClient } from "@schedule/prisma";
+import type { OAuthClientStatus } from "@schedule/prisma/enums";
 
 export class OAuthClientRepository {
   constructor(private readonly prisma: PrismaClient) {}

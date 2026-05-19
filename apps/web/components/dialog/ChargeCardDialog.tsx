@@ -1,12 +1,12 @@
 import type { Dispatch, SetStateAction } from "react";
 import { useState } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogHeader, DialogClose } from "@calcom/ui/components/dialog";
-import { showToast } from "@calcom/ui/components/toast";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogHeader, DialogClose } from "@schedule/ui/components/dialog";
+import { showToast } from "@schedule/ui/components/toast";
 import { CreditCardIcon, TriangleAlertIcon } from "@coss/ui/icons";
 
 interface IRescheduleDialog {

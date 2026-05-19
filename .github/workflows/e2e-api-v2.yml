@@ -82,12 +82,12 @@ jobs:
       - name: Build platform packages with Turbo
         run: |
           yarn turbo run build \
-            --filter=@calcom/platform-constants \
-            --filter=@calcom/platform-enums \
-            --filter=@calcom/platform-utils \
-            --filter=@calcom/platform-types \
-            --filter=@calcom/platform-libraries \
-            --filter=@calcom/trpc
+            --filter=@schedule/platform-constants \
+            --filter=@schedule/platform-enums \
+            --filter=@schedule/platform-utils \
+            --filter=@schedule/platform-types \
+            --filter=@schedule/platform-libraries \
+            --filter=@schedule/trpc
 
       - name: Run Tests
         working-directory: apps/api/v2

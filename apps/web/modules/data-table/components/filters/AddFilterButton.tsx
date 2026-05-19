@@ -1,10 +1,10 @@
 "use client";
 
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
-import { Command, CommandEmpty, CommandInput, CommandItem, CommandList } from "@calcom/ui/components/command";
-import { Popover, PopoverContent, PopoverTrigger } from "@calcom/ui/components/popover";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
+import { Command, CommandEmpty, CommandInput, CommandItem, CommandList } from "@schedule/ui/components/command";
+import { Popover, PopoverContent, PopoverTrigger } from "@schedule/ui/components/popover";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import { EyeOffIcon, PlusIcon } from "@coss/ui/icons";
 import type { Table } from "@tanstack/react-table";
 import startCase from "lodash/startCase";

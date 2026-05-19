@@ -1,6 +1,6 @@
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { Button } from "@calcom/ui/components/button";
-import { Icon } from "@calcom/ui/components/icon";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { Button } from "@schedule/ui/components/button";
+import { Icon } from "@schedule/ui/components/icon";
 
 export default function AppNotInstalledMessage({ appName }: { appName: string }) {
   const { t } = useLocale();

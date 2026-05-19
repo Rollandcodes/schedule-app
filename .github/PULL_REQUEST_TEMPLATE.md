@@ -2,7 +2,7 @@
 
 <!-- Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-Note: Cal.diy is a community-maintained open-source project. Contributions here do NOT flow to Cal.com's production service. -->
+Note: Schedule is a community-maintained open-source project. Contributions here do NOT flow to any commercial service. -->
 
 - Fixes #XXXX (GitHub issue number)
 
@@ -39,8 +39,8 @@ A visual demonstration is strongly recommended, for both the original and new ch
 
 <!-- Remove bullet points below that don't apply to you -->
 
-- I haven't read the [contributing guide](https://github.com/calcom/cal.diy/blob/main/CONTRIBUTING.md)
-- My code doesn't follow the style guidelines of this project
-- I haven't commented my code, particularly in hard-to-understand areas
-- I haven't checked if my changes generate no new warnings
-- My PR is too large (>500 lines or >10 files) and should be split into smaller PRs
+- [ ] I have read the [contributing guide](https://github.com/Rollandcodes/schedule-app/blob/main/CONTRIBUTING.md)
+- [ ] My code follows the style guidelines of this project
+- [ ] I have added comments for complex or non-obvious code
+- [ ] My changes generate no new warnings
+- [ ] My PR is small and focused (<= 500 lines and <= 10 files) or has been split into smaller PRs

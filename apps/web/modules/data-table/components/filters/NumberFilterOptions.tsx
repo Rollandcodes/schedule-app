@@ -1,11 +1,11 @@
 "use client";
 
-import type { FilterableColumn } from "@calcom/features/data-table/lib/types";
-import { ColumnFilterType, ZNumberFilterValue } from "@calcom/features/data-table/lib/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import type { FilterType } from "@calcom/types/data-table";
-import { Button } from "@calcom/ui/components/button";
-import { Form, NumberInput, Select } from "@calcom/ui/components/form";
+import type { FilterableColumn } from "@schedule/features/data-table/lib/types";
+import { ColumnFilterType, ZNumberFilterValue } from "@schedule/features/data-table/lib/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import type { FilterType } from "@schedule/types/data-table";
+import { Button } from "@schedule/ui/components/button";
+import { Form, NumberInput, Select } from "@schedule/ui/components/form";
 import { Controller, useForm } from "react-hook-form";
 import { useDataTable, useFilterValue } from "~/data-table/hooks";
 import { numberFilterOperatorOptions } from "./utils";

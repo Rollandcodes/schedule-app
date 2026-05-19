@@ -1,6 +1,6 @@
-import type { MembershipRepository } from "@calcom/features/membership/repositories/MembershipRepository";
-import type { ProfileRepository } from "@calcom/features/profile/repositories/ProfileRepository";
-import { teamMetadataSchema } from "@calcom/prisma/zod-utils";
+import type { MembershipRepository } from "@schedule/features/membership/repositories/MembershipRepository";
+import type { ProfileRepository } from "@schedule/features/profile/repositories/ProfileRepository";
+import { teamMetadataSchema } from "@schedule/prisma/zod-utils";
 
 import type { TeamAccessUseCase } from "../teamAccessUseCase";
 import {

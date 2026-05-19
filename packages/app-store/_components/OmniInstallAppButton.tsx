@@ -1,7 +1,7 @@
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { showToast } from "@calcom/ui/components/toast";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { showToast } from "@schedule/ui/components/toast";
 import useAddAppMutation from "../_utils/useAddAppMutation";
 import { InstallAppButton } from "../InstallAppButton";
 import type { AppCardApp } from "../types";

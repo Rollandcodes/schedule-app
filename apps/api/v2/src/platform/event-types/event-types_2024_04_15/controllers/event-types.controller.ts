@@ -3,9 +3,9 @@ import {
   EVENT_TYPE_WRITE,
   SUCCESS_STATUS,
   X_CAL_CLIENT_ID,
-} from "@calcom/platform-constants";
-import { getEventTypesByViewer, getPublicEvent } from "@calcom/platform-libraries/event-types";
-import type { PrismaClient } from "@calcom/prisma";
+} from "@schedule/platform-constants";
+import { getEventTypesByViewer, getPublicEvent } from "@schedule/platform-libraries/event-types";
+import type { PrismaClient } from "@schedule/prisma";
 import {
   Body,
   Controller,

@@ -8,14 +8,14 @@ import { Toaster } from "sonner";
 import { z } from "zod";
 import posthog from "posthog-js";
 
-import { APP_NAME } from "@calcom/lib/constants";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { useParamsWithFallback } from "@calcom/lib/hooks/useParamsWithFallback";
-import type { RouterOutputs } from "@calcom/trpc/react";
-import classNames from "@calcom/ui/classNames";
-import { Button } from "@calcom/ui/components/button";
-import { StepCard } from "@calcom/ui/components/card";
-import { Steps } from "@calcom/ui/components/form";
+import { APP_NAME } from "@schedule/lib/constants";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { useParamsWithFallback } from "@schedule/lib/hooks/useParamsWithFallback";
+import type { RouterOutputs } from "@schedule/trpc/react";
+import classNames from "@schedule/ui/classNames";
+import { Button } from "@schedule/ui/components/button";
+import { StepCard } from "@schedule/ui/components/card";
+import { Steps } from "@schedule/ui/components/form";
 import { LoaderIcon } from "@coss/ui/icons";
 
 import { ConnectedCalendars } from "@components/getting-started/steps-views/ConnectCalendars";

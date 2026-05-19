@@ -315,39 +315,39 @@
     "B2_BUCKET_NAME"
   ],
   "tasks": {
-    "@calcom/web#copy-app-store-static": {
+    "@schedule/web#copy-app-store-static": {
       "inputs": ["../../packages/app-store/**/static/**/*"],
       "outputLogs": "new-only",
       "outputs": ["public/app-store/**"]
     },
-    "@calcom/prisma#build": {
+    "@schedule/prisma#build": {
       "cache": false,
       "dependsOn": ["post-install"]
     },
-    "@calcom/prisma#db-migrate": {
+    "@schedule/prisma#db-migrate": {
       "cache": false,
-      "dependsOn": ["@calcom/prisma#db-up"],
+      "dependsOn": ["@schedule/prisma#db-up"],
       "inputs": ["./schema.prisma", "./migrations/**/*.sql"]
     },
-    "@calcom/prisma#db-seed": {
+    "@schedule/prisma#db-seed": {
       "cache": false,
-      "dependsOn": ["@calcom/prisma#db-deploy"]
+      "dependsOn": ["@schedule/prisma#db-deploy"]
     },
-    "@calcom/prisma#db-up": {
+    "@schedule/prisma#db-up": {
       "cache": false
     },
-    "@calcom/prisma#dx": {
+    "@schedule/prisma#dx": {
       "cache": false,
-      "dependsOn": ["@calcom/prisma#db-up"]
+      "dependsOn": ["@schedule/prisma#db-up"]
     },
-    "@calcom/app-store#build:types": {
+    "@schedule/app-store#build:types": {
       "outputs": ["types/**"]
     },
-    "@calcom/trpc#build": {
-      "dependsOn": ["@calcom/prisma#post-install"],
+    "@schedule/trpc#build": {
+      "dependsOn": ["@schedule/prisma#post-install"],
       "outputs": ["./types"]
     },
-    "@calcom/web#build": {
+    "@schedule/web#build": {
       "dependsOn": ["^build", "copy-app-store-static"],
       "outputs": [".next/**"],
       "env": [
@@ -392,18 +392,18 @@
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env.production"]
     },
-    "@calcom/web#dx": {
+    "@schedule/web#dx": {
       "cache": false,
-      "dependsOn": ["@calcom/prisma#dx"]
+      "dependsOn": ["@schedule/prisma#dx"]
     },
-    "@calcom/web#start": {
+    "@schedule/web#start": {
       "cache": false,
       "dependsOn": []
     },
-    "@calcom/atoms#build-npm": {
+    "@schedule/atoms#build-npm": {
       "outputs": ["dist/**", "globals.min.css"]
     },
-    "@calcom/api-v2#build": {
+    "@schedule/api-v2#build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**"],
       "env": [
@@ -420,7 +420,7 @@
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env.production"]
     },
-    "@calcom/ai#build": {
+    "@schedule/ai#build": {
       "env": [
         "FRONTEND_URL",
         "BACKEND_URL",
@@ -434,7 +434,7 @@
         "DATABASE_URL"
       ]
     },
-    "@calcom/website#build": {
+    "@schedule/website#build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**"],
       "env": [
@@ -472,13 +472,13 @@
     "db-seed": {},
     "deploy": {
       "cache": false,
-      "dependsOn": ["@calcom/web#build"]
+      "dependsOn": ["@schedule/web#build"]
     },
     "clean": {
       "cache": false,
       "outputs": ["dist/**", "build/**"]
     },
-    "@calcom/web#dev": {
+    "@schedule/web#dev": {
       "dependsOn": ["//#env-check:common", "//#env-check:app-store"],
       "cache": false
     },
@@ -534,7 +534,7 @@
       "inputs": ["./schema.prisma", "./prisma/schema.prisma"],
       "env": ["PRISMA_GENERATE_DATAPROXY"]
     },
-    "@calcom/prisma#post-install": {
+    "@schedule/prisma#post-install": {
       "cache": false,
       "outputs": ["dist/**", "build/**"]
     },
@@ -551,17 +551,17 @@
     },
     "type-check": {
       "cache": false,
-      "dependsOn": ["@calcom/trpc#build"]
+      "dependsOn": ["@schedule/trpc#build"]
     },
     "type-check:ci": {
       "cache": false,
-      "dependsOn": ["@calcom/trpc#build"]
+      "dependsOn": ["@schedule/trpc#build"]
     },
-    "@calcom/prisma#db-reset": {
+    "@schedule/prisma#db-reset": {
       "cache": false,
       "outputs": ["dist/**", "build/**"]
     },
-    "@calcom/app-store-cli#build": {
+    "@schedule/app-store-cli#build": {
       "inputs": [
         "../../packages/app-store/**/package.json",
         "../../packages/app-store/**/config.json",
@@ -573,11 +573,11 @@
       ],
       "outputs": ["../../packages/app-store/*.generated.ts", "../../packages/app-store/*.generated.tsx"]
     },
-    "@calcom/embed-react#type-check": {
-      "dependsOn": ["@calcom/embed-core#build", "@calcom/embed-snippet#build"],
+    "@schedule/embed-react#type-check": {
+      "dependsOn": ["@schedule/embed-core#build", "@schedule/embed-snippet#build"],
       "outputs": ["dist/**", "build/**"]
     },
-    "@calcom/embed-core#build": {
+    "@schedule/embed-core#build": {
       "cache": false,
       "outputs": ["../../../apps/web/public/embed/**"],
       "env": [
@@ -590,8 +590,8 @@
     "embed-tests-update-snapshots:ci": {
       "cache": false,
       "dependsOn": [
-        "@calcom/prisma#db-seed",
-        "@calcom/web#build",
+        "@schedule/prisma#db-seed",
+        "@schedule/web#build",
         "^build",
         "^embed-tests-update-snapshots:ci"
       ],

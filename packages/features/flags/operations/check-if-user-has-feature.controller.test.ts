@@ -1,9 +1,9 @@
-import prismock from "@calcom/testing/lib/__mocks__/prisma";
+import prismock from "@schedule/testing/lib/__mocks__/prisma";
 
 import { expect, it } from "vitest";
 
-import type { FeatureId } from "@calcom/features/flags/config";
-import { FeaturesRepository } from "@calcom/features/flags/features.repository";
+import type { FeatureId } from "@schedule/features/flags/config";
+import { FeaturesRepository } from "@schedule/features/flags/features.repository";
 
 import { checkIfUserHasFeatureController } from "./check-if-user-has-feature.controller";
 

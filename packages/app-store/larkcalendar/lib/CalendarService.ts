@@ -1,7 +1,7 @@
-import { getLocation } from "@calcom/lib/CalEventParser";
-import logger from "@calcom/lib/logger";
-import prisma from "@calcom/prisma";
-import type { BufferedBusyTime } from "@calcom/types/BufferedBusyTime";
+import { getLocation } from "@schedule/lib/CalEventParser";
+import logger from "@schedule/lib/logger";
+import prisma from "@schedule/prisma";
+import type { BufferedBusyTime } from "@schedule/types/BufferedBusyTime";
 import type {
   Calendar,
   CalendarServiceEvent,
@@ -10,8 +10,8 @@ import type {
   GetAvailabilityParams,
   IntegrationCalendar,
   NewCalendarEventType,
-} from "@calcom/types/Calendar";
-import type { CredentialPayload } from "@calcom/types/Credential";
+} from "@schedule/types/Calendar";
+import type { CredentialPayload } from "@schedule/types/Credential";
 
 import refreshOAuthTokens from "../../_utils/oauth/refreshOAuthTokens";
 import { handleLarkError, isExpired, LARK_HOST } from "../common";

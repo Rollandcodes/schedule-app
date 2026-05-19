@@ -2,13 +2,13 @@ import {
   CalendarStoreContext,
   createCalendarStore,
   useCalendarStore,
-} from "@calcom/features/calendars/weeklyview/state/store";
-import classNames from "@calcom/ui/classNames";
+} from "@schedule/features/calendars/weeklyview/state/store";
+import classNames from "@schedule/ui/classNames";
 import type React from "react";
 import { useEffect, useMemo, useRef } from "react";
-import "@calcom/features/calendars/weeklyview/styles/styles.css";
-import type { CalendarComponentProps } from "@calcom/features/calendars/weeklyview/types/state";
-import { getDaysBetweenDates, getHoursToDisplay } from "@calcom/features/calendars/weeklyview/utils";
+import "@schedule/features/calendars/weeklyview/styles/styles.css";
+import type { CalendarComponentProps } from "@schedule/features/calendars/weeklyview/types/state";
+import { getDaysBetweenDates, getHoursToDisplay } from "@schedule/features/calendars/weeklyview/utils";
 import { CurrentTime } from "./currentTime";
 import { DateValues } from "./DateValues";
 import { AvailableCellsForDay, EmptyCell } from "./event/Empty";

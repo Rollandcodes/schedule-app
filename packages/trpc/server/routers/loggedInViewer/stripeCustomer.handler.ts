@@ -1,6 +1,6 @@
-import { prisma } from "@calcom/prisma";
-import { userMetadata } from "@calcom/prisma/zod-utils";
-import type { TrpcSessionUser } from "@calcom/trpc/server/types";
+import { prisma } from "@schedule/prisma";
+import { userMetadata } from "@schedule/prisma/zod-utils";
+import type { TrpcSessionUser } from "@schedule/trpc/server/types";
 import { TRPCError } from "@trpc/server";
 
 type StripeCustomerOptions = {

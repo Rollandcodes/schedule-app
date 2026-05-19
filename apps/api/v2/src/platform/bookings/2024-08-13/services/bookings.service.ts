@@ -8,9 +8,9 @@ import {
   handleMarkNoShow,
   roundRobinManualReassignment,
   roundRobinReassignment,
-} from "@calcom/platform-libraries";
-import { makeUserActor, PrismaOrgMembershipRepository } from "@calcom/platform-libraries/bookings";
-import type { RescheduleSeatedBookingInput_2024_08_13 } from "@calcom/platform-types";
+} from "@schedule/platform-libraries";
+import { makeUserActor, PrismaOrgMembershipRepository } from "@schedule/platform-libraries/bookings";
+import type { RescheduleSeatedBookingInput_2024_08_13 } from "@schedule/platform-types";
 import {
   BookingOutput_2024_08_13,
   CancelBookingInput,
@@ -24,9 +24,9 @@ import {
   ReassignToUserBookingInput_2024_08_13,
   RecurringBookingOutput_2024_08_13,
   RescheduleBookingInput,
-} from "@calcom/platform-types";
-import type { PrismaClient } from "@calcom/prisma";
-import type { EventType, Team, User } from "@calcom/prisma/client";
+} from "@schedule/platform-types";
+import type { PrismaClient } from "@schedule/prisma";
+import type { EventType, Team, User } from "@schedule/prisma/client";
 import {
   BadRequestException,
   ConflictException,

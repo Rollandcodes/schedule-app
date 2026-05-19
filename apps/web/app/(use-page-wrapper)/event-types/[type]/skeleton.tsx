@@ -5,7 +5,7 @@ import {
   SkeletonContainer,
   SkeletonText,
   SkeletonAvatar,
-} from "@calcom/ui/components/skeleton";
+} from "@schedule/ui/components/skeleton";
 
 import Shell from "~/shell/Shell";
 

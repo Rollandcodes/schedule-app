@@ -1,5 +1,5 @@
 {
-  "name": "@calcom/api-proxy",
+  "name": "@schedule/api-proxy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

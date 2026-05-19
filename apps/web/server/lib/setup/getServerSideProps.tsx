@@ -1,7 +1,7 @@
 import process from "node:process";
-import { getServerSession } from "@calcom/features/auth/lib/getServerSession";
-import prisma from "@calcom/prisma";
-import { UserPermissionRole } from "@calcom/prisma/enums";
+import { getServerSession } from "@schedule/features/auth/lib/getServerSession";
+import prisma from "@schedule/prisma";
+import { UserPermissionRole } from "@schedule/prisma/enums";
 import type { GetServerSidePropsContext } from "next";
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {

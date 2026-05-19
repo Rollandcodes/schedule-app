@@ -1,4 +1,4 @@
-import type { FeatureState } from "@calcom/features/flags/config";
+import type { FeatureState } from "@schedule/features/flags/config";
 
 import type { OptInFeaturePolicy } from "../types";
 

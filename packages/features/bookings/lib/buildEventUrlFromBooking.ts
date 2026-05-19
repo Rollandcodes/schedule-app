@@ -1,6 +1,6 @@
-import { WEBAPP_URL } from "@calcom/lib/constants";
-import logger from "@calcom/lib/logger";
-import { safeStringify } from "@calcom/lib/safeStringify";
+import { WEBAPP_URL } from "@schedule/lib/constants";
+import logger from "@schedule/lib/logger";
+import { safeStringify } from "@schedule/lib/safeStringify";
 
 type BookingEventType = {
   slug: string;

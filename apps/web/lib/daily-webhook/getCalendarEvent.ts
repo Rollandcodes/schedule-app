@@ -1,5 +1,5 @@
-import { getTranslation } from "@calcom/i18n/server";
-import type { CalendarEvent } from "@calcom/types/Calendar";
+import { getTranslation } from "@schedule/i18n/server";
+import type { CalendarEvent } from "@schedule/types/Calendar";
 
 import type { getBookingResponse } from "./getBooking";
 

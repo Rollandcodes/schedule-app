@@ -1,18 +1,18 @@
-import { EventTypeRepository } from "@calcom/features/eventtypes/repositories/eventTypeRepository";
-import { hasFilter } from "@calcom/features/filters/lib/hasFilter";
-import { MembershipRepository } from "@calcom/features/membership/repositories/MembershipRepository";
-import { ProfileRepository } from "@calcom/features/profile/repositories/ProfileRepository";
-import { UserRepository } from "@calcom/features/users/repositories/UserRepository";
-import { getPlaceholderAvatar } from "@calcom/lib/defaultAvatarImage";
-import { ErrorCode } from "@calcom/lib/errorCodes";
-import { ErrorWithCode } from "@calcom/lib/errors";
-import { getUserAvatarUrl } from "@calcom/lib/getAvatarUrl";
-import logger from "@calcom/lib/logger";
-import { markdownToSafeHTML } from "@calcom/lib/markdownToSafeHTML";
-import { safeStringify } from "@calcom/lib/safeStringify";
-import prisma from "@calcom/prisma";
-import { MembershipRole, SchedulingType } from "@calcom/prisma/enums";
-import { eventTypeMetaDataSchemaWithUntypedApps, teamMetadataSchema } from "@calcom/prisma/zod-utils";
+import { EventTypeRepository } from "@schedule/features/eventtypes/repositories/eventTypeRepository";
+import { hasFilter } from "@schedule/features/filters/lib/hasFilter";
+import { MembershipRepository } from "@schedule/features/membership/repositories/MembershipRepository";
+import { ProfileRepository } from "@schedule/features/profile/repositories/ProfileRepository";
+import { UserRepository } from "@schedule/features/users/repositories/UserRepository";
+import { getPlaceholderAvatar } from "@schedule/lib/defaultAvatarImage";
+import { ErrorCode } from "@schedule/lib/errorCodes";
+import { ErrorWithCode } from "@schedule/lib/errors";
+import { getUserAvatarUrl } from "@schedule/lib/getAvatarUrl";
+import logger from "@schedule/lib/logger";
+import { markdownToSafeHTML } from "@schedule/lib/markdownToSafeHTML";
+import { safeStringify } from "@schedule/lib/safeStringify";
+import prisma from "@schedule/prisma";
+import { MembershipRole, SchedulingType } from "@schedule/prisma/enums";
+import { eventTypeMetaDataSchemaWithUntypedApps, teamMetadataSchema } from "@schedule/prisma/zod-utils";
 import { orderBy } from "lodash";
 
 class PermissionCheckService {

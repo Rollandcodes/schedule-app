@@ -1,4 +1,4 @@
-import type { AppMeta } from "@calcom/types/App";
+import type { AppMeta } from "@schedule/types/App";
 
 export const metadata = {
   name: "Microsoft Exchange 2013 Calendar",

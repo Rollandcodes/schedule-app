@@ -1,11 +1,11 @@
-import type { EventTypeSetupProps, FormValues } from "@calcom/features/eventtypes/lib/types";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { SchedulingType } from "@calcom/prisma/enums";
-import classNames from "@calcom/ui/classNames";
-import { Badge } from "@calcom/ui/components/badge";
-import { Button } from "@calcom/ui/components/button";
-import { ButtonGroup } from "@calcom/ui/components/buttonGroup";
-import { VerticalDivider } from "@calcom/ui/components/divider";
+import type { EventTypeSetupProps, FormValues } from "@schedule/features/eventtypes/lib/types";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { SchedulingType } from "@schedule/prisma/enums";
+import classNames from "@schedule/ui/classNames";
+import { Badge } from "@schedule/ui/components/badge";
+import { Button } from "@schedule/ui/components/button";
+import { ButtonGroup } from "@schedule/ui/components/buttonGroup";
+import { VerticalDivider } from "@schedule/ui/components/divider";
 import {
   Dropdown,
   DropdownItem,
@@ -13,18 +13,18 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@calcom/ui/components/dropdown";
-import { Label, Switch } from "@calcom/ui/components/form";
-import type { VerticalTabItemProps } from "@calcom/ui/components/navigation";
-import { HorizontalTabs, VerticalTabs } from "@calcom/ui/components/navigation";
-import { Skeleton } from "@calcom/ui/components/skeleton";
-import { showToast } from "@calcom/ui/components/toast";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+} from "@schedule/ui/components/dropdown";
+import { Label, Switch } from "@schedule/ui/components/form";
+import type { VerticalTabItemProps } from "@schedule/ui/components/navigation";
+import { HorizontalTabs, VerticalTabs } from "@schedule/ui/components/navigation";
+import { Skeleton } from "@schedule/ui/components/skeleton";
+import { showToast } from "@schedule/ui/components/toast";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 import {
   EventTypeEmbedButton,
   EventTypeEmbedDialog,
-} from "@calcom/web/modules/embed/components/EventTypeEmbed";
-import WebShell from "@calcom/web/modules/shell/Shell";
+} from "@schedule/web/modules/embed/components/EventTypeEmbed";
+import WebShell from "@schedule/web/modules/shell/Shell";
 import { LoaderIcon } from "@coss/ui/icons";
 import { Suspense, useMemo, useState } from "react";
 import type { UseFormReturn } from "react-hook-form";

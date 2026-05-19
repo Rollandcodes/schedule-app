@@ -5,17 +5,17 @@ import { useSession } from "next-auth/react";
 import type { RefCallback } from "react";
 import { useEffect, useState } from "react";
 
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { fetchUsername } from "@calcom/lib/fetchUsername";
-import { useDebounce } from "@calcom/lib/hooks/useDebounce";
-import { useLocale } from "@calcom/lib/hooks/useLocale";
-import { trpc } from "@calcom/trpc/react";
-import type { AppRouter } from "@calcom/trpc/types/server/routers/_app";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
-import { TextField } from "@calcom/ui/components/form";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { fetchUsername } from "@schedule/lib/fetchUsername";
+import { useDebounce } from "@schedule/lib/hooks/useDebounce";
+import { useLocale } from "@schedule/lib/hooks/useLocale";
+import { trpc } from "@schedule/trpc/react";
+import type { AppRouter } from "@schedule/trpc/types/server/routers/_app";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
+import { TextField } from "@schedule/ui/components/form";
 import { CheckIcon } from "@coss/ui/icons";
-import { Tooltip } from "@calcom/ui/components/tooltip";
+import { Tooltip } from "@schedule/ui/components/tooltip";
 
 import type { TRPCClientErrorLike } from "@trpc/client";
 

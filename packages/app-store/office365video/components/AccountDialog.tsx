@@ -1,7 +1,7 @@
-import type { DialogProps as ControlledDialogProps } from "@calcom/features/components/controlled-dialog";
-import { Dialog } from "@calcom/features/components/controlled-dialog";
-import { Button } from "@calcom/ui/components/button";
-import { DialogContent, DialogFooter, DialogClose } from "@calcom/ui/components/dialog";
+import type { DialogProps as ControlledDialogProps } from "@schedule/features/components/controlled-dialog";
+import { Dialog } from "@schedule/features/components/controlled-dialog";
+import { Button } from "@schedule/ui/components/button";
+import { DialogContent, DialogFooter, DialogClose } from "@schedule/ui/components/dialog";
 
 export function AccountDialog(
   props: ControlledDialogProps & {

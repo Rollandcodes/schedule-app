@@ -1,5 +1,5 @@
-import { EMAIL_FROM_NAME } from "@calcom/lib/constants";
-import type { CalendarEvent, Person } from "@calcom/types/Calendar";
+import { EMAIL_FROM_NAME } from "@schedule/lib/constants";
+import type { CalendarEvent, Person } from "@schedule/types/Calendar";
 
 import generateIcsFile, { GenerateIcsRole } from "../lib/generateIcsFile";
 import renderEmail from "../src/renderEmail";

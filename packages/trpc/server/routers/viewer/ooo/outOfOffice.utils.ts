@@ -1,5 +1,5 @@
-import prisma from "@calcom/prisma";
-import { MembershipRole } from "@calcom/prisma/enums";
+import prisma from "@schedule/prisma";
+import { MembershipRole } from "@schedule/prisma/enums";
 
 class PermissionCheckService {
   constructor(_prisma?: unknown) {}

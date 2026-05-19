@@ -1,17 +1,17 @@
-import { PrismaBookingReportRepository } from "@calcom/features/bookingReport/repositories/PrismaBookingReportRepository";
-import handleCancelBooking from "@calcom/features/bookings/lib/handleCancelBooking";
-import { BookingRepository } from "@calcom/features/bookings/repositories/BookingRepository";
-import { BookingAccessService } from "@calcom/features/bookings/services/BookingAccessService";
-import { BookingReportReason, BookingStatus } from "@calcom/prisma/enums";
+import { PrismaBookingReportRepository } from "@schedule/features/bookingReport/repositories/PrismaBookingReportRepository";
+import handleCancelBooking from "@schedule/features/bookings/lib/handleCancelBooking";
+import { BookingRepository } from "@schedule/features/bookings/repositories/BookingRepository";
+import { BookingAccessService } from "@schedule/features/bookings/services/BookingAccessService";
+import { BookingReportReason, BookingStatus } from "@schedule/prisma/enums";
 import { TRPCError } from "@trpc/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { reportBookingHandler } from "./reportBooking.handler";
 
-vi.mock("@calcom/features/bookingReport/repositories/PrismaBookingReportRepository");
-vi.mock("@calcom/features/bookings/lib/handleCancelBooking");
-vi.mock("@calcom/features/bookings/repositories/BookingRepository");
-vi.mock("@calcom/features/bookings/services/BookingAccessService");
-vi.mock("@calcom/lib/logger", () => ({
+vi.mock("@schedule/features/bookingReport/repositories/PrismaBookingReportRepository");
+vi.mock("@schedule/features/bookings/lib/handleCancelBooking");
+vi.mock("@schedule/features/bookings/repositories/BookingRepository");
+vi.mock("@schedule/features/bookings/services/BookingAccessService");
+vi.mock("@schedule/lib/logger", () => ({
   default: {
     getSubLogger: () => ({
       warn: vi.fn(),
@@ -20,7 +20,7 @@ vi.mock("@calcom/lib/logger", () => ({
   },
 }));
 
-vi.mock("@calcom/prisma", () => ({
+vi.mock("@schedule/prisma", () => ({
   default: {},
   prisma: {},
 }));

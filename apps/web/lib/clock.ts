@@ -3,9 +3,9 @@ import {
   getIs24hClockFromLocalStorage,
   isBrowserLocale24h,
   setIs24hClockInLocalStorage,
-} from "@calcom/lib/timeFormat";
-import { CURRENT_TIMEZONE } from "@calcom/lib/timezoneConstants";
-import { localStorage } from "@calcom/lib/webstorage";
+} from "@schedule/lib/timeFormat";
+import { CURRENT_TIMEZONE } from "@schedule/lib/timezoneConstants";
+import { localStorage } from "@schedule/lib/webstorage";
 
 interface TimeOptions {
   is24hClock: boolean;

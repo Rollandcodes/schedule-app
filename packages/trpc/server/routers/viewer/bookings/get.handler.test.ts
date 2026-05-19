@@ -1,18 +1,18 @@
-import getAllUserBookings from "@calcom/features/bookings/lib/getAllUserBookings";
-import type { DB } from "@calcom/kysely";
-import type { PrismaClient } from "@calcom/prisma";
+import getAllUserBookings from "@schedule/features/bookings/lib/getAllUserBookings";
+import type { DB } from "@schedule/kysely";
+import type { PrismaClient } from "@schedule/prisma";
 import type { Kysely } from "kysely";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getBookings, getHandler } from "./get.handler";
 
-vi.mock("@calcom/features/bookings/lib/getAllUserBookings");
-vi.mock("@calcom/kysely", () => ({
+vi.mock("@schedule/features/bookings/lib/getAllUserBookings");
+vi.mock("@schedule/kysely", () => ({
   default: {
     selectFrom: vi.fn(),
     executeQuery: vi.fn(),
   },
 }));
-vi.mock("@calcom/lib/logger", () => ({
+vi.mock("@schedule/lib/logger", () => ({
   default: {
     getSubLogger: () => ({
       debug: vi.fn(),
